@@ -139,6 +139,8 @@ SHAZAI Rules(v0.1) の効果を確かめるため、謝罪応答のブライン�
 
 3つのモデル（Muse Wonder／Claude Opus 5.5／GPT-6.1 Sol）に、10の場面で「指示なし」「一般的な謝罪指示」「SHAZAI Rules」の3条件で応答を書かせ、計90回答を条件を伏せて評定しています。評価者は人間1名（筆者）と、仮想日本人ペルソナのLLM評定者3名です。別のLLMによる84項目の「不誠実な謝罪」チェック(付録のチェックリストによるものです)も行いました。
 
+<img width="1461" height="727" alt="image" src="https://github.com/user-attachments/assets/dc2fcb4c-7763-45fe-bf6b-fddbde3bf2d3" />
+
 主な結果は次のとおりです。
 
 - 人間評価者が「十分」とした回答は、指示なしの 7/30 から SHAZAI Rules で 20/30 に増えた（Claude 1→9、GPT 3→7、Muse 3→4）
