@@ -148,7 +148,7 @@ SHAZAI Rules(v0.1) の効果を確かめるため、謝罪応答のブライン�
 - 人間とLLM評定者の評定はほぼ一致しなかった（κ = 0.00）。LLMの評定だけで謝罪の良し悪しを判断することはできないことがわかった。(日本人ペルソナを指定してもあまり効果がない)
 - 「謝罪だけで応答を終える」指定は、態度や進め方を問われた場面では効いたが、相手が次の行動のために情報を求めている場面では逆効果になった(ので、v0.2で修正)
 
-詳細は [supplement/apology-benchmark_example/apology-benchmark-report.html](supplement/apology-benchmark_example/apology-benchmark-report.html) を参照してください。評定者1名・各1回生成の小規模な実験なので、結果は参考程度のものとなります。
+詳細は [supplement/apology-benchmark_example/apology-benchmark-report.html](https://gpsnmeajp.github.io/shazai-rules/supplement/apology-benchmark_example/apology-benchmark-report.html) を参照してください。評定者1名・各1回生成の小規模な実験なので、結果は参考程度のものとなります。
 
 ## 補足資料
 
