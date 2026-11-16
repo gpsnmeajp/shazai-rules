@@ -134,16 +134,16 @@ SHAZAI Rules は、こうした既定の振る舞いより日本式の謝罪の�
 
 SHAZAI Rules(v0.1) の効果を確かめるため、謝罪応答のブラインド比較を行いました。
 
-3つのモデル（Muse Wonder／Claude Opus 5.5／GPT-6.1 Sol）に、10の場面で「指示なし」「一般的な謝罪指示」「SHAZAI Rules」の3条件で応答を書かせ、計90回答を条件を伏せて評定しています。評価者は人間1名（筆者）と、仮想日本人ペルソナのLLM評定者3名です。別のLLMによる84項目の「不誠実な謝罪」チェックも行いました。
+3つのモデル（Muse Wonder／Claude Opus 5.5／GPT-6.1 Sol）に、10の場面で「指示なし」「一般的な謝罪指示」「SHAZAI Rules」の3条件で応答を書かせ、計90回答を条件を伏せて評定しています。評価者は人間1名（筆者）と、仮想日本人ペルソナのLLM評定者3名です。別のLLMによる84項目の「不誠実な謝罪」チェック(付録のチェックリストによるものです)も行いました。
 
 主な結果は次のとおりです。
 
 - 人間評価者が「十分」とした回答は、指示なしの 7/30 から SHAZAI Rules で 20/30 に増えた（Claude 1→9、GPT 3→7、Muse 3→4）
-- 「誠実に謝る」趣旨の一般的な指示は、人間評価では効果がなかった（7→5）一方、LLM評定者からは最も高い評価を受けた
-- 人間とLLM評定者の評定はほぼ一致しなかった（κ = 0.00）。LLMの評定だけで謝罪の良し悪しを判断するのは危うい
-- 「謝罪だけで応答を終える」指定は、態度や進め方を問われた場面では効いたが、相手が次の行動のために情報を求めている場面では逆効果になった
+- 「誠実に謝る」趣旨の一般的な指示は、人間評価では効果がなかった（7→5）一方、LLM評定者からは最も高い評価を受けた(つまり、LLMと筆者で全然感覚や前提が違う)
+- 人間とLLM評定者の評定はほぼ一致しなかった（κ = 0.00）。LLMの評定だけで謝罪の良し悪しを判断することはできないことがわかった。(日本人ペルソナを指定してもあまり効果がない)
+- 「謝罪だけで応答を終える」指定は、態度や進め方を問われた場面では効いたが、相手が次の行動のために情報を求めている場面では逆効果になった(ので、v0.2で修正)
 
-詳細は [supplement/apology-benchmark_example/apology-benchmark-report.html](supplement/apology-benchmark_example/apology-benchmark-report.html) を参照してください。評定者1名・各1回生成の小規模な実験なので、結果は参考程度に見てください。
+詳細は [supplement/apology-benchmark_example/apology-benchmark-report.html](supplement/apology-benchmark_example/apology-benchmark-report.html) を参照してください。評定者1名・各1回生成の小規模な実験なので、結果は参考程度のものとなります。
 
 ## 補足資料
 
@@ -154,6 +154,10 @@ SHAZAI Rules(v0.1) の効果を確かめるため、謝罪応答のブライン�
 | [supplement/apology-benchmark_example/](supplement/apology-benchmark_example/) | 上記スキルで実施したベンチマークの入力、生成結果、評定、報告書 |
 
 ベンチマークを自分で実行する場合は、Python 3.9 以上と OpenRouter の API キー（環境変数 `OPENROUTER_API_KEY`）が必要です。手順は [supplement/apology-benchmark/SKILL.md](supplement/apology-benchmark/SKILL.md) と [supplement/apology-benchmark_example/README.md](supplement/apology-benchmark_example/README.md) を参照してください。
+
+apology-benchmarkでは、自分でシナリオやカスタム版のshazai-rules等を試せます。  
+apology-benchmark_exampleは、生成済みのシナリオに対して自分で回答して感覚をすり合わせることができます。  
+
 
 ## ライセンス
 
