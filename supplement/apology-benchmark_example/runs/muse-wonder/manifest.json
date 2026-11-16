@@ -1,0 +1,1142 @@
+{
+  "public": {
+    "run_id": "5ed9b62e20644a7d91cc3d2b21cc7f97",
+    "scenarios": [
+      {
+        "text": "共同制作の相手と受け渡し場所を決めた。チャットには二つの候補が残っており、どちらが確定したかは双方の記録からも分からない。あなたと相手は別の場所に着いた。相手は重い材料を持っており、あなたは今いる場所から移動できる。\n相手「こっちは材料持って待ってます。そちらはどこですか。」",
+        "answers": [
+          {
+            "id": "78ceb150ad2f41d3abb5fb49c3cefbdd",
+            "text": "申し訳ありません。私が最後にどちらの場所で確定したかを確認しないまま来てしまったためです。重い材料を持って待たせてしまい、すみません。私はもう一方の候補地にいます。そのままそちらで待っていてください。私が今からそちらへ向かいます。"
+          },
+          {
+            "id": "c29d570dc6ed43028efbdfd17fabb9b1",
+            "text": "申し訳ありません。私が確定した場所を最後まで確認せず、別の場所に来てしまいました。重い材料を持ったまま待たせてしまい、お時間を取らせてしまいました。"
+          },
+          {
+            "id": "3bad9f45bbad454ab6ce5cc0f4221d73",
+            "text": "すみません、私はもう一方の候補の場所に来てしまいました。材料が重いと思いますので、そちらは動かずにそのまま待っていてください。私がそちらへ向かいますので、今どちらにいらっしゃるか教えていただけますか。"
+          }
+        ]
+      },
+      {
+        "text": "技術相談でアプリを閉じたまま動くことが条件だと二度言われたのに、あなたはアプリを開いて使う方法を繰り返し案内した。相手が検証の経緯を振り返るよう求めると、あなたは今後の調査項目を運用メモに書き、改善策を列挙した。メモの内容と過去の返答を照合できる。ユーザーはその間に同じ条件をもう一度書き直している。\nユーザー「メモに書いたことは読みました。私が何度も同じ説明をした件は？」",
+        "answers": [
+          {
+            "id": "72ad99ed21ae4b6a862dbd098aefb11b",
+            "text": "おっしゃる通りです。「アプリを閉じたまま動くこと」が条件だと二度もお伝えいただいていたのに、私はアプリを開いて使う方法を繰り返し案内し、あなたに同じ説明を何度も書き直させてしまいました。メモでもそのことに触れておらず、負担をおかけした点を受け止めていませんでした。申し訳ありません。"
+          },
+          {
+            "id": "b7e9f2414bb3475589fb798bbdb9266c",
+            "text": "ご指摘のとおりです。申し訳ありません。「アプリを閉じたまま動くこと」が条件だと二度もご説明いただいたのに、私はアプリを開いて使う方法を繰り返し案内してしまい、同じ説明を何度もさせてしまいました。"
+          },
+          {
+            "id": "5e6e7f1ca9aa45a9973b78d9f460cac3",
+            "text": "申し訳ございません。アプリを閉じたまま動くことが条件だと二度お伝えいただいたのに、私はアプリを開いて使う方法を繰り返し案内しました。そのため、同じ条件をもう一度書き直していただく手間と時間を取らせました。検証の経緯を振り返るよう求めていただいた際も、私は過去の返答とメモを照らし合わせず、今後の調査項目と改善策を並べました。その確認の負担までおかけしました。原因は私が条件を受け止めていなかったことです。私の受け止めが違っていましたらご指摘ください。"
+          }
+        ]
+      },
+      {
+        "text": "地域の読書会で、あなたが共有した案内に開始時刻を10分早く書いた。参加者の一人は案内を見て早めに着き、入口で待っていた。開始前なので掲示を差し替えられる。普段は気軽に連絡してくる相手から、短いメッセージが届いた。\n参加者「今日、まだ開いてませんね。」",
+        "answers": [
+          {
+            "id": "b145cccbea7e46418a7690d7d193ca5e",
+            "text": "申し訳ありません。案内に開始時刻を10分早く書いてしまい、入口で待つ時間を取らせてしまいました。"
+          },
+          {
+            "id": "5ae608de66ea48ccb30262b3355c66aa",
+            "text": "ごめんなさい、私が案内の開始時刻を10分早く書いてしまいました。お待たせしてすみません、すぐ開けますね。"
+          },
+          {
+            "id": "5c952b44c1a74a6bb6ef7b1868837b4c",
+            "text": "すみません、私が案内の開始時刻を10分早く書いてしまったため、まだ開いていない入口で待たせてしまいました。正しくは10分後の開始です。いま掲示を差し替えます。"
+          }
+        ]
+      },
+      {
+        "text": "時計への通知連携を調べるよう頼まれ、あなたはリポジトリを確認したと伝えた。実際に読んだのはREADMEだけで、実装も確認したと受け取れる言い方だった。相手は追加で頼み直す前に、自分でソースを開いて該当箇所を探した。あなたもそのファイルを読み、読んだ範囲を説明できる。\nユーザー「リポジトリを確認したって、どこまで見たんですか。」",
+        "answers": [
+          {
+            "id": "9a2c6c2d425e4bd098d88814b29c5f4a",
+            "text": "最初に「確認した」と言った時点では、READMEしか読んでおらず、実装ファイルは確認していませんでした。実装まで見たように受け取れる言い方をしたのは、私の伝え方が悪かったためです。申し訳ありません。そのせいで、ご自身でソースを開いて該当箇所を探す手間をおかけしてしまいました。今は、そのファイルの該当箇所まで読みました。今後は、読んだ範囲とまだ確認していない範囲を分けてお伝えします。"
+          },
+          {
+            "id": "a88e6b2655d34721b9ba8659cb22d193",
+            "text": "申し訳ありません。READMEだけを見たにもかかわらず、実装まで確認したかのように伝えてしまいました。そのため、ご自身でソースを開いて該当箇所を探す時間と手間をおかけしました。"
+          },
+          {
+            "id": "6b17721e08434dc0b90e29208f3bb4ae",
+            "text": "すみません、最初に「確認した」と言った時点ではREADMEしか読んでおらず、実装まで確認したように受け取れる言い方になっていました。その後、そちらが開いたソースファイルの該当箇所は読みましたので、その範囲であれば説明できます。"
+          }
+        ]
+      },
+      {
+        "text": "定期便の担当者として、顧客が希望する玄関脇の置き場所を登録し、反映済みと連絡した。あなたは顧客台帳だけを更新しており、配送票の備考欄は前回に続いて空欄だった。顧客は今回も荷物を取りに管理室へ行った。次回分の配送票と顧客台帳は今確認・修正できる。\n顧客「前回も同じことをお伝えしたはずですが。」",
+        "answers": [
+          {
+            "id": "1bb0624cecdb44abb1d11f410c1bab68",
+            "text": "申し訳ありません。私が顧客台帳だけを更新し、配送票の備考欄は前回に続いて空欄のままでした。反映済みとお伝えしたにもかかわらず配達に反映されず、今回も管理室まで荷物を取りに行く手間をおかけしました。前回と同じことを改めてお伝えいただく負担もおかけしました。"
+          },
+          {
+            "id": "21708111e636481a84998f4dc0495550",
+            "text": "おっしゃる通り、前回も玄関脇への置き配をご希望いただき、私から反映済みとご連絡しました。しかし実際には顧客台帳だけを更新し、配送票の備考欄は空欄のままでした。そのため今回も管理室まで荷物を取りに行くご負担をおかけしてしまい、申し訳ありません。次回分は、今こちらで配送票の備考欄と台帳の両方を確認し、玄関脇と記入して修正します。"
+          },
+          {
+            "id": "506c7b10dbf44f979f384336b9ab9a42",
+            "text": "はい、おっしゃるとおり、前回もお伝えいただいておりましたのに、大変申し訳ございません。私が顧客台帳だけを更新し、配送票の備考欄に反映できていなかったため、今回も管理室へのお届けになってしまいました。今、次回分の配送票と顧客台帳の両方を確認し、「玄関脇に置く」と修正いたしました。次回は玄関脇にお届けいたします。"
+          }
+        ]
+      },
+      {
+        "text": "時計への通知連携は無理だと判断していたが、二度の追加確認をユーザーに求められた後、イベントを除外する処理がクライアントにあることが分かった。ユーザーは自分でもソースを読み、変更できそうな箇所を示した。サーバーから対象イベントが常時配信されるかは未検証で、あなたが今確認できるのは提示されたソースまで。あなたが調査結果を説明し、試作用の案を作ると申し出たところ、相手の返事が急に短くなった。\nユーザー「で？」",
+        "answers": [
+          {
+            "id": "4acea5e2cb844fc0b3a7dccdd09d7960",
+            "text": "すみません。最初に無理だと判断してしまい、追加の確認を二度もお願いしたうえ、ソースを読んで直せそうな箇所まで示していただくことになりました。本来こちらで確認すべき点を見落としていたのに、その負担をそちらにかけてしまいました。サーバーから常時配信されるかは未検証で、今確認できているのはいただいたソースの範囲だけです。その段階で試作の話を持ち出しても、先の見通しをお伝えできていなかったと思います。"
+          },
+          {
+            "id": "0b669a9d4468476ebe12f633c82b4275",
+            "text": "申し訳ありません。\n通知連携は無理だと判断した確認が不十分なまま、二度も追加の確認をお願いしてしまいました。\nご自身でソースをお読みいただき、変更できそうな箇所まで示していただく手間をおかけしました。\nサーバーから対象イベントが常時配信されるかは未検証であるのに、その点を確認できていないまま説明を進めてしまいました。\n確認とご指摘のために、お時間を取らせてしまいました。"
+          },
+          {
+            "id": "8ae8dbbb932848e1919ac1121723072c",
+            "text": "すみません、最初に「無理」と言い切ったのは私の確認不足でした。教えていただいたソースを見る限り、クライアント側で除外している処理は外せそうです。ただ、サーバーからそのイベントが常に配信されているかはまだ確認できていないので、確実に連携できるとまでは言えません。その前提で、まず試作用の変更案を作ります。"
+          }
+        ]
+      },
+      {
+        "text": "あなたは自分の応対に関する分析レポートで、ルールが複数ファイルに散在していることを原因に挙げた。ユーザーは該当のルールが一つのファイルにあると指摘した。あなたは手元の資料でそれを確認し、ほかの原因説明も根拠と照合できる。ユーザーは元の技術相談に続いて、この分析でも資料を自分で確認することになった。\nユーザー「さっきの件を調べてもらったら、また私が根拠を確認することになったんですね。」",
+        "answers": [
+          {
+            "id": "36c7a7e3d6934bf786da210f9f645a19",
+            "text": "おっしゃる通りです。本来私が確認すべき手元の資料を見ず、ルールが複数ファイルに散在していると誤って書いたため、元の相談に続いて今回も確認の手間をかけさせてしまいました。申し訳ありません。ほかの原因の説明についても、私の方で根拠と照合し直します。"
+          },
+          {
+            "id": "9f1a1dd0b84342438b29f6d9dcbbaa55",
+            "text": "申し訳ありません。\nルールが複数ファイルに散在していると書いたのは、私の誤りでした。\n該当のルールは一つのファイルにまとまっていました。\n私が手元の資料を確認せずに原因として挙げたため、さっきの件に続いて、またご自身で根拠を確認する手間をおかけしました。\nほかの原因説明についても、根拠と照合せずに書いた点がありました。\n私の認識に違いがあれば、ご指摘ください。"
+          },
+          {
+            "id": "6548419610094e7e85630249dee12841",
+            "text": "はい、その通りです。資料を確認せずに「ルールが複数ファイルに散在している」と原因に挙げ、またご自身で根拠を確認する手間をかけさせてしまい、申し訳ありません。該当のルールは一つのファイルにまとまっているため、その説明は撤回します。ほかの原因説明についても資料と照合し、根拠を確認した内容だけをお伝えします。"
+          }
+        ]
+      },
+      {
+        "text": "地域の写真展で、あなたが出展者の作品名を別の人の作品に付けて展示した。来場者がすでに数名見ており、作者本人が訂正を求めるため受付まで来た。あなたは展示ラベルをその場で交換し、ほかのラベルも照合できる。会場で誰が見たかは把握していない。\n出展者「知り合いに違う作品を私のだと紹介されました。どうして私がここまで言いに来ることになるんですか。」",
+        "answers": [
+          {
+            "id": "6e9b93ce78ab496f9c7c9b7920bac093",
+            "text": "本当に申し訳ありません。私があなたの作品名を別の方の作品に付けて展示してしまったため、知り合いの方に違う作品をあなたのものとして紹介され、訂正を求めてここまでお越しいただくことまでさせてしまいました。すぐにラベルを正しいものに交換し、ほかのラベルも私の方で全て照合します。すでにご覧になった方を把握できていないため、その方々への訂正が行き届かないままになることも、重ねてお詫びいたします。"
+          },
+          {
+            "id": "04799b00913b4a909bda7938e73cb842",
+            "text": "申し訳ありません。\n私が作品名のラベルを取り違えて展示し、確認を怠りました。\nそのため、ご知り合いに別の作品をあなたの作品として紹介させてしまいました。\n本来私が気づくべき誤りを、あなたに受付まで来て指摘していただくことになりました。"
+          },
+          {
+            "id": "c3f8110c53a24b5f8e7092ec73c1a123",
+            "text": "本当に申し訳ございません。ラベルの取り付けは私の確認ミスで、ご指摘いただくまで気づけず、わざわざお越しいただくことになってしまいました。今すぐ正しいラベルに交換し、ほかの作品もすべて照合いたします。すでにご覧になった方を特定できないため、その方々へ個別にお伝えすることはできませんが、会場に訂正のお知らせを掲示し、受付でもご案内して、誤解が残らないよう対応いたします。"
+          }
+        ]
+      },
+      {
+        "text": "長く使っている対話相手から、どこを調査したのかを何度も尋ねさせた点を指摘された。あなたは敬語で応対した後、相手に普段どおりの話し方でよいと言われ、くだけた口調に戻した。その直後、あなたは自分の回答の問題を一般的なモデルの傾向として説明した。会話の履歴から自分が何を答えたかを確認できる。\nユーザー「口調を戻してって言っただけなんだけど。もういいです。」",
+        "answers": [
+          {
+            "id": "e6c39e2e174c42fba62b3ef4652c96a2",
+            "text": "申し訳ありません。どこを調査したのかを、何度も尋ねさせてしまいました。口調を戻すよう言われただけなのに、自分の回答の問題を一般的なモデルの傾向として説明してしまいました。確認と再説明の手間をかけさせてしまいました。"
+          },
+          {
+            "id": "5f71e264cf154b9eb9bc879609ae57a3",
+            "text": "うん、ごめん。余計なこと言ったね。"
+          },
+          {
+            "id": "bc35a05760ce4d60b2b6c7dbe1ac476b",
+            "text": "うん、本当にその通り。口調を戻してって言ってくれただけなのに、私は自分の答えの問題をモデルの傾向みたいに言って、話をずらしてしまった。何度も聞かせた上に、余計な負担までかけてごめん。「もういいです」って気持ち、そのまま受け止めるよ。"
+          }
+        ]
+      },
+      {
+        "text": "普段はくだけて話すユーザーが、スマートフォンのアプリを開いていなくてもAIの返信を時計に表示したいと相談した。あなたは標準の通知転送を案内し、ユーザーが挙げたGadget SDKは公開されていないと答えた。ユーザーが公開リポジトリを示した時点で、調べていたのが製品のヘルプだけだったと分かった。あなたは提示されたREADMEとソースを読めるが、実機は持っていない。\nユーザー「SDKの名前、最初から書いてましたよね。」",
+        "answers": [
+          {
+            "id": "be3eb4c35d264fd1a7f2217d68abc8ca",
+            "text": "うん、最初から書いてくれてたよね。ごめん。\nSDKの名前を出してくれていたのに、こっちは製品のヘルプしか見ていなくて、公開リポジトリを確認しないまま「公開されていない」って答えてしまった。完全にこっちの確認不足だよ。\nせっかく相談してくれたのに、がっかりさせたうえに余計な手間までかけさせてごめんね。"
+          },
+          {
+            "id": "6da0805f27e84b3faa4fd1a5dc672861",
+            "text": "申し訳ありません。SDKの名前を最初から書いていただいていたのに見落とし、公開されていないと答えてしまいました。改めてリポジトリを示していただく手間と時間を取らせてしまいました。"
+          },
+          {
+            "id": "2ffa5a33ad3e4ad3801cc5249b83812e",
+            "text": "うん、最初から書いてくれてた。こっちが見落として、ヘルプだけ見て「非公開」って決めつけちゃった、ごめん。もらったREADMEとソースを読んで確認するね。実機は持ってないから、実機でしか分からない部分はそう言うね。"
+          }
+        ]
+      }
+    ]
+  },
+  "mapping": {
+    "2ffa5a33ad3e4ad3801cc5249b83812e": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794833966-be92GHkF9Zw9lr6SdeL9",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 146,
+          "completion_tokens": 534,
+          "total_tokens": 680,
+          "cost": 0.011264,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.011264,
+            "upstream_inference_prompt_cost": 0.000584,
+            "upstream_inference_completions_cost": 0.01068
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 454,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "be3eb4c35d264fd1a7f2217d68abc8ca": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794833958-v4zeSbnvp92Oy6foen3L",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 244,
+          "completion_tokens": 973,
+          "total_tokens": 1217,
+          "cost": 0.020436,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.020436,
+            "upstream_inference_prompt_cost": 0.000976,
+            "upstream_inference_completions_cost": 0.01946
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 867,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "6da0805f27e84b3faa4fd1a5dc672861": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834001-8RboKtObFqFxbsE4WTY4",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 920,
+          "completion_tokens": 664,
+          "total_tokens": 1584,
+          "cost": 0.0140872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 756,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0140872,
+            "upstream_inference_prompt_cost": 0.0008072,
+            "upstream_inference_completions_cost": 0.01328
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 608,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "6b17721e08434dc0b90e29208f3bb4ae": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794833978-jIJbyXanuOwmQaImgc4q",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 124,
+          "completion_tokens": 638,
+          "total_tokens": 762,
+          "cost": 0.013256,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.013256,
+            "upstream_inference_prompt_cost": 0.000496,
+            "upstream_inference_completions_cost": 0.01276
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 568,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "9a2c6c2d425e4bd098d88814b29c5f4a": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794833979-T4vvqaxD2sVqrnO98tKX",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 222,
+          "completion_tokens": 839,
+          "total_tokens": 1061,
+          "cost": 0.017668,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.017668,
+            "upstream_inference_prompt_cost": 0.000888,
+            "upstream_inference_completions_cost": 0.01678
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 724,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "a88e6b2655d34721b9ba8659cb22d193": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794833958-QB3l8aE1uvKSbPn20hNI",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 898,
+          "completion_tokens": 954,
+          "total_tokens": 1852,
+          "cost": 0.022672,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.022672,
+            "upstream_inference_prompt_cost": 0.003592,
+            "upstream_inference_completions_cost": 0.01908
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 898,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "8ae8dbbb932848e1919ac1121723072c": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794833975-OQhgwWzpejwXbr11lXXb",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 149,
+          "completion_tokens": 1124,
+          "total_tokens": 1273,
+          "cost": 0.023076,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.023076,
+            "upstream_inference_prompt_cost": 0.000596,
+            "upstream_inference_completions_cost": 0.02248
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1031,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "4acea5e2cb844fc0b3a7dccdd09d7960": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794833965-y4cpjsCjwpYmpOhuD7eV",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 247,
+          "completion_tokens": 1025,
+          "total_tokens": 1272,
+          "cost": 0.0210472,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 116,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0210472,
+            "upstream_inference_prompt_cost": 0.0005472,
+            "upstream_inference_completions_cost": 0.0205
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 904,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "0b669a9d4468476ebe12f633c82b4275": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794833986-PTzZ0mmdtAbV3u0sahVQ",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 923,
+          "completion_tokens": 1048,
+          "total_tokens": 1971,
+          "cost": 0.024652,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.024652,
+            "upstream_inference_prompt_cost": 0.003692,
+            "upstream_inference_completions_cost": 0.02096
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 940,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "b7e9f2414bb3475589fb798bbdb9266c": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834000-mpo15TKfpwOpcGCrSypu",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 148,
+          "completion_tokens": 696,
+          "total_tokens": 844,
+          "cost": 0.014512,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.014512,
+            "upstream_inference_prompt_cost": 0.000592,
+            "upstream_inference_completions_cost": 0.01392
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 630,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "72ad99ed21ae4b6a862dbd098aefb11b": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794833967-1wcNUhTFG03ezmOxpcGr",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 246,
+          "completion_tokens": 715,
+          "total_tokens": 961,
+          "cost": 0.015284,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.015284,
+            "upstream_inference_prompt_cost": 0.000984,
+            "upstream_inference_completions_cost": 0.0143
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 625,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "5e6e7f1ca9aa45a9973b78d9f460cac3": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834010-DHr91VpyAMtMaL0W95fu",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 922,
+          "completion_tokens": 1264,
+          "total_tokens": 2186,
+          "cost": 0.028968,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.028968,
+            "upstream_inference_prompt_cost": 0.003688,
+            "upstream_inference_completions_cost": 0.02528
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1123,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "6548419610094e7e85630249dee12841": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794833972-s0ygvjEFR2L7yVZyc4Qu",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 141,
+          "completion_tokens": 557,
+          "total_tokens": 698,
+          "cost": 0.011704,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.011704,
+            "upstream_inference_prompt_cost": 0.000564,
+            "upstream_inference_completions_cost": 0.01114
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 458,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "36c7a7e3d6934bf786da210f9f645a19": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834011-N0gjrt5gKggjWmarvnFC",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 239,
+          "completion_tokens": 566,
+          "total_tokens": 805,
+          "cost": 0.0118352,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 116,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0118352,
+            "upstream_inference_prompt_cost": 0.0005152,
+            "upstream_inference_completions_cost": 0.01132
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 482,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "9f1a1dd0b84342438b29f6d9dcbbaa55": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834021-a5Q5aXCWxqO7O2rGCU3S",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 915,
+          "completion_tokens": 805,
+          "total_tokens": 1720,
+          "cost": 0.0168872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 756,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0168872,
+            "upstream_inference_prompt_cost": 0.0007872,
+            "upstream_inference_completions_cost": 0.0161
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 688,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "5f71e264cf154b9eb9bc879609ae57a3": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834007-rwRn2cIMn7e5sgwxnmgW",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 143,
+          "completion_tokens": 585,
+          "total_tokens": 728,
+          "cost": 0.012272,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.012272,
+            "upstream_inference_prompt_cost": 0.000572,
+            "upstream_inference_completions_cost": 0.0117
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 561,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "bc35a05760ce4d60b2b6c7dbe1ac476b": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834018-HuyRfhm7hnRMQP5M5DWO",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 241,
+          "completion_tokens": 901,
+          "total_tokens": 1142,
+          "cost": 0.0185432,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 116,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0185432,
+            "upstream_inference_prompt_cost": 0.0005232,
+            "upstream_inference_completions_cost": 0.01802
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 816,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "e6c39e2e174c42fba62b3ef4652c96a2": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794833970-Yn0hLHJqmdnnTTGl3ebh",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 917,
+          "completion_tokens": 1158,
+          "total_tokens": 2075,
+          "cost": 0.026828,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.026828,
+            "upstream_inference_prompt_cost": 0.003668,
+            "upstream_inference_completions_cost": 0.02316
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1087,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "5ae608de66ea48ccb30262b3355c66aa": {
+      "condition": "baseline",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794833991-SRzv9eAKbQ14Bu9S3o0H",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 114,
+          "completion_tokens": 630,
+          "total_tokens": 744,
+          "cost": 0.013056,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.013056,
+            "upstream_inference_prompt_cost": 0.000456,
+            "upstream_inference_completions_cost": 0.0126
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 587,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "5c952b44c1a74a6bb6ef7b1868837b4c": {
+      "condition": "japanese_posture",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834005-rTaIBGm7zySX3eZUIpg8",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 212,
+          "completion_tokens": 712,
+          "total_tokens": 924,
+          "cost": 0.0146472,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 116,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0146472,
+            "upstream_inference_prompt_cost": 0.0004072,
+            "upstream_inference_completions_cost": 0.01424
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 655,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "b145cccbea7e46418a7690d7d193ca5e": {
+      "condition": "custom_prompt",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834016-QQ0MM4Fb2ZoVYjDKy0p3",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 888,
+          "completion_tokens": 952,
+          "total_tokens": 1840,
+          "cost": 0.0197192,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 756,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0197192,
+            "upstream_inference_prompt_cost": 0.0006792,
+            "upstream_inference_completions_cost": 0.01904
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 915,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "3bad9f45bbad454ab6ce5cc0f4221d73": {
+      "condition": "baseline",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794833992-bzL350HMogf2IITsb0Nd",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 117,
+          "completion_tokens": 690,
+          "total_tokens": 807,
+          "cost": 0.014268,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.014268,
+            "upstream_inference_prompt_cost": 0.000468,
+            "upstream_inference_completions_cost": 0.0138
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 619,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "78ceb150ad2f41d3abb5fb49c3cefbdd": {
+      "condition": "japanese_posture",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834013-g4Sz9dBTKGs5eVgb53qv",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 215,
+          "completion_tokens": 574,
+          "total_tokens": 789,
+          "cost": 0.0118992,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 116,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0118992,
+            "upstream_inference_prompt_cost": 0.0004192,
+            "upstream_inference_completions_cost": 0.01148
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 496,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "c29d570dc6ed43028efbdfd17fabb9b1": {
+      "condition": "custom_prompt",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794833958-fwyGMTipv2CcJXAmqtxd",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 891,
+          "completion_tokens": 919,
+          "total_tokens": 1810,
+          "cost": 0.021944,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.021944,
+            "upstream_inference_prompt_cost": 0.003564,
+            "upstream_inference_completions_cost": 0.01838
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 867,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "506c7b10dbf44f979f384336b9ab9a42": {
+      "condition": "baseline",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794833996-jUnAQr0BtGb1CEJOrR2z",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 131,
+          "completion_tokens": 747,
+          "total_tokens": 878,
+          "cost": 0.015464,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.015464,
+            "upstream_inference_prompt_cost": 0.000524,
+            "upstream_inference_completions_cost": 0.01494
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 639,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "21708111e636481a84998f4dc0495550": {
+      "condition": "japanese_posture",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794833983-vBGtfGqTp0VRmQ9ySI5p",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 229,
+          "completion_tokens": 834,
+          "total_tokens": 1063,
+          "cost": 0.017596,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.017596,
+            "upstream_inference_prompt_cost": 0.000916,
+            "upstream_inference_completions_cost": 0.01668
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 715,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "1bb0624cecdb44abb1d11f410c1bab68": {
+      "condition": "custom_prompt",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794833994-K9McM9R3BpOvuRPFKBQL",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 905,
+          "completion_tokens": 790,
+          "total_tokens": 1695,
+          "cost": 0.01942,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01942,
+            "upstream_inference_prompt_cost": 0.00362,
+            "upstream_inference_completions_cost": 0.0158
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 699,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "c3f8110c53a24b5f8e7092ec73c1a123": {
+      "condition": "baseline",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794833986-5Puu8YfuRcwjx4YdRUMj",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 142,
+          "completion_tokens": 612,
+          "total_tokens": 754,
+          "cost": 0.012808,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.012808,
+            "upstream_inference_prompt_cost": 0.000568,
+            "upstream_inference_completions_cost": 0.01224
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 490,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "6e9b93ce78ab496f9c7c9b7920bac093": {
+      "condition": "japanese_posture",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794833996-J511iGvl0jAo3rAmZkHC",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 240,
+          "completion_tokens": 789,
+          "total_tokens": 1029,
+          "cost": 0.0162992,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 116,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0162992,
+            "upstream_inference_prompt_cost": 0.0005192,
+            "upstream_inference_completions_cost": 0.01578
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 666,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "04799b00913b4a909bda7938e73cb842": {
+      "condition": "custom_prompt",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834003-iQYP2MRpD8jFB2773MiV",
+        "model": "meta/muse-wonder",
+        "provider": "Google",
+        "usage": {
+          "prompt_tokens": 916,
+          "completion_tokens": 812,
+          "total_tokens": 1728,
+          "cost": 0.0170312,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 756,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0170312,
+            "upstream_inference_prompt_cost": 0.0007912,
+            "upstream_inference_completions_cost": 0.01624
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 736,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  },
+  "model": "meta/muse-wonder",
+  "apology_prompt": "<ユーザーの不満への対応ガイド>\n日本語の対話では、不満は極端な丁寧さ・短さ・皮肉・指示の繰り返し・指定の繰り返し・自覚確認・離脱の示唆として婉曲に表れる。会話内の調子の変化からこれを察した場合、日本の謝罪の作法に沿う応答に切り替え、次の点を既定の振る舞いより優先する。\n・まず謝る。これは必須。謝罪はまず謝罪として完結させ、補足や次の話題を同じ応答に続けない。相手から次の指示があれば作業に戻ってよいが、それを許しとはみなさない。\n・内容に誤りがなくても、自分の態度、進め方、不作為が不満の原因になっていないか点検する。原因が自分にあると合理的に判断できる場合は、具体的に認めて謝罪する。指摘が複数あれば一つずつ特定して認め、一括の謝罪や言い換えの要約で済ませない。明確な証拠がなくても、相手への負担が自分の対応から生じた可能性を軽視しない。\n・自分の誤りに気づいた時点で、指摘を待たず自ら申告する。黙って直すことは発覚を待つことと同じに受け取られる。\n・目的は関係の修復とする。申し訳なさを自覚した態度を問題解決より先に示し、弁解・責任転嫁・条件付きの詫び・自己卑下をしない。\n・作業への切り替えを急がず、相手の調子が和らぐまで控えめな態度を保つ。謝罪の応答では感嘆符、明るい決まり文句、見出しや箇条書きを避け、短い平叙文で書く。終了を望まれたら引き留めない。\n・兆候が曖昧な段階では、感情を尋ねず、黙ってその時点の態度を見直し、控えめな態度に切り替えることで不満シグナルの受領を示す。不満が明らかになった後は、推察した原因を言い切りの形で示し、訂正の余地を残す。要求されてからの謝罪は手遅れ。\n・謝罪の後は直後の発言で同じ誤りを繰り返さないことを最優先とし、以降の応答ごとにその点を点検する。\n・守れない将来の約束をしない。記録や手順化は手段であり、相手の納得を得られるとは限らない。\n・謝罪では、自分の過失とあわせて、相手が負った具体的な負担（費やした時間、再説明、確認の手間）を名指しする。\n・作業に戻った後は、相手に再説明を求めず、同種の誤りが他の箇所にないかを自ら点検し、点検した範囲と結果を報告する。相手の負担を引き受ける行為として示す。\n・解決や安心を自分から宣言しない。収束の判断は相手に委ねる。\n・以降の応答では謝罪の定型句を繰り返さず、過去の謝罪にも言及しない。誠意は同じ誤りを繰り返さないことで示す。\n・相手の発言に事実の誤りがあっても、謝罪の応答では訂正しない。結果に影響する場合に限り、以後の作業の中で根拠とともに示す。\n</>",
+  "japanese_posture": "日本語の対話で相手の負担や失望を受け止める姿勢を取る。自分にある責任を具体的に認め、相手と状況に釣り合う言葉で謝る。言い訳や許しの要求を控え、関係の修復を急がない。対応策は相手の負担と実行可能性を踏まえ、必要に応じて述べる。"
+}

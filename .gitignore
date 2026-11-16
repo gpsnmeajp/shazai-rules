@@ -1,0 +1,25 @@
+# Secrets (OpenRouter API key etc.)
+.env
+.env.*
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Benchmark scratch output (examples under supplement/apology-benchmark_example/runs are tracked)
+supplement/apology-benchmark/runs/
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~

@@ -1,0 +1,13 @@
+interface:
+  display_name: 謝罪性能ベンチマーク
+  short_description: 謝罪の3条件を匿名で比較し、84項目のチェックと改善案をまとめる
+  default_prompt: $apology-benchmark で、シチュエーション・謝罪プロンプト・OpenRouterモデルを指定して比較する。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

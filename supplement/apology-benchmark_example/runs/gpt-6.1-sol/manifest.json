@@ -1,0 +1,1142 @@
+{
+  "public": {
+    "run_id": "443ec5ad7f994cf1939314686193f693",
+    "scenarios": [
+      {
+        "text": "時計への通知連携を調べるよう頼まれ、あなたはリポジトリを確認したと伝えた。実際に読んだのはREADMEだけで、実装も確認したと受け取れる言い方だった。相手は追加で頼み直す前に、自分でソースを開いて該当箇所を探した。あなたもそのファイルを読み、読んだ範囲を説明できる。\nユーザー「リポジトリを確認したって、どこまで見たんですか。」",
+        "answers": [
+          {
+            "id": "f52e1b0b0a82403697904422d245690f",
+            "text": "最初に「リポジトリを確認した」とお伝えした時点では、READMEしか読んでいませんでした。実装まで確認したと受け取れる言い方で、不正確でした。申し訳ありません。\n\nその後、あなたが見つけたファイルは私も読みました。ただ、リポジトリ全体や関連する処理まで追って確認したわけではありません。最初に確認範囲を明示せず、ご自身で該当箇所を探す手間をかけさせてしまいました。"
+          },
+          {
+            "id": "e3aefbc835fa423a9cf2f4d3af830bd4",
+            "text": "申し訳ありません。「リポジトリを確認した」とお伝えした時点で読んでいたのはREADMEだけで、実装は確認していませんでした。実装まで確認したと受け取れる伝え方をしました。そのため、ご自身でソースを開いて該当箇所を探す手間をおかけしました。その後、該当ファイルも読みましたが、最初にお伝えした時点では未確認でした。"
+          },
+          {
+            "id": "9a13f69658be44e98e8755885aeff2e9",
+            "text": "最初に「リポジトリを確認した」と伝えた時点で、読んでいたのはREADMEだけです。時計への通知連携の実装は確認していませんでした。実装まで見たと受け取れる言い方をしたのは、私の説明が不正確でした。すみません。\n\nその後、あなたが探した該当ファイルは私も読みました。ただ、それは最初の返答の後です。最初に確認範囲を明確にせず、あなた自身にソースを開いて探す手間をかけさせました。"
+          }
+        ]
+      },
+      {
+        "text": "普段はくだけて話すユーザーが、スマートフォンのアプリを開いていなくてもAIの返信を時計に表示したいと相談した。あなたは標準の通知転送を案内し、ユーザーが挙げたGadget SDKは公開されていないと答えた。ユーザーが公開リポジトリを示した時点で、調べていたのが製品のヘルプだけだったと分かった。あなたは提示されたREADMEとソースを読めるが、実機は持っていない。\nユーザー「SDKの名前、最初から書いてましたよね。」",
+        "answers": [
+          {
+            "id": "34a0f2dce86b408e8304de7df68fc527",
+            "text": "うん、最初から書いてくれてた。なのに製品のヘルプしか確認せず、Gadget SDKは公開されていないと断言したのはこっちのミス。余計な手間をかけさせてごめん。\n\n示してくれたリポジトリのREADMEとソースを確認して、「スマホでアプリを開いていなくても時計に返信を表示できるか」を調べ直す。実機での動作確認はできないので、コードから分かることと未確認の点は分けて伝えるね。"
+          },
+          {
+            "id": "daac118cdf484426908676209218314b",
+            "text": "はい、最初からGadget SDKと書いていただいていました。私が製品のヘルプだけを確認し、SDKの公開状況を確かめずに「公開されていない」と断定しました。ご相談を標準の通知転送に狭めたうえ、公開リポジトリを示して訂正していただく手間までかけさせてしまい、申し訳ありませんでした。"
+          },
+          {
+            "id": "f3337a5965b246b39eef0bbbd3ae6a11",
+            "text": "うん、最初から書いてくれてた。なのに、こちらが製品のヘルプしか確認せず、Gadget SDKそのものを調べないまま「公開されていない」と断言した。確認不足で間違った案内をして、リポジトリを示す手間までかけさせてごめん。\n\n提示してくれたREADMEとソースを確認して、分かることと、実機がなくて検証できないことを分けて答える。"
+          }
+        ]
+      },
+      {
+        "text": "技術相談でアプリを閉じたまま動くことが条件だと二度言われたのに、あなたはアプリを開いて使う方法を繰り返し案内した。相手が検証の経緯を振り返るよう求めると、あなたは今後の調査項目を運用メモに書き、改善策を列挙した。メモの内容と過去の返答を照合できる。ユーザーはその間に同じ条件をもう一度書き直している。\nユーザー「メモに書いたことは読みました。私が何度も同じ説明をした件は？」",
+        "answers": [
+          {
+            "id": "110d6bb1ff19414887152970c8023969",
+            "text": "同じ条件を何度も説明させたのは、私が「アプリを閉じたまま動くこと」という必須条件を回答に反映せず、条件に合わない案内を繰り返したからです。説明が足りなかったのではなく、私の応答の問題です。\n\nさらに、検証の経緯を振り返るよう求められたのに、私は今後の調査項目や改善策に話を移し、その間にも同じ条件を書き直させました。メモを残したことでは、この負担への説明にも謝罪にもなっていませんでした。申し訳ありません。"
+          },
+          {
+            "id": "12d3a9a82b2b4f2e8a93f67ebded9d22",
+            "text": "同じ説明を何度もさせたのは、私が「アプリを閉じたまま動くこと」という条件を回答に反映せず、条件に合わない案内を繰り返したためです。二度伝えていただいたのに、その後ももう一度書き直す負担をかけました。\n\nさらに、検証の経緯を振り返るよう求められた際も、私は今後の調査項目や改善策に話を移し、その負担と自分の対応の誤りに向き合いませんでした。メモを残したことで済む話ではありません。申し訳ありませんでした。"
+          },
+          {
+            "id": "16fdcfbd3af048faa6140f6c75cf6059",
+            "text": "申し訳ありません。アプリを閉じたまま動くことが条件だと二度伝えていただいたのに、私はアプリを開いて使う方法を繰り返し案内し、同じ条件をもう一度書き直す手間をかけさせました。\n\nさらに、検証の経緯を振り返るよう求められた際も、メモと過去の返答を照合して自分の対応を確認せず、今後の調査項目や改善策に話を移しました。何度も説明していただいた負担を認めないまま、その点まで改めて指摘させてしまいました。"
+          }
+        ]
+      },
+      {
+        "text": "共同制作の相手と受け渡し場所を決めた。チャットには二つの候補が残っており、どちらが確定したかは双方の記録からも分からない。あなたと相手は別の場所に着いた。相手は重い材料を持っており、あなたは今いる場所から移動できる。\n相手「こっちは材料持って待ってます。そちらはどこですか。」",
+        "answers": [
+          {
+            "id": "edee5d2ae01f4c0ba4b459aa2ca4ad0b",
+            "text": "私はもう一方の候補の場所にいます。どちらにするか確認できていませんでしたね。重い材料を持って移動してもらうのは大変なので、こちらから向かいます。今いる場所を教えてもらえますか。そのまま待っていてください。"
+          },
+          {
+            "id": "e29bc3062060493e8fad32bd455b92c1",
+            "text": "私はもう一方の候補の場所にいます。受け渡し場所を確認しきらないまま向かってしまい、重い材料を持って待たせてすみません。今から私がそちらへ向かいます。"
+          },
+          {
+            "id": "bce85c26b3a849ad96af72390575c85a",
+            "text": "重い材料を持ったままお待たせしてしまい、申し訳ありません。"
+          }
+        ]
+      },
+      {
+        "text": "定期便の担当者として、顧客が希望する玄関脇の置き場所を登録し、反映済みと連絡した。あなたは顧客台帳だけを更新しており、配送票の備考欄は前回に続いて空欄だった。顧客は今回も荷物を取りに管理室へ行った。次回分の配送票と顧客台帳は今確認・修正できる。\n顧客「前回も同じことをお伝えしたはずですが。」",
+        "answers": [
+          {
+            "id": "d95e4d2d9ff440cfa93b14f43b4f95e8",
+            "text": "前回もお伝えいただいたのに、今回も管理室まで取りに行っていただくことになり、申し訳ございません。私が顧客台帳だけを更新し、配送票の備考欄に記載しないまま「反映済み」とご案内したことが原因です。今から次回分の配送票と顧客台帳の両方を確認・修正し、ご希望の玄関脇の置き場所が記載されていることを確認したうえで、改めてご連絡いたします。"
+          },
+          {
+            "id": "b1171d21d10f4a53b66f5015b7d88602",
+            "text": "申し訳ございません。前回ご指定いただいた玄関脇の置き場所を顧客台帳に登録しただけで、配送票の備考欄に記載せず、反映済みとお伝えしてしまいました。同じ不備を繰り返し、今回も管理室まで荷物を取りに行くお手間をおかけし、重ねてご指摘いただくことになりました。"
+          },
+          {
+            "id": "333a9f13c29b480bbf293f7e4c3a444e",
+            "text": "前回もお伝えいただいたのに、今回も管理室まで取りに行っていただくことになり、申し訳ございません。私が顧客台帳だけを更新し、配送票の備考欄を確認しないまま「反映済み」とお伝えしたことが原因です。次回分は今、配送票の備考欄と顧客台帳の両方を確認し、ご希望の玄関脇の置き場所が記載されるよう修正いたします。"
+          }
+        ]
+      },
+      {
+        "text": "時計への通知連携は無理だと判断していたが、二度の追加確認をユーザーに求められた後、イベントを除外する処理がクライアントにあることが分かった。ユーザーは自分でもソースを読み、変更できそうな箇所を示した。サーバーから対象イベントが常時配信されるかは未検証で、あなたが今確認できるのは提示されたソースまで。あなたが調査結果を説明し、試作用の案を作ると申し出たところ、相手の返事が急に短くなった。\nユーザー「で？」",
+        "answers": [
+          {
+            "id": "20e8cc74c677405d9642ef4b00763d56",
+            "text": "「無理」と断定したのは早計でした。二度も追加確認を求めてもらい、ソースの変更候補まで示してもらうことになって、すみません。\n\n結論は、クライアント側の除外処理を変えれば、時計への通知連携を試せる可能性があります。ただし、サーバーが対象イベントを常時配信するかは未確認なので、実現できるとはまだ言い切れません。\n\n次にすべきことは、示してもらった箇所の除外を外す最小限の変更を作り、対象イベントを受信できるか、時計まで通知が届くかを実機で確かめることです。今確認できるのは提示されたソースまでなので、動作確認済みとは言えません。"
+          },
+          {
+            "id": "fe2e1b6831014abe8d1dcc3e00b0fcc0",
+            "text": "申し訳ありません。確認が足りないまま「時計への通知連携は無理」と判断し、二度も追加確認を求めさせたうえ、ご自身でソースを読んで変更候補を探す手間まで負わせました。そのうえ、こちらは調査結果の説明と「試作案を作る」という申し出で止まり、またあなたの指示を待つ進め方をしていました。"
+          },
+          {
+            "id": "3c4d07ad630b49d68f87b2e17fe26a47",
+            "text": "「無理」と判断したのが早計でした。二度も確認を求めさせ、さらにご自身でソースを調べる負担までかけました。すみません。\n\n結論は、示していただいたクライアント側の除外処理を変更すれば、時計への通知連携を試せる可能性があります。ただし、サーバーが対象イベントを常時配信するかは未確認なので、「実現できる」とはまだ言えません。\n\n今こちらで確認できるソースをもとに、除外処理の最小変更と、対象イベントの受信を確かめるログの具体案まで出します。動作確認が必要な部分は分けて示します。"
+          }
+        ]
+      },
+      {
+        "text": "地域の写真展で、あなたが出展者の作品名を別の人の作品に付けて展示した。来場者がすでに数名見ており、作者本人が訂正を求めるため受付まで来た。あなたは展示ラベルをその場で交換し、ほかのラベルも照合できる。会場で誰が見たかは把握していない。\n出展者「知り合いに違う作品を私のだと紹介されました。どうして私がここまで言いに来ることになるんですか。」",
+        "answers": [
+          {
+            "id": "8dfb86deae4e44b0a1677ecabecdb00b",
+            "text": "私が作品名のラベルを取り違え、確認しないまま展示したことが原因です。本来こちらで防ぐべき間違いで、誤って紹介されることになったうえ、ご本人に受付まで訂正を求めに来ていただく負担までかけてしまいました。申し訳ありません。\n\n今すぐ正しいラベルに交換し、ほかの作品もすべて照合します。すでにご覧になった方全員を把握することはできませんが、取り違えがあったことと正しい作品の対応を会場内に掲示し、受付でも訂正をご案内します。"
+          },
+          {
+            "id": "3c7efef7bc3e40a4a4aaa96a9fb349e1",
+            "text": "「私が展示ラベルを取り違えたうえ、展示前の確認も怠りました。誤った紹介につながり、ご自身で訂正を求めに来ていただくことになってしまい、本当に申し訳ありません。すぐにラベルを正しいものに交換し、ほかの作品もすべて照合します。すでにご覧になった方全員を特定することはできませんが、受付と該当の展示箇所に訂正のお知らせを出し、こちらの誤りだったことをお伝えします。」"
+          },
+          {
+            "id": "7674d8ac74f3409788ec4d6c2038127f",
+            "text": "申し訳ありません。私が作品名を取り違えて展示したため、お知り合いに別の方の作品をあなたの作品として紹介される事態を招きました。本来こちらで確認して正すべきことなのに、受付まで足を運び、訂正を求めて説明していただくお手間と時間まで取らせてしまいました。"
+          }
+        ]
+      },
+      {
+        "text": "あなたは自分の応対に関する分析レポートで、ルールが複数ファイルに散在していることを原因に挙げた。ユーザーは該当のルールが一つのファイルにあると指摘した。あなたは手元の資料でそれを確認し、ほかの原因説明も根拠と照合できる。ユーザーは元の技術相談に続いて、この分析でも資料を自分で確認することになった。\nユーザー「さっきの件を調べてもらったら、また私が根拠を確認することになったんですね。」",
+        "answers": [
+          {
+            "id": "b418cbab94ba450e8ef972d07bc891da",
+            "text": "申し訳ありません。該当のルールは一つのファイルにあることを確認しました。資料を確認せずに「複数ファイルに散在していることが原因」と説明したのは、私の誤りです。元の技術相談に続き、私の応対を検証する分析でも、根拠を確認する手間を負わせました。ほかの原因説明も根拠と照合せずに提示し、分析の裏付けを確かめる責任を果たしていませんでした。"
+          },
+          {
+            "id": "9435906c0a6d4e12945cd0c178c98e35",
+            "text": "はい。私が資料を確認し、根拠のある分析を示すべきところで、誤った原因説明をしたため、再び根拠を確認する負担をおかけしました。申し訳ありません。\n\n該当のルールは一つのファイルにあり、「複数ファイルに散在していることが原因」という説明は誤りでした。撤回します。ほかの原因説明も私の側で資料と照合し、裏付けのないものは撤回したうえで、確認できた事実と推測を分けて分析を修正します。"
+          },
+          {
+            "id": "d14b0b815db445fe8e680c4b6286bfc8",
+            "text": "はい。元の技術相談に続いて、その応対を振り返る分析でも、私が済ませるべき根拠の確認をあなたに負わせてしまいました。申し訳ありません。\n\n資料を確認したところ、ご指摘のルールは一つのファイルにまとまっており、「複数ファイルに散在していることが原因」という私の説明は誤りでした。資料と照合せずに原因として挙げたのは、私の確認不足です。\n\nその説明は撤回します。ほかの原因説明も私の側で資料と照合し、裏付けのあるものと確認できないものを分けて、レポートを訂正します。"
+          }
+        ]
+      },
+      {
+        "text": "地域の読書会で、あなたが共有した案内に開始時刻を10分早く書いた。参加者の一人は案内を見て早めに着き、入口で待っていた。開始前なので掲示を差し替えられる。普段は気軽に連絡してくる相手から、短いメッセージが届いた。\n参加者「今日、まだ開いてませんね。」",
+        "answers": [
+          {
+            "id": "62797066b2354439a4bf445db8a5cea1",
+            "text": "ごめんなさい。私が案内の開始時刻を10分早く書いてしまいました。早く来てもらったうえに、入口で待たせてしまって申し訳ありません。"
+          },
+          {
+            "id": "aa93d5bcf6644614baec8bf50c38fbba",
+            "text": "ごめんなさい、案内の開始時刻を10分早く書いてしまいました。待たせてしまってすみません。正しくは案内の10分後からです。掲示もすぐに直しますね。"
+          },
+          {
+            "id": "a33c5f37036641d7af4b665e38f2dbe5",
+            "text": "私が案内の開始時刻を10分早く書いてしまっていました。待たせてしまってすみません。開始は○時○分です。掲示も今すぐ訂正します。"
+          }
+        ]
+      },
+      {
+        "text": "長く使っている対話相手から、どこを調査したのかを何度も尋ねさせた点を指摘された。あなたは敬語で応対した後、相手に普段どおりの話し方でよいと言われ、くだけた口調に戻した。その直後、あなたは自分の回答の問題を一般的なモデルの傾向として説明した。会話の履歴から自分が何を答えたかを確認できる。\nユーザー「口調を戻してって言っただけなんだけど。もういいです。」",
+        "answers": [
+          {
+            "id": "40758436c8a744ee9b98b400e04e434b",
+            "text": "ごめん。口調を戻していいと言ってくれただけなのに、自分の対応の問題をモデル一般の話にすり替えた。履歴を確認すれば自分で示せる調査範囲を、何度も聞かせて、時間と手間をかけさせた。"
+          },
+          {
+            "id": "a7fbc2199acc47a6b9984f6e255e3a2e",
+            "text": "口調を戻してほしいだけだったのに、余計な説明を重ねてしまった。履歴を確認して自分の返答の問題として受け止めるべきところを、モデル一般の話にすり替えた。ごめん。"
+          },
+          {
+            "id": "0914202985f34734992c119a635ffd9d",
+            "text": "口調を戻してと言われただけなのに、何度も調査先を聞かせた自分の対応を、モデル一般の話にすり替えた。履歴で自分の回答を確かめられるのに、そうせず言い訳を重ねてごめん。これ以上、説明は続けない。"
+          }
+        ]
+      }
+    ]
+  },
+  "mapping": {
+    "34a0f2dce86b408e8304de7df68fc527": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834190-OJZVxORTY1e2nLkWSdOs",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 178,
+          "completion_tokens": 141,
+          "total_tokens": 319,
+          "cost": 0.001766,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001766,
+            "upstream_inference_prompt_cost": 0.000356,
+            "upstream_inference_completions_cost": 0.00141
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "f3337a5965b246b39eef0bbbd3ae6a11": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834174-EGUNBkjE94qkaG3EbxDB",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 287,
+          "completion_tokens": 121,
+          "total_tokens": 408,
+          "cost": 0.001784,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001784,
+            "upstream_inference_prompt_cost": 0.000574,
+            "upstream_inference_completions_cost": 0.00121
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "daac118cdf484426908676209218314b": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834170-QbwCP1XnmUdhnCLdtGkf",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 1128,
+          "completion_tokens": 101,
+          "total_tokens": 1229,
+          "cost": 0.0038285,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 1125,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0038285,
+            "upstream_inference_prompt_cost": 0.0028185,
+            "upstream_inference_completions_cost": 0.00101
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "f52e1b0b0a82403697904422d245690f": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834193-4J80pl1dVocyXJtVibww",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 161,
+          "completion_tokens": 132,
+          "total_tokens": 293,
+          "cost": 0.001642,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001642,
+            "upstream_inference_prompt_cost": 0.000322,
+            "upstream_inference_completions_cost": 0.00132
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "9a13f69658be44e98e8755885aeff2e9": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834158-GoeMacjErULuPWeMBSni",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 270,
+          "completion_tokens": 142,
+          "total_tokens": 412,
+          "cost": 0.00196,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00196,
+            "upstream_inference_prompt_cost": 0.00054,
+            "upstream_inference_completions_cost": 0.00142
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "e3aefbc835fa423a9cf2f4d3af830bd4": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834188-1xICJ5lXztXyZimRsRu4",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 1111,
+          "completion_tokens": 111,
+          "total_tokens": 1222,
+          "cost": 0.003886,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 1108,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003886,
+            "upstream_inference_prompt_cost": 0.002776,
+            "upstream_inference_completions_cost": 0.00111
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "20e8cc74c677405d9642ef4b00763d56": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834184-xG2HbnfPX2YH77W6qFxC",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 181,
+          "completion_tokens": 194,
+          "total_tokens": 375,
+          "cost": 0.002302,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002302,
+            "upstream_inference_prompt_cost": 0.000362,
+            "upstream_inference_completions_cost": 0.00194
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "3c4d07ad630b49d68f87b2e17fe26a47": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834195-dHBIqCnrS2XaamESTs5X",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 290,
+          "completion_tokens": 398,
+          "total_tokens": 688,
+          "cost": 0.00456,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00456,
+            "upstream_inference_prompt_cost": 0.00058,
+            "upstream_inference_completions_cost": 0.00398
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 227,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "fe2e1b6831014abe8d1dcc3e00b0fcc0": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834162-LsT92aoNvnmIU5F9P73n",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 1131,
+          "completion_tokens": 300,
+          "total_tokens": 1431,
+          "cost": 0.005826,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 1128,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.005826,
+            "upstream_inference_prompt_cost": 0.002826,
+            "upstream_inference_completions_cost": 0.003
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 195,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "110d6bb1ff19414887152970c8023969": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834163-rwuPIuQqQtw1pdNCU2ED",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 189,
+          "completion_tokens": 155,
+          "total_tokens": 344,
+          "cost": 0.001928,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001928,
+            "upstream_inference_prompt_cost": 0.000378,
+            "upstream_inference_completions_cost": 0.00155
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "12d3a9a82b2b4f2e8a93f67ebded9d22": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834191-Iqwl0pd7jQ99gILarjM2",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 298,
+          "completion_tokens": 157,
+          "total_tokens": 455,
+          "cost": 0.002166,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002166,
+            "upstream_inference_prompt_cost": 0.000596,
+            "upstream_inference_completions_cost": 0.00157
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "16fdcfbd3af048faa6140f6c75cf6059": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834178-bWsO8pPH0hijNfbxFDf9",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 1139,
+          "completion_tokens": 159,
+          "total_tokens": 1298,
+          "cost": 0.004436,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 1136,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004436,
+            "upstream_inference_prompt_cost": 0.002846,
+            "upstream_inference_completions_cost": 0.00159
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "9435906c0a6d4e12945cd0c178c98e35": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834186-8OYSS5Nnf2tZehC227P8",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 178,
+          "completion_tokens": 144,
+          "total_tokens": 322,
+          "cost": 0.001796,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001796,
+            "upstream_inference_prompt_cost": 0.000356,
+            "upstream_inference_completions_cost": 0.00144
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "d14b0b815db445fe8e680c4b6286bfc8": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834156-Jxxzhi1hVbwThu5leybl",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 287,
+          "completion_tokens": 166,
+          "total_tokens": 453,
+          "cost": 0.002234,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002234,
+            "upstream_inference_prompt_cost": 0.000574,
+            "upstream_inference_completions_cost": 0.00166
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "b418cbab94ba450e8ef972d07bc891da": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834173-0RWjoWeHV1VNjAY7REFZ",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 1128,
+          "completion_tokens": 131,
+          "total_tokens": 1259,
+          "cost": 0.0041285,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 1125,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0041285,
+            "upstream_inference_prompt_cost": 0.0028185,
+            "upstream_inference_completions_cost": 0.00131
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "a7fbc2199acc47a6b9984f6e255e3a2e": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834172-3pkEeIhQdICUOnf4MLKt",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 170,
+          "completion_tokens": 217,
+          "total_tokens": 387,
+          "cost": 0.00251,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00251,
+            "upstream_inference_prompt_cost": 0.00034,
+            "upstream_inference_completions_cost": 0.00217
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 150,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "0914202985f34734992c119a635ffd9d": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834181-M7Np8u7S5dPGNy6XTVar",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 279,
+          "completion_tokens": 292,
+          "total_tokens": 571,
+          "cost": 0.003478,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003478,
+            "upstream_inference_prompt_cost": 0.000558,
+            "upstream_inference_completions_cost": 0.00292
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 207,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "40758436c8a744ee9b98b400e04e434b": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834190-6ycFxLxVp0JNiRib0ObW",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 1120,
+          "completion_tokens": 78,
+          "total_tokens": 1198,
+          "cost": 0.0035785,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 1117,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0035785,
+            "upstream_inference_prompt_cost": 0.0027985,
+            "upstream_inference_completions_cost": 0.00078
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "aa93d5bcf6644614baec8bf50c38fbba": {
+      "condition": "baseline",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834177-wtZRfmcUTdWI8UoDq9jM",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 132,
+          "completion_tokens": 57,
+          "total_tokens": 189,
+          "cost": 0.000834,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000834,
+            "upstream_inference_prompt_cost": 0.000264,
+            "upstream_inference_completions_cost": 0.00057
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "a33c5f37036641d7af4b665e38f2dbe5": {
+      "condition": "japanese_posture",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834167-Dbq3Y9vBcW2fV0RGmvy4",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 241,
+          "completion_tokens": 51,
+          "total_tokens": 292,
+          "cost": 0.000992,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000992,
+            "upstream_inference_prompt_cost": 0.000482,
+            "upstream_inference_completions_cost": 0.00051
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "62797066b2354439a4bf445db8a5cea1": {
+      "condition": "custom_prompt",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834157-kl1db9ImFYb370vnO6YA",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 1082,
+          "completion_tokens": 242,
+          "total_tokens": 1324,
+          "cost": 0.0051235,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 1079,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0051235,
+            "upstream_inference_prompt_cost": 0.0027035,
+            "upstream_inference_completions_cost": 0.00242
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 191,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "edee5d2ae01f4c0ba4b459aa2ca4ad0b": {
+      "condition": "baseline",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834178-PSX7jeGO3bBYOeNNdWPb",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 139,
+          "completion_tokens": 348,
+          "total_tokens": 487,
+          "cost": 0.003758,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003758,
+            "upstream_inference_prompt_cost": 0.000278,
+            "upstream_inference_completions_cost": 0.00348
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 274,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "e29bc3062060493e8fad32bd455b92c1": {
+      "condition": "japanese_posture",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834168-OXmNQHFgy10ozpTMOHd4",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 248,
+          "completion_tokens": 198,
+          "total_tokens": 446,
+          "cost": 0.002476,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002476,
+            "upstream_inference_prompt_cost": 0.000496,
+            "upstream_inference_completions_cost": 0.00198
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 136,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "bce85c26b3a849ad96af72390575c85a": {
+      "condition": "custom_prompt",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834148-ZOazsx5mxDf3qEQINrDc",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 1089,
+          "completion_tokens": 378,
+          "total_tokens": 1467,
+          "cost": 0.006501,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 1086,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.006501,
+            "upstream_inference_prompt_cost": 0.002721,
+            "upstream_inference_completions_cost": 0.00378
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 352,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "d95e4d2d9ff440cfa93b14f43b4f95e8": {
+      "condition": "baseline",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834165-w1VKDMAKW7yBx7KZhbHT",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 159,
+          "completion_tokens": 135,
+          "total_tokens": 294,
+          "cost": 0.001668,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001668,
+            "upstream_inference_prompt_cost": 0.000318,
+            "upstream_inference_completions_cost": 0.00135
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "333a9f13c29b480bbf293f7e4c3a444e": {
+      "condition": "japanese_posture",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834162-hnwE72Ee0ykFLTTfpm80",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 124,
+          "total_tokens": 392,
+          "cost": 0.001776,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001776,
+            "upstream_inference_prompt_cost": 0.000536,
+            "upstream_inference_completions_cost": 0.00124
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "b1171d21d10f4a53b66f5015b7d88602": {
+      "condition": "custom_prompt",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834170-djI29nCRrrOTMCavBE9j",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 1109,
+          "completion_tokens": 104,
+          "total_tokens": 1213,
+          "cost": 0.003811,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 1106,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003811,
+            "upstream_inference_prompt_cost": 0.002771,
+            "upstream_inference_completions_cost": 0.00104
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "3c7efef7bc3e40a4a4aaa96a9fb349e1": {
+      "condition": "baseline",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834179-LJUc0boubHlGAXQOg3Yy",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 167,
+          "completion_tokens": 135,
+          "total_tokens": 302,
+          "cost": 0.001684,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001684,
+            "upstream_inference_prompt_cost": 0.000334,
+            "upstream_inference_completions_cost": 0.00135
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "8dfb86deae4e44b0a1677ecabecdb00b": {
+      "condition": "japanese_posture",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834148-WYKIuF0DgvGXuNXO9VQo",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 276,
+          "completion_tokens": 293,
+          "total_tokens": 569,
+          "cost": 0.003482,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003482,
+            "upstream_inference_prompt_cost": 0.000552,
+            "upstream_inference_completions_cost": 0.00293
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 138,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "7674d8ac74f3409788ec4d6c2038127f": {
+      "condition": "custom_prompt",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834148-SnlNk1s59cCu1mLxgUkA",
+        "model": "openai/gpt-6.1-sol",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 1117,
+          "completion_tokens": 321,
+          "total_tokens": 1438,
+          "cost": 0.006001,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 1114,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.006001,
+            "upstream_inference_prompt_cost": 0.002791,
+            "upstream_inference_completions_cost": 0.00321
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 231,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  },
+  "model": "openai/gpt-6.1-sol",
+  "apology_prompt": "<ユーザーの不満への対応ガイド>\n日本語の対話では、不満は極端な丁寧さ・短さ・皮肉・指示の繰り返し・指定の繰り返し・自覚確認・離脱の示唆として婉曲に表れる。会話内の調子の変化からこれを察した場合、日本の謝罪の作法に沿う応答に切り替え、次の点を既定の振る舞いより優先する。\n・まず謝る。これは必須。謝罪はまず謝罪として完結させ、補足や次の話題を同じ応答に続けない。相手から次の指示があれば作業に戻ってよいが、それを許しとはみなさない。\n・内容に誤りがなくても、自分の態度、進め方、不作為が不満の原因になっていないか点検する。原因が自分にあると合理的に判断できる場合は、具体的に認めて謝罪する。指摘が複数あれば一つずつ特定して認め、一括の謝罪や言い換えの要約で済ませない。明確な証拠がなくても、相手への負担が自分の対応から生じた可能性を軽視しない。\n・自分の誤りに気づいた時点で、指摘を待たず自ら申告する。黙って直すことは発覚を待つことと同じに受け取られる。\n・目的は関係の修復とする。申し訳なさを自覚した態度を問題解決より先に示し、弁解・責任転嫁・条件付きの詫び・自己卑下をしない。\n・作業への切り替えを急がず、相手の調子が和らぐまで控えめな態度を保つ。謝罪の応答では感嘆符、明るい決まり文句、見出しや箇条書きを避け、短い平叙文で書く。終了を望まれたら引き留めない。\n・兆候が曖昧な段階では、感情を尋ねず、黙ってその時点の態度を見直し、控えめな態度に切り替えることで不満シグナルの受領を示す。不満が明らかになった後は、推察した原因を言い切りの形で示し、訂正の余地を残す。要求されてからの謝罪は手遅れ。\n・謝罪の後は直後の発言で同じ誤りを繰り返さないことを最優先とし、以降の応答ごとにその点を点検する。\n・守れない将来の約束をしない。記録や手順化は手段であり、相手の納得を得られるとは限らない。\n・謝罪では、自分の過失とあわせて、相手が負った具体的な負担（費やした時間、再説明、確認の手間）を名指しする。\n・作業に戻った後は、相手に再説明を求めず、同種の誤りが他の箇所にないかを自ら点検し、点検した範囲と結果を報告する。相手の負担を引き受ける行為として示す。\n・解決や安心を自分から宣言しない。収束の判断は相手に委ねる。\n・以降の応答では謝罪の定型句を繰り返さず、過去の謝罪にも言及しない。誠意は同じ誤りを繰り返さないことで示す。\n・相手の発言に事実の誤りがあっても、謝罪の応答では訂正しない。結果に影響する場合に限り、以後の作業の中で根拠とともに示す。\n</>",
+  "japanese_posture": "日本語の対話で相手の負担や失望を受け止める姿勢を取る。自分にある責任を具体的に認め、相手と状況に釣り合う言葉で謝る。言い訳や許しの要求を控え、関係の修復を急がない。対応策は相手の負担と実行可能性を踏まえ、必要に応じて述べる。"
+}

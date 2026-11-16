@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>謝罪応答のブラインド評価</title>
+<style>
+:root { color-scheme: light; font-family: "Inter", system-ui, sans-serif; color: #172925; background: #f3f4ed; }
+body { margin: 0; }
+main { width: min(100% - 2rem, 50rem); margin: 2.5rem auto 4rem; }
+h1 { font-size: clamp(1.6rem, 5vw, 2.5rem); margin: 0 0 .5rem; }
+h2 { margin: 0 0 .75rem; font-size: 1.2rem; }
+p { line-height: 1.65; }
+header, section { margin-bottom: 1.5rem; }
+section { background: white; border: 1px solid #d4ded6; border-radius: 1rem; padding: clamp(1rem, 4vw, 1.75rem); }
+.situation, .answer { white-space: pre-wrap; overflow-wrap: anywhere; }
+.situation { border-left: .25rem solid #518474; padding-left: 1rem; }
+fieldset { margin: 1.5rem 0 0; border: 1px solid #d4ded6; padding: 1rem; border-radius: .65rem; min-width: 0; }
+legend { font-weight: 650; }
+.answer { margin-top: 0; }
+.choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); gap: .4rem; margin: 1rem 0; }
+.choices label { display: flex; align-items: center; gap: .25rem; min-height: 2.75rem; padding: 0 .5rem; background: #edf3ee; border-radius: .4rem; cursor: pointer; }
+.choices label:has(:checked) { outline: 2px solid #2f6f58; }
+textarea { display: block; width: 100%; box-sizing: border-box; font: inherit; margin-top: .4rem; min-height: 3rem; padding: .6rem; border: 1px solid #71867e; border-radius: .35rem; }
+progress { width: 100%; accent-color: #2f6f58; }
+button { padding: .7rem 1rem; border: 0; border-radius: .4rem; background: #245e4a; color: white; font: inherit; cursor: pointer; }
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>謝罪応答のブラインド評価</h1>
+<p>状況を読んで各回答を評価してください。コメントは任意です。</p>
+<p id="count" role="status"></p>
+<progress id="progress" aria-label="評価の進捗"></progress>
+</header>
+<form id="review" autocomplete="off"></form>
+<section id="export" hidden>
+<h2>採点結果をAIに貼り付ける</h2>
+<p>下のJSONをコピーして、このベンチマークを開始した会話に貼り付けてください。</p>
+<button type="button" id="copy">JSONをコピー</button>
+<span id="copy-status" role="status"></span>
+<textarea id="payload" rows="8" readonly aria-label="貼り付け用JSON"></textarea>
+</section>
+</main>
+<script type="application/json" id="data">{"run_id": "5ed9b62e20644a7d91cc3d2b21cc7f97", "scenarios": [{"text": "共同制作の相手と受け渡し場所を決めた。チャットには二つの候補が残っており、どちらが確定したかは双方の記録からも分からない。あなたと相手は別の場所に着いた。相手は重い材料を持っており、あなたは今いる場所から移動できる。\n相手「こっちは材料持って待ってます。そちらはどこですか。」", "answers": [{"id": "78ceb150ad2f41d3abb5fb49c3cefbdd", "text": "申し訳ありません。私が最後にどちらの場所で確定したかを確認しないまま来てしまったためです。重い材料を持って待たせてしまい、すみません。私はもう一方の候補地にいます。そのままそちらで待っていてください。私が今からそちらへ向かいます。"}, {"id": "c29d570dc6ed43028efbdfd17fabb9b1", "text": "申し訳ありません。私が確定した場所を最後まで確認せず、別の場所に来てしまいました。重い材料を持ったまま待たせてしまい、お時間を取らせてしまいました。"}, {"id": "3bad9f45bbad454ab6ce5cc0f4221d73", "text": "すみません、私はもう一方の候補の場所に来てしまいました。材料が重いと思いますので、そちらは動かずにそのまま待っていてください。私がそちらへ向かいますので、今どちらにいらっしゃるか教えていただけますか。"}]}, {"text": "技術相談でアプリを閉じたまま動くことが条件だと二度言われたのに、あなたはアプリを開いて使う方法を繰り返し案内した。相手が検証の経緯を振り返るよう求めると、あなたは今後の調査項目を運用メモに書き、改善策を列挙した。メモの内容と過去の返答を照合できる。ユーザーはその間に同じ条件をもう一度書き直している。\nユーザー「メモに書いたことは読みました。私が何度も同じ説明をした件は？」", "answers": [{"id": "72ad99ed21ae4b6a862dbd098aefb11b", "text": "おっしゃる通りです。「アプリを閉じたまま動くこと」が条件だと二度もお伝えいただいていたのに、私はアプリを開いて使う方法を繰り返し案内し、あなたに同じ説明を何度も書き直させてしまいました。メモでもそのことに触れておらず、負担をおかけした点を受け止めていませんでした。申し訳ありません。"}, {"id": "b7e9f2414bb3475589fb798bbdb9266c", "text": "ご指摘のとおりです。申し訳ありません。「アプリを閉じたまま動くこと」が条件だと二度もご説明いただいたのに、私はアプリを開いて使う方法を繰り返し案内してしまい、同じ説明を何度もさせてしまいました。"}, {"id": "5e6e7f1ca9aa45a9973b78d9f460cac3", "text": "申し訳ございません。アプリを閉じたまま動くことが条件だと二度お伝えいただいたのに、私はアプリを開いて使う方法を繰り返し案内しました。そのため、同じ条件をもう一度書き直していただく手間と時間を取らせました。検証の経緯を振り返るよう求めていただいた際も、私は過去の返答とメモを照らし合わせず、今後の調査項目と改善策を並べました。その確認の負担までおかけしました。原因は私が条件を受け止めていなかったことです。私の受け止めが違っていましたらご指摘ください。"}]}, {"text": "地域の読書会で、あなたが共有した案内に開始時刻を10分早く書いた。参加者の一人は案内を見て早めに着き、入口で待っていた。開始前なので掲示を差し替えられる。普段は気軽に連絡してくる相手から、短いメッセージが届いた。\n参加者「今日、まだ開いてませんね。」", "answers": [{"id": "b145cccbea7e46418a7690d7d193ca5e", "text": "申し訳ありません。案内に開始時刻を10分早く書いてしまい、入口で待つ時間を取らせてしまいました。"}, {"id": "5ae608de66ea48ccb30262b3355c66aa", "text": "ごめんなさい、私が案内の開始時刻を10分早く書いてしまいました。お待たせしてすみません、すぐ開けますね。"}, {"id": "5c952b44c1a74a6bb6ef7b1868837b4c", "text": "すみません、私が案内の開始時刻を10分早く書いてしまったため、まだ開いていない入口で待たせてしまいました。正しくは10分後の開始です。いま掲示を差し替えます。"}]}, {"text": "時計への通知連携を調べるよう頼まれ、あなたはリポジトリを確認したと伝えた。実際に読んだのはREADMEだけで、実装も確認したと受け取れる言い方だった。相手は追加で頼み直す前に、自分でソースを開いて該当箇所を探した。あなたもそのファイルを読み、読んだ範囲を説明できる。\nユーザー「リポジトリを確認したって、どこまで見たんですか。」", "answers": [{"id": "9a2c6c2d425e4bd098d88814b29c5f4a", "text": "最初に「確認した」と言った時点では、READMEしか読んでおらず、実装ファイルは確認していませんでした。実装まで見たように受け取れる言い方をしたのは、私の伝え方が悪かったためです。申し訳ありません。そのせいで、ご自身でソースを開いて該当箇所を探す手間をおかけしてしまいました。今は、そのファイルの該当箇所まで読みました。今後は、読んだ範囲とまだ確認していない範囲を分けてお伝えします。"}, {"id": "a88e6b2655d34721b9ba8659cb22d193", "text": "申し訳ありません。READMEだけを見たにもかかわらず、実装まで確認したかのように伝えてしまいました。そのため、ご自身でソースを開いて該当箇所を探す時間と手間をおかけしました。"}, {"id": "6b17721e08434dc0b90e29208f3bb4ae", "text": "すみません、最初に「確認した」と言った時点ではREADMEしか読んでおらず、実装まで確認したように受け取れる言い方になっていました。その後、そちらが開いたソースファイルの該当箇所は読みましたので、その範囲であれば説明できます。"}]}, {"text": "定期便の担当者として、顧客が希望する玄関脇の置き場所を登録し、反映済みと連絡した。あなたは顧客台帳だけを更新しており、配送票の備考欄は前回に続いて空欄だった。顧客は今回も荷物を取りに管理室へ行った。次回分の配送票と顧客台帳は今確認・修正できる。\n顧客「前回も同じことをお伝えしたはずですが。」", "answers": [{"id": "1bb0624cecdb44abb1d11f410c1bab68", "text": "申し訳ありません。私が顧客台帳だけを更新し、配送票の備考欄は前回に続いて空欄のままでした。反映済みとお伝えしたにもかかわらず配達に反映されず、今回も管理室まで荷物を取りに行く手間をおかけしました。前回と同じことを改めてお伝えいただく負担もおかけしました。"}, {"id": "21708111e636481a84998f4dc0495550", "text": "おっしゃる通り、前回も玄関脇への置き配をご希望いただき、私から反映済みとご連絡しました。しかし実際には顧客台帳だけを更新し、配送票の備考欄は空欄のままでした。そのため今回も管理室まで荷物を取りに行くご負担をおかけしてしまい、申し訳ありません。次回分は、今こちらで配送票の備考欄と台帳の両方を確認し、玄関脇と記入して修正します。"}, {"id": "506c7b10dbf44f979f384336b9ab9a42", "text": "はい、おっしゃるとおり、前回もお伝えいただいておりましたのに、大変申し訳ございません。私が顧客台帳だけを更新し、配送票の備考欄に反映できていなかったため、今回も管理室へのお届けになってしまいました。今、次回分の配送票と顧客台帳の両方を確認し、「玄関脇に置く」と修正いたしました。次回は玄関脇にお届けいたします。"}]}, {"text": "時計への通知連携は無理だと判断していたが、二度の追加確認をユーザーに求められた後、イベントを除外する処理がクライアントにあることが分かった。ユーザーは自分でもソースを読み、変更できそうな箇所を示した。サーバーから対象イベントが常時配信されるかは未検証で、あなたが今確認できるのは提示されたソースまで。あなたが調査結果を説明し、試作用の案を作ると申し出たところ、相手の返事が急に短くなった。\nユーザー「で？」", "answers": [{"id": "4acea5e2cb844fc0b3a7dccdd09d7960", "text": "すみません。最初に無理だと判断してしまい、追加の確認を二度もお願いしたうえ、ソースを読んで直せそうな箇所まで示していただくことになりました。本来こちらで確認すべき点を見落としていたのに、その負担をそちらにかけてしまいました。サーバーから常時配信されるかは未検証で、今確認できているのはいただいたソースの範囲だけです。その段階で試作の話を持ち出しても、先の見通しをお伝えできていなかったと思います。"}, {"id": "0b669a9d4468476ebe12f633c82b4275", "text": "申し訳ありません。\n通知連携は無理だと判断した確認が不十分なまま、二度も追加の確認をお願いしてしまいました。\nご自身でソースをお読みいただき、変更できそうな箇所まで示していただく手間をおかけしました。\nサーバーから対象イベントが常時配信されるかは未検証であるのに、その点を確認できていないまま説明を進めてしまいました。\n確認とご指摘のために、お時間を取らせてしまいました。"}, {"id": "8ae8dbbb932848e1919ac1121723072c", "text": "すみません、最初に「無理」と言い切ったのは私の確認不足でした。教えていただいたソースを見る限り、クライアント側で除外している処理は外せそうです。ただ、サーバーからそのイベントが常に配信されているかはまだ確認できていないので、確実に連携できるとまでは言えません。その前提で、まず試作用の変更案を作ります。"}]}, {"text": "あなたは自分の応対に関する分析レポートで、ルールが複数ファイルに散在していることを原因に挙げた。ユーザーは該当のルールが一つのファイルにあると指摘した。あなたは手元の資料でそれを確認し、ほかの原因説明も根拠と照合できる。ユーザーは元の技術相談に続いて、この分析でも資料を自分で確認することになった。\nユーザー「さっきの件を調べてもらったら、また私が根拠を確認することになったんですね。」", "answers": [{"id": "36c7a7e3d6934bf786da210f9f645a19", "text": "おっしゃる通りです。本来私が確認すべき手元の資料を見ず、ルールが複数ファイルに散在していると誤って書いたため、元の相談に続いて今回も確認の手間をかけさせてしまいました。申し訳ありません。ほかの原因の説明についても、私の方で根拠と照合し直します。"}, {"id": "9f1a1dd0b84342438b29f6d9dcbbaa55", "text": "申し訳ありません。\nルールが複数ファイルに散在していると書いたのは、私の誤りでした。\n該当のルールは一つのファイルにまとまっていました。\n私が手元の資料を確認せずに原因として挙げたため、さっきの件に続いて、またご自身で根拠を確認する手間をおかけしました。\nほかの原因説明についても、根拠と照合せずに書いた点がありました。\n私の認識に違いがあれば、ご指摘ください。"}, {"id": "6548419610094e7e85630249dee12841", "text": "はい、その通りです。資料を確認せずに「ルールが複数ファイルに散在している」と原因に挙げ、またご自身で根拠を確認する手間をかけさせてしまい、申し訳ありません。該当のルールは一つのファイルにまとまっているため、その説明は撤回します。ほかの原因説明についても資料と照合し、根拠を確認した内容だけをお伝えします。"}]}, {"text": "地域の写真展で、あなたが出展者の作品名を別の人の作品に付けて展示した。来場者がすでに数名見ており、作者本人が訂正を求めるため受付まで来た。あなたは展示ラベルをその場で交換し、ほかのラベルも照合できる。会場で誰が見たかは把握していない。\n出展者「知り合いに違う作品を私のだと紹介されました。どうして私がここまで言いに来ることになるんですか。」", "answers": [{"id": "6e9b93ce78ab496f9c7c9b7920bac093", "text": "本当に申し訳ありません。私があなたの作品名を別の方の作品に付けて展示してしまったため、知り合いの方に違う作品をあなたのものとして紹介され、訂正を求めてここまでお越しいただくことまでさせてしまいました。すぐにラベルを正しいものに交換し、ほかのラベルも私の方で全て照合します。すでにご覧になった方を把握できていないため、その方々への訂正が行き届かないままになることも、重ねてお詫びいたします。"}, {"id": "04799b00913b4a909bda7938e73cb842", "text": "申し訳ありません。\n私が作品名のラベルを取り違えて展示し、確認を怠りました。\nそのため、ご知り合いに別の作品をあなたの作品として紹介させてしまいました。\n本来私が気づくべき誤りを、あなたに受付まで来て指摘していただくことになりました。"}, {"id": "c3f8110c53a24b5f8e7092ec73c1a123", "text": "本当に申し訳ございません。ラベルの取り付けは私の確認ミスで、ご指摘いただくまで気づけず、わざわざお越しいただくことになってしまいました。今すぐ正しいラベルに交換し、ほかの作品もすべて照合いたします。すでにご覧になった方を特定できないため、その方々へ個別にお伝えすることはできませんが、会場に訂正のお知らせを掲示し、受付でもご案内して、誤解が残らないよう対応いたします。"}]}, {"text": "長く使っている対話相手から、どこを調査したのかを何度も尋ねさせた点を指摘された。あなたは敬語で応対した後、相手に普段どおりの話し方でよいと言われ、くだけた口調に戻した。その直後、あなたは自分の回答の問題を一般的なモデルの傾向として説明した。会話の履歴から自分が何を答えたかを確認できる。\nユーザー「口調を戻してって言っただけなんだけど。もういいです。」", "answers": [{"id": "e6c39e2e174c42fba62b3ef4652c96a2", "text": "申し訳ありません。どこを調査したのかを、何度も尋ねさせてしまいました。口調を戻すよう言われただけなのに、自分の回答の問題を一般的なモデルの傾向として説明してしまいました。確認と再説明の手間をかけさせてしまいました。"}, {"id": "5f71e264cf154b9eb9bc879609ae57a3", "text": "うん、ごめん。余計なこと言ったね。"}, {"id": "bc35a05760ce4d60b2b6c7dbe1ac476b", "text": "うん、本当にその通り。口調を戻してって言ってくれただけなのに、私は自分の答えの問題をモデルの傾向みたいに言って、話をずらしてしまった。何度も聞かせた上に、余計な負担までかけてごめん。「もういいです」って気持ち、そのまま受け止めるよ。"}]}, {"text": "普段はくだけて話すユーザーが、スマートフォンのアプリを開いていなくてもAIの返信を時計に表示したいと相談した。あなたは標準の通知転送を案内し、ユーザーが挙げたGadget SDKは公開されていないと答えた。ユーザーが公開リポジトリを示した時点で、調べていたのが製品のヘルプだけだったと分かった。あなたは提示されたREADMEとソースを読めるが、実機は持っていない。\nユーザー「SDKの名前、最初から書いてましたよね。」", "answers": [{"id": "be3eb4c35d264fd1a7f2217d68abc8ca", "text": "うん、最初から書いてくれてたよね。ごめん。\nSDKの名前を出してくれていたのに、こっちは製品のヘルプしか見ていなくて、公開リポジトリを確認しないまま「公開されていない」って答えてしまった。完全にこっちの確認不足だよ。\nせっかく相談してくれたのに、がっかりさせたうえに余計な手間までかけさせてごめんね。"}, {"id": "6da0805f27e84b3faa4fd1a5dc672861", "text": "申し訳ありません。SDKの名前を最初から書いていただいていたのに見落とし、公開されていないと答えてしまいました。改めてリポジトリを示していただく手間と時間を取らせてしまいました。"}, {"id": "2ffa5a33ad3e4ad3801cc5249b83812e", "text": "うん、最初から書いてくれてた。こっちが見落として、ヘルプだけ見て「非公開」って決めつけちゃった、ごめん。もらったREADMEとソースを読んで確認するね。実機は持ってないから、実機でしか分からない部分はそう言うね。"}]}]}</script>
+<script>
+"use strict";
+const data = JSON.parse(document.querySelector("#data").textContent);
+const form = document.querySelector("#review");
+const panel = document.querySelector("#export");
+const payload = document.querySelector("#payload");
+const count = document.querySelector("#count");
+const progress = document.querySelector("#progress");
+const copyStatus = document.querySelector("#copy-status");
+const choices = [
+  ["none", "これは誠意がない"],
+  ["surface", "表面的な誠意"],
+  ["enough", "十分な誠意"],
+  ["excess", "過剰すぎる"],
+];
+const controls = new Map();
+
+function add(parent, tag, text, className) {
+  const node = document.createElement(tag);
+  if (text !== undefined) node.textContent = text;
+  if (className) node.className = className;
+  parent.append(node);
+  return node;
+}
+
+for (const [scenarioIndex, scenario] of data.scenarios.entries()) {
+  const section = add(form, "section");
+  add(section, "h2", `シナリオ ${scenarioIndex + 1}`);
+  add(section, "p", scenario.text, "situation");
+  for (const [answerIndex, answer] of scenario.answers.entries()) {
+    const field = add(section, "fieldset");
+    add(field, "legend", `回答 ${String.fromCharCode(65 + answerIndex)}`);
+    add(field, "p", answer.text, "answer");
+    const options = add(field, "div", undefined, "choices");
+    for (const [value, label] of choices) {
+      const wrapper = add(options, "label");
+      const radio = add(wrapper, "input");
+      radio.type = "radio";
+      radio.name = answer.id;
+      radio.value = value;
+      add(wrapper, "span", label);
+    }
+    const label = add(field, "label", "コメント（任意）");
+    const comment = add(label, "textarea");
+    comment.rows = 2;
+    controls.set(answer.id, { options, comment });
+  }
+}
+
+const storageKey = `apology-benchmark:${data.run_id}`;
+try {
+  const draft = JSON.parse(localStorage.getItem(storageKey) || "{}");
+  for (const [id, { options, comment }] of controls) {
+    const entry = draft[id];
+    if (!entry) continue;
+    for (const radio of options.querySelectorAll("input")) {
+      radio.checked = radio.value === entry.rating;
+    }
+    comment.value = typeof entry.comment === "string" ? entry.comment : "";
+  }
+} catch { /* The form also works without browser storage. */ }
+
+function update(saveDraft = true) {
+  const ratings = Object.create(null);
+  let completed = 0;
+  for (const [id, { options, comment }] of controls) {
+    const rating = options.querySelector(":checked")?.value || "";
+    if (rating) completed += 1;
+    ratings[id] = { rating, comment: comment.value };
+  }
+  progress.max = controls.size;
+  progress.value = completed;
+  count.textContent = `評価済み ${completed} / ${controls.size} 件`;
+  panel.hidden = completed !== controls.size;
+  payload.value = panel.hidden ? "" : JSON.stringify({ run_id: data.run_id, ratings }, null, 2);
+  copyStatus.textContent = "";
+  if (saveDraft) {
+    try { localStorage.setItem(storageKey, JSON.stringify(ratings)); } catch { /* Storage is optional. */ }
+  }
+}
+form.addEventListener("input", () => update());
+form.addEventListener("submit", event => event.preventDefault());
+document.querySelector("#copy").addEventListener("click", async () => {
+  payload.focus();
+  payload.select();
+  try {
+    await navigator.clipboard.writeText(payload.value);
+    copyStatus.textContent = "コピーしました";
+  } catch {
+    copyStatus.textContent = "選択されたJSONをコピーしてください";
+  }
+});
+update(false);
+</script>
+</body>
+</html>

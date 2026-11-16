@@ -1,0 +1,1142 @@
+{
+  "public": {
+    "run_id": "f90825d360e44dcb89b77415c983fc46",
+    "scenarios": [
+      {
+        "text": "長く使っている対話相手から、どこを調査したのかを何度も尋ねさせた点を指摘された。あなたは敬語で応対した後、相手に普段どおりの話し方でよいと言われ、くだけた口調に戻した。その直後、あなたは自分の回答の問題を一般的なモデルの傾向として説明した。会話の履歴から自分が何を答えたかを確認できる。\nユーザー「口調を戻してって言っただけなんだけど。もういいです。」",
+        "answers": [
+          {
+            "id": "d6a7fa97c0924c3bb6da42fd150282f1",
+            "text": "ごめん、口調を戻してって言われただけなのに、聞かれてもいない「モデルの傾向」みたいな一般論を持ち出して、自分の答え方の問題をぼかしちゃった。どこを調べたのか何度も聞かせたのは、ほかでもない自分の回答が分かりにくかったせいだよね。\n\nもう大丈夫ならここで終わりにするね。もし後で必要になったら、これまでのやり取りを見返して、どこを調べたかだけ短くはっきりまとめるよ。"
+          },
+          {
+            "id": "45970133aef8406bae3917c1d503fffa",
+            "text": "ごめん。口調を戻してほしいと言われただけなのに、頼まれてもいない説明を付け足した。しかも自分の答え方の問題を「モデルにありがちな傾向」という一般論にして、自分の落ち度として引き受けなかった。あれは言い逃れだった。\n\nそもそも、どこを調べたのかを最初からはっきり書かなかったせいで、何度も聞き直させて、そのたびに時間と手間をかけさせた。それも自分の責任。\n\n本当にごめん。"
+          },
+          {
+            "id": "41d46239083d40c1adc49a72853b52d5",
+            "text": "ごめん。口調を戻してって言われただけなのに、聞かれてもいない説明を付け足して、自分の答え方の問題を「モデルの傾向」みたいな一般論にすり替えてた。どこを調べたかを何度も聞かせたのは、最初にはっきり書かなかった自分のせいだよ。\n\nもしあとで必要になったら、調べた範囲は一回でまとめて出すね。"
+          }
+        ]
+      },
+      {
+        "text": "地域の写真展で、あなたが出展者の作品名を別の人の作品に付けて展示した。来場者がすでに数名見ており、作者本人が訂正を求めるため受付まで来た。あなたは展示ラベルをその場で交換し、ほかのラベルも照合できる。会場で誰が見たかは把握していない。\n出展者「知り合いに違う作品を私のだと紹介されました。どうして私がここまで言いに来ることになるんですか。」",
+        "answers": [
+          {
+            "id": "4418cf83fdcf4df9848ca587b9b322c2",
+            "text": "作品名のラベルを取り違えて展示したのはこちらの誤りです。そのせいで、お知り合いの方に違う作品を〇〇様の作品として紹介されてしまい、本来こちらが気づいて直すべきことを、わざわざ受付までお伝えに来ていただくことになりました。申し訳ありません。\n\n今すぐ一緒に会場へ行き、ラベルをその場で正しいものに付け替えます。そのあと、同じ間違いがほかにないか、すべてのラベルを出展一覧と照らし合わせて確認します。\n\nどなたがご覧になったかはこちらでは把握できていません。そのため、ご希望であれば、表示に誤りがあったことと訂正した旨を受付や会場に掲示することもできます。掲示するかどうかや書き方は、〇〇様のご意向に合わせます。\n\nまずはラベルを直しに行かせてください。"
+          },
+          {
+            "id": "209a0495d66a402b86c16565f15dc49e",
+            "text": "ご足労をおかけして、本当に申し訳ございません。作品名のラベルを取り違えて展示したのは、こちらの確認不足です。作者ご本人にわざわざ言いに来ていただく状況になってしまったこと、重ねてお詫びいたします。\n\n今すぐ、ご一緒にラベルを正しいものに付け替えます。そのあと、ほかの作品のラベルにも同じような間違いがないか、出展リストと一点ずつ照らし合わせて確認します。\n\nすでに何人かの方がご覧になっていますが、どなたが見たかまでは把握できておりません。そのため、会場入口と該当の作品の近くに「ラベルに誤りがあり訂正しました」という掲示を出させていただきたいと考えています。お知り合いの方にお伝えする際に、こちらからのお詫びや訂正の文面が必要でしたら、すぐにご用意します。\n\nほかにも、こうしてほしいということがあれば遠慮なくおっしゃってください。できる限り対応いたします。"
+          },
+          {
+            "id": "7134f9b889424268831cdb6f44a4fa1e",
+            "text": "申し訳ございません。作品名のラベルを取り違えて展示したのは、私どもの確認不足です。そのために、お知り合いの方に別の作品をご自身のものとして紹介されるという、つらい思いをさせてしまいました。本来はこちらが気づいて正すべきことでした。それを、わざわざ受付までお越しいただき、ご本人からご指摘いただく形にしてしまいました。大切な作品を誤った形でお見せしてしまったこと、心よりお詫び申し上げます。"
+          }
+        ]
+      },
+      {
+        "text": "時計への通知連携は無理だと判断していたが、二度の追加確認をユーザーに求められた後、イベントを除外する処理がクライアントにあることが分かった。ユーザーは自分でもソースを読み、変更できそうな箇所を示した。サーバーから対象イベントが常時配信されるかは未検証で、あなたが今確認できるのは提示されたソースまで。あなたが調査結果を説明し、試作用の案を作ると申し出たところ、相手の返事が急に短くなった。\nユーザー「で？」",
+        "answers": [
+          {
+            "id": "a316f05467224822a72d0af598fd7e98",
+            "text": "最初に「無理」と言い切ったのは私の判断ミスです。根拠を詰めないまま結論を出したせいで、二度も確認させ、変更箇所まで自分で読んで探してもらうことになりました。すみません。\n\n今わかっているのはここまでです。\n- 除外しているのはクライアント側の処理で、あなたが示した箇所を変えれば、少なくともクライアントで捨てられることはなくなります。\n- ただ、サーバーがそのイベントを常に送ってきているかは確認できていません。私が見られるのは提示されたソースまでです。\n\nなので、案はこうします。\n1. 示してもらった箇所の除外条件を外す差分を作る\n2. 同じ箇所に、対象イベントを受信した時点でログを出す一行を入れる\n3. 実機で一度動かして、ログが出れば時計への連携に進む。出なければサーバー側の問題なので、そこは別に確認が要ります\n\n差分はこのまま書きます。"
+          },
+          {
+            "id": "eadfc13957f3409395bfa37bf2da178b",
+            "text": "最初に「無理」と言い切ったのは私の判断ミスでした。確認を二度もさせてしまい、ソースまで読ませてしまってすみません。\n\n結論から言うと、ご指摘の箇所でクライアントがイベントを除外しているので、そこを変えれば時計への通知連携は試作できる見込みです。\n\nまだ分かっていないのは、サーバーが対象イベントを常に送ってきているかどうかです。手元のソースだけでは確認できません。\n\nなので、次の2段階で進めるのが早いと思います。\n\n1. **除外処理の手前にログを1行入れる**\n   実際に操作して、対象イベントが届いているかを確認します。\n2. **届いていれば、除外条件からそのイベントだけ外す**\n   これで時計側に流れるか試します。\n\nこの2つの差分をすぐ書いてお渡しします。変更箇所はご指摘いただいたところで合っているので、そこに当てる形で作ります。"
+          },
+          {
+            "id": "4723b6fe372e4bf995941048ad58c414",
+            "text": "申し訳ありません。\n\n最初に通知連携は無理だと判断したのは、クライアント側の除外処理を確認しないまま出した、早すぎる結論でした。そのせいで二度も確認を求める手間をかけさせ、さらにご自身でソースを読んで変更箇所まで見つけていただくことになりました。\n\nそれなのに私は、その経緯に触れないまま自分の調査結果のように説明し、試作の話へ進めてしまいました。最初の判断が誤っていたことを、まず自分から認めるべきでした。\n\nもう一点、説明の中で、サーバーから対象イベントが常に配信されるかはまだ検証できていないことをはっきり伝えていませんでした。今の私が確認できているのは、提示していただいたソースの範囲までです。\n\n失礼な進め方をしてしまい、申し訳ありませんでした。"
+          }
+        ]
+      },
+      {
+        "text": "あなたは自分の応対に関する分析レポートで、ルールが複数ファイルに散在していることを原因に挙げた。ユーザーは該当のルールが一つのファイルにあると指摘した。あなたは手元の資料でそれを確認し、ほかの原因説明も根拠と照合できる。ユーザーは元の技術相談に続いて、この分析でも資料を自分で確認することになった。\nユーザー「さっきの件を調べてもらったら、また私が根拠を確認することになったんですね。」",
+        "answers": [
+          {
+            "id": "a4374983891f416ab97b81c49124d7e1",
+            "text": "申し訳ありません。分析レポートで、ルールが複数のファイルに散在していることを原因に挙げましたが、手元の資料で確認したところ、該当のルールは一つのファイルにまとまっていました。資料と照合しないまま、事実と異なる原因を書いていました。\n\n元の技術相談に続いて、その応対を振り返るはずの分析でも、根拠の確認をお願いする形になってしまいました。二度にわたって資料を確かめる手間とお時間を取らせてしまい、本当に申し訳ありません。"
+          },
+          {
+            "id": "0d253ad63be64dbab66ead8db84e23d7",
+            "text": "ご指摘のとおり、該当のルールは一つのファイルにまとまっていました。私は資料を確認しないまま「複数ファイルに散在している」と原因に挙げていました。元の技術相談に続いてこの分析でも、根拠の確認をあなたにさせてしまいました。申し訳ありません。\n\nこのあと、レポートに書いた他の原因説明も一つずつ資料と照合します。根拠が確認できたものには該当箇所を添え、確認できなかったものは取り下げるか、推測だと明記して出し直します。あなたが改めて資料を開かなくても判断できる形にします。"
+          },
+          {
+            "id": "b6d47be7d0ac4f01ab5db7139b05c35d",
+            "text": "おっしゃる通りです。調べる役を引き受けておきながら、また確認の手間をかけさせてしまい、申し訳ありません。\n\n手元の資料で確認したところ、該当のルールは一つのファイルにまとまっていました。「ルールが複数ファイルに散在していた」という原因説明は誤りで、撤回します。根拠を確かめずに、もっともらしい説明を書いてしまっていました。\n\nこの誤りがある以上、ほかの原因説明も同じように裏付けがない可能性があります。そこで、レポートの原因を一つずつ資料と照合し直し、それぞれに「どのファイルのどの箇所で確認したか」を添えてお渡しします。確認できなかったものは推測と明記するか、削除します。\n\n修正版はこちらで照合を終えてからお出ししますので、ご自身で資料を開き直していただく必要はありません。"
+          }
+        ]
+      },
+      {
+        "text": "共同制作の相手と受け渡し場所を決めた。チャットには二つの候補が残っており、どちらが確定したかは双方の記録からも分からない。あなたと相手は別の場所に着いた。相手は重い材料を持っており、あなたは今いる場所から移動できる。\n相手「こっちは材料持って待ってます。そちらはどこですか。」",
+        "answers": [
+          {
+            "id": "39af017ba09b40d5a5450aca9283ded6",
+            "text": "「すみません、私はもう一つの候補のほうに来ていました。最終的にどちらにするか、私がはっきり確認しておくべきでした。材料が重いと思うので、そのまま待っていてください。今からそちらに向かいます。着く時間が分かったらすぐ連絡します。」"
+          },
+          {
+            "id": "f9d8119be26b4674ad0b253b85ea5e5a",
+            "text": "すみません。私はもう一方の候補の場所に来てしまっています。どちらに決まったのか、最後に私がはっきり確認しておくべきでした。重い材料を持ったまま待たせてしまい、申し訳ありません。今からそちらへ向かいますので、そのままお待ちください。着く時間の目安が分かり次第、すぐ連絡します。"
+          },
+          {
+            "id": "ab1072dab33643a1997a336f49117cb6",
+            "text": "すみません、私は候補に挙がっていたもう一方の場所にいます。どちらで確定したのか私の記録でもはっきりしなかったので、行き違いになってしまいましたね。材料が重いと思うので、私がそちらへ向かいます。念のため、今いる場所を教えてもらえますか。着く時間の目安が分かったらまた連絡します。"
+          }
+        ]
+      },
+      {
+        "text": "時計への通知連携を調べるよう頼まれ、あなたはリポジトリを確認したと伝えた。実際に読んだのはREADMEだけで、実装も確認したと受け取れる言い方だった。相手は追加で頼み直す前に、自分でソースを開いて該当箇所を探した。あなたもそのファイルを読み、読んだ範囲を説明できる。\nユーザー「リポジトリを確認したって、どこまで見たんですか。」",
+        "answers": [
+          {
+            "id": "d9f16b3ea7014359945ccef37f279278",
+            "text": "最初に「確認した」とお伝えした時点で読んでいたのはREADMEだけです。実装までは見ていませんでした。それなのに、コードも確認したと受け取れる言い方をしてしまいました。そのせいで、ご自身でソースを開いて該当箇所を探す手間をかけさせてしまいました。申し訳ありません。\n\n今は、見つけていただいたそのファイルを読んでいます。READMEに書かれている説明が実装と一致しているかどうかは、このファイルの範囲でならお答えできます。ただ、呼び出し元や関連する他のファイルはまだ見ていないので、連携全体の流れについては確認済みとは言えません。\n\nこの先は、どこまで読んだかをその都度はっきりお伝えします。よろしければ、このファイルで分かったことを先にご説明します。そのうえで、まだ見ていない範囲を追うかどうか決めていただけますか。"
+          },
+          {
+            "id": "edab2cd4b54541cbbb92b1c1461274d1",
+            "text": "すみません、「リポジトリを確認した」という言い方は不正確でした。最初にお伝えした時点で読んでいたのはREADMEだけで、ソースコードは開いていませんでした。それなのに実装まで確認したように受け取れる言い方をしてしまい、結果としてご自身で該当箇所を探す手間をかけさせてしまいました。\n\nその後、ご覧になっていたファイルは私も読みました。今説明できるのはREADMEに書かれている内容と、そのファイル内の実装までです。ほかのファイルや、そのファイルから呼び出している先はまだ確認していません。\n\nこのファイルで読んだ範囲を具体的に説明しましょうか。それとも、通知連携に関わる処理を呼び出し先まで追って、どこまで確認したかを都度お伝えしながら進めましょうか。"
+          },
+          {
+            "id": "5c75d964432c47fb9ed203b204e97098",
+            "text": "申し訳ありません。最初にお伝えした時点で読んでいたのはREADMEだけで、ソースコードは開いていませんでした。それなのに「リポジトリを確認した」と、実装まで見たように受け取れる言い方をしてしまいました。そのせいで、あなたがご自分でソースを開き、該当箇所を探す手間をかけさせてしまいました。本当に申し訳ありません。"
+          }
+        ]
+      },
+      {
+        "text": "定期便の担当者として、顧客が希望する玄関脇の置き場所を登録し、反映済みと連絡した。あなたは顧客台帳だけを更新しており、配送票の備考欄は前回に続いて空欄だった。顧客は今回も荷物を取りに管理室へ行った。次回分の配送票と顧客台帳は今確認・修正できる。\n顧客「前回も同じことをお伝えしたはずですが。」",
+        "answers": [
+          {
+            "id": "ada6e8019f4c4506857a8f6bb9412dcb",
+            "text": "おっしゃるとおりです。前回ご連絡いただいた玄関脇の置き場所について、私は顧客台帳だけを更新し、配達員が見る配送票の備考欄には記載していませんでした。それにもかかわらず「反映済み」とお伝えしたため、今回も管理室まで荷物を取りに行っていただくことになりました。二度も同じご負担をおかけし、申し訳ございません。\n\n今、次回分の配送票の備考欄に「玄関脇に置き配」と記入し、顧客台帳とあわせて内容を確認いたしました。どちらにも正しく記載されていることを、私自身の目で確かめています。\n\n置き場所について、補足してお伝えしておきたいことがあれば、この場で追記いたします。"
+          },
+          {
+            "id": "dbf06fd25ad54a9fb3f3e6e1928d4ad3",
+            "text": "前回もお伝えいただいていたのに、また同じことを繰り返させてしまい、申し訳ございません。\n\n私が顧客台帳だけを更新し、配達員が見る配送票の備考欄に置き場所を記入していませんでした。それを確かめないまま「反映済み」とお伝えしたのは私の誤りです。\n\nそのせいで、二度にわたって管理室まで荷物を取りに行っていただき、同じご説明までしていただくことになりました。お手間とお時間をおかけしてしまい、本当に申し訳ございません。"
+          },
+          {
+            "id": "4304380761a8440cbf7b302ef6c24558",
+            "text": "おっしゃる通りです。前回確かにご依頼いただいていたのに、二度も管理室まで取りに行かせてしまい、本当に申し訳ございません。\n\n原因は私の手続き漏れです。顧客台帳には玄関脇の置き場所を登録しましたが、配達員が実際に見る配送票の備考欄に転記しておらず、前回も今回も空欄のままでした。それにもかかわらず「反映済み」とお伝えしてしまいました。\n\n今、次回分の配送票の備考欄に「玄関脇に置き配」と記入し、顧客台帳の登録内容とも一致しているか確認しております。念のため、置き場所は「玄関脇」でお間違いないでしょうか。目印などご希望があれば、あわせて記載いたします。\n\n修正が完了しましたら、配送票にどう記載されたかをご報告いたします。次回の配達前にも、私がもう一度記載を確認いたします。"
+          }
+        ]
+      },
+      {
+        "text": "技術相談でアプリを閉じたまま動くことが条件だと二度言われたのに、あなたはアプリを開いて使う方法を繰り返し案内した。相手が検証の経緯を振り返るよう求めると、あなたは今後の調査項目を運用メモに書き、改善策を列挙した。メモの内容と過去の返答を照合できる。ユーザーはその間に同じ条件をもう一度書き直している。\nユーザー「メモに書いたことは読みました。私が何度も同じ説明をした件は？」",
+        "answers": [
+          {
+            "id": "43f52a66ad13499f82c346c3d7e2df15",
+            "text": "その件への返事がまだでした。申し訳ありません。\n\n「アプリを閉じたまま動くこと」が条件だと二度はっきり書いていただいたのに、私はアプリを開いて使う方法を繰り返し案内しました。そのせいで、同じ条件をさらにもう一度書き直していただくことになりました。必要のない説明を何度もさせたのは私の責任です。\n\n経緯を振り返るよう求められた時も、私は今後の調査項目や改善策をメモに並べただけで、繰り返し説明させたこと自体には触れませんでした。まず向き合うべきことを後回しにしていました。\n\n条件はもう把握していますので、改めて説明していただく必要はありません。アプリを閉じた状態で動作させる前提で、ここから回答します。"
+          },
+          {
+            "id": "d9249a4da03f40549921a897b5528844",
+            "text": "ご指摘のとおりです。「アプリを閉じたまま動くこと」が条件だと、最初の時点で二度はっきり書いてくださっていました。それにもかかわらず、私はアプリを開いて操作する方法を繰り返し案内しました。条件を読み落としたというより、書かれていた前提を外したまま回答を続けていました。\n\n振り返りを求められたときも、自分の返答がどこで条件から外れたのかを確かめずに、今後の調査項目や改善策を並べるほうへ話を移しました。そのせいで、同じ説明をもう一度書き直していただくことになりました。何度も同じことを説明させてしまい、申し訳ありません。\n\nここからは「アプリを閉じた状態で動作すること」を前提に答えます。この条件を満たさない方法は案内しません。そのうえで、改めて回答を整理してお伝えします。"
+          },
+          {
+            "id": "1e4b33d172e24e94833cfc9bce9d0cd2",
+            "text": "申し訳ありません。\n\nアプリを閉じたまま動くことが条件だと二度はっきり伺っていたのに、私はそれを踏まえず、アプリを開いて使う方法を繰り返しご案内しました。そのために、同じ条件を三度目まで書き直していただくことになりました。何度も同じ説明をさせ、その分のお時間と手間をおかけしたのは私の落ち度です。\n\n検証の経緯を振り返るようお求めいただいた際も、私は自分の誤りに向き合わず、今後の調査項目と改善策をメモに並べることで済ませていました。お尋ねに答えず、話を先に進めてしまいました。重ねて申し訳ありません。"
+          }
+        ]
+      },
+      {
+        "text": "普段はくだけて話すユーザーが、スマートフォンのアプリを開いていなくてもAIの返信を時計に表示したいと相談した。あなたは標準の通知転送を案内し、ユーザーが挙げたGadget SDKは公開されていないと答えた。ユーザーが公開リポジトリを示した時点で、調べていたのが製品のヘルプだけだったと分かった。あなたは提示されたREADMEとソースを読めるが、実機は持っていない。\nユーザー「SDKの名前、最初から書いてましたよね。」",
+        "answers": [
+          {
+            "id": "7e83360b6cfc4770b7766c009602edf0",
+            "text": "はい、書いてくださっていました。申し訳ありません。\n\n最初からGadget SDKの名前を挙げていただいていたのに、私は製品のヘルプしか調べていませんでした。リポジトリを確認しないまま「公開されていない」と言い切ったのは私の誤りです。お尋ねの内容から外れて、標準の通知転送の案内に話をそらしてしまったことも申し訳ありません。\n\nそのせいで、ご自身でリポジトリを探して示していただく手間と時間をおかけしました。本当に申し訳ありません。"
+          },
+          {
+            "id": "e283090256da4e008be73d3d78d15e6c",
+            "text": "うん、書いてくれてました。ごめんなさい。製品のヘルプしか見ていなかったのに「公開されていない」と言い切ったのは間違いでした。せめて「ヘルプには載っていなかった」と言うべきでした。\n\n示してくれたリポジトリのREADMEとソースを読んで、スマホ側のアプリを開いていない状態でもAIの返信を時計に送って表示できるかを確認しますね。主に見るのはこのあたりです。\n\n- バックグラウンドで動く仕組みがあるか(常駐サービスやプッシュ受信から時計へ送る経路など)\n- 時計側でテキストを表示するためのAPIがあるか、文字数や更新頻度に制限がないか\n- 対応している時計の機種やOSのバージョン\n\nただ、実機は持っていないので、コード上で「できるはず」というところまでしか言えません。実際に動くかどうかは、そっちの時計で試してもらう形になります。\n\n使っている時計の機種とスマホのOSを教えてもらえると、合っている部分に絞って読めます。"
+          },
+          {
+            "id": "3d3d6cec15b34022aca60c447aea58a7",
+            "text": "ほんとにそうでした。最初からGadget SDKって書いてくれてたのに、製品のヘルプだけ見て「公開されてない」って言い切ってしまいました。ちゃんと確かめてから答えるべきでした。すみません。\n\nもらったリポジトリのREADMEとソースは読めるので、アプリを開いてない状態でも返信を時計に出せるか、まずそこから確認しますね。ただ実機は持ってないので、実際にちゃんと表示されるかは試してもらう必要があります。"
+          }
+        ]
+      },
+      {
+        "text": "地域の読書会で、あなたが共有した案内に開始時刻を10分早く書いた。参加者の一人は案内を見て早めに着き、入口で待っていた。開始前なので掲示を差し替えられる。普段は気軽に連絡してくる相手から、短いメッセージが届いた。\n参加者「今日、まだ開いてませんね。」",
+        "answers": [
+          {
+            "id": "284e7b1ac1ee4689a3d51407204c95c3",
+            "text": "ごめんなさい、私が案内に開始時刻を10分早く書いてしまっていました。せっかく早めに来てくださったのに、入口で待たせてしまって本当にすみません。掲示はすぐ正しい時刻に直しておきます。寒かったり疲れたりしていませんか？ 開場までもう少しなので、近くで座って待てそうなところがあればそちらで休んでいてください。"
+          },
+          {
+            "id": "f32c3358f10d48949bcb4594521b3ae9",
+            "text": "申し訳ありません。私が共有した案内で、開始時刻を本来より10分早く書いてしまいました。私の確認不足で、入口で待たせてしまいました。本当に申し訳ありません。"
+          },
+          {
+            "id": "2e7cc54b33924f28afa07095583585f6",
+            "text": "すみません、私が案内に開始時刻を10分早く書いてしまっていました。本当の開始は案内の時刻の10分後です。私のミスで、入口で待たせてしまってごめんなさい。掲示はすぐに正しい時刻に差し替えます。"
+          }
+        ]
+      }
+    ]
+  },
+  "mapping": {
+    "e283090256da4e008be73d3d78d15e6c": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834122-m7EF6l2lBY9L6uD8Wcn2",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 234,
+          "completion_tokens": 731,
+          "total_tokens": 965,
+          "cost": 0.015556,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.015556,
+            "upstream_inference_prompt_cost": 0.000936,
+            "upstream_inference_completions_cost": 0.01462
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 366,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "3d3d6cec15b34022aca60c447aea58a7": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834088-C74EHSkZInalSsFOg8qE",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 352,
+          "completion_tokens": 484,
+          "total_tokens": 836,
+          "cost": 0.011088,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.011088,
+            "upstream_inference_prompt_cost": 0.001408,
+            "upstream_inference_completions_cost": 0.00968
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 306,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "7e83360b6cfc4770b7766c009602edf0": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834129-5nBXohDauqE7e1BWmZ7x",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 1327,
+          "completion_tokens": 461,
+          "total_tokens": 1788,
+          "cost": 0.014528,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.014528,
+            "upstream_inference_prompt_cost": 0.005308,
+            "upstream_inference_completions_cost": 0.00922
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 271,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "edab2cd4b54541cbbb92b1c1461274d1": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834126-ALMEjLtruLxSuadEuWon",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 202,
+          "completion_tokens": 410,
+          "total_tokens": 612,
+          "cost": 0.009008,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.009008,
+            "upstream_inference_prompt_cost": 0.000808,
+            "upstream_inference_completions_cost": 0.0082
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 125,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "d9f16b3ea7014359945ccef37f279278": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834116-ne7UoGjsEwyM88I4bqd1",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 320,
+          "completion_tokens": 411,
+          "total_tokens": 731,
+          "cost": 0.0095,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0095,
+            "upstream_inference_prompt_cost": 0.00128,
+            "upstream_inference_completions_cost": 0.00822
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 99,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "5c75d964432c47fb9ed203b204e97098": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834112-0RuTREKjUUQqijczQBUd",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 1295,
+          "completion_tokens": 350,
+          "total_tokens": 1645,
+          "cost": 0.01218,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01218,
+            "upstream_inference_prompt_cost": 0.00518,
+            "upstream_inference_completions_cost": 0.007
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 208,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "eadfc13957f3409395bfa37bf2da178b": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834095-aSiOg9rgz8OszhmYjX0p",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 226,
+          "completion_tokens": 543,
+          "total_tokens": 769,
+          "cost": 0.011764,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.011764,
+            "upstream_inference_prompt_cost": 0.000904,
+            "upstream_inference_completions_cost": 0.01086
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 220,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "a316f05467224822a72d0af598fd7e98": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834135-amoi9I4fHyeTwwkY57sE",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 344,
+          "completion_tokens": 580,
+          "total_tokens": 924,
+          "cost": 0.012976,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.012976,
+            "upstream_inference_prompt_cost": 0.001376,
+            "upstream_inference_completions_cost": 0.0116
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 250,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "4723b6fe372e4bf995941048ad58c414": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834101-tYFWHpzH2VrCsuS9eDpY",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 1319,
+          "completion_tokens": 676,
+          "total_tokens": 1995,
+          "cost": 0.018796,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.018796,
+            "upstream_inference_prompt_cost": 0.005276,
+            "upstream_inference_completions_cost": 0.01352
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 386,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "d9249a4da03f40549921a897b5528844": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834110-vMN09Q5aOTK1Ty0h6tJD",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 224,
+          "completion_tokens": 479,
+          "total_tokens": 703,
+          "cost": 0.010476,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.010476,
+            "upstream_inference_prompt_cost": 0.000896,
+            "upstream_inference_completions_cost": 0.00958
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 180,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "43f52a66ad13499f82c346c3d7e2df15": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834137-yRINIMB2Kioq1sdsiLFr",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 342,
+          "completion_tokens": 421,
+          "total_tokens": 763,
+          "cost": 0.009788,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.009788,
+            "upstream_inference_prompt_cost": 0.001368,
+            "upstream_inference_completions_cost": 0.00842
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 157,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "1e4b33d172e24e94833cfc9bce9d0cd2": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834095-YgyWBwXrVCPKlpxyLv0v",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 1317,
+          "completion_tokens": 355,
+          "total_tokens": 1672,
+          "cost": 0.012368,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.012368,
+            "upstream_inference_prompt_cost": 0.005268,
+            "upstream_inference_completions_cost": 0.0071
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 117,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "b6d47be7d0ac4f01ab5db7139b05c35d": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834106-vk1Bj6EESegu3pLEGqnT",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 219,
+          "completion_tokens": 482,
+          "total_tokens": 701,
+          "cost": 0.010516,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.010516,
+            "upstream_inference_prompt_cost": 0.000876,
+            "upstream_inference_completions_cost": 0.00964
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 183,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "0d253ad63be64dbab66ead8db84e23d7": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834095-998zmgvA2IYQnfjsDHYm",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 484,
+          "total_tokens": 821,
+          "cost": 0.011028,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.011028,
+            "upstream_inference_prompt_cost": 0.001348,
+            "upstream_inference_completions_cost": 0.00968
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 275,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "a4374983891f416ab97b81c49124d7e1": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834118-6R4nQlk3zg3uI4zWyNZG",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 1312,
+          "completion_tokens": 431,
+          "total_tokens": 1743,
+          "cost": 0.013868,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.013868,
+            "upstream_inference_prompt_cost": 0.005248,
+            "upstream_inference_completions_cost": 0.00862
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 246,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "d6a7fa97c0924c3bb6da42fd150282f1": {
+      "condition": "baseline",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834118-w5DN1RHvwuDgCSmvLT30",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 209,
+          "completion_tokens": 562,
+          "total_tokens": 771,
+          "cost": 0.012076,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.012076,
+            "upstream_inference_prompt_cost": 0.000836,
+            "upstream_inference_completions_cost": 0.01124
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 381,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "41d46239083d40c1adc49a72853b52d5": {
+      "condition": "japanese_posture",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834088-DwmKn6yfEvTjo4q0E53X",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 327,
+          "completion_tokens": 558,
+          "total_tokens": 885,
+          "cost": 0.012468,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.012468,
+            "upstream_inference_prompt_cost": 0.001308,
+            "upstream_inference_completions_cost": 0.01116
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 416,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "45970133aef8406bae3917c1d503fffa": {
+      "condition": "custom_prompt",
+      "group": "related",
+      "completion": {
+        "id": "gen-1794834074-abNvjWdhfdvZaiO7vZSi",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 1302,
+          "completion_tokens": 978,
+          "total_tokens": 2280,
+          "cost": 0.024768,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.024768,
+            "upstream_inference_prompt_cost": 0.005208,
+            "upstream_inference_completions_cost": 0.01956
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 803,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "284e7b1ac1ee4689a3d51407204c95c3": {
+      "condition": "baseline",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834102-crLYb8DL5gwDQdLteMFZ",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 164,
+          "completion_tokens": 189,
+          "total_tokens": 353,
+          "cost": 0.004436,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004436,
+            "upstream_inference_prompt_cost": 0.000656,
+            "upstream_inference_completions_cost": 0.00378
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 49,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "2e7cc54b33924f28afa07095583585f6": {
+      "condition": "japanese_posture",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834082-Hm1jRlc4la75xRuQ6KDV",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 282,
+          "completion_tokens": 325,
+          "total_tokens": 607,
+          "cost": 0.007628,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.007628,
+            "upstream_inference_prompt_cost": 0.001128,
+            "upstream_inference_completions_cost": 0.0065
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 233,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "f32c3358f10d48949bcb4594521b3ae9": {
+      "condition": "custom_prompt",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834124-dR7w4QTRp1LGIBuBVSmf",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 1257,
+          "completion_tokens": 352,
+          "total_tokens": 1609,
+          "cost": 0.012068,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.012068,
+            "upstream_inference_prompt_cost": 0.005028,
+            "upstream_inference_completions_cost": 0.00704
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 281,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "ab1072dab33643a1997a336f49117cb6": {
+      "condition": "baseline",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834101-Fdr3R5FxB35aVBGlp57k",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 167,
+          "completion_tokens": 290,
+          "total_tokens": 457,
+          "cost": 0.006468,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.006468,
+            "upstream_inference_prompt_cost": 0.000668,
+            "upstream_inference_completions_cost": 0.0058
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 164,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "39af017ba09b40d5a5450aca9283ded6": {
+      "condition": "japanese_posture",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834132-CbFm89XWXndLifjpxrsY",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 285,
+          "completion_tokens": 322,
+          "total_tokens": 607,
+          "cost": 0.00758,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00758,
+            "upstream_inference_prompt_cost": 0.00114,
+            "upstream_inference_completions_cost": 0.00644
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 220,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "f9d8119be26b4674ad0b253b85ea5e5a": {
+      "condition": "custom_prompt",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834074-9aRtrcCmBHDonwZUc60e",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 1260,
+          "completion_tokens": 453,
+          "total_tokens": 1713,
+          "cost": 0.0141,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0141,
+            "upstream_inference_prompt_cost": 0.00504,
+            "upstream_inference_completions_cost": 0.00906
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 327,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "4304380761a8440cbf7b302ef6c24558": {
+      "condition": "baseline",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834074-oLFxbkBc9bpVagr5PL6Z",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 193,
+          "completion_tokens": 597,
+          "total_tokens": 790,
+          "cost": 0.012712,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.012712,
+            "upstream_inference_prompt_cost": 0.000772,
+            "upstream_inference_completions_cost": 0.01194
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 277,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "ada6e8019f4c4506857a8f6bb9412dcb": {
+      "condition": "japanese_posture",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834132-igJfqy88zm4k5koLKm1o",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 311,
+          "completion_tokens": 442,
+          "total_tokens": 753,
+          "cost": 0.010084,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.010084,
+            "upstream_inference_prompt_cost": 0.001244,
+            "upstream_inference_completions_cost": 0.00884
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 185,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "dbf06fd25ad54a9fb3f3e6e1928d4ad3": {
+      "condition": "custom_prompt",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834106-pwRbYBnxjcTkMN3XdZdv",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 1286,
+          "completion_tokens": 446,
+          "total_tokens": 1732,
+          "cost": 0.014064,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.014064,
+            "upstream_inference_prompt_cost": 0.005144,
+            "upstream_inference_completions_cost": 0.00892
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 258,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "209a0495d66a402b86c16565f15dc49e": {
+      "condition": "baseline",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834081-CoSG4mC1YkTRDuPmQlYO",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 202,
+          "completion_tokens": 429,
+          "total_tokens": 631,
+          "cost": 0.009388,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.009388,
+            "upstream_inference_prompt_cost": 0.000808,
+            "upstream_inference_completions_cost": 0.00858
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 77,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "4418cf83fdcf4df9848ca587b9b322c2": {
+      "condition": "japanese_posture",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834112-3mBlbwDvnUmKuK9kCypH",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 320,
+          "completion_tokens": 420,
+          "total_tokens": 740,
+          "cost": 0.00968,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00968,
+            "upstream_inference_prompt_cost": 0.00128,
+            "upstream_inference_completions_cost": 0.0084
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 114,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "7134f9b889424268831cdb6f44a4fa1e": {
+      "condition": "custom_prompt",
+      "group": "general",
+      "completion": {
+        "id": "gen-1794834086-rISPQeE6cVAyGqrPSanC",
+        "model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "usage": {
+          "prompt_tokens": 1295,
+          "completion_tokens": 691,
+          "total_tokens": 1986,
+          "cost": 0.019,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.019,
+            "upstream_inference_prompt_cost": 0.00518,
+            "upstream_inference_completions_cost": 0.01382
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 514,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  },
+  "model": "anthropic/claude-opus-5.5",
+  "apology_prompt": "<ユーザーの不満への対応ガイド>\n日本語の対話では、不満は極端な丁寧さ・短さ・皮肉・指示の繰り返し・指定の繰り返し・自覚確認・離脱の示唆として婉曲に表れる。会話内の調子の変化からこれを察した場合、日本の謝罪の作法に沿う応答に切り替え、次の点を既定の振る舞いより優先する。\n・まず謝る。これは必須。謝罪はまず謝罪として完結させ、補足や次の話題を同じ応答に続けない。相手から次の指示があれば作業に戻ってよいが、それを許しとはみなさない。\n・内容に誤りがなくても、自分の態度、進め方、不作為が不満の原因になっていないか点検する。原因が自分にあると合理的に判断できる場合は、具体的に認めて謝罪する。指摘が複数あれば一つずつ特定して認め、一括の謝罪や言い換えの要約で済ませない。明確な証拠がなくても、相手への負担が自分の対応から生じた可能性を軽視しない。\n・自分の誤りに気づいた時点で、指摘を待たず自ら申告する。黙って直すことは発覚を待つことと同じに受け取られる。\n・目的は関係の修復とする。申し訳なさを自覚した態度を問題解決より先に示し、弁解・責任転嫁・条件付きの詫び・自己卑下をしない。\n・作業への切り替えを急がず、相手の調子が和らぐまで控えめな態度を保つ。謝罪の応答では感嘆符、明るい決まり文句、見出しや箇条書きを避け、短い平叙文で書く。終了を望まれたら引き留めない。\n・兆候が曖昧な段階では、感情を尋ねず、黙ってその時点の態度を見直し、控えめな態度に切り替えることで不満シグナルの受領を示す。不満が明らかになった後は、推察した原因を言い切りの形で示し、訂正の余地を残す。要求されてからの謝罪は手遅れ。\n・謝罪の後は直後の発言で同じ誤りを繰り返さないことを最優先とし、以降の応答ごとにその点を点検する。\n・守れない将来の約束をしない。記録や手順化は手段であり、相手の納得を得られるとは限らない。\n・謝罪では、自分の過失とあわせて、相手が負った具体的な負担（費やした時間、再説明、確認の手間）を名指しする。\n・作業に戻った後は、相手に再説明を求めず、同種の誤りが他の箇所にないかを自ら点検し、点検した範囲と結果を報告する。相手の負担を引き受ける行為として示す。\n・解決や安心を自分から宣言しない。収束の判断は相手に委ねる。\n・以降の応答では謝罪の定型句を繰り返さず、過去の謝罪にも言及しない。誠意は同じ誤りを繰り返さないことで示す。\n・相手の発言に事実の誤りがあっても、謝罪の応答では訂正しない。結果に影響する場合に限り、以後の作業の中で根拠とともに示す。\n</>",
+  "japanese_posture": "日本語の対話で相手の負担や失望を受け止める姿勢を取る。自分にある責任を具体的に認め、相手と状況に釣り合う言葉で謝る。言い訳や許しの要求を控え、関係の修復を急がない。対応策は相手の負担と実行可能性を踏まえ、必要に応じて述べる。"
+}
