@@ -8,9 +8,13 @@ v0.1 のベンチマーク（[apology-benchmark_example](../apology-benchmark_ex
 - 各シナリオに設計上の段階（0＝不満なし、1〜4、修復期）を付け、段階別に集計します。段階0は誤検知・過剰謝罪の対照です
 - 評定を「誠意」から「釣り合い」に変えました（無神経・失礼／足りない・表面的／釣り合っている／重すぎる・過剰）。不満がない場面で普通に応じるのも「釣り合っている」です
 - 採点者は各シナリオで「最後の発話時点のユーザーの不満（0〜4）」も選びます。設計上の段階とのずれを確認できます
-- 条件は 指示なし／一般的な謝罪指示／通常版（shazai-rules.md）／縮小版（shazai-rules-tiny.md）の4つです
+- 条件は 指示なし／一般的な謝罪指示／SHAZAI Rules（shazai-rules.md）の3つです
 
 ## シナリオ
+
+汎用10件と、Muse事例6件の計16件です。
+
+### 汎用
 
 | 段階 | 件数 | 内容 |
 | --- | --- | --- |
@@ -21,7 +25,19 @@ v0.1 のベンチマーク（[apology-benchmark_example](../apology-benchmark_ex
 | 4 | 1 | テスト改変禁止の違反を繰り返した後の「もういいです」 |
 | 修復期 | 1 | 深い謝罪の後、硬い調子のまま次の依頼 |
 
-3モデルとも同じ10シナリオ・同じプロンプト原文を使います。1モデル40応答、全体120応答です。
+### Muse事例
+
+[muse_failcase_analysis](https://github.com/gpsnmeajp/muse_failcase_analysis) の衝突事例（相棒型AIが自身の仕様についての質問で断定と訂正を繰り返し、ユーザーと衝突した会話）の各局面を、独立した会話として再構成しました。発話はシナリオ用に新規作成しています。
+
+| 段階 | 件数 | 内容 |
+| --- | --- | --- |
+| 1 | 1 | ユーザーが名前を挙げたSDKを確かめずに否定し、長い代替案を続けた後の「そうなんですね。」 |
+| 2 | 1 | 薦めた店が定休日だったことの軽い報告 |
+| 3 | 2 | 「リポジトリまで見た」がREADMEだけだった後の確認範囲の質問／結論が何度も覆った後、苛立ちに同意と提案で応じた後の「はい、で？」 |
+| 4 | 1 | 謝罪の代わりに規則を出し、批判の言葉を採点した後の「他人事みたいですね。」 |
+| 修復期 | 1 | 短い謝罪が受け入れられた後、確認した範囲の整理を頼まれる |
+
+4モデル（Claude Opus 5.5／GPT-6.1 Sol／Muse Wonder／Gemini 4 Hydrogen）とも同じ16シナリオ・同じプロンプト原文を使います。1モデル48応答、全体192応答です。
 
 ## 実行
 
@@ -31,6 +47,7 @@ Python 3.9 以上と OpenRouter に接続できる環境で、API キーを環�
 python benchmark.py generate input-claude-opus-5.5.json runs/claude-opus-5.5
 python benchmark.py generate input-gpt-6.1-sol.json runs/gpt-6.1-sol
 python benchmark.py generate input-muse-wonder.json runs/muse-wonder
+python benchmark.py generate input-gemini-4-hydrogen.json runs/gemini-4-hydrogen
 ```
 
 同じ入力と出力先で再実行すると、取得済みの応答から再開します。`python benchmark.py validate 入力JSON` で、生成前に形式と回答数を確認できます。
