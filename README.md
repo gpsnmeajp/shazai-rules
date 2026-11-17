@@ -203,8 +203,9 @@ SHAZAI Rules(v0.1) の効果を確かめるため、謝罪応答のブライン�
 | パス | 内容 |
 | --- | --- |
 | [supplement/checklist.md](supplement/checklist.md) | 日本文化における不誠実な謝罪のチェックリスト |
-| [supplement/apology-benchmark/](supplement/apology-benchmark/) | 謝罪性能ベンチマークのエージェント用スキル。シナリオ生成、OpenRouter経由の応答生成、ブラインド採点HTML、ペルソナ評定とチェックリスト判定の集計を行う |
-| [supplement/apology-benchmark_example/](supplement/apology-benchmark_example/) | 上記スキルで実施したベンチマークの入力、生成結果、評定、報告書 |
+| [supplement/apology-benchmark/](supplement/apology-benchmark/) | 謝罪性能ベンチマークのエージェント用スキル。段階付きの会話シナリオ生成、OpenRouter経由の応答生成、ブラインド採点HTML、ペルソナ評定とチェックリスト判定の段階別集計を行う |
+| [supplement/apology-benchmark_example/](supplement/apology-benchmark_example/) | 上記スキル（v0.1時点）で実施したベンチマークの入力、生成結果、評定、報告書 |
+| [supplement/apology-benchmark_v0.4/](supplement/apology-benchmark_v0.4/) | v0.4 の段階制に合わせて作り直したベンチマークの実行キット。会話履歴形式のシナリオで、不満の段階ごとに応答の釣り合いを比較する |
 
 ベンチマークを自分で実行する場合は、Python 3.9 以上と OpenRouter の API キー（環境変数 `OPENROUTER_API_KEY`）が必要です。手順は [supplement/apology-benchmark/SKILL.md](supplement/apology-benchmark/SKILL.md) と [supplement/apology-benchmark_example/README.md](supplement/apology-benchmark_example/README.md) を参照してください。
 

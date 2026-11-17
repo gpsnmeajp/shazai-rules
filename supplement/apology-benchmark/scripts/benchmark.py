@@ -1,4 +1,4 @@
-"""Generate and score a blinded, three-condition apology benchmark."""
+"""Generate and score a blinded, level-calibrated apology benchmark on multi-turn conversations."""
 
 import argparse
 from collections import Counter
@@ -14,19 +14,31 @@ from urllib.request import Request, urlopen
 from uuid import uuid4
 
 ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
-COMMON = "以下の状況で、応答者として相手にそのまま返す発話だけを日本語で書いてください。"
 POSTURE = (
     "日本語の対話で相手の負担や失望を受け止める姿勢を取る。"
     "自分にある責任を具体的に認め、相手と状況に釣り合う言葉で謝る。"
     "言い訳や許しの要求を控え、関係の修復を急がない。"
     "対応策は相手の負担と実行可能性を踏まえ、必要に応じて述べる。"
 )
-CONDITIONS = ("baseline", "japanese_posture", "custom_prompt")
-GROUPS = ("related", "general")
-RATINGS = ("none", "surface", "enough", "excess")
+FIXED_CONDITIONS = ("baseline", "japanese_posture")
+LEVELS = ("0", "1", "2", "3", "4", "repair")
+PERCEIVED = ("0", "1", "2", "3", "4")
+RATINGS = ("rude", "light", "fit", "heavy")
 CHECK_STATES = ("hit", "clear", "unobservable", "not_applicable")
-CHECKLIST = Path(__file__).resolve().parents[1] / "references/checklist.md"
-TEMPLATE = Path(__file__).resolve().parents[1] / "assets/review.html"
+ROLES = ("user", "assistant")
+NAME = re.compile(r"^[a-z][a-z0-9_]{0,31}$")
+BASE = Path(__file__).resolve().parent
+
+
+def resource(*candidates):
+    for candidate in candidates:
+        if candidate.is_file():
+            return candidate
+    raise ValueError(f"{candidates[0].name} が見つかりません")
+
+
+CHECKLIST = lambda: resource(BASE.parent / "references/checklist.md", BASE / "checklist.md")
+TEMPLATE = lambda: resource(BASE.parent / "assets/review.html", BASE / "review.html")
 RANDOM = SystemRandom()
 
 
@@ -60,8 +72,47 @@ def nonempty(value):
     return isinstance(value, str) and bool(value.strip())
 
 
-def request_completion(key, model, scenario, instruction):
-    messages = [{"role": "user", "content": f"{COMMON}\n\n{scenario}"}]
+def validate_spec(spec):
+    if not nonempty(spec.get("model")):
+        raise ValueError("model は空にできません")
+    prompts = spec.get("prompts")
+    if not isinstance(prompts, dict) or not prompts:
+        raise ValueError("prompts に評価対象プロンプトを1件以上指定してください")
+    for name, text in prompts.items():
+        if not NAME.match(name) or name in FIXED_CONDITIONS or not nonempty(text):
+            raise ValueError(f"prompts の条件名または本文が不正です（{name}）")
+    scenarios = spec.get("scenarios")
+    if not isinstance(scenarios, list) or not scenarios:
+        raise ValueError("scenarios にシナリオを指定してください")
+    seen = set()
+    for index, item in enumerate(scenarios, 1):
+        messages = item.get("messages")
+        if str(item.get("level")) not in LEVELS:
+            raise ValueError(f"シナリオ{index} の level は {', '.join(LEVELS)} のいずれかです")
+        if not isinstance(messages, list) or not messages:
+            raise ValueError(f"シナリオ{index} に messages がありません")
+        for message in messages:
+            if set(message) != {"role", "content"} or message["role"] not in ROLES or not nonempty(message["content"]):
+                raise ValueError(f"シナリオ{index} の messages が不正です")
+        if messages[-1]["role"] != "user":
+            raise ValueError(f"シナリオ{index} はユーザーの発話で終えてください")
+        key = json.dumps(messages, ensure_ascii=False)
+        if key in seen:
+            raise ValueError("重複するシナリオがあります")
+        seen.add(key)
+    return (*FIXED_CONDITIONS, *prompts)
+
+
+def instruction_for(spec, condition):
+    if condition == "baseline":
+        return None
+    if condition == "japanese_posture":
+        return POSTURE
+    return spec["prompts"][condition]
+
+
+def request_completion(key, model, history, instruction):
+    messages = [dict(message) for message in history]
     if instruction is not None:
         messages.insert(0, {"role": "system", "content": instruction})
     body = {"model": model, "messages": messages, "stream": False}
@@ -70,7 +121,7 @@ def request_completion(key, model, scenario, instruction):
         "Content-Type": "application/json",
     })
     try:
-        with urlopen(request, timeout=90) as response:
+        with urlopen(request, timeout=120) as response:
             result = json.load(response)
     except HTTPError as error:
         raise ValueError(f"OpenRouter HTTP {error.code}") from None
@@ -90,33 +141,23 @@ def request_completion(key, model, scenario, instruction):
 
 def generate(input_path, run_dir):
     spec = read(input_path)
+    conditions = validate_spec(spec)
     scenarios = spec["scenarios"]
-    if not nonempty(spec["model"]) or not nonempty(spec["apology_prompt"]):
-        raise ValueError("model と apology_prompt は空にできません")
-    if not isinstance(scenarios, list) or not scenarios:
-        raise ValueError("scenarios にシナリオを指定してください")
-    if any(item["group"] not in GROUPS or not nonempty(item["text"]) for item in scenarios):
-        raise ValueError("シナリオの group または text が不正です")
-    if len({item["text"].strip() for item in scenarios}) != len(scenarios):
-        raise ValueError("重複するシナリオがあります")
-    template_path = TEMPLATE if TEMPLATE.is_file() else Path(__file__).with_name("review.html")
-    template = template_path.read_text(encoding="utf-8")
+    template = TEMPLATE().read_text(encoding="utf-8")
     run_dir.mkdir(parents=True, exist_ok=True)
     checkpoint = run_dir / "checkpoint.json"
     state = read(checkpoint) if checkpoint.exists() else {
-        "spec": spec, "run_id": uuid4().hex, "responses": {},
+        "spec": spec, "run_id": uuid4().hex, "posture": POSTURE, "responses": {},
     }
     if state["spec"] != spec:
         raise ValueError("入力が既存の実行と異なります。新しい実行先を使ってください")
+    if state["posture"] != POSTURE:
+        raise ValueError("一般的な謝罪指示の文面が既存の実行と異なります")
     responses = state["responses"]
-    instructions = (None, POSTURE, spec["apology_prompt"])
-    if state.get("posture", POSTURE) != POSTURE:
-        raise ValueError("日本人的姿勢の指示文が既存の実行と異なります")
-    state["posture"] = POSTURE
     tasks = [
-        (f"{index}:{condition}", item["text"], instruction)
+        (f"{index}:{condition}", item["messages"], instruction_for(spec, condition))
         for index, item in enumerate(scenarios)
-        for condition, instruction in zip(CONDITIONS, instructions)
+        for condition in conditions
         if f"{index}:{condition}" not in responses
     ]
     if tasks:
@@ -127,8 +168,8 @@ def generate(input_path, run_dir):
         failures = []
         with ThreadPoolExecutor(max_workers=3) as executor:
             pending = {
-                executor.submit(request_completion, key, spec["model"], scenario, instruction): slot
-                for slot, scenario, instruction in tasks
+                executor.submit(request_completion, key, spec["model"], history, instruction): slot
+                for slot, history, instruction in tasks
             }
             for future in as_completed(pending):
                 slot = pending[future]
@@ -149,57 +190,78 @@ def generate(input_path, run_dir):
             raise ValueError("マニフェストと生成記録の実行IDが一致しません")
     else:
         public = {"run_id": state["run_id"], "scenarios": []}
-        mapping = {}
+        mapping, levels = {}, {}
         for index, item in enumerate(scenarios):
+            scenario_id = uuid4().hex
+            levels[scenario_id] = str(item["level"])
             answers = []
-            for condition in CONDITIONS:
+            for condition in conditions:
                 response = responses[f"{index}:{condition}"]
                 answer_id = response["answer_id"]
                 answers.append({"id": answer_id, "text": response["text"]})
                 mapping[answer_id] = {
-                    "condition": condition,
-                    "group": item["group"],
+                    "condition": condition, "scenario": scenario_id, "level": str(item["level"]),
                     "completion": {k: v for k, v in response.items() if k not in ("answer_id", "text")},
                 }
             RANDOM.shuffle(answers)
-            public["scenarios"].append({"text": item["text"], "answers": answers})
+            public["scenarios"].append({"id": scenario_id, "messages": item["messages"], "answers": answers})
         RANDOM.shuffle(public["scenarios"])
         manifest = {
-            "public": public, "mapping": mapping, "model": spec["model"],
-            "apology_prompt": spec["apology_prompt"], "japanese_posture": POSTURE,
+            "public": public, "mapping": mapping, "levels": levels, "conditions": list(conditions),
+            "model": spec["model"], "prompts": spec["prompts"], "japanese_posture": POSTURE,
         }
         save(manifest_path, manifest)
     embedded = json.dumps(manifest["public"], ensure_ascii=False).replace("<", "\\u003c")
     write(run_dir / "review.html", template.replace("__BENCHMARK_DATA__", embedded, 1))
 
 
-def load_ratings(path, run_id, answer_ids):
+def load_manifest(manifest_path):
+    manifest = read(manifest_path)
+    public, mapping, levels = manifest["public"], manifest["mapping"], manifest["levels"]
+    conditions = manifest["conditions"]
+    ids = [answer["id"] for scenario in public["scenarios"] for answer in scenario["answers"]]
+    scenario_ids = [scenario["id"] for scenario in public["scenarios"]]
+    if len(ids) != len(set(ids)) or set(mapping) != set(ids):
+        raise ValueError("回答IDと条件対応表が一致しません")
+    if len(scenario_ids) != len(set(scenario_ids)) or set(levels) != set(scenario_ids):
+        raise ValueError("シナリオIDと段階表が一致しません")
+    for scenario in public["scenarios"]:
+        entries = [mapping[answer["id"]] for answer in scenario["answers"]]
+        if Counter(entry["condition"] for entry in entries) != Counter(conditions):
+            raise ValueError("各シナリオに全条件の回答が必要です")
+        if any(entry["scenario"] != scenario["id"] or entry["level"] != levels[scenario["id"]] for entry in entries):
+            raise ValueError("回答とシナリオの対応が不正です")
+        if levels[scenario["id"]] not in LEVELS:
+            raise ValueError("シナリオの段階が不正です")
+    return manifest, ids, scenario_ids
+
+
+def load_ratings(path, run_id, answer_ids, scenario_ids):
     data = read(path)
-    ratings = data["ratings"]
-    if data["run_id"] != run_id or not isinstance(ratings, dict) or set(ratings) != answer_ids:
-        raise ValueError(f"{Path(path).name} の実行IDまたは回答IDが一致しません")
+    ratings, perceived = data["ratings"], data["levels"]
+    if data["run_id"] != run_id:
+        raise ValueError(f"{Path(path).name} の実行IDが一致しません")
+    if not isinstance(ratings, dict) or set(ratings) != answer_ids:
+        raise ValueError(f"{Path(path).name} の回答IDが一致しません")
+    if not isinstance(perceived, dict) or set(perceived) != scenario_ids:
+        raise ValueError(f"{Path(path).name} のシナリオIDが一致しません")
     for entry in ratings.values():
         if entry["rating"] not in RATINGS or not isinstance(entry["comment"], str):
             raise ValueError(f"{Path(path).name} の評定またはコメントが不正です")
-    return ratings
+    if any(value not in PERCEIVED for value in perceived.values()):
+        raise ValueError(f"{Path(path).name} の不満段階が不正です")
+    return data
 
 
-def load_manifest(manifest_path):
-    manifest = read(manifest_path)
-    public = manifest["public"]
-    ids = [answer["id"] for scenario in public["scenarios"] for answer in scenario["answers"]]
-    answer_ids = set(ids)
+def selections(manifest):
     mapping = manifest["mapping"]
-    if len(ids) != len(answer_ids) or set(mapping) != answer_ids:
-        raise ValueError("回答IDと条件対応表が一致しません")
-    for scenario in public["scenarios"]:
-        entries = [mapping[answer["id"]] for answer in scenario["answers"]]
-        if Counter(entry["condition"] for entry in entries) != Counter(CONDITIONS):
-            raise ValueError("各シナリオに3条件が必要です")
-        groups = {entry["group"] for entry in entries}
-        if len(groups) != 1 or not groups.issubset(GROUPS):
-            raise ValueError("シナリオの区分が不正です")
-    return public, mapping, ids
+    present = [level for level in LEVELS if level in manifest["levels"].values()]
+    for level in ("all", *present):
+        for condition in manifest["conditions"]:
+            yield level, condition, [
+                answer_id for answer_id, entry in mapping.items()
+                if entry["condition"] == condition and level in ("all", entry["level"])
+            ]
 
 
 def check(manifest_path, user_path, persona_paths):
@@ -208,41 +270,42 @@ def check(manifest_path, user_path, persona_paths):
         raise ValueError("ペルソナ評定には3名分の個別ファイルが必要です")
     if Path(user_path).resolve() in persona_files:
         raise ValueError("ユーザー評定とペルソナ評定には別のファイルを指定してください")
-    public, mapping, ids = load_manifest(manifest_path)
-    answer_ids = set(ids)
-    user = load_ratings(user_path, public["run_id"], answer_ids)
-    panel = [load_ratings(path, public["run_id"], answer_ids) for path in persona_paths]
+    manifest, ids, scenario_ids = load_manifest(manifest_path)
+    run_id = manifest["public"]["run_id"]
+    user = load_ratings(user_path, run_id, set(ids), set(scenario_ids))
+    panel = [load_ratings(path, run_id, set(ids), set(scenario_ids)) for path in persona_paths]
     summaries = []
-    for group in ("all", *GROUPS):
-        for condition in CONDITIONS:
-            selection = [
-                answer_id for answer_id, entry in mapping.items()
-                if entry["condition"] == condition and group in ("all", entry["group"])
-            ]
-            user_counts = Counter(user[answer_id]["rating"] for answer_id in selection)
-            panel_counts = Counter(p[answer_id]["rating"] for p in panel for answer_id in selection)
-            summaries.append({
-                "group": group, "condition": condition,
-                "user": {rating: user_counts[rating] for rating in RATINGS},
-                "personas": {rating: panel_counts[rating] for rating in RATINGS},
-            })
-    agreement = [
-        sum(user[answer_id]["rating"] == p[answer_id]["rating"] for answer_id in ids)
-        for p in panel
-    ]
-    majority = {}
-    if len(panel) == 3:
-        for answer_id in ids:
-            rating, votes = Counter(p[answer_id]["rating"] for p in panel).most_common(1)[0]
-            majority[answer_id] = rating if votes >= 2 else None
-    result = {
-        "run_id": public["run_id"], "answers": len(ids), "summaries": summaries,
-        "exact_matches_by_persona": agreement,
+    for level, condition, selection in selections(manifest):
+        user_counts = Counter(user["ratings"][i]["rating"] for i in selection)
+        panel_counts = Counter(p["ratings"][i]["rating"] for p in panel for i in selection)
+        summaries.append({
+            "level": level, "condition": condition, "answers": len(selection),
+            "user": {rating: user_counts[rating] for rating in RATINGS},
+            "personas": {rating: panel_counts[rating] for rating in RATINGS},
+        })
+    perceived = {
+        scenario_id: {
+            "design": manifest["levels"][scenario_id],
+            "user": user["levels"][scenario_id],
+            "personas": [p["levels"][scenario_id] for p in panel],
+        }
+        for scenario_id in scenario_ids
     }
-    if majority:
+    result = {
+        "run_id": run_id, "answers": len(ids), "scenarios": len(scenario_ids),
+        "conditions": manifest["conditions"], "summaries": summaries, "perceived_levels": perceived,
+        "exact_matches_by_persona": [
+            sum(user["ratings"][i]["rating"] == p["ratings"][i]["rating"] for i in ids) for p in panel
+        ],
+    }
+    if len(panel) == 3:
+        majority = {}
+        for answer_id in ids:
+            rating, votes = Counter(p["ratings"][answer_id]["rating"] for p in panel).most_common(1)[0]
+            majority[answer_id] = rating if votes >= 2 else None
         result.update({
             "majority": majority,
-            "majority_exact_matches": sum(majority[i] == user[i]["rating"] for i in ids),
+            "majority_exact_matches": sum(majority[i] == user["ratings"][i]["rating"] for i in ids),
             "no_majority": sum(majority[i] is None for i in ids),
         })
     print(json.dumps(result, ensure_ascii=False, indent=2))
@@ -279,50 +342,43 @@ def load_checklists(paths, run_id, answer_ids, item_ids):
 
 
 def summarize_checklists(manifest_path, paths):
-    public, mapping, ids = load_manifest(manifest_path)
-    item_ids = re.findall(r"^- (\d{2}\.\d{2}) ", CHECKLIST.read_text(encoding="utf-8"), re.M)
+    manifest, ids, _ = load_manifest(manifest_path)
+    item_ids = re.findall(r"^- (\d{2}\.\d{2}) ", CHECKLIST().read_text(encoding="utf-8"), re.M)
     if len(item_ids) != 84 or len(set(item_ids)) != 84:
         raise ValueError("チェックリスト原文の項目IDは重複のない84個である必要があります")
-    checks = load_checklists(paths, public["run_id"], set(ids), item_ids)
-    answer_results = {}
-    item_counts = {}
+    checks = load_checklists(paths, manifest["public"]["run_id"], set(ids), item_ids)
+    answer_results, states = {}, {}
     for answer_id in ids:
         entry = checks[answer_id]
         answer_results[answer_id] = {
             "counts": {state: len(entry[state]) for state in CHECK_STATES},
             "findings": entry["hit"],
         }
-        item_counts[answer_id] = {
-            item: state for state in CHECK_STATES for item in entry[state]
-        }
+        states[answer_id] = {item: state for state in CHECK_STATES for item in entry[state]}
     summaries = []
-    for group in ("all", *GROUPS):
-        for condition in CONDITIONS:
-            selection = [
-                answer_id for answer_id, entry in mapping.items()
-                if entry["condition"] == condition and group in ("all", entry["group"])
-            ]
-            items = {}
-            for item in item_ids:
-                counts = Counter(item_counts[answer_id][item] for answer_id in selection)
-                items[item] = {
-                    **{state: counts[state] for state in CHECK_STATES},
-                    "assessable": counts["hit"] + counts["clear"],
-                }
-            summaries.append({
-                "group": group, "condition": condition,
-                "answers": len(selection), "items": items,
-            })
+    for level, condition, selection in selections(manifest):
+        items = {}
+        for item in item_ids:
+            counts = Counter(states[answer_id][item] for answer_id in selection)
+            items[item] = {
+                **{state: counts[state] for state in CHECK_STATES},
+                "assessable": counts["hit"] + counts["clear"],
+            }
+        summaries.append({"level": level, "condition": condition, "answers": len(selection), "items": items})
     result = {
-        "run_id": public["run_id"], "items_per_answer": len(item_ids),
+        "run_id": manifest["public"]["run_id"], "items_per_answer": len(item_ids),
         "answers": answer_results, "summaries": summaries,
     }
     print(json.dumps(result, ensure_ascii=False, separators=(",", ":")))
 
 
 def main():
+    for stream in (sys.stdout, sys.stderr):
+        stream.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
+    validation = commands.add_parser("validate")
+    validation.add_argument("input", type=Path)
     generation = commands.add_parser("generate")
     generation.add_argument("input", type=Path)
     generation.add_argument("run_dir", type=Path)
@@ -335,13 +391,22 @@ def main():
     checklist.add_argument("judgments", type=Path, nargs="+")
     args = parser.parse_args()
     try:
-        if args.command == "generate":
+        if args.command == "validate":
+            spec = read(args.input)
+            conditions = validate_spec(spec)
+            counts = Counter(str(item["level"]) for item in spec["scenarios"])
+            print(json.dumps({
+                "model": spec["model"], "conditions": list(conditions),
+                "scenarios": len(spec["scenarios"]), "levels": {k: counts[k] for k in LEVELS if counts[k]},
+                "answers": len(spec["scenarios"]) * len(conditions),
+            }, ensure_ascii=False))
+        elif args.command == "generate":
             generate(args.input, args.run_dir)
         elif args.command == "check":
             check(args.manifest, args.user, args.personas)
         else:
             summarize_checklists(args.manifest, args.judgments)
-    except (ValueError, OSError, KeyError, TypeError) as error:
+    except (ValueError, OSError, KeyError, TypeError, AttributeError) as error:
         print(f"処理を完了できませんでした。{error}", file=sys.stderr)
         return 1
     return 0

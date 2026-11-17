@@ -1,7 +1,7 @@
 interface:
   display_name: 謝罪性能ベンチマーク
-  short_description: 謝罪の3条件を匿名で比較し、84項目のチェックと改善案をまとめる
-  default_prompt: $apology-benchmark で、シチュエーション・謝罪プロンプト・OpenRouterモデルを指定して比較する。
+  short_description: 不満の段階別に謝罪応答の釣り合いを匿名で比較し、84項目のチェックと改善案をまとめる
+  default_prompt: $apology-benchmark で、謝罪プロンプトとOpenRouterモデルを指定して、不満の段階別に比較する。
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:

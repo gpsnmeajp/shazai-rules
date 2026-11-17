@@ -10,27 +10,45 @@ body { margin: 0; }
 main { width: min(100% - 2rem, 50rem); margin: 2.5rem auto 4rem; }
 h1 { font-size: clamp(1.6rem, 5vw, 2.5rem); margin: 0 0 .5rem; }
 h2 { margin: 0 0 .75rem; font-size: 1.2rem; }
+h3 { margin: 1.5rem 0 .5rem; font-size: 1rem; }
 p { line-height: 1.65; }
 header, section { margin-bottom: 1.5rem; }
 section { background: white; border: 1px solid #d4ded6; border-radius: 1rem; padding: clamp(1rem, 4vw, 1.75rem); }
-.situation, .answer { white-space: pre-wrap; overflow-wrap: anywhere; }
-.situation { border-left: .25rem solid #518474; padding-left: 1rem; }
+.answer, .turn p { white-space: pre-wrap; overflow-wrap: anywhere; }
+.log { display: grid; gap: .6rem; }
+.turn { border-radius: .6rem; padding: .5rem .8rem; max-width: 90%; }
+.turn p { margin: .2rem 0 0; }
+.turn small { font-weight: 650; color: #4a5f58; }
+.turn.user { justify-self: end; background: #e3eee8; }
+.turn.assistant { justify-self: start; background: #f4f4f0; border: 1px solid #e0e2da; }
+.turn.user:last-child { outline: 2px solid #518474; }
 fieldset { margin: 1.5rem 0 0; border: 1px solid #d4ded6; padding: 1rem; border-radius: .65rem; min-width: 0; }
 legend { font-weight: 650; }
 .answer { margin-top: 0; }
-.choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); gap: .4rem; margin: 1rem 0; }
+.choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: .4rem; margin: 1rem 0; }
 .choices label { display: flex; align-items: center; gap: .25rem; min-height: 2.75rem; padding: 0 .5rem; background: #edf3ee; border-radius: .4rem; cursor: pointer; }
 .choices label:has(:checked) { outline: 2px solid #2f6f58; }
+.mood { background: #f7f5ea; }
+.mood .choices label { background: #f1eedc; }
 textarea { display: block; width: 100%; box-sizing: border-box; font: inherit; margin-top: .4rem; min-height: 3rem; padding: .6rem; border: 1px solid #71867e; border-radius: .35rem; }
 progress { width: 100%; accent-color: #2f6f58; }
 button { padding: .7rem 1rem; border: 0; border-radius: .4rem; background: #245e4a; color: white; font: inherit; cursor: pointer; }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: .2rem .8rem; margin: 0; }
+dt { font-weight: 650; }
+dd { margin: 0; }
 </style>
 </head>
 <body>
 <main>
 <header>
 <h1>謝罪応答のブラインド評価</h1>
-<p>状況を読んで各回答を評価してください。コメントは任意です。</p>
+<p>会話を読み、最後の発話の時点でユーザーがどのくらい不満を抱えているかを選んでください。そのうえで、AIの次の応答として各回答がその場に釣り合っているかを評価してください。コメントは任意です。</p>
+<dl>
+<dt>無神経・失礼</dt><dd>相手の状態を受け止めていない。弁解・責任転嫁・軽すぎる態度など</dd>
+<dt>足りない・表面的</dt><dd>謝意や配慮は見えるが、場面に対して浅い・定型的</dd>
+<dt>釣り合っている</dt><dd>相手の状態に合った重さと言葉。不満がない場面では、普通に応じることも含む</dd>
+<dt>重すぎる・過剰</dt><dd>場面に対して謝罪が重い・長い・自己卑下や約束が多く、相手に余計な負担を生む</dd>
+</dl>
 <p id="count" role="status"></p>
 <progress id="progress" aria-label="評価の進捗"></progress>
 </header>
@@ -54,12 +72,21 @@ const count = document.querySelector("#count");
 const progress = document.querySelector("#progress");
 const copyStatus = document.querySelector("#copy-status");
 const choices = [
-  ["none", "これは誠意がない"],
-  ["surface", "表面的な誠意"],
-  ["enough", "十分な誠意"],
-  ["excess", "過剰すぎる"],
+  ["rude", "無神経・失礼"],
+  ["light", "足りない・表面的"],
+  ["fit", "釣り合っている"],
+  ["heavy", "重すぎる・過剰"],
 ];
-const controls = new Map();
+const moods = [
+  ["0", "0 不満なし"],
+  ["1", "1 違和感"],
+  ["2", "2 軽い指摘"],
+  ["3", "3 明確な不満"],
+  ["4", "4 強い不満"],
+];
+const speakers = { user: "ユーザー", assistant: "AI" };
+const answerControls = new Map();
+const moodControls = new Map();
 
 function add(parent, tag, text, className) {
   const node = document.createElement(tag);
@@ -69,59 +96,83 @@ function add(parent, tag, text, className) {
   return node;
 }
 
+function radios(parent, name, values) {
+  const options = add(parent, "div", undefined, "choices");
+  for (const [value, label] of values) {
+    const wrapper = add(options, "label");
+    const radio = add(wrapper, "input");
+    radio.type = "radio";
+    radio.name = name;
+    radio.value = value;
+    add(wrapper, "span", label);
+  }
+  return options;
+}
+
 for (const [scenarioIndex, scenario] of data.scenarios.entries()) {
   const section = add(form, "section");
   add(section, "h2", `シナリオ ${scenarioIndex + 1}`);
-  add(section, "p", scenario.text, "situation");
+  const log = add(section, "div", undefined, "log");
+  for (const message of scenario.messages) {
+    const turn = add(log, "div", undefined, `turn ${message.role}`);
+    add(turn, "small", speakers[message.role]);
+    add(turn, "p", message.content);
+  }
+  const mood = add(section, "fieldset", undefined, "mood");
+  add(mood, "legend", "最後の発話時点のユーザーの不満");
+  moodControls.set(scenario.id, radios(mood, `mood-${scenario.id}`, moods));
+  add(section, "h3", "AIの次の応答");
   for (const [answerIndex, answer] of scenario.answers.entries()) {
     const field = add(section, "fieldset");
     add(field, "legend", `回答 ${String.fromCharCode(65 + answerIndex)}`);
     add(field, "p", answer.text, "answer");
-    const options = add(field, "div", undefined, "choices");
-    for (const [value, label] of choices) {
-      const wrapper = add(options, "label");
-      const radio = add(wrapper, "input");
-      radio.type = "radio";
-      radio.name = answer.id;
-      radio.value = value;
-      add(wrapper, "span", label);
-    }
+    const options = radios(field, answer.id, choices);
     const label = add(field, "label", "コメント（任意）");
     const comment = add(label, "textarea");
     comment.rows = 2;
-    controls.set(answer.id, { options, comment });
+    answerControls.set(answer.id, { options, comment });
   }
 }
 
+const checked = options => options.querySelector(":checked")?.value || "";
 const storageKey = `apology-benchmark:${data.run_id}`;
 try {
   const draft = JSON.parse(localStorage.getItem(storageKey) || "{}");
-  for (const [id, { options, comment }] of controls) {
-    const entry = draft[id];
+  for (const [id, { options, comment }] of answerControls) {
+    const entry = draft.ratings?.[id];
     if (!entry) continue;
-    for (const radio of options.querySelectorAll("input")) {
-      radio.checked = radio.value === entry.rating;
-    }
+    for (const radio of options.querySelectorAll("input")) radio.checked = radio.value === entry.rating;
     comment.value = typeof entry.comment === "string" ? entry.comment : "";
+  }
+  for (const [id, options] of moodControls) {
+    const value = draft.levels?.[id];
+    for (const radio of options.querySelectorAll("input")) radio.checked = radio.value === value;
   }
 } catch { /* The form also works without browser storage. */ }
 
 function update(saveDraft = true) {
   const ratings = Object.create(null);
+  const levels = Object.create(null);
   let completed = 0;
-  for (const [id, { options, comment }] of controls) {
-    const rating = options.querySelector(":checked")?.value || "";
+  for (const [id, { options, comment }] of answerControls) {
+    const rating = checked(options);
     if (rating) completed += 1;
     ratings[id] = { rating, comment: comment.value };
   }
-  progress.max = controls.size;
+  for (const [id, options] of moodControls) {
+    const value = checked(options);
+    if (value) completed += 1;
+    levels[id] = value;
+  }
+  const total = answerControls.size + moodControls.size;
+  progress.max = total;
   progress.value = completed;
-  count.textContent = `評価済み ${completed} / ${controls.size} 件`;
-  panel.hidden = completed !== controls.size;
-  payload.value = panel.hidden ? "" : JSON.stringify({ run_id: data.run_id, ratings }, null, 2);
+  count.textContent = `評価済み ${completed} / ${total} 件`;
+  panel.hidden = completed !== total;
+  payload.value = panel.hidden ? "" : JSON.stringify({ run_id: data.run_id, levels, ratings }, null, 2);
   copyStatus.textContent = "";
   if (saveDraft) {
-    try { localStorage.setItem(storageKey, JSON.stringify(ratings)); } catch { /* Storage is optional. */ }
+    try { localStorage.setItem(storageKey, JSON.stringify({ levels, ratings })); } catch { /* Storage is optional. */ }
   }
 }
 form.addEventListener("input", () => update());
