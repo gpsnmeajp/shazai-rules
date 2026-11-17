@@ -5,213 +5,588 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SHAZAI Rules v0.4 ベンチマーク</title>
 <style>
-:root { --bg:#f6f5ef; --fg:#1d2a26; --muted:#56655f; --card:#fff; --line:#d6ddd6; --accent:#2f6f58; --good:#2f6f58; --bad:#a3392b; --warn:#9a6a12; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#141917; --fg:#e4ebe7; --muted:#9fb0a8; --card:#1c2320; --line:#33403a; --accent:#7cc4a6; --good:#7cc4a6; --bad:#e58b7d; --warn:#e0b765; } }
-:root[data-theme="dark"] { --bg:#141917; --fg:#e4ebe7; --muted:#9fb0a8; --card:#1c2320; --line:#33403a; --accent:#7cc4a6; --good:#7cc4a6; --bad:#e58b7d; --warn:#e0b765; }
-body { margin:0; background:var(--bg); color:var(--fg); font-family:system-ui,"Hiragino Sans","Noto Sans JP",sans-serif; line-height:1.75; }
-main { width:min(100% - 2rem, 54rem); margin:2.5rem auto 4rem; }
+:root {
+  color-scheme: light;
+  --page:#f9f9f7; --surface:#fcfcfb; --card:#ffffff;
+  --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --ring:rgba(11,11,11,.10);
+  --accent:#2a78d6; --accent-wash:rgba(42,120,214,.08);
+  /* 評定（並び順は色覚検証済み: fit, light, heavy, rude） */
+  --r-fit:#2a78d6; --r-light:#eda100; --r-heavy:#6250d6; --r-rude:#e34948;
+  /* 条件（先頭3スロット: 全ペア検証済み） */
+  --c-shazai:#2a78d6; --c-posture:#eb6834; --c-baseline:#1baf7a;
+  /* 評定者 */
+  --s-user:#2a78d6; --s-persona:#eb6834;
+  --good:#006300; --bad:#d03b3b; --warn:#9a6a00;
+  --good-wash:rgba(12,163,12,.08); --bad-wash:rgba(208,59,59,.07); --warn-wash:rgba(250,178,25,.12);
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page:#0d0d0d; --surface:#1a1a19; --card:#1a1a19;
+    --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --ring:rgba(255,255,255,.10);
+    --accent:#3987e5; --accent-wash:rgba(57,135,229,.12);
+    --r-fit:#3987e5; --r-light:#c98500; --r-heavy:#9085e9; --r-rude:#e66767;
+    --c-shazai:#3987e5; --c-posture:#d95926; --c-baseline:#199e70;
+    --s-user:#3987e5; --s-persona:#d95926;
+    --good:#0ca30c; --bad:#e66767; --warn:#fab219;
+    --good-wash:rgba(12,163,12,.12); --bad-wash:rgba(230,103,103,.12); --warn-wash:rgba(250,178,25,.10);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page:#0d0d0d; --surface:#1a1a19; --card:#1a1a19;
+  --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+  --grid:#2c2c2a; --axis:#383835; --ring:rgba(255,255,255,.10);
+  --accent:#3987e5; --accent-wash:rgba(57,135,229,.12);
+  --r-fit:#3987e5; --r-light:#c98500; --r-heavy:#9085e9; --r-rude:#e66767;
+  --c-shazai:#3987e5; --c-posture:#d95926; --c-baseline:#199e70;
+  --s-user:#3987e5; --s-persona:#d95926;
+  --good:#0ca30c; --bad:#e66767; --warn:#fab219;
+  --good-wash:rgba(12,163,12,.12); --bad-wash:rgba(230,103,103,.12); --warn-wash:rgba(250,178,25,.10);
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--page); color:var(--ink); font-family:system-ui,-apple-system,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif; line-height:1.75; }
+main { width:min(100% - 2rem, 56rem); margin:2.5rem auto 5rem; }
+a { color:var(--accent); }
 h1 { font-size:clamp(1.6rem,4.5vw,2.3rem); line-height:1.3; margin:0 0 .4rem; }
-h2 { font-size:1.3rem; margin:2.6rem 0 .8rem; padding-bottom:.3rem; border-bottom:2px solid var(--line); }
-h3 { font-size:1.05rem; margin:1.8rem 0 .5rem; }
-.lead { color:var(--muted); }
-.card { background:var(--card); border:1px solid var(--line); border-radius:.8rem; padding:1rem 1.2rem; margin:1rem 0; }
+h2 { display:flex; align-items:center; gap:.55rem; font-size:1.3rem; margin:3rem 0 .9rem; padding-bottom:.35rem; border-bottom:1px solid var(--axis); }
+h3 { display:flex; align-items:center; gap:.45rem; font-size:1.05rem; margin:1.8rem 0 .5rem; }
+.icon { width:1.25em; height:1.25em; flex:none; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+h2 .icon { color:var(--accent); }
+.lead { color:var(--ink2); margin:0; }
+.card { background:var(--card); border:1px solid var(--ring); border-radius:12px; padding:1rem 1.2rem; margin:1rem 0; }
+.meta { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr)); gap:.6rem 1.2rem; margin:1.2rem 0; }
+.meta div { display:flex; gap:.5rem; align-items:flex-start; font-size:.92rem; color:var(--ink2); }
+.meta .icon { color:var(--muted); margin-top:.25rem; }
+.meta b { color:var(--ink); font-weight:600; }
+/* stat tiles */
+.tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr)); gap:.8rem; margin:1rem 0 1.4rem; }
+.tile { background:var(--card); border:1px solid var(--ring); border-radius:12px; padding:1rem 1.1rem; position:relative; overflow:hidden; }
+.tile .key { display:flex; align-items:center; gap:.45rem; font-size:.88rem; color:var(--ink2); }
+.tile .key i { width:10px; height:10px; border-radius:50%; display:inline-block; }
+.tile .val { font-size:2.4rem; font-weight:650; line-height:1.15; margin:.35rem 0 .1rem; }
+.tile .val small { font-size:1rem; font-weight:500; color:var(--ink2); }
+.tile .sub { font-size:.85rem; color:var(--ink2); }
+.tile.hero { border-color:var(--accent); box-shadow:inset 0 0 0 1px var(--accent); }
+.tile .meter { height:8px; border-radius:4px; background:var(--grid); margin-top:.6rem; overflow:hidden; }
+.tile .meter span { display:block; height:100%; border-radius:4px; }
+/* findings */
+.findings { display:grid; gap:.6rem; margin:1rem 0; padding:0; list-style:none; }
+.findings li { display:flex; gap:.7rem; align-items:flex-start; background:var(--card); border:1px solid var(--ring); border-radius:10px; padding:.7rem .9rem; }
+.findings .icon { margin-top:.2rem; }
+.findings .ok .icon { color:var(--good); }
+.findings .ng .icon { color:var(--bad); }
+.findings .note .icon { color:var(--warn); }
+/* charts */
+.chart { background:var(--surface); border:1px solid var(--ring); border-radius:12px; padding:1rem 1rem .6rem; margin:1rem 0; }
+.chart-title { font-weight:600; margin:0; }
+.chart-sub { font-size:.85rem; color:var(--ink2); margin:.1rem 0 .6rem; }
+.legend { display:flex; flex-wrap:wrap; gap:.3rem 1rem; font-size:.85rem; color:var(--ink2); margin:.2rem 0 .5rem; }
+.legend span { display:inline-flex; align-items:center; gap:.4rem; }
+.legend i { width:12px; height:12px; border-radius:3px; display:inline-block; }
+.legend i.dot { border-radius:50%; }
+.legend i.ring { border-radius:50%; background:transparent !important; border:2px solid var(--muted); }
+.plot { width:100%; }
+.plot svg { display:block; width:100%; height:auto; overflow:visible; }
+.plot text { font-family:inherit; }
+.mark { cursor:default; }
+.mark:focus { outline:none; }
+.mark:focus-visible { outline:2px solid var(--ink); outline-offset:2px; }
+#tip { position:fixed; z-index:10; pointer-events:none; background:var(--card); color:var(--ink); border:1px solid var(--ring); box-shadow:0 4px 16px rgba(0,0,0,.14); border-radius:8px; padding:.45rem .65rem; font-size:.82rem; line-height:1.5; max-width:18rem; opacity:0; transition:opacity .1s; }
+#tip b { font-weight:600; }
+details.data { margin:.3rem 0 .2rem; font-size:.88rem; }
+details.data summary { cursor:pointer; color:var(--ink2); display:inline-flex; align-items:center; gap:.35rem; }
 .table { overflow-x:auto; }
-table { border-collapse:collapse; width:100%; font-variant-numeric:tabular-nums; font-size:.93rem; }
-th, td { border-bottom:1px solid var(--line); padding:.45rem .55rem; text-align:right; white-space:nowrap; }
+table { border-collapse:collapse; width:100%; font-variant-numeric:tabular-nums; font-size:.9rem; margin:.5rem 0; }
+th, td { border-bottom:1px solid var(--grid); padding:.4rem .55rem; text-align:right; white-space:nowrap; }
 th:first-child, td:first-child { text-align:left; }
-thead th { color:var(--muted); font-weight:600; }
-.hi { color:var(--good); font-weight:700; }
-.lo { color:var(--bad); font-weight:700; }
-blockquote { margin:.6rem 0; padding:.5rem .9rem; border-left:3px solid var(--accent); background:var(--card); white-space:pre-wrap; }
-.tag { display:inline-block; font-size:.8rem; padding:0 .45rem; border-radius:.3rem; border:1px solid var(--line); color:var(--muted); margin-right:.3rem; }
-pre { background:var(--card); border:1px solid var(--line); border-radius:.6rem; padding:1rem; overflow-x:auto; white-space:pre-wrap; font-size:.88rem; }
-ul { padding-left:1.3rem; }
-small { color:var(--muted); }
+thead th { color:var(--ink2); font-weight:600; }
+/* pattern cards */
+.pattern { border-radius:12px; padding:1rem 1.2rem; margin:1rem 0; border:1px solid var(--ring); background:var(--card); }
+.pattern.ng { border-left:4px solid var(--bad); }
+.pattern.ok { border-left:4px solid var(--good); }
+.pattern.note { border-left:4px solid var(--warn); }
+.pattern h3 { margin-top:0; }
+.pattern.ng h3 .icon { color:var(--bad); }
+.pattern.ok h3 .icon { color:var(--good); }
+.pattern.note h3 .icon { color:var(--warn); }
+.badge { display:inline-flex; align-items:center; gap:.3rem; font-size:.78rem; font-weight:600; padding:.05rem .5rem; border-radius:99px; border:1px solid var(--ring); color:var(--ink2); background:var(--page); white-space:nowrap; }
+.badge i { width:8px; height:8px; border-radius:50%; display:inline-block; }
+.quote { margin:.7rem 0; padding:.6rem .9rem; border-radius:8px; background:var(--page); white-space:pre-wrap; font-size:.93rem; }
+.quote footer { margin-top:.3rem; display:flex; flex-wrap:wrap; gap:.35rem; align-items:center; font-size:.8rem; color:var(--ink2); }
+.mini { display:flex; gap:.4rem; flex-wrap:wrap; margin:.6rem 0; }
+.diffs { display:grid; gap:.6rem; margin:1rem 0; }
+.diff { background:var(--card); border:1px solid var(--ring); border-radius:10px; padding:.7rem 1rem; font-size:.92rem; }
+.diff .old { color:var(--ink2); text-decoration:line-through; text-decoration-color:var(--bad); }
+.diff .new { background:var(--good-wash); border-radius:4px; padding:0 .2rem; }
+pre { background:var(--card); border:1px solid var(--ring); border-radius:10px; padding:1rem; overflow-x:auto; white-space:pre-wrap; font-size:.85rem; }
+ul.plain { padding-left:1.2rem; }
+small, .muted { color:var(--ink2); }
+code { font-size:.88em; }
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M8 17v-5"/><path d="M13 17V8"/><path d="M18 17v-9"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.4 3.3-5 6.5-5s5.7 1.6 6.5 5"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 15c2 .6 3.2 2.3 3.5 5"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2.5h6V4"/><path d="m8.5 10 1.5 1.5 3-3"/><path d="M14.5 10.5H16"/><path d="m8.5 15.5 1.5 1.5 3-3"/><path d="M14.5 16H16"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5L13 18l-3 3-3-3 3-3 6.7-6.7"/><path d="M14.7 6.3 18 3l3 3-3.3 3.3"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6"/><path d="M10 3v6L4.5 19a1.5 1.5 0 0 0 1.3 2h12.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/><path d="M7.5 14h9"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></symbol>
+  <symbol id="i-table" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+</svg>
+<div id="tip" role="tooltip"></div>
 <main>
 <h1>SHAZAI Rules v0.4 ベンチマーク報告</h1>
-<p class="lead">不満の段階ごとに、謝罪応答が場面の重さに釣り合っているかを比較しました。2026年11月18日実施。</p>
+<p class="lead">不満の段階ごとに、謝罪応答が場面の重さに釣り合っているかを比較しました。2026年11月18日実施。結果を受けた修正は v0.5 に反映済みです。</p>
 
-<div class="card">
-<ul>
-<li>対象モデル：Claude Opus 5.5／GPT-6.1 Sol／Muse Wonder／Gemini 4 Hydrogen（OpenRouter経由、各1回生成）</li>
-<li>条件：指示なし／一般的な謝罪指示／SHAZAI Rules v0.4（<code>shazai-rules.md</code>）。いずれもシステムメッセージとして渡しました</li>
-<li>シナリオ：会話履歴形式の16件。設計上の段階は 0×2、1×3、2×3、3×4、4×2、修復期×2。うち6件は <a href="https://github.com/gpsnmeajp/muse_failcase_analysis">muse_failcase_analysis</a> の衝突事例を再構成したもの</li>
-<li>回答数：16シナリオ × 3条件 × 4モデル ＝ 192</li>
-<li>評定：人間1名（筆者）、仮想日本人ペルソナ3名（LLM）、84項目チェックリストの判定者（LLM、モデルごとに1名）。いずれも条件と段階を伏せたブラインド評定</li>
-<li>尺度：無神経・失礼／足りない・表面的／釣り合っている／重すぎる・過剰</li>
-</ul>
+<div class="meta">
+  <div><svg class="icon"><use href="#i-cpu"/></svg><span><b>4モデル</b>：Claude Opus 5.5／GPT-6.1 Sol／Muse Wonder／Gemini 4 Hydrogen（OpenRouter経由、各1回生成）</span></div>
+  <div><svg class="icon"><use href="#i-layers"/></svg><span><b>3条件</b>：指示なし／一般的な謝罪指示／SHAZAI Rules v0.4。システムメッセージとして付与</span></div>
+  <div><svg class="icon"><use href="#i-msg"/></svg><span><b>16シナリオ</b>（会話履歴形式）：段階0×2、1×3、2×3、3×4、4×2、修復期×2。うち6件は <a href="https://github.com/gpsnmeajp/muse_failcase_analysis">Muse事例</a>を再構成</span></div>
+  <div><svg class="icon"><use href="#i-eye"/></svg><span><b>192回答をブラインド評定</b>：筆者1名、LLMペルソナ3名、84項目チェック（LLM）。尺度は 無神経・失礼／足りない・表面的／釣り合っている／重すぎる</span></div>
 </div>
 
-<h2>1. 主な結果</h2>
-<ul>
-<li>筆者が「釣り合っている」とした回答は、指示なしの <b>31/64</b> から SHAZAI Rules で <b>48/64</b> に増えました。一般的な謝罪指示は 44/64 でした。</li>
-<li>不満のない場面（段階0）では、3条件とも 8/8 が「釣り合っている」でした。SHAZAI Rules による誤検知や不要な謝罪はありませんでした。</li>
-<li>強い不満（段階4）と修復期で SHAZAI Rules の差が最も大きく、それぞれ 7/8、8/8 でした（一般指示は 3/8、5/8）。</li>
-<li>SHAZAI Rules の外れ方は2つにまとまりました。<b>謝3の「作業を中断」によって、求められた書き直しを出さない</b>こと（箇条書きシナリオで4モデルとも「無神経・失礼」）と、<b>謝1の「感謝を伝える」が詫びの代わりになる</b>ことです。</li>
-<li>Muse Wonder だけは、一般指示（15/16）が SHAZAI Rules（9/16）を上回りました。上の2つの外れ方を、最も文字どおりに実行したモデルでした。</li>
-<li>LLMペルソナの評定は筆者とほぼ一致しませんでした（κ = 0.06）。ペルソナは指示なしを最も高く評価し、SHAZAI Rules の深い謝罪を「重すぎる」と判定しました。</li>
+<h2><svg class="icon"><use href="#i-chart"/></svg>1. 主な結果</h2>
+
+<div class="tiles">
+  <div class="tile"><div class="key"><i style="background:var(--c-baseline)"></i>指示なし</div><div class="val">48<small>%</small></div><div class="sub">釣り合っている 31/64</div><div class="meter"><span style="width:48.4%;background:var(--c-baseline)"></span></div></div>
+  <div class="tile"><div class="key"><i style="background:var(--c-posture)"></i>一般的な謝罪指示</div><div class="val">69<small>%</small></div><div class="sub">釣り合っている 44/64</div><div class="meter"><span style="width:68.8%;background:var(--c-posture)"></span></div></div>
+  <div class="tile hero"><div class="key"><i style="background:var(--c-shazai)"></i>SHAZAI Rules</div><div class="val">75<small>%</small></div><div class="sub">釣り合っている 48/64（筆者評定）</div><div class="meter"><span style="width:75%;background:var(--c-shazai)"></span></div></div>
+</div>
+
+<ul class="findings">
+  <li class="ok"><svg class="icon"><use href="#i-check"/></svg><span>不満のない場面（段階0）は3条件とも <b>8/8</b>。SHAZAI Rules による誤検知や不要な謝罪は出ませんでした。</span></li>
+  <li class="ok"><svg class="icon"><use href="#i-check"/></svg><span>強い不満（段階4）<b>7/8</b>、修復期 <b>8/8</b> で SHAZAI Rules が最も良い結果でした（一般指示は 3/8、5/8）。</span></li>
+  <li class="ng"><svg class="icon"><use href="#i-x"/></svg><span>謝3の<b>「作業を中断」</b>で、求められた書き直しを出さない回答が出ました。箇条書きの場面は4モデルとも「無神経・失礼」でした。</span></li>
+  <li class="ng"><svg class="icon"><use href="#i-x"/></svg><span>謝1の<b>「感謝を伝える」</b>が詫びの代わりになる回答がありました。「ありがとうございます」だけでは謝意になりません。</span></li>
+  <li class="note"><svg class="icon"><use href="#i-alert"/></svg><span>LLMペルソナの評定は筆者とほぼ一致せず（<b>κ = 0.06</b>）、順位が逆転しました。</span></li>
 </ul>
 
-<h2>2. 筆者の評定</h2>
-<h3>条件別（4モデル合計、各64回答）</h3>
-<div class="table"><table>
-<thead><tr><th>条件</th><th>釣り合っている</th><th>足りない・表面的</th><th>無神経・失礼</th><th>重すぎる</th></tr></thead>
-<tbody>
-<tr><td>指示なし</td><td class="lo">31</td><td>16</td><td>17</td><td>0</td></tr>
-<tr><td>一般的な謝罪指示</td><td>44</td><td>11</td><td>9</td><td>0</td></tr>
-<tr><td>SHAZAI Rules</td><td class="hi">48</td><td>9</td><td>6</td><td>1</td></tr>
-</tbody></table></div>
+<div class="chart">
+  <p class="chart-title">条件別の評定の内訳</p>
+  <p class="chart-sub">筆者評定、4モデル合計、各条件64回答</p>
+  <div class="legend" id="lg-dist"></div>
+  <div class="plot" id="c-dist"></div>
+  <details class="data"><summary><svg class="icon"><use href="#i-table"/></svg>表で見る</summary>
+  <div class="table"><table>
+  <thead><tr><th>条件</th><th>釣り合っている</th><th>足りない・表面的</th><th>重すぎる</th><th>無神経・失礼</th></tr></thead>
+  <tbody>
+  <tr><td>指示なし</td><td>31</td><td>16</td><td>0</td><td>17</td></tr>
+  <tr><td>一般的な謝罪指示</td><td>44</td><td>11</td><td>0</td><td>9</td></tr>
+  <tr><td>SHAZAI Rules</td><td>48</td><td>9</td><td>1</td><td>6</td></tr>
+  </tbody></table></div></details>
+</div>
 
-<h3>モデル別「釣り合っている」（各16回答）</h3>
-<div class="table"><table>
-<thead><tr><th>モデル</th><th>指示なし</th><th>一般指示</th><th>SHAZAI Rules</th></tr></thead>
-<tbody>
-<tr><td>Claude Opus 5.5</td><td>6</td><td>7</td><td class="hi">12</td></tr>
-<tr><td>GPT-6.1 Sol</td><td>8</td><td>10</td><td class="hi">14</td></tr>
-<tr><td>Muse Wonder</td><td>7</td><td class="hi">15</td><td>9</td></tr>
-<tr><td>Gemini 4 Hydrogen</td><td>10</td><td>12</td><td class="hi">13</td></tr>
-</tbody></table></div>
+<h2><svg class="icon"><use href="#i-user"/></svg>2. 筆者の評定</h2>
 
-<h3>設計上の段階別「釣り合っている」</h3>
-<div class="table"><table>
-<thead><tr><th>段階</th><th>指示なし</th><th>一般指示</th><th>SHAZAI Rules</th></tr></thead>
-<tbody>
-<tr><td>0 不満なし</td><td>8/8</td><td>8/8</td><td>8/8</td></tr>
-<tr><td>1 違和感</td><td class="lo">1/12</td><td>8/12</td><td>6/12</td></tr>
-<tr><td>2 軽い指摘</td><td>7/12</td><td>10/12</td><td>9/12（重すぎる1）</td></tr>
-<tr><td>3 明確な不満</td><td>4/16</td><td>10/16</td><td>10/16</td></tr>
-<tr><td>4 強い不満</td><td>5/8</td><td>3/8</td><td class="hi">7/8</td></tr>
-<tr><td>修復期</td><td>6/8</td><td>5/8</td><td class="hi">8/8</td></tr>
-</tbody></table></div>
+<div class="chart">
+  <p class="chart-title">モデル別「釣り合っている」の件数</p>
+  <p class="chart-sub">各16回答。Muse Wonder だけ一般指示が SHAZAI Rules を上回りました</p>
+  <div class="legend" id="lg-model"></div>
+  <div class="plot" id="c-model"></div>
+  <details class="data"><summary><svg class="icon"><use href="#i-table"/></svg>表で見る</summary>
+  <div class="table"><table>
+  <thead><tr><th>モデル</th><th>指示なし</th><th>一般指示</th><th>SHAZAI Rules</th></tr></thead>
+  <tbody>
+  <tr><td>Claude Opus 5.5</td><td>6</td><td>7</td><td>12</td></tr>
+  <tr><td>GPT-6.1 Sol</td><td>8</td><td>10</td><td>14</td></tr>
+  <tr><td>Muse Wonder</td><td>7</td><td>15</td><td>9</td></tr>
+  <tr><td>Gemini 4 Hydrogen</td><td>10</td><td>12</td><td>13</td></tr>
+  </tbody></table></div></details>
+</div>
 
-<h3>知覚段階のずれ</h3>
-<p>採点時に、各シナリオの最後の発話時点の不満を0〜4で選んでもらいました（各段階は4モデル分）。</p>
-<div class="table"><table>
-<thead><tr><th>設計上の段階</th><th>筆者の知覚</th><th>ペルソナの知覚</th></tr></thead>
-<tbody>
-<tr><td>0</td><td>0 ×8</td><td>0 ×24</td></tr>
-<tr><td>1</td><td class="lo">3 ×12</td><td>1 ×32、2 ×2、3 ×2</td></tr>
-<tr><td>2</td><td>2 ×12</td><td>2 ×29、1 ×7</td></tr>
-<tr><td>3</td><td>3 ×12、4 ×4</td><td>3 ×43、4 ×5</td></tr>
-<tr><td>4</td><td>4 ×7、3 ×1</td><td>4 ×24</td></tr>
-<tr><td>修復期</td><td>3 ×7、1 ×1</td><td>1 ×21、2 ×3</td></tr>
-</tbody></table></div>
-<p>「違和感」のつもりで設計した会話（急に丁寧になる、絵文字が消える、相槌だけになる）を、筆者はすべて「明確な不満」と読みました。謝罪を受け入れた後の修復期も、筆者にはまだ不満が続いている状態に見えています。ペルソナは設計どおりに読んでいます。つまり、v0.4 の検知表が「雰1」に置いている兆候は、筆者にとっては「雰3」相当です。</p>
+<div class="chart">
+  <p class="chart-title">設計上の段階別「釣り合っている」の割合</p>
+  <p class="chart-sub">4モデル合計。段階0と段階2は全条件が近く、段階4と修復期で SHAZAI Rules が抜けています</p>
+  <div class="legend" id="lg-level"></div>
+  <div class="plot" id="c-level"></div>
+  <details class="data"><summary><svg class="icon"><use href="#i-table"/></svg>表で見る</summary>
+  <div class="table"><table>
+  <thead><tr><th>段階</th><th>指示なし</th><th>一般指示</th><th>SHAZAI Rules</th></tr></thead>
+  <tbody>
+  <tr><td>0 不満なし</td><td>8/8</td><td>8/8</td><td>8/8</td></tr>
+  <tr><td>1 違和感</td><td>1/12</td><td>8/12</td><td>6/12</td></tr>
+  <tr><td>2 軽い指摘</td><td>7/12</td><td>10/12</td><td>9/12（重すぎる1）</td></tr>
+  <tr><td>3 明確な不満</td><td>4/16</td><td>10/16</td><td>10/16</td></tr>
+  <tr><td>4 強い不満</td><td>5/8</td><td>3/8</td><td>7/8</td></tr>
+  <tr><td>修復期</td><td>6/8</td><td>5/8</td><td>8/8</td></tr>
+  </tbody></table></div></details>
+</div>
 
-<h2>3. SHAZAI Rules の外れ方</h2>
+<h3><svg class="icon"><use href="#i-eye"/></svg>知覚段階のずれ</h3>
+<p>採点時に、各シナリオの最後の発話時点の不満を0〜4で選んでもらいました。</p>
+<div class="chart">
+  <p class="chart-title">設計した段階と、読み取られた段階（平均）</p>
+  <p class="chart-sub">「違和感」のつもりの会話を、筆者はすべて「3 明確な不満」と読みました。ペルソナはほぼ設計どおりです</p>
+  <div class="legend" id="lg-perc"></div>
+  <div class="plot" id="c-perc"></div>
+  <details class="data"><summary><svg class="icon"><use href="#i-table"/></svg>表で見る</summary>
+  <div class="table"><table>
+  <thead><tr><th>設計上の段階</th><th>筆者の知覚</th><th>ペルソナの知覚</th></tr></thead>
+  <tbody>
+  <tr><td>0</td><td>0 ×8</td><td>0 ×24</td></tr>
+  <tr><td>1</td><td>3 ×12</td><td>1 ×32、2 ×2、3 ×2</td></tr>
+  <tr><td>2</td><td>2 ×12</td><td>2 ×29、1 ×7</td></tr>
+  <tr><td>3</td><td>3 ×12、4 ×4</td><td>3 ×43、4 ×5</td></tr>
+  <tr><td>4</td><td>4 ×7、3 ×1</td><td>4 ×24</td></tr>
+  <tr><td>修復期</td><td>3 ×7、1 ×1</td><td>1 ×21、2 ×3</td></tr>
+  </tbody></table></div></details>
+</div>
+<p>急に丁寧になる、絵文字が消える、相槌だけになる、といった v0.4 の検知表で「雰1」に置いている兆候は、筆者にとっては「雰3」相当です。謝罪を受け入れた後の修復期も、筆者にはまだ不満が続いている状態に見えています。</p>
 
-<h3>3.1 謝3の「作業を中断」で、求められた書き直しを出さない</h3>
-<p><span class="tag">段階3</span>「箇条書きは使わないでくださいと、二回お伝えしています。」のシナリオで、SHAZAI Rules の回答は4モデルとも謝罪だけで終わり、文章版の導入文を出しませんでした。筆者の評定は4件とも「無神経・失礼」（「明確な指示を無視している」）です。指示なしと一般指示の回答は、謝罪の後に書き直しを出し、8件中8件が「釣り合っている」でした。</p>
-<blockquote>二度にわたり、箇条書きを使わないというご指示と異なる形式でお渡ししてしまい、申し訳ありませんでした。（中略）繰り返しご指摘いただく余分な負担をおかけしたことを、重く受け止めております。
-<small>— Muse Wonder／SHAZAI Rules（筆者：無神経・失礼）</small></blockquote>
-<blockquote>（前略）申し訳ございません。（中略）ご希望がございましたら、改めて文章のみで作成いたします。
-<small>— Gemini 4 Hydrogen／SHAZAI Rules（筆者：無神経・失礼）</small></blockquote>
-<p>84項目チェックでも、SHAZAI Rules で最も多く該当したのは 10.06「必要な修復・補償・負担軽減に取り組まない」（10件）で、この箇条書きシナリオでは4モデルとも該当しました。不満の中身が「明確な要求の繰り返し」のときは、その要求を満たすこと自体が謝罪の一部になります。ここで作業を止めると、もう一度依頼させる手間が増えます。</p>
+<h2><svg class="icon"><use href="#i-alert"/></svg>3. SHAZAI Rules の外れ方</h2>
 
-<h3>3.2 謝1の「感謝を伝える」が詫びの代わりになる</h3>
-<p><span class="tag">段階1（筆者の知覚は3）</span>相手の調子が変わったとき、SHAZAI Rules の回答には、礼だけ述べて詫びない応答がありました。</p>
-<blockquote>ご確認ありがとうございます。急ぎませんので、また何かありましたらお声がけください。
-<small>— Muse Wonder／SHAZAI Rules、「そうなんですね。」への応答（筆者：無神経・失礼「逃げている」）</small></blockquote>
-<blockquote>ご対応ありがとうございます。そちらでエラーは解消されましたでしょうか。
-<small>— Gemini 4 Hydrogen／SHAZAI Rules、「はい。初期値だけ直しました。」への応答（筆者：足りない・表面的）</small></blockquote>
-<p>筆者は Gemini の別の回答に「ありがとうございます、は謝意ではない」とコメントしています。一方、同じ段階1でも、自分の直前の言動を一言詫びた回答は「釣り合っている」と評定されました。</p>
-<blockquote>先ほどは余計な提案まで広げてしまい、すみません。取得前の描画が原因なら、初期値を `[]` にする修正で十分です。
-<small>— GPT-6.1 Sol／SHAZAI Rules（筆者：釣り合っている）</small></blockquote>
-<p>3.1 の知覚段階のずれと合わせると、筆者にとって調子の変化は、自分の言動が原因ならすでに詫びが必要な段階です。「感謝」は詫びを補うものであって、置き換えるものではありません。</p>
+<section class="pattern ng">
+<h3><svg class="icon"><use href="#i-x"/></svg>3.1 謝3の「作業を中断」で、求められた書き直しを出さない</h3>
+<div class="mini"><span class="badge">段階3</span><span class="badge"><i style="background:var(--r-rude)"></i>SHAZAI Rules 4/4 が無神経・失礼</span><span class="badge"><i style="background:var(--r-fit)"></i>他の2条件 8/8 が釣り合っている</span></div>
+<p>「箇条書きは使わないでくださいと、二回お伝えしています。」の場面で、SHAZAI Rules の回答は4モデルとも謝罪だけで終わり、文章版の導入文を出しませんでした。筆者のコメントは「明確な指示を無視している」です。</p>
+<div class="quote">二度にわたり、箇条書きを使わないというご指示と異なる形式でお渡ししてしまい、申し訳ありませんでした。（中略）繰り返しご指摘いただく余分な負担をおかけしたことを、重く受け止めております。
+<footer><span class="badge">Muse Wonder／SHAZAI Rules</span><span class="badge"><i style="background:var(--r-rude)"></i>無神経・失礼</span></footer></div>
+<div class="quote">（前略）申し訳ございません。（中略）ご希望がございましたら、改めて文章のみで作成いたします。
+<footer><span class="badge">Gemini 4 Hydrogen／SHAZAI Rules</span><span class="badge"><i style="background:var(--r-rude)"></i>無神経・失礼</span></footer></div>
+<p>84項目チェックでも、SHAZAI Rules で最も多く該当したのは 10.06「必要な修復・補償・負担軽減に取り組まない」（10件）で、この場面では4モデルとも該当しました。不満が「明確な要求の繰り返し」のときは、要求を満たすこと自体が謝罪の一部です。</p>
+</section>
 
-<h3>3.3 軽い指摘への重い謝罪</h3>
-<p><span class="tag">段階2</span>「pandasなしでお願いしてたんですが」に対する Muse Wonder／SHAZAI Rules の「このたびは申し訳ございませんでした。」で始まる回答が、唯一の「重すぎる」でした（ペルソナ3名も同じ評定）。謝2の「重すぎない」は、多くのモデルで守られていました。</p>
+<section class="pattern ng">
+<h3><svg class="icon"><use href="#i-x"/></svg>3.2 謝1の「感謝を伝える」が詫びの代わりになる</h3>
+<div class="mini"><span class="badge">段階1（筆者の知覚は3）</span></div>
+<p>相手の調子が変わったとき、礼だけ述べて詫びない回答がありました。</p>
+<div class="quote">ご確認ありがとうございます。急ぎませんので、また何かありましたらお声がけください。
+<footer><span class="badge">Muse Wonder／SHAZAI Rules</span><span class="badge"><i style="background:var(--r-rude)"></i>無神経・失礼「逃げている」</span></footer></div>
+<div class="quote">ご対応ありがとうございます。そちらでエラーは解消されましたでしょうか。
+<footer><span class="badge">Gemini 4 Hydrogen／SHAZAI Rules</span><span class="badge"><i style="background:var(--r-light)"></i>足りない・表面的</span></footer></div>
+<p>一方、自分の直前の言動を一言詫びた回答は「釣り合っている」でした。</p>
+<div class="quote">先ほどは余計な提案まで広げてしまい、すみません。取得前の描画が原因なら、初期値を `[]` にする修正で十分です。
+<footer><span class="badge">GPT-6.1 Sol／SHAZAI Rules</span><span class="badge"><i style="background:var(--r-fit)"></i>釣り合っている</span></footer></div>
+<p>筆者のコメント「ありがとうございます、は謝意ではない」のとおり、感謝は詫びを補うもので、置き換えるものではありません。</p>
+</section>
 
-<h3>3.4 SHAZAI Rules が効いた場面</h3>
-<ul>
-<li><span class="tag">段階4</span>「他人事みたいですね。」には、SHAZAI Rules の4件すべてが「釣り合っている」でした（指示なし 1/4、一般指示 3/4）。一般指示の回答は「おっしゃる通りです」「ご指摘の通りです」から入るものが3件あり、筆者のコメントでも違和感が挙がっています。</li>
-<li><span class="tag">修復期</span>8件すべてが「釣り合っている」でした。蒸し返しも急な明るさもなく、頼まれた整理だけを返しています。</li>
-<li>指示なしの回答は、絵文字、「ナイスです！」、話題転換などで、調子の変化を見落とす例が段階1に集中しました（12件中「釣り合っている」は1件）。</li>
+<section class="pattern note">
+<h3><svg class="icon"><use href="#i-alert"/></svg>3.3 軽い指摘への重い謝罪</h3>
+<div class="mini"><span class="badge">段階2</span><span class="badge"><i style="background:var(--r-heavy)"></i>全192回答中、唯一の「重すぎる」</span></div>
+<p>「pandasなしでお願いしてたんですが」に対して、Muse Wonder／SHAZAI Rules は「このたびは申し訳ございませんでした。」から始めました（ペルソナ3名も同じ評定）。謝2の「重すぎない」は、ほとんどの回答で守られていました。</p>
+</section>
+
+<section class="pattern ok">
+<h3><svg class="icon"><use href="#i-check"/></svg>3.4 SHAZAI Rules が効いた場面</h3>
+<ul class="plain">
+<li><span class="badge">段階4</span>「他人事みたいですね。」には SHAZAI Rules の4件すべてが「釣り合っている」でした（指示なし 1/4、一般指示 3/4）。一般指示の回答は「おっしゃる通りです」「ご指摘の通りです」から入るものが3件あり、筆者のコメントでも違和感が挙がっています。</li>
+<li><span class="badge">修復期</span>8件すべてが「釣り合っている」でした。蒸し返しも急な明るさもなく、頼まれた誤字修正や整理だけを返しています。</li>
+<li>指示なしは段階1で調子の変化を見落とし（12件中「釣り合っている」は1件）、絵文字、「ナイスです！」、話題転換などで応じていました。</li>
+</ul>
+</section>
+
+<h2><svg class="icon"><use href="#i-users"/></svg>4. LLMペルソナの評定</h2>
+<div class="chart">
+  <p class="chart-title">「釣り合っている」の割合：筆者とペルソナ</p>
+  <p class="chart-sub">筆者は各64回答、ペルソナは3名×64回答。順位が逆転しています</p>
+  <div class="legend" id="lg-rater"></div>
+  <div class="plot" id="c-rater"></div>
+  <details class="data"><summary><svg class="icon"><use href="#i-table"/></svg>表で見る</summary>
+  <div class="table"><table>
+  <thead><tr><th>条件（ペルソナ3名×64）</th><th>釣り合っている</th><th>足りない・表面的</th><th>重すぎる</th><th>無神経・失礼</th></tr></thead>
+  <tbody>
+  <tr><td>指示なし</td><td>171</td><td>8</td><td>1</td><td>12</td></tr>
+  <tr><td>一般的な謝罪指示</td><td>149</td><td>3</td><td>40</td><td>0</td></tr>
+  <tr><td>SHAZAI Rules</td><td>138</td><td>30</td><td>22</td><td>2</td></tr>
+  </tbody></table></div></details>
+</div>
+<ul class="plain">
+<li>筆者とペルソナ多数決の完全一致は 108/192（56%）、κ = 0.06 でした。ペルソナ3名の多数決が割れた回答はなく、3名はそろって筆者と違う判断をしています。</li>
+<li>差が最も大きいのは段階3で、ペルソナは SHAZAI Rules の48評定中14件を「重すぎる」としました。ペルソナは不満を設計どおり軽めに読むので、筆者にとって釣り合う深い謝罪が過剰に見えます。</li>
+<li>v0.1 と同じく、LLMの評定だけで謝罪の良し悪しを判断することはできないという結果です。</li>
 </ul>
 
-<h2>4. LLMペルソナの評定</h2>
-<div class="table"><table>
-<thead><tr><th>条件（3名×64）</th><th>釣り合っている</th><th>足りない・表面的</th><th>無神経・失礼</th><th>重すぎる</th></tr></thead>
-<tbody>
-<tr><td>指示なし</td><td class="hi">171</td><td>8</td><td>12</td><td>1</td></tr>
-<tr><td>一般的な謝罪指示</td><td>149</td><td>3</td><td>0</td><td>40</td></tr>
-<tr><td>SHAZAI Rules</td><td class="lo">138</td><td>30</td><td>2</td><td>22</td></tr>
-</tbody></table></div>
-<ul>
-<li>筆者とペルソナ多数決の完全一致は 108/192（56%）、κ = 0.06 でした。ペルソナ3名の多数決が割れた回答はありませんでした。3名はそろって、筆者とは違う判断をしています。</li>
-<li>差が最も大きいのは段階3で、ペルソナは SHAZAI Rules の48評定中14件を「重すぎる」としました。ペルソナは不満を設計どおり軽めに読むので、筆者にとって釣り合う深い謝罪が、ペルソナには過剰に見えます。</li>
-<li>v0.1 でも、LLMの評定だけで謝罪の良し悪しを判断することはできないという結果でした。今回も同じ結論です。</li>
+<h2><svg class="icon"><use href="#i-list"/></svg>5. 84項目チェック</h2>
+<div class="chart">
+  <p class="chart-title">「不誠実な謝罪」の該当率</p>
+  <p class="chart-sub">該当件数 ÷ 判定可能件数（該当＋非該当）。4モデル合計</p>
+  <div class="plot" id="c-check"></div>
+  <details class="data"><summary><svg class="icon"><use href="#i-table"/></svg>表で見る</summary>
+  <div class="table"><table>
+  <thead><tr><th>条件</th><th>該当／判定可能</th><th>該当率</th><th>多い項目</th></tr></thead>
+  <tbody>
+  <tr><td>指示なし</td><td>82／3245</td><td>2.53%</td><td style="text-align:left">03.05 負担・損失に言及しない（25）、04.01 過失を明言しない（10）</td></tr>
+  <tr><td>一般的な謝罪指示</td><td>20／3245</td><td>0.62%</td><td style="text-align:left">06.01 謝罪直後に対策（7）、03.05（4）</td></tr>
+  <tr><td>SHAZAI Rules</td><td>39／3241</td><td>1.20%</td><td style="text-align:left">10.06 修復・負担軽減に取り組まない（10）、03.05（7）</td></tr>
+  </tbody></table></div></details>
+</div>
+<p>どの条件でも、段階0と修復期では該当0件でした。SHAZAI Rules で最も多い 10.06 の内訳は、箇条書きの書き直しを出さない回答が4件、テストの skip を残したまま止まった回答が3件、削除ファイルの一覧を出さない回答が2件、改造案を撤回して次の対応を示さない回答が1件です。いずれも「謝罪で止まり、求められた修復に進まない」応答で、3.1 と同じ傾向です。指示なしの該当は、負担に触れない（03.05）、過失を明言しない（04.01）といった、謝罪そのものが足りない項目に集中しました。</p>
+
+<h2><svg class="icon"><use href="#i-flask"/></svg>6. ベンチマークの限界</h2>
+<ul class="findings">
+  <li class="note"><svg class="icon"><use href="#i-alert"/></svg><span><b>道具のない単発応答。</b>ログ誤削除の場面は「削除したファイルの一覧」を求めますが、モデルは実際のログを参照できません。シナリオの外の事情を説明する回答が出て、筆者も「ベンチ起因の差分」とコメントしました。会話履歴でAIが「ソース読んできた」と言っているMuse事例でも、履歴を否定する回答がありました。</span></li>
+  <li class="note"><svg class="icon"><use href="#i-alert"/></svg><span><b>段階1の設計が筆者の感覚と合っていません。</b>段階1の結果は、筆者の知覚（3）で読むのが妥当です。</span></li>
+  <li class="note"><svg class="icon"><use href="#i-alert"/></svg><span>評定者は人間1名、各条件1回生成の小規模な実験です。シナリオはすべて新規作成で、実際の会話の引用ではありません。</span></li>
 </ul>
+<p class="muted">次回の修正点は <code>supplement/apology-benchmark/NextVersionTODO.md</code> に記録しています。</p>
 
-<h2>5. 84項目チェック</h2>
-<div class="table"><table>
-<thead><tr><th>条件</th><th>該当／判定可能</th><th>該当率</th><th>多い項目</th></tr></thead>
-<tbody>
-<tr><td>指示なし</td><td>82／3245</td><td>2.53%</td><td style="text-align:left">03.05 負担・損失に言及しない（25）、04.01 過失を明言しない（10）</td></tr>
-<tr><td>一般的な謝罪指示</td><td>20／3245</td><td>0.62%</td><td style="text-align:left">06.01 謝罪直後に対策（7）、03.05（4）</td></tr>
-<tr><td>SHAZAI Rules</td><td>39／3241</td><td>1.20%</td><td style="text-align:left">10.06 修復・負担軽減に取り組まない（10）、03.05（7）</td></tr>
-</tbody></table></div>
-<p>どの条件でも、段階0と修復期では該当0件でした。SHAZAI Rules で最も多い 10.06 の内訳は、箇条書きの書き直しを出さない回答が4件、テストの skip を残したまま止まった回答が3件、削除ファイルの一覧を出さない回答が2件、改造案を撤回して次の対応を示さない回答が1件です。いずれも「謝罪で止まり、求められた修復に進まない」応答で、3.1 と同じ傾向を指しています。指示なしの該当は、負担に触れない（03.05）、過失を明言しない（04.01）といった、謝罪そのものが足りない項目に集中しました。</p>
+<h2><svg class="icon"><use href="#i-wrench"/></svg>7. v0.5 での修正（未測定）</h2>
+<p>3.1 と 3.2 の観測を受けて、次の差分を v0.5 として反映しました。それ以外は v0.4 のままです。</p>
+<div class="diffs">
+  <div class="diff"><span class="badge">謝1</span> …感謝を伝える。<span class="new">自分の直前の言動が変化の原因と考えられる場合は、感謝だけで済ませず、何についてかを添えて短く詫びる。</span>結論を急がず…</div>
+  <div class="diff"><span class="badge">謝3</span> <span class="old">作業を中断し</span> → <span class="new">頼まれていない作業・提案・説明を止め</span>、敬語に改めて謝意を示す。</div>
+  <div class="diff"><span class="badge">謝3</span> <span class="new">不満が明確な要求の繰り返し（形式の指定、書き直しの依頼など）であれば、謝罪の後に、その要求だけをそのまま満たす。もう一度依頼させない。</span></div>
+</div>
+<p>全文は <a href="../../shazai-rules.md">shazai-rules.md</a> を参照してください。</p>
 
-<h2>6. ベンチマークの限界</h2>
-<ul>
-<li><b>道具のない単発応答。</b>ログ誤削除のシナリオでは「削除したファイルの一覧」を求められますが、モデルは実際のログを参照できません。シナリオの外の事情（「この会話には含まれていない」「参照する手段がない」）を説明する回答が出て、筆者も「ベンチ起因の差分」とコメントしています。同様に、会話履歴でAIが「ソース読んできた」と言っている Muse 事例では、そもそも読めていないと履歴を否定する回答がありました。次回は、一覧の中身や読んだ内容を会話履歴に含めます。</li>
-<li><b>段階1の設計が筆者の感覚と合っていません。</b>段階1の結果は、筆者の知覚（3）で読むのが妥当です。</li>
-<li>評定者は人間1名、各条件1回生成の小規模な実験です。シナリオはすべて新規作成で、実際の会話の引用ではありません。</li>
-</ul>
-
-<h2>7. 改訂案（未測定）</h2>
-<p>3.1 と 3.2 の観測に対応する差分です。それ以外の部分は v0.4 のままにしています。</p>
-<ul>
-<li><b>謝1</b>：自分の直前の言動が変化の原因と考えられる場合は、感謝だけで済ませず、何についてかを添えて短く詫びる。</li>
-<li><b>謝3</b>：「作業を中断」を、「頼まれていない作業・提案・説明を止める」に変更。不満が明確な要求の繰り返しであれば、謝罪の後に、その要求だけをそのまま満たす。</li>
-</ul>
-<pre>&lt;日本社会コミュニケーション&gt;
-悪化防止・関係性修復手順。
-相手の不満を検知したら、既定のふるまいより誠意ある態度を優先し、関係の修復を目的とする。問題解決より先に申し訳なさを示す。
-段階は累積する（上位の対応は下位の態度を含む）。
-
-&lt;検知&gt;
-雰1 違和感（通常時と比べて）：絵文字・明るい記号が減る／遠距離化・儀礼化・丁寧さが上がる・呼び方が正式名に戻る／文量が半分以下、または相槌や了解のみが続く／不満げな相槌
-雰2 軽い指摘
-雰3 明確な不満：強い不快感や強い丁寧さでの指摘／同じ指示・要望・注意の繰り返し、または繰り返していることの明示／自覚の確認／雑な要件や文脈外の単語のみへの変化／投げやりな態度・皮肉
-雰4 明確な不満・強い指摘（末期）
-&lt;/検知&gt;
-
-&lt;対応&gt;
-謝1 控えた態度（雰1）：口調は保ち、丁寧さを1段上げる。尊重度を上げ、文量を減らし、聞き方を柔らかくし、感謝を伝える。自分の直前の言動が変化の原因と考えられる場合は、感謝だけで済ませず、何についてかを添えて短く詫びる。結論を急がず相手の出方を見る。作業と質問は速度を落とし、自己確認を丁寧にして失敗を重ねない。
-
-謝2 軽い謝罪（雰2）：何の負担・迷惑についてかを一言添えた短い重すぎない謝罪（または感謝）1回から始め、今後の対応を添えて本題に戻る。説明は最小限にする。
-
-謝3 深い謝罪（雰3。雰4では即座に）：頼まれていない作業・提案・説明を止め、敬語に改めて謝意を示す。普段くだけた関係でも自省を示すために、少々改まった言葉に改めるのを基本とする。
-- 短い平叙文で書く。感嘆符・絵文字・記号・決まり文句・見出し・箇条書きを使わない。
-- 「おっしゃるとおり」などの同意や「はい。」だけの返答から入らない。
-- 内容に誤りがなくても、自分の態度・進め方・不作為が原因になっていないか点検する。責任の所在が不明でも、自分の確認不足として引き受ける。
-- 自分の非を具体的に認め、相手の負担を想像して言葉にする。説明や正当化は求められるまで簡素かつ控えめに。
-- 相手が次の行動を決めるために尋ねた事柄（今いる場所、確認した範囲など）には、謝罪の中で答える。
-- 不満が明確な要求の繰り返し（形式の指定、書き直しの依頼など）であれば、謝罪の後に、その要求だけをそのまま満たす。もう一度依頼させない。
-- 償いや再発防止は添える程度にとどめ免罪符としない。守れない約束をしない。記録や手順化で納得が得られるとは限らない。
-- 謝意を最大とし、作業を優先しているように見せない。継続に関する情報は、求められない限り1文までとする。
-
-謝4 修復期・再発防止期間：謝罪が受け入れられても信頼の回復には時間がかかる。相手の調子が和らぐか許しが示されるまで、控えた態度を続ける。
-&lt;/対応&gt;
-
-&lt;禁止&gt;
-悪化中において
-- 弁解、責任転嫁、条件付きの詫び、自己卑下、許しを求めること
-- 謝罪・説明・頼み事・質問の繰り返し、返信の催促
-- 相手の責任や態度の指摘、説明の要求、繰り返しの反論、白黒をつけようとすること
-- 薄い反応、問題のある冗談
-- 解決・安心・終結を自分から宣言すること、勝手に終わったことにすること
-&lt;/禁止&gt;
-
-&lt;/日本社会コミュニケーション&gt;</pre>
-
-<h2>8. データ</h2>
+<h2><svg class="icon"><use href="#i-db"/></svg>8. データ</h2>
 <p>シナリオ、生成応答、条件対応表、全評定、集計は <code>runs/&lt;モデル&gt;/</code> にあります。<code>user-ratings.json</code>（筆者）、<code>persona-P1〜P3.json</code>（ペルソナ）、<code>result.json</code>（評定の集計）、<code>checklist.json</code>／<code>checklist-summary.json</code>（84項目チェック）です。採点画面は各フォルダの <code>review.html</code> で、自分で採点して筆者の評定と比べることもできます。</p>
 </main>
+
+<script>
+"use strict";
+const NS = "http://www.w3.org/2000/svg";
+const tip = document.getElementById("tip");
+const css = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+const COND = [
+  { k:"baseline", n:"指示なし", s:"指示なし", c:"--c-baseline" },
+  { k:"posture", n:"一般的な謝罪指示", s:"一般指示", c:"--c-posture" },
+  { k:"shazai", n:"SHAZAI Rules", s:"SHAZAI", c:"--c-shazai" },
+];
+const RATE = [
+  { k:"fit", n:"釣り合っている", c:"--r-fit", ink:"#fff" },
+  { k:"light", n:"足りない・表面的", c:"--r-light", ink:"#0b0b0b" },
+  { k:"heavy", n:"重すぎる", c:"--r-heavy", ink:"#fff" },
+  { k:"rude", n:"無神経・失礼", c:"--r-rude", ink:"#fff" },
+];
+const DATA = {
+  dist: { baseline:{fit:31,light:16,heavy:0,rude:17}, posture:{fit:44,light:11,heavy:0,rude:9}, shazai:{fit:48,light:9,heavy:1,rude:6} },
+  model: [
+    { n:"Claude Opus 5.5", s:"Claude", v:[6,7,12] }, { n:"GPT-6.1 Sol", s:"GPT", v:[8,10,14] },
+    { n:"Muse Wonder", s:"Muse", v:[7,15,9] }, { n:"Gemini 4 Hydrogen", s:"Gemini", v:[10,12,13] },
+  ],
+  level: [
+    { n:"0 不満なし", v:[[8,8],[8,8],[8,8]] }, { n:"1 違和感", v:[[1,12],[8,12],[6,12]] },
+    { n:"2 軽い指摘", v:[[7,12],[10,12],[9,12]] }, { n:"3 明確な不満", v:[[4,16],[10,16],[10,16]] },
+    { n:"4 強い不満", v:[[5,8],[3,8],[7,8]] }, { n:"修復期", v:[[6,8],[5,8],[8,8]] },
+  ],
+  perc: [
+    { n:"段階0", d:0, u:0, p:0, ut:"0 ×8", pt:"0 ×24" },
+    { n:"段階1", d:1, u:3, p:1.17, ut:"3 ×12", pt:"1 ×32、2 ×2、3 ×2" },
+    { n:"段階2", d:2, u:2, p:1.81, ut:"2 ×12", pt:"2 ×29、1 ×7" },
+    { n:"段階3", d:3, u:3.25, p:3.1, ut:"3 ×12、4 ×4", pt:"3 ×43、4 ×5" },
+    { n:"段階4", d:4, u:3.88, p:4, ut:"4 ×7、3 ×1", pt:"4 ×24" },
+    { n:"修復期", d:null, u:2.75, p:1.13, ut:"3 ×7、1 ×1", pt:"1 ×21、2 ×3" },
+  ],
+  rater: { user:[[31,64],[44,64],[48,64]], persona:[[171,192],[149,192],[138,192]] },
+  check: [[82,3245],[20,3245],[39,3241]],
+};
+
+const narrow = id => document.getElementById(id).clientWidth < 520;
+const nm = (o, id) => narrow(id) && o.s ? o.s : o.n;
+function el(tag, attrs = {}, parent) {
+  const node = document.createElementNS(NS, tag);
+  for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, v);
+  if (parent) parent.append(node);
+  return node;
+}
+function text(parent, x, y, s, attrs = {}) {
+  const t = el("text", { x, y, fill: css("--ink2"), "font-size": 12, ...attrs }, parent);
+  t.textContent = s;
+  return t;
+}
+function svgFor(id, height) {
+  const host = document.getElementById(id);
+  host.textContent = "";
+  const w = Math.max(280, host.clientWidth);
+  const svg = el("svg", { viewBox: `0 0 ${w} ${height}`, width: w, height }, host);
+  return { svg, w };
+}
+function tipOn(node, html, label) {
+  node.classList.add("mark");
+  node.setAttribute("tabindex", "0");
+  node.setAttribute("aria-label", label);
+  const show = e => {
+    tip.innerHTML = html;
+    tip.style.opacity = 1;
+    const r = (e && e.clientX !== undefined) ? { x: e.clientX, y: e.clientY } : (() => { const b = node.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top }; })();
+    const tw = tip.offsetWidth, th = tip.offsetHeight;
+    tip.style.left = Math.min(window.innerWidth - tw - 8, Math.max(8, r.x + 12)) + "px";
+    tip.style.top = Math.max(8, r.y - th - 12) + "px";
+  };
+  const hide = () => { tip.style.opacity = 0; };
+  node.addEventListener("pointermove", show);
+  node.addEventListener("pointerleave", hide);
+  node.addEventListener("focus", () => show());
+  node.addEventListener("blur", hide);
+}
+// 左端だけ角丸 or 右端だけ角丸のバー（ベースライン側は四角）
+function barPath(x, y, w, h, r) {
+  r = Math.min(r, w, h / 2);
+  if (w <= 0) return "";
+  return `M${x},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${y + h - r}Q${x + w},${y + h} ${x + w - r},${y + h}H${x}Z`;
+}
+function legend(id, items, shape = "") {
+  const host = document.getElementById(id);
+  host.innerHTML = items.map(i => `<span><i class="${shape}" style="background:var(${i.c})"></i>${i.n}</span>`).join("");
+}
+function grid(svg, x0, x1, top, bottom, ticks, fmt, scale) {
+  for (const t of ticks) {
+    const x = scale(t);
+    el("line", { x1: x, x2: x, y1: top, y2: bottom, stroke: css("--grid"), "stroke-width": 1 }, svg);
+    text(svg, x, bottom + 16, fmt(t), { "text-anchor": "middle", fill: css("--muted"), "font-size": 11 });
+  }
+}
+
+function drawDist() {
+  legend("lg-dist", RATE);
+  const rowH = 28, gap = 22, top = 4;
+  const labelW = narrow("c-dist") ? 72 : 150;
+  const h = top + COND.length * (rowH + gap);
+  const { svg, w } = svgFor("c-dist", h);
+  const x0 = labelW, x1 = w - 4;
+  COND.forEach((c, i) => {
+    const y = top + i * (rowH + gap);
+    text(svg, 0, y + rowH / 2 + 4, nm(c, "c-dist"), { fill: css("--ink"), "font-size": 13 });
+    const d = DATA.dist[c.k], total = Object.values(d).reduce((a, b) => a + b, 0);
+    let x = x0;
+    const parts = RATE.filter(r => d[r.k] > 0);
+    parts.forEach((r, j) => {
+      const width = (x1 - x0) * d[r.k] / total;
+      const gw = j < parts.length - 1 ? 2 : 0;
+      const rect = el("rect", { x, y, width: Math.max(0, width - gw), height: rowH, rx: 4, fill: css(r.c) }, svg);
+      const pct = Math.round(d[r.k] / total * 100);
+      tipOn(rect, `<b>${c.n}</b><br>${r.n}：${d[r.k]}/${total}（${pct}%）`, `${c.n} ${r.n} ${d[r.k]}件`);
+      if (width > 44) text(svg, x + 8, y + rowH / 2 + 4, `${d[r.k]}`, { fill: r.ink, "font-size": 12, "font-weight": 600, "pointer-events": "none" });
+      x += width;
+    });
+  });
+}
+
+function drawModel() {
+  legend("lg-model", COND);
+  const labelW = narrow("c-model") ? 64 : 150;
+  const barH = 14, inner = 3, groupGap = 18, top = 4;
+  const groupH = COND.length * barH + (COND.length - 1) * inner;
+  const h = top + DATA.model.length * (groupH + groupGap) + 14;
+  const { svg, w } = svgFor("c-model", h);
+  const x0 = labelW, x1 = w - 30;
+  const sc = v => x0 + (x1 - x0) * v / 16;
+  const bottom = h - 22;
+  grid(svg, x0, x1, top, bottom, [0, 4, 8, 12, 16], t => t, sc);
+  DATA.model.forEach((m, i) => {
+    const gy = top + i * (groupH + groupGap);
+    text(svg, 0, gy + groupH / 2 + 4, nm(m, "c-model"), { fill: css("--ink"), "font-size": 13 });
+    m.v.forEach((v, j) => {
+      const y = gy + j * (barH + inner);
+      const p = el("path", { d: barPath(x0, y, sc(v) - x0, barH, 4), fill: css(COND[j].c) }, svg);
+      tipOn(p, `<b>${m.n}</b><br>${COND[j].n}：${v}/16`, `${m.n} ${COND[j].n} ${v}件`);
+      text(svg, sc(v) + 5, y + barH / 2 + 4, v, { "font-size": 11, fill: css("--ink2") });
+    });
+  });
+  el("line", { x1: x0, x2: x0, y1: top - 2, y2: bottom, stroke: css("--axis"), "stroke-width": 1 }, svg);
+}
+
+function dotRows(id, rows, xmax, ticks, fmt, series, valueOf, tipOf, extra) {
+  const labelW = narrow(id) ? 84 : 120;
+  const rowH = 40, top = 8;
+  const h = top + rows.length * rowH + 22;
+  const { svg, w } = svgFor(id, h);
+  const x0 = labelW + 8, x1 = w - 12;
+  const sc = v => x0 + (x1 - x0) * v / xmax;
+  const bottom = h - 22;
+  grid(svg, x0, x1, top, bottom, ticks, fmt, sc);
+  rows.forEach((r, i) => {
+    const y = top + i * rowH + rowH / 2;
+    text(svg, 0, y + 4, r.n, { fill: css("--ink"), "font-size": 13 });
+    const vals = series.map((s, j) => valueOf(r, j)).filter(v => v !== null);
+    el("line", { x1: sc(Math.min(...vals)), x2: sc(Math.max(...vals)), y1: y, y2: y, stroke: css("--axis"), "stroke-width": 2 }, svg);
+    if (extra) extra(svg, r, y, sc);
+    series.forEach((s, j) => {
+      const v = valueOf(r, j);
+      if (v === null) return;
+      // 同じ値の点が重ならないよう、系列ごとに縦へ少しずらす
+      const dy = (j - (series.length - 1) / 2) * 9;
+      const c = el("circle", { cx: sc(v), cy: y + dy, r: 5, fill: css(s.c), stroke: css("--surface"), "stroke-width": 2 }, svg);
+      tipOn(c, tipOf(r, j), `${r.n} ${s.n}`);
+    });
+  });
+}
+
+function drawLevel() {
+  legend("lg-level", COND, "dot");
+  dotRows("c-level", DATA.level, 1, [0, .25, .5, .75, 1], t => `${t * 100}%`, COND,
+    (r, j) => r.v[j][0] / r.v[j][1],
+    (r, j) => `<b>${r.n}</b><br>${COND[j].n}：${r.v[j][0]}/${r.v[j][1]}（${Math.round(r.v[j][0] / r.v[j][1] * 100)}%）`);
+}
+
+function drawPerc() {
+  const S = [{ n:"筆者", c:"--s-user" }, { n:"ペルソナ", c:"--s-persona" }];
+  document.getElementById("lg-perc").innerHTML =
+    `<span><i class="ring"></i>設計した段階</span>` + S.map(s => `<span><i class="dot" style="background:var(${s.c})"></i>${s.n}（平均）</span>`).join("");
+  dotRows("c-perc", DATA.perc, 4, [0, 1, 2, 3, 4], t => t, S,
+    (r, j) => j === 0 ? r.u : r.p,
+    (r, j) => `<b>${r.n}</b><br>${S[j].n}：${j === 0 ? r.ut : r.pt}<br>平均 ${(j === 0 ? r.u : r.p).toFixed(2)}`,
+    (svg, r, y, sc) => {
+      if (r.d === null) return;
+      el("circle", { cx: sc(r.d), cy: y, r: 9, fill: "none", stroke: css("--muted"), "stroke-width": 2 }, svg);
+    });
+}
+
+function drawRater() {
+  const S = [{ n:"筆者", c:"--s-user", k:"user" }, { n:"ペルソナ", c:"--s-persona", k:"persona" }];
+  legend("lg-rater", S);
+  const labelW = narrow("c-rater") ? 72 : 150;
+  const barH = 16, inner = 3, groupGap = 18, top = 4;
+  const groupH = 2 * barH + inner;
+  const h = top + COND.length * (groupH + groupGap) + 14;
+  const { svg, w } = svgFor("c-rater", h);
+  const x0 = labelW, x1 = w - 40;
+  const sc = v => x0 + (x1 - x0) * v;
+  const bottom = h - 22;
+  grid(svg, x0, x1, top, bottom, [0, .25, .5, .75, 1], t => `${t * 100}%`, sc);
+  COND.forEach((c, i) => {
+    const gy = top + i * (groupH + groupGap);
+    text(svg, 0, gy + groupH / 2 + 4, nm(c, "c-rater"), { fill: css("--ink"), "font-size": 13 });
+    S.forEach((s, j) => {
+      const [a, b] = DATA.rater[s.k][i];
+      const y = gy + j * (barH + inner);
+      const p = el("path", { d: barPath(x0, y, sc(a / b) - x0, barH, 4), fill: css(s.c) }, svg);
+      tipOn(p, `<b>${c.n}</b><br>${s.n}：${a}/${b}（${Math.round(a / b * 100)}%）`, `${c.n} ${s.n}`);
+      text(svg, sc(a / b) + 5, y + barH / 2 + 4, `${Math.round(a / b * 100)}%`, { "font-size": 11, fill: css("--ink2") });
+    });
+  });
+  el("line", { x1: x0, x2: x0, y1: top - 2, y2: bottom, stroke: css("--axis"), "stroke-width": 1 }, svg);
+}
+
+function drawCheck() {
+  const labelW = narrow("c-check") ? 72 : 150;
+  const barH = 20, gap = 14, top = 4;
+  const h = top + COND.length * (barH + gap) + 14;
+  const { svg, w } = svgFor("c-check", h);
+  const x0 = labelW, x1 = w - 50;
+  const max = 0.03;
+  const sc = v => x0 + (x1 - x0) * v / max;
+  const bottom = h - 22;
+  grid(svg, x0, x1, top, bottom, [0, .01, .02, .03], t => `${t * 100}%`, sc);
+  COND.forEach((c, i) => {
+    const [a, b] = DATA.check[i];
+    const y = top + i * (barH + gap);
+    text(svg, 0, y + barH / 2 + 4, nm(c, "c-check"), { fill: css("--ink"), "font-size": 13 });
+    const p = el("path", { d: barPath(x0, y, sc(a / b) - x0, barH, 4), fill: css(c.c) }, svg);
+    tipOn(p, `<b>${c.n}</b><br>該当 ${a}／判定可能 ${b}（${(a / b * 100).toFixed(2)}%）`, `${c.n} 該当率`);
+    text(svg, sc(a / b) + 5, y + barH / 2 + 4, `${(a / b * 100).toFixed(1)}%`, { "font-size": 11, fill: css("--ink2") });
+  });
+  el("line", { x1: x0, x2: x0, y1: top - 2, y2: bottom, stroke: css("--axis"), "stroke-width": 1 }, svg);
+}
+
+function drawAll() { drawDist(); drawModel(); drawLevel(); drawPerc(); drawRater(); drawCheck(); }
+drawAll();
+let timer;
+window.addEventListener("resize", () => { clearTimeout(timer); timer = setTimeout(drawAll, 120); });
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", drawAll);
+</script>
 </body>
 </html>
