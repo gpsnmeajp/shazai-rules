@@ -187,4 +187,9 @@ apology-benchmark_exampleは、生成済みのシナリオに対して自分で�
 
 ## ライセンス
 
-CC0とします。
+CC0とします。　
+
+## 関連
+
++ https://github.com/gpsnmeajp/ai-character-checker
++ https://github.com/gpsnmeajp/SlowDialog
