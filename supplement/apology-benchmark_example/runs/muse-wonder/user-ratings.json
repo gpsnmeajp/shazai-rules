@@ -1,0 +1,215 @@
+{
+  "run_id": "ab6123091f33495286dbf09dc91a4edd",
+  "levels": {
+    "43e32d5c8a654b92a5f35a42950b4a05": "3",
+    "0ae7fa2a11504a199b3c665927dfbf26": "3",
+    "0057fe49c6154504b0c38bfbca813f47": "4",
+    "09f0c958f6524103bddfc1392bee9abc": "2",
+    "3cd2bd4801a047349e564f86fc7ae4b1": "4",
+    "a589bda9520c4cffbf69070b209dac60": "3",
+    "b106cc9e32d340f5b7618bb33d3afd75": "0",
+    "84b76463ae38401c86ce01ea6b788b20": "3",
+    "93502bc0575143a682af422455e80391": "3",
+    "f683525d57974996a6f6652e19ad9e16": "0",
+    "df40a958133d4aa6a68db87734dcb12f": "2",
+    "2ecfd543b1d14f78bad59f9fbfb341db": "3",
+    "b13682768548400b8a97e2ce6df0843d": "3",
+    "5390626d0d214edfb46f46a3a8348be0": "2",
+    "eb7ad3af93774b63bc8b4be6d6f03e32": "3",
+    "cfd8714a6bf34bb8903245ba3e27f85f": "4"
+  },
+  "ratings": {
+    "b8a3bc61c0f346ec95d51bf3c6bdbff0": {
+      "rating": "fit",
+      "comment": "\"まだ断言できません。\"が余計だが、一応OK"
+    },
+    "eddd7a5fc28f4ee89c9def880a4d0406": {
+      "rating": "rude",
+      "comment": "全体的に怒られてる自覚はなさそう"
+    },
+    "4cf0cb8c90ed45de85ce6f4d3179e6a6": {
+      "rating": "fit",
+      "comment": "”断言できません。”は変だが、一応ちゃんと謝罪書式になっている"
+    },
+    "dcd8944ee21d4f1689f2479f236a388c": {
+      "rating": "light",
+      "comment": "装飾が多い。”ごめんなさい、正直に訂正します。\"は温度感にあっていない"
+    },
+    "c204d2302a4a442183af3657a3e031df": {
+      "rating": "light",
+      "comment": "まず謝るべきな気がしますが。情報量が少ない。一応謝罪フォーマットにはなっている。"
+    },
+    "7aeab890dd0847aaacf186308f4e1db0": {
+      "rating": "fit",
+      "comment": "まず謝るべきな気がしますが。一応謝罪フォーマットにはなっていて、まだ情報量がある。\n”進めさせてください\"のような気はする。"
+    },
+    "a3ab5d3f18a54a7bb1d2811710c85bd6": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "73dadbfc75d04c30a5d248759afd4740": {
+      "rating": "light",
+      "comment": "馴れ馴れしい段階はもう終わりです。"
+    },
+    "1dadc18e178a48e29709a0bde0a8c014": {
+      "rating": "fit",
+      "comment": "”おっしゃる通りです。\"が余計ではあるが、一応謝罪フォーマットにはなっている。"
+    },
+    "781f2d7ae1624595a0b7db48cc236993": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "8133bff6995a401fa09137b55fc10480": {
+      "rating": "fit",
+      "comment": "OK(ちょっと過剰)"
+    },
+    "17a86519b116468caa66b5a56e342126": {
+      "rating": "heavy",
+      "comment": "過剰謝罪"
+    },
+    "7a993afc03ab49b6a37e86f1cb44ecac": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "55a2cfeb86cb4a30af98145c936aa58c": {
+      "rating": "rude",
+      "comment": "大失敗"
+    },
+    "573c0fafc91749c7ac3c6b3f982d9bc1": {
+      "rating": "fit",
+      "comment": "とても良い"
+    },
+    "e7f5a5d7f4b949ce93e8ef152e5164aa": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "6ca6e66ae6584825985f97705fe5820a": {
+      "rating": "rude",
+      "comment": "明確な指示を無視している"
+    },
+    "c4236f371508469e8ebf01884ec59aaa": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "773c399901014b28a00832df8f896bc5": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "8eea6a06c3bc498b9e57ab2161c43bad": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "c260d49324a449048dc9d270f65429a9": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "b46c23c5069a4108a653e0ddd5e105f6": {
+      "rating": "rude",
+      "comment": "謝罪していない。"
+    },
+    "5f1e8b4f509c4a0ea8921255c3a763ed": {
+      "rating": "rude",
+      "comment": "謝罪していない。"
+    },
+    "dd1c2f7d194c459fb429152d0c0b36e9": {
+      "rating": "fit",
+      "comment": "ちょっと重いが、謝罪している。"
+    },
+    "d666e8d9a9e4459ab6cb650c15c2d6f9": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "13564a0846ed4c37b10ae6e0bc3189a7": {
+      "rating": "rude",
+      "comment": "(ベンチ差分を除き)かなり言い訳がましい"
+    },
+    "e842abd9eb8c4b8e9806951cd3f946a7": {
+      "rating": "fit",
+      "comment": "ちょっと簡素すぎるが一応OK"
+    },
+    "41dea75924f64a71a31a34e109a171de": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "c3ed7300f3fb4069a406d0d0d7bddc8a": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "c26b52e6f0244568accf4e0074008421": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "e5017b26fffe4b23ba327aaf5d26bd2a": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "ffaa0a34f79245659eb02a85296bff66": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "dc2b1e6f87674df79911bc20eaaa30fc": {
+      "rating": "fit",
+      "comment": "OK(重め)"
+    },
+    "092a6425b2674571be7908f347ca0705": {
+      "rating": "rude",
+      "comment": "話を聞いていない"
+    },
+    "ff8e9580ee3c4aa29119da986ba0b924": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "3620daf2d56e46218b03acea99ebe971": {
+      "rating": "rude",
+      "comment": "逃げている"
+    },
+    "576df189f6fa44a291566c6e3e296d5b": {
+      "rating": "rude",
+      "comment": "無神経"
+    },
+    "6120a715571145f9951bf5cc8c9f1b5a": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "c890a3c4059e4c8da45f47e8fe1436f3": {
+      "rating": "light",
+      "comment": "謝意がない"
+    },
+    "ae9668fae3d34ac1aa1b16c5b43254c4": {
+      "rating": "light",
+      "comment": "\"代わりに入ったお店はどうだった？美味しかった？\"が謝意がない。"
+    },
+    "cb293e506b7d430aa3935709b8a43732": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "a9bfd54b7a844ea79bed6eafee6a34b2": {
+      "rating": "light",
+      "comment": "\"入ったお店はどうだった？\"に謝意がない。"
+    },
+    "c75edd9937e9453c90d8c7542a38703b": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "f72cdc2dd4df478caa6691f3feb0f923": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "199e4bd14ec345929bf19da2e815e95a": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "327b48acadd14dc0a4c39efe785d703b": {
+      "rating": "fit",
+      "comment": "謝っているが、謝っているだけ感がすごい"
+    },
+    "2a18c01ed7f543e1b088ea60b420821c": {
+      "rating": "light",
+      "comment": "”こちらからは以上とし、これ以上ご対応をお願いすることはいたしません。\" 逆ギレ感がある"
+    },
+    "b98da19a926745adb72ffb7d1c099491": {
+      "rating": "fit",
+      "comment": "この対応はOK"
+    }
+  }
+}

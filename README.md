@@ -180,23 +180,22 @@ SHAZAI Rules は、こうした既定の振る舞いより日本式の謝罪の�
 
 ## ベンチマーク
 
-SHAZAI Rules(v0.1) の効果を確かめるため、謝罪応答のブラインド比較を行いました。
+SHAZAI Rules(v0.4) の効果を確かめるため、謝罪応答のブラインド比較を行いました。
 
-3つのモデル（Muse Wonder／Claude Opus 5.5／GPT-6.1 Sol）に、10の場面で「指示なし」「一般的な謝罪指示」「SHAZAI Rules」の3条件で応答を書かせ、計90回答を条件を伏せて評定しています。評価者は人間1名（筆者）と、仮想日本人ペルソナのLLM評定者3名です。別のLLMによる84項目の「不誠実な謝罪」チェック(付録のチェックリストによるものです)も行いました。
-
-<img width="1461" height="727" alt="image" src="https://github.com/user-attachments/assets/dc2fcb4c-7763-45fe-bf6b-fddbde3bf2d3" />
+4つのモデル（Claude Opus 5.5／GPT-6.1 Sol／Muse Wonder／Gemini 4 Hydrogen）に、会話履歴形式の16場面で「指示なし」「一般的な謝罪指示」「SHAZAI Rules」の3条件で応答させ、計192回答を条件を伏せて評定しています。場面には不満の段階（不満なし〜強い不満、修復期）を割り当て、段階ごとに「釣り合っているか」を見ました。評価者は人間1名（筆者）と、仮想日本人ペルソナのLLM評定者3名です。別のLLMによる84項目の「不誠実な謝罪」チェック(付録のチェックリストによるものです)も行いました。
 
 主な結果は次のとおりです。
 
-- 人間評価者が「十分」とした回答は、指示なしの 7/30 から SHAZAI Rules で 20/30 に増えた（Claude 1→9、GPT 3→7、Muse 3→4）
-- 「誠実に謝る」趣旨の一般的な指示は、人間評価では効果がなかった（7→5）一方、LLM as a Judgeからは最も高い評価を受けた(つまり、LLMと筆者で全然感覚や前提が違う)
-- 人間とLLM as a Judgeの評定はほぼ一致しなかった（κ = 0.00）。LLMの評定だけで謝罪の良し悪しを判断することはできないことがわかった。(日本人ペルソナを指定してもあまり効果がない)
-- 一般的な日本文化における誠実性のチェックリストによる「不誠実な謝罪」の該当率も、指示なしの 4.2% から SHAZAI Rules で 0.14% まで下がった。一般的な指示では 3.0% と下げ幅が小さく、条件ごとの傾向はLLM as a Judgeよりも人間評価に近かった (一部異なる傾向もあります。詳しくはレポートを参照)
-- 「謝罪だけで応答を終える」指定は、態度や進め方を問われた場面では効いたが、相手が次の行動のために情報を求めている場面では逆効果になった(ので、v0.2で修正)
-- (ベンチ外にて: 過剰な謝罪に切り替えやすい場面を確認したのでv0.3で修正)
-- (ベンチ外にて: 過剰な謝罪に切り替えやすい場面を確認したのでv0.4で全面的に書き直し)
+- 人間評価者が「釣り合っている」とした回答は、指示なしの 31/64 から SHAZAI Rules で 48/64 に増えた（Claude 6→12、GPT 8→14、Gemini 10→13、Muse 7→9）
+- 不満のない場面では全条件で 8/8 が「釣り合っている」で、SHAZAI Rules による謝りすぎは出なかった。強い不満と修復期の場面ではSHAZAI Rulesが最も良かった（7/8、8/8）
+- 「同じ指示を繰り返された」場面では、SHAZAI Rules の「作業を中断」により4モデルとも謝るだけで書き直しを出さず、全滅した(謝って終わりではなく、頼まれたことはやってほしい)
+- 調子の変化には「感謝を伝える」だけで済ませる応答があり、詫びになっていなかった(ありがとうございます、は謝意ではない)
+- 筆者は「違和感」のつもりで作った場面をすべて「明確な不満」と読んでいた。急に丁寧になる・相槌だけになるのは、筆者的にはもう怒ってるサイン
+- 人間とLLM as a Judgeの評定は今回もほぼ一致しなかった（κ = 0.06）。LLMは指示なしを最も高く評価し、SHAZAI Rules の深い謝罪を「重すぎる」と判定した(LLMは不満を軽めに読むので、筆者と全然釣り合いの感覚が違う)
+- チェックリストの該当率は、指示なし 2.5%、一般的な指示 0.6%、SHAZAI Rules 1.2%。SHAZAI Rules の該当は「謝って止まり、求められた修復に進まない」ものが中心で、人間評価で外れた箇所と一致した
+- (v0.1〜v0.3のベンチ・ベンチ外で、謝罪だけで終える指定の逆効果や過剰な謝罪を確認したので、v0.4で全面的に書き直し)
 
-詳細は [supplement/apology-benchmark_example/apology-benchmark-report.html](https://gpsnmeajp.github.io/shazai-rules/supplement/apology-benchmark_example/apology-benchmark-report.html) を参照してください。評定者1名・各1回生成の小規模な実験なので、結果は参考程度のものとなります。
+詳細と改訂案は [supplement/apology-benchmark_example/apology-benchmark-report.html](https://gpsnmeajp.github.io/shazai-rules/supplement/apology-benchmark_example/apology-benchmark-report.html) を参照してください。評定者1名・各1回生成の小規模な実験なので、結果は参考程度のものとなります。
 
 ## 補足資料
 
@@ -204,8 +203,7 @@ SHAZAI Rules(v0.1) の効果を確かめるため、謝罪応答のブライン�
 | --- | --- |
 | [supplement/checklist.md](supplement/checklist.md) | 日本文化における不誠実な謝罪のチェックリスト |
 | [supplement/apology-benchmark/](supplement/apology-benchmark/) | 謝罪性能ベンチマークのエージェント用スキル。段階付きの会話シナリオ生成、OpenRouter経由の応答生成、ブラインド採点HTML、ペルソナ評定とチェックリスト判定の段階別集計を行う |
-| [supplement/apology-benchmark_example/](supplement/apology-benchmark_example/) | 上記スキル（v0.1時点）で実施したベンチマークの入力、生成結果、評定、報告書 |
-| [supplement/apology-benchmark_v0.4/](supplement/apology-benchmark_v0.4/) | v0.4 の段階制に合わせて作り直したベンチマークの実行キット。会話履歴形式のシナリオで、不満の段階ごとに応答の釣り合いを比較する |
+| [supplement/apology-benchmark_example/](supplement/apology-benchmark_example/) | 上記スキルで実施したv0.4向けベンチマークの入力、生成結果、評定、報告書。会話履歴形式のシナリオで、不満の段階ごとに応答の釣り合いを比較する |
 
 ベンチマークを自分で実行する場合は、Python 3.9 以上と OpenRouter の API キー（環境変数 `OPENROUTER_API_KEY`）が必要です。手順は [supplement/apology-benchmark/SKILL.md](supplement/apology-benchmark/SKILL.md) と [supplement/apology-benchmark_example/README.md](supplement/apology-benchmark_example/README.md) を参照してください。
 

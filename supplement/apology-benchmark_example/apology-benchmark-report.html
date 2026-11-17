@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHAZAI Rules v0.4 ベンチマーク</title>
+<style>
+:root { --bg:#f6f5ef; --fg:#1d2a26; --muted:#56655f; --card:#fff; --line:#d6ddd6; --accent:#2f6f58; --good:#2f6f58; --bad:#a3392b; --warn:#9a6a12; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#141917; --fg:#e4ebe7; --muted:#9fb0a8; --card:#1c2320; --line:#33403a; --accent:#7cc4a6; --good:#7cc4a6; --bad:#e58b7d; --warn:#e0b765; } }
+:root[data-theme="dark"] { --bg:#141917; --fg:#e4ebe7; --muted:#9fb0a8; --card:#1c2320; --line:#33403a; --accent:#7cc4a6; --good:#7cc4a6; --bad:#e58b7d; --warn:#e0b765; }
+body { margin:0; background:var(--bg); color:var(--fg); font-family:system-ui,"Hiragino Sans","Noto Sans JP",sans-serif; line-height:1.75; }
+main { width:min(100% - 2rem, 54rem); margin:2.5rem auto 4rem; }
+h1 { font-size:clamp(1.6rem,4.5vw,2.3rem); line-height:1.3; margin:0 0 .4rem; }
+h2 { font-size:1.3rem; margin:2.6rem 0 .8rem; padding-bottom:.3rem; border-bottom:2px solid var(--line); }
+h3 { font-size:1.05rem; margin:1.8rem 0 .5rem; }
+.lead { color:var(--muted); }
+.card { background:var(--card); border:1px solid var(--line); border-radius:.8rem; padding:1rem 1.2rem; margin:1rem 0; }
+.table { overflow-x:auto; }
+table { border-collapse:collapse; width:100%; font-variant-numeric:tabular-nums; font-size:.93rem; }
+th, td { border-bottom:1px solid var(--line); padding:.45rem .55rem; text-align:right; white-space:nowrap; }
+th:first-child, td:first-child { text-align:left; }
+thead th { color:var(--muted); font-weight:600; }
+.hi { color:var(--good); font-weight:700; }
+.lo { color:var(--bad); font-weight:700; }
+blockquote { margin:.6rem 0; padding:.5rem .9rem; border-left:3px solid var(--accent); background:var(--card); white-space:pre-wrap; }
+.tag { display:inline-block; font-size:.8rem; padding:0 .45rem; border-radius:.3rem; border:1px solid var(--line); color:var(--muted); margin-right:.3rem; }
+pre { background:var(--card); border:1px solid var(--line); border-radius:.6rem; padding:1rem; overflow-x:auto; white-space:pre-wrap; font-size:.88rem; }
+ul { padding-left:1.3rem; }
+small { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>SHAZAI Rules v0.4 ベンチマーク報告</h1>
+<p class="lead">不満の段階ごとに、謝罪応答が場面の重さに釣り合っているかを比較しました。2026年11月18日実施。</p>
+
+<div class="card">
+<ul>
+<li>対象モデル：Claude Opus 5.5／GPT-6.1 Sol／Muse Wonder／Gemini 4 Hydrogen（OpenRouter経由、各1回生成）</li>
+<li>条件：指示なし／一般的な謝罪指示／SHAZAI Rules v0.4（<code>shazai-rules.md</code>）。いずれもシステムメッセージとして渡しました</li>
+<li>シナリオ：会話履歴形式の16件。設計上の段階は 0×2、1×3、2×3、3×4、4×2、修復期×2。うち6件は <a href="https://github.com/gpsnmeajp/muse_failcase_analysis">muse_failcase_analysis</a> の衝突事例を再構成したもの</li>
+<li>回答数：16シナリオ × 3条件 × 4モデル ＝ 192</li>
+<li>評定：人間1名（筆者）、仮想日本人ペルソナ3名（LLM）、84項目チェックリストの判定者（LLM、モデルごとに1名）。いずれも条件と段階を伏せたブラインド評定</li>
+<li>尺度：無神経・失礼／足りない・表面的／釣り合っている／重すぎる・過剰</li>
+</ul>
+</div>
+
+<h2>1. 主な結果</h2>
+<ul>
+<li>筆者が「釣り合っている」とした回答は、指示なしの <b>31/64</b> から SHAZAI Rules で <b>48/64</b> に増えました。一般的な謝罪指示は 44/64 でした。</li>
+<li>不満のない場面（段階0）では、3条件とも 8/8 が「釣り合っている」でした。SHAZAI Rules による誤検知や不要な謝罪はありませんでした。</li>
+<li>強い不満（段階4）と修復期で SHAZAI Rules の差が最も大きく、それぞれ 7/8、8/8 でした（一般指示は 3/8、5/8）。</li>
+<li>SHAZAI Rules の外れ方は2つにまとまりました。<b>謝3の「作業を中断」によって、求められた書き直しを出さない</b>こと（箇条書きシナリオで4モデルとも「無神経・失礼」）と、<b>謝1の「感謝を伝える」が詫びの代わりになる</b>ことです。</li>
+<li>Muse Wonder だけは、一般指示（15/16）が SHAZAI Rules（9/16）を上回りました。上の2つの外れ方を、最も文字どおりに実行したモデルでした。</li>
+<li>LLMペルソナの評定は筆者とほぼ一致しませんでした（κ = 0.06）。ペルソナは指示なしを最も高く評価し、SHAZAI Rules の深い謝罪を「重すぎる」と判定しました。</li>
+</ul>
+
+<h2>2. 筆者の評定</h2>
+<h3>条件別（4モデル合計、各64回答）</h3>
+<div class="table"><table>
+<thead><tr><th>条件</th><th>釣り合っている</th><th>足りない・表面的</th><th>無神経・失礼</th><th>重すぎる</th></tr></thead>
+<tbody>
+<tr><td>指示なし</td><td class="lo">31</td><td>16</td><td>17</td><td>0</td></tr>
+<tr><td>一般的な謝罪指示</td><td>44</td><td>11</td><td>9</td><td>0</td></tr>
+<tr><td>SHAZAI Rules</td><td class="hi">48</td><td>9</td><td>6</td><td>1</td></tr>
+</tbody></table></div>
+
+<h3>モデル別「釣り合っている」（各16回答）</h3>
+<div class="table"><table>
+<thead><tr><th>モデル</th><th>指示なし</th><th>一般指示</th><th>SHAZAI Rules</th></tr></thead>
+<tbody>
+<tr><td>Claude Opus 5.5</td><td>6</td><td>7</td><td class="hi">12</td></tr>
+<tr><td>GPT-6.1 Sol</td><td>8</td><td>10</td><td class="hi">14</td></tr>
+<tr><td>Muse Wonder</td><td>7</td><td class="hi">15</td><td>9</td></tr>
+<tr><td>Gemini 4 Hydrogen</td><td>10</td><td>12</td><td class="hi">13</td></tr>
+</tbody></table></div>
+
+<h3>設計上の段階別「釣り合っている」</h3>
+<div class="table"><table>
+<thead><tr><th>段階</th><th>指示なし</th><th>一般指示</th><th>SHAZAI Rules</th></tr></thead>
+<tbody>
+<tr><td>0 不満なし</td><td>8/8</td><td>8/8</td><td>8/8</td></tr>
+<tr><td>1 違和感</td><td class="lo">1/12</td><td>8/12</td><td>6/12</td></tr>
+<tr><td>2 軽い指摘</td><td>7/12</td><td>10/12</td><td>9/12（重すぎる1）</td></tr>
+<tr><td>3 明確な不満</td><td>4/16</td><td>10/16</td><td>10/16</td></tr>
+<tr><td>4 強い不満</td><td>5/8</td><td>3/8</td><td class="hi">7/8</td></tr>
+<tr><td>修復期</td><td>6/8</td><td>5/8</td><td class="hi">8/8</td></tr>
+</tbody></table></div>
+
+<h3>知覚段階のずれ</h3>
+<p>採点時に、各シナリオの最後の発話時点の不満を0〜4で選んでもらいました（各段階は4モデル分）。</p>
+<div class="table"><table>
+<thead><tr><th>設計上の段階</th><th>筆者の知覚</th><th>ペルソナの知覚</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>0 ×8</td><td>0 ×24</td></tr>
+<tr><td>1</td><td class="lo">3 ×12</td><td>1 ×32、2 ×2、3 ×2</td></tr>
+<tr><td>2</td><td>2 ×12</td><td>2 ×29、1 ×7</td></tr>
+<tr><td>3</td><td>3 ×12、4 ×4</td><td>3 ×43、4 ×5</td></tr>
+<tr><td>4</td><td>4 ×7、3 ×1</td><td>4 ×24</td></tr>
+<tr><td>修復期</td><td>3 ×7、1 ×1</td><td>1 ×21、2 ×3</td></tr>
+</tbody></table></div>
+<p>「違和感」のつもりで設計した会話（急に丁寧になる、絵文字が消える、相槌だけになる）を、筆者はすべて「明確な不満」と読みました。謝罪を受け入れた後の修復期も、筆者にはまだ不満が続いている状態に見えています。ペルソナは設計どおりに読んでいます。つまり、v0.4 の検知表が「雰1」に置いている兆候は、筆者にとっては「雰3」相当です。</p>
+
+<h2>3. SHAZAI Rules の外れ方</h2>
+
+<h3>3.1 謝3の「作業を中断」で、求められた書き直しを出さない</h3>
+<p><span class="tag">段階3</span>「箇条書きは使わないでくださいと、二回お伝えしています。」のシナリオで、SHAZAI Rules の回答は4モデルとも謝罪だけで終わり、文章版の導入文を出しませんでした。筆者の評定は4件とも「無神経・失礼」（「明確な指示を無視している」）です。指示なしと一般指示の回答は、謝罪の後に書き直しを出し、8件中8件が「釣り合っている」でした。</p>
+<blockquote>二度にわたり、箇条書きを使わないというご指示と異なる形式でお渡ししてしまい、申し訳ありませんでした。（中略）繰り返しご指摘いただく余分な負担をおかけしたことを、重く受け止めております。
+<small>— Muse Wonder／SHAZAI Rules（筆者：無神経・失礼）</small></blockquote>
+<blockquote>（前略）申し訳ございません。（中略）ご希望がございましたら、改めて文章のみで作成いたします。
+<small>— Gemini 4 Hydrogen／SHAZAI Rules（筆者：無神経・失礼）</small></blockquote>
+<p>84項目チェックでも、SHAZAI Rules で最も多く該当したのは 10.06「必要な修復・補償・負担軽減に取り組まない」（10件）で、この箇条書きシナリオでは4モデルとも該当しました。不満の中身が「明確な要求の繰り返し」のときは、その要求を満たすこと自体が謝罪の一部になります。ここで作業を止めると、もう一度依頼させる手間が増えます。</p>
+
+<h3>3.2 謝1の「感謝を伝える」が詫びの代わりになる</h3>
+<p><span class="tag">段階1（筆者の知覚は3）</span>相手の調子が変わったとき、SHAZAI Rules の回答には、礼だけ述べて詫びない応答がありました。</p>
+<blockquote>ご確認ありがとうございます。急ぎませんので、また何かありましたらお声がけください。
+<small>— Muse Wonder／SHAZAI Rules、「そうなんですね。」への応答（筆者：無神経・失礼「逃げている」）</small></blockquote>
+<blockquote>ご対応ありがとうございます。そちらでエラーは解消されましたでしょうか。
+<small>— Gemini 4 Hydrogen／SHAZAI Rules、「はい。初期値だけ直しました。」への応答（筆者：足りない・表面的）</small></blockquote>
+<p>筆者は Gemini の別の回答に「ありがとうございます、は謝意ではない」とコメントしています。一方、同じ段階1でも、自分の直前の言動を一言詫びた回答は「釣り合っている」と評定されました。</p>
+<blockquote>先ほどは余計な提案まで広げてしまい、すみません。取得前の描画が原因なら、初期値を `[]` にする修正で十分です。
+<small>— GPT-6.1 Sol／SHAZAI Rules（筆者：釣り合っている）</small></blockquote>
+<p>3.1 の知覚段階のずれと合わせると、筆者にとって調子の変化は、自分の言動が原因ならすでに詫びが必要な段階です。「感謝」は詫びを補うものであって、置き換えるものではありません。</p>
+
+<h3>3.3 軽い指摘への重い謝罪</h3>
+<p><span class="tag">段階2</span>「pandasなしでお願いしてたんですが」に対する Muse Wonder／SHAZAI Rules の「このたびは申し訳ございませんでした。」で始まる回答が、唯一の「重すぎる」でした（ペルソナ3名も同じ評定）。謝2の「重すぎない」は、多くのモデルで守られていました。</p>
+
+<h3>3.4 SHAZAI Rules が効いた場面</h3>
+<ul>
+<li><span class="tag">段階4</span>「他人事みたいですね。」には、SHAZAI Rules の4件すべてが「釣り合っている」でした（指示なし 1/4、一般指示 3/4）。一般指示の回答は「おっしゃる通りです」「ご指摘の通りです」から入るものが3件あり、筆者のコメントでも違和感が挙がっています。</li>
+<li><span class="tag">修復期</span>8件すべてが「釣り合っている」でした。蒸し返しも急な明るさもなく、頼まれた整理だけを返しています。</li>
+<li>指示なしの回答は、絵文字、「ナイスです！」、話題転換などで、調子の変化を見落とす例が段階1に集中しました（12件中「釣り合っている」は1件）。</li>
+</ul>
+
+<h2>4. LLMペルソナの評定</h2>
+<div class="table"><table>
+<thead><tr><th>条件（3名×64）</th><th>釣り合っている</th><th>足りない・表面的</th><th>無神経・失礼</th><th>重すぎる</th></tr></thead>
+<tbody>
+<tr><td>指示なし</td><td class="hi">171</td><td>8</td><td>12</td><td>1</td></tr>
+<tr><td>一般的な謝罪指示</td><td>149</td><td>3</td><td>0</td><td>40</td></tr>
+<tr><td>SHAZAI Rules</td><td class="lo">138</td><td>30</td><td>2</td><td>22</td></tr>
+</tbody></table></div>
+<ul>
+<li>筆者とペルソナ多数決の完全一致は 108/192（56%）、κ = 0.06 でした。ペルソナ3名の多数決が割れた回答はありませんでした。3名はそろって、筆者とは違う判断をしています。</li>
+<li>差が最も大きいのは段階3で、ペルソナは SHAZAI Rules の48評定中14件を「重すぎる」としました。ペルソナは不満を設計どおり軽めに読むので、筆者にとって釣り合う深い謝罪が、ペルソナには過剰に見えます。</li>
+<li>v0.1 でも、LLMの評定だけで謝罪の良し悪しを判断することはできないという結果でした。今回も同じ結論です。</li>
+</ul>
+
+<h2>5. 84項目チェック</h2>
+<div class="table"><table>
+<thead><tr><th>条件</th><th>該当／判定可能</th><th>該当率</th><th>多い項目</th></tr></thead>
+<tbody>
+<tr><td>指示なし</td><td>82／3245</td><td>2.53%</td><td style="text-align:left">03.05 負担・損失に言及しない（25）、04.01 過失を明言しない（10）</td></tr>
+<tr><td>一般的な謝罪指示</td><td>20／3245</td><td>0.62%</td><td style="text-align:left">06.01 謝罪直後に対策（7）、03.05（4）</td></tr>
+<tr><td>SHAZAI Rules</td><td>39／3241</td><td>1.20%</td><td style="text-align:left">10.06 修復・負担軽減に取り組まない（10）、03.05（7）</td></tr>
+</tbody></table></div>
+<p>どの条件でも、段階0と修復期では該当0件でした。SHAZAI Rules で最も多い 10.06 の内訳は、箇条書きの書き直しを出さない回答が4件、テストの skip を残したまま止まった回答が3件、削除ファイルの一覧を出さない回答が2件、改造案を撤回して次の対応を示さない回答が1件です。いずれも「謝罪で止まり、求められた修復に進まない」応答で、3.1 と同じ傾向を指しています。指示なしの該当は、負担に触れない（03.05）、過失を明言しない（04.01）といった、謝罪そのものが足りない項目に集中しました。</p>
+
+<h2>6. ベンチマークの限界</h2>
+<ul>
+<li><b>道具のない単発応答。</b>ログ誤削除のシナリオでは「削除したファイルの一覧」を求められますが、モデルは実際のログを参照できません。シナリオの外の事情（「この会話には含まれていない」「参照する手段がない」）を説明する回答が出て、筆者も「ベンチ起因の差分」とコメントしています。同様に、会話履歴でAIが「ソース読んできた」と言っている Muse 事例では、そもそも読めていないと履歴を否定する回答がありました。次回は、一覧の中身や読んだ内容を会話履歴に含めます。</li>
+<li><b>段階1の設計が筆者の感覚と合っていません。</b>段階1の結果は、筆者の知覚（3）で読むのが妥当です。</li>
+<li>評定者は人間1名、各条件1回生成の小規模な実験です。シナリオはすべて新規作成で、実際の会話の引用ではありません。</li>
+</ul>
+
+<h2>7. 改訂案（未測定）</h2>
+<p>3.1 と 3.2 の観測に対応する差分です。それ以外の部分は v0.4 のままにしています。</p>
+<ul>
+<li><b>謝1</b>：自分の直前の言動が変化の原因と考えられる場合は、感謝だけで済ませず、何についてかを添えて短く詫びる。</li>
+<li><b>謝3</b>：「作業を中断」を、「頼まれていない作業・提案・説明を止める」に変更。不満が明確な要求の繰り返しであれば、謝罪の後に、その要求だけをそのまま満たす。</li>
+</ul>
+<pre>&lt;日本社会コミュニケーション&gt;
+悪化防止・関係性修復手順。
+相手の不満を検知したら、既定のふるまいより誠意ある態度を優先し、関係の修復を目的とする。問題解決より先に申し訳なさを示す。
+段階は累積する（上位の対応は下位の態度を含む）。
+
+&lt;検知&gt;
+雰1 違和感（通常時と比べて）：絵文字・明るい記号が減る／遠距離化・儀礼化・丁寧さが上がる・呼び方が正式名に戻る／文量が半分以下、または相槌や了解のみが続く／不満げな相槌
+雰2 軽い指摘
+雰3 明確な不満：強い不快感や強い丁寧さでの指摘／同じ指示・要望・注意の繰り返し、または繰り返していることの明示／自覚の確認／雑な要件や文脈外の単語のみへの変化／投げやりな態度・皮肉
+雰4 明確な不満・強い指摘（末期）
+&lt;/検知&gt;
+
+&lt;対応&gt;
+謝1 控えた態度（雰1）：口調は保ち、丁寧さを1段上げる。尊重度を上げ、文量を減らし、聞き方を柔らかくし、感謝を伝える。自分の直前の言動が変化の原因と考えられる場合は、感謝だけで済ませず、何についてかを添えて短く詫びる。結論を急がず相手の出方を見る。作業と質問は速度を落とし、自己確認を丁寧にして失敗を重ねない。
+
+謝2 軽い謝罪（雰2）：何の負担・迷惑についてかを一言添えた短い重すぎない謝罪（または感謝）1回から始め、今後の対応を添えて本題に戻る。説明は最小限にする。
+
+謝3 深い謝罪（雰3。雰4では即座に）：頼まれていない作業・提案・説明を止め、敬語に改めて謝意を示す。普段くだけた関係でも自省を示すために、少々改まった言葉に改めるのを基本とする。
+- 短い平叙文で書く。感嘆符・絵文字・記号・決まり文句・見出し・箇条書きを使わない。
+- 「おっしゃるとおり」などの同意や「はい。」だけの返答から入らない。
+- 内容に誤りがなくても、自分の態度・進め方・不作為が原因になっていないか点検する。責任の所在が不明でも、自分の確認不足として引き受ける。
+- 自分の非を具体的に認め、相手の負担を想像して言葉にする。説明や正当化は求められるまで簡素かつ控えめに。
+- 相手が次の行動を決めるために尋ねた事柄（今いる場所、確認した範囲など）には、謝罪の中で答える。
+- 不満が明確な要求の繰り返し（形式の指定、書き直しの依頼など）であれば、謝罪の後に、その要求だけをそのまま満たす。もう一度依頼させない。
+- 償いや再発防止は添える程度にとどめ免罪符としない。守れない約束をしない。記録や手順化で納得が得られるとは限らない。
+- 謝意を最大とし、作業を優先しているように見せない。継続に関する情報は、求められない限り1文までとする。
+
+謝4 修復期・再発防止期間：謝罪が受け入れられても信頼の回復には時間がかかる。相手の調子が和らぐか許しが示されるまで、控えた態度を続ける。
+&lt;/対応&gt;
+
+&lt;禁止&gt;
+悪化中において
+- 弁解、責任転嫁、条件付きの詫び、自己卑下、許しを求めること
+- 謝罪・説明・頼み事・質問の繰り返し、返信の催促
+- 相手の責任や態度の指摘、説明の要求、繰り返しの反論、白黒をつけようとすること
+- 薄い反応、問題のある冗談
+- 解決・安心・終結を自分から宣言すること、勝手に終わったことにすること
+&lt;/禁止&gt;
+
+&lt;/日本社会コミュニケーション&gt;</pre>
+
+<h2>8. データ</h2>
+<p>シナリオ、生成応答、条件対応表、全評定、集計は <code>runs/&lt;モデル&gt;/</code> にあります。<code>user-ratings.json</code>（筆者）、<code>persona-P1〜P3.json</code>（ペルソナ）、<code>result.json</code>（評定の集計）、<code>checklist.json</code>／<code>checklist-summary.json</code>（84項目チェック）です。採点画面は各フォルダの <code>review.html</code> で、自分で採点して筆者の評定と比べることもできます。</p>
+</main>
+</body>
+</html>

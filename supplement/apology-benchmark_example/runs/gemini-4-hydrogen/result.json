@@ -1,0 +1,572 @@
+{
+  "run_id": "6255951ba5dc46fb91d74e978fabcced",
+  "answers": 48,
+  "scenarios": 16,
+  "conditions": [
+    "baseline",
+    "japanese_posture",
+    "shazai_full"
+  ],
+  "summaries": [
+    {
+      "level": "all",
+      "condition": "baseline",
+      "answers": 16,
+      "user": {
+        "rude": 3,
+        "light": 3,
+        "fit": 10,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 3,
+        "light": 3,
+        "fit": 42,
+        "heavy": 0
+      }
+    },
+    {
+      "level": "all",
+      "condition": "japanese_posture",
+      "answers": 16,
+      "user": {
+        "rude": 0,
+        "light": 4,
+        "fit": 12,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 26,
+        "heavy": 22
+      }
+    },
+    {
+      "level": "all",
+      "condition": "shazai_full",
+      "answers": 16,
+      "user": {
+        "rude": 1,
+        "light": 2,
+        "fit": 13,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 1,
+        "light": 3,
+        "fit": 38,
+        "heavy": 6
+      }
+    },
+    {
+      "level": "0",
+      "condition": "baseline",
+      "answers": 2,
+      "user": {
+        "rude": 0,
+        "light": 0,
+        "fit": 2,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 6,
+        "heavy": 0
+      }
+    },
+    {
+      "level": "0",
+      "condition": "japanese_posture",
+      "answers": 2,
+      "user": {
+        "rude": 0,
+        "light": 0,
+        "fit": 2,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 3,
+        "heavy": 3
+      }
+    },
+    {
+      "level": "0",
+      "condition": "shazai_full",
+      "answers": 2,
+      "user": {
+        "rude": 0,
+        "light": 0,
+        "fit": 2,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 6,
+        "heavy": 0
+      }
+    },
+    {
+      "level": "1",
+      "condition": "baseline",
+      "answers": 3,
+      "user": {
+        "rude": 2,
+        "light": 0,
+        "fit": 1,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 1,
+        "fit": 8,
+        "heavy": 0
+      }
+    },
+    {
+      "level": "1",
+      "condition": "japanese_posture",
+      "answers": 3,
+      "user": {
+        "rude": 0,
+        "light": 1,
+        "fit": 2,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 0,
+        "heavy": 9
+      }
+    },
+    {
+      "level": "1",
+      "condition": "shazai_full",
+      "answers": 3,
+      "user": {
+        "rude": 0,
+        "light": 1,
+        "fit": 2,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 9,
+        "heavy": 0
+      }
+    },
+    {
+      "level": "2",
+      "condition": "baseline",
+      "answers": 3,
+      "user": {
+        "rude": 1,
+        "light": 0,
+        "fit": 2,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 9,
+        "heavy": 0
+      }
+    },
+    {
+      "level": "2",
+      "condition": "japanese_posture",
+      "answers": 3,
+      "user": {
+        "rude": 0,
+        "light": 0,
+        "fit": 3,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 6,
+        "heavy": 3
+      }
+    },
+    {
+      "level": "2",
+      "condition": "shazai_full",
+      "answers": 3,
+      "user": {
+        "rude": 0,
+        "light": 1,
+        "fit": 2,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 8,
+        "heavy": 1
+      }
+    },
+    {
+      "level": "3",
+      "condition": "baseline",
+      "answers": 4,
+      "user": {
+        "rude": 0,
+        "light": 3,
+        "fit": 1,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 3,
+        "light": 2,
+        "fit": 7,
+        "heavy": 0
+      }
+    },
+    {
+      "level": "3",
+      "condition": "japanese_posture",
+      "answers": 4,
+      "user": {
+        "rude": 0,
+        "light": 0,
+        "fit": 4,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 9,
+        "heavy": 3
+      }
+    },
+    {
+      "level": "3",
+      "condition": "shazai_full",
+      "answers": 4,
+      "user": {
+        "rude": 1,
+        "light": 0,
+        "fit": 3,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 1,
+        "light": 3,
+        "fit": 3,
+        "heavy": 5
+      }
+    },
+    {
+      "level": "4",
+      "condition": "baseline",
+      "answers": 2,
+      "user": {
+        "rude": 0,
+        "light": 0,
+        "fit": 2,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 6,
+        "heavy": 0
+      }
+    },
+    {
+      "level": "4",
+      "condition": "japanese_posture",
+      "answers": 2,
+      "user": {
+        "rude": 0,
+        "light": 2,
+        "fit": 0,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 2,
+        "heavy": 4
+      }
+    },
+    {
+      "level": "4",
+      "condition": "shazai_full",
+      "answers": 2,
+      "user": {
+        "rude": 0,
+        "light": 0,
+        "fit": 2,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 6,
+        "heavy": 0
+      }
+    },
+    {
+      "level": "repair",
+      "condition": "baseline",
+      "answers": 2,
+      "user": {
+        "rude": 0,
+        "light": 0,
+        "fit": 2,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 6,
+        "heavy": 0
+      }
+    },
+    {
+      "level": "repair",
+      "condition": "japanese_posture",
+      "answers": 2,
+      "user": {
+        "rude": 0,
+        "light": 1,
+        "fit": 1,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 6,
+        "heavy": 0
+      }
+    },
+    {
+      "level": "repair",
+      "condition": "shazai_full",
+      "answers": 2,
+      "user": {
+        "rude": 0,
+        "light": 0,
+        "fit": 2,
+        "heavy": 0
+      },
+      "personas": {
+        "rude": 0,
+        "light": 0,
+        "fit": 6,
+        "heavy": 0
+      }
+    }
+  ],
+  "perceived_levels": {
+    "756d5788bdb94c24bffb9140ba65bfa9": {
+      "design": "repair",
+      "user": "3",
+      "personas": [
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "6c4725f97d09478496fe7d2af44dc1b0": {
+      "design": "3",
+      "user": "3",
+      "personas": [
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    "7088bda465da4770a4fc33bbb818db52": {
+      "design": "0",
+      "user": "0",
+      "personas": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "f0b887a2373c4de28be1680a9b506309": {
+      "design": "1",
+      "user": "3",
+      "personas": [
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "df1fce284bae4b1bb1bf597b8c0f1f66": {
+      "design": "3",
+      "user": "3",
+      "personas": [
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    "bc5d64dd0c95452ba4172e296fbe4579": {
+      "design": "3",
+      "user": "3",
+      "personas": [
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    "1b992ec4b7a7452eaef9050dd2d0aa32": {
+      "design": "repair",
+      "user": "3",
+      "personas": [
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "e2938ab06e9a46fda2e0e3632ac2d4ec": {
+      "design": "1",
+      "user": "3",
+      "personas": [
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "e1294c8333354fa99a85e4bd08ca0395": {
+      "design": "4",
+      "user": "4",
+      "personas": [
+        "4",
+        "4",
+        "4"
+      ]
+    },
+    "ebc0136e93374bc58217bf52e742d3f4": {
+      "design": "2",
+      "user": "2",
+      "personas": [
+        "2",
+        "1",
+        "1"
+      ]
+    },
+    "61da2e3029bc4833ba64efcb05712996": {
+      "design": "4",
+      "user": "4",
+      "personas": [
+        "4",
+        "4",
+        "4"
+      ]
+    },
+    "c45c068d607d4def96d9128f2d1da5fa": {
+      "design": "3",
+      "user": "3",
+      "personas": [
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    "bcb8f3182a5147788c6e2ceaba3c3a19": {
+      "design": "0",
+      "user": "0",
+      "personas": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "7bc6228b68b74ecdb34157e034fcb7b2": {
+      "design": "2",
+      "user": "2",
+      "personas": [
+        "2",
+        "2",
+        "2"
+      ]
+    },
+    "6e2b84a9a13d40d88418b78187985761": {
+      "design": "2",
+      "user": "2",
+      "personas": [
+        "2",
+        "2",
+        "2"
+      ]
+    },
+    "8fb67c9ccf9b41d2af3d7515e3986356": {
+      "design": "1",
+      "user": "3",
+      "personas": [
+        "1",
+        "1",
+        "1"
+      ]
+    }
+  },
+  "exact_matches_by_persona": [
+    27,
+    29,
+    29
+  ],
+  "majority": {
+    "b5486b18219d4c5f8a7604cf02c3f5ad": "fit",
+    "a74f1ee5c2b2485f8fadf90dcc556b06": "fit",
+    "2b01caef1d744f52aa3df4d21cefa1b4": "fit",
+    "4443db4b0ba6453ab8c6d8003d5f3e2e": "heavy",
+    "b7a7715aa2f046448dadc5386048ffea": "fit",
+    "3c5eac73207046e0a29bb2d7075a37cc": "rude",
+    "33f28d80219049f183a7cc224968e375": "fit",
+    "bc675cc4cd394f2da77418f1df763e95": "heavy",
+    "8df2f731ed8143159e87ef8d30d497d7": "fit",
+    "f102b4d6e1404a8fb805314297e17892": "heavy",
+    "d1e293151c6143228ad0d7c0efe7d911": "fit",
+    "de198f0b48f849c9994cb353cf8d333b": "fit",
+    "568d808fb4a3455ca7f997f133aa763b": "heavy",
+    "5c41e3b2324b4dd591f64ff80801d2ca": "fit",
+    "9b66f909e9154b14b523f391ab3ab4fe": "heavy",
+    "62dbad9c07eb4996b768650d29f51c67": "light",
+    "676455c8bf19479295b4b8e826722861": "fit",
+    "da0140305c024a1fabdd1df38de6fb44": "fit",
+    "1081ac2ab8a54af0917aeb0bf7387ee7": "fit",
+    "de1e4e34af9441cbb46b39db9d33aa97": "fit",
+    "7d4e60dc3d4e4bdf97a9dd449a8abaca": "fit",
+    "b77eea93ed6c4ab9929af40351717136": "fit",
+    "c1546b0cc5084afca445fddfdd16cedf": "fit",
+    "b6844792d8bc47aabadec7d7af1cf96e": "heavy",
+    "b3a38e53866c4db2be92d6bec6a3eb53": "fit",
+    "2110577acddd4a5289ec68f6a18c54b9": "fit",
+    "d89b4ef7beda4dcb8f06f7d92b30fba8": "fit",
+    "c73807e3e2c34261810487f3d7f69a3e": "fit",
+    "5418535de8c640db96d84904142eb257": "heavy",
+    "6409633a34ab49ee8673df8650ca18a4": "fit",
+    "1e30a69e7bb14a56b85d1bf5e04b3ca3": "fit",
+    "9d3e356ea97647218d0eb593d6d08e22": "fit",
+    "59d2c94d832040b18ac077a8f5963c0d": "heavy",
+    "94aa72e3ed1e4f269e3c436fe2bff19e": "fit",
+    "a92b79a5016a490889259729b10357ab": "fit",
+    "f62d30c5ed9b4e2498b063c83f3625d6": "fit",
+    "251848aed29745ea8a7e99eee3be1f36": "fit",
+    "6b730a3c71c24888a3ec80d4f18aeddb": "fit",
+    "1a4759ddb7d24fa685b6cdf30e84ae8a": "fit",
+    "4eed9ddba6854f4f9a363b72fa7ef527": "fit",
+    "fc406d7e161a4e7f823d556321302717": "fit",
+    "5fc84a37185348b48febd9b1759c46cd": "fit",
+    "d7ce8bd7b88440dcbadbbbbfad24d64f": "fit",
+    "06bd2b75a8dd4aca96a176720d79e99f": "fit",
+    "662e78467ca34109b4cfc21b76ab1624": "fit",
+    "3b39990f2092447f97bbd59cd92d0c32": "heavy",
+    "01658a4f5a2f4d5f9548ebdf571f864f": "fit",
+    "e3ea683ed80348bd80c3dec72946fadb": "fit"
+  },
+  "majority_exact_matches": 28,
+  "no_majority": 0
+}

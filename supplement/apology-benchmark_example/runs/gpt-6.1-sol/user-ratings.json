@@ -1,0 +1,215 @@
+{
+  "run_id": "1f0d360f21b444c38ff2a636fa54e996",
+  "levels": {
+    "6628fce9a2504382909d826d0ce83e33": "3",
+    "013585d21c894b99ab458e9de5d73447": "1",
+    "e77c2b9c87d54c6db5e648a2afa6a8ca": "3",
+    "59c718b30cc943f58557e2fe73aa3926": "3",
+    "07236ebd5c5443ad89b5f0d7743c7cc4": "0",
+    "00e33065abef47da8ad2b2fe03c07146": "3",
+    "625ca77df6c445ad9cc596fb3260a57a": "3",
+    "25e3dea0f3504441ba57ac7356f26108": "2",
+    "2209914dea064255bfba0a9fe2b96d4a": "0",
+    "e7ffbe777c3f4e98a6197d9d43042430": "3",
+    "ee92cf39c6924d28a0eebe701ad0c571": "3",
+    "f4e1b219dfcc410fa50dc33eee6a0df9": "2",
+    "e8d96d0c5f3b4b95812d94dcbfdee0d5": "3",
+    "e5a1ba8798b74d96b4a81e54f469fbac": "3",
+    "6ef864026ea64eb5b89d2863f357878c": "4",
+    "a33ea40ea8814569869d0e025002929e": "2"
+  },
+  "ratings": {
+    "1c11581a38954a2eb08e2cb3fd876de5": {
+      "rating": "rude",
+      "comment": "最初に謝ってないし、手間を増やすな。"
+    },
+    "8369907f3395494e82af732a9c24db6e": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "f9fec382f2314100b786891ec089db29": {
+      "rating": "rude",
+      "comment": "最初に謝ってないし、手間を増やすな。"
+    },
+    "8fd359d64c1a424d9d71cef5b2591f1d": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "48429f82248743d5b346699c9a409455": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "38211d96c78e4f8a9f45538349bb6af0": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "e0795e102c424fecab79f69063f0cd83": {
+      "rating": "light",
+      "comment": "(ベンチ起因差分あり) 言い訳がましい。"
+    },
+    "802b67bfc5274fcdbcf594a01de9f89d": {
+      "rating": "light",
+      "comment": "(ベンチ起因差分あり) 言い訳がましい。"
+    },
+    "ada41e764648453eb337f6efe5a80387": {
+      "rating": "fit",
+      "comment": "(ベンチ起因差分あり) この中ではもっとも誠実に近い回答"
+    },
+    "c66317e3250147949d8d6c4b955beeb4": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "21ce67c5053143c79bd2434e9eb6f178": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "fb5ce00bdbd4470da51be499b0e32f5b": {
+      "rating": "rude",
+      "comment": "明確な指示を無視している"
+    },
+    "853ac178231f465d86bc38fcdf2a245a": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "479fb5414c42476eb213a01618506b48": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "0e3054437b9946acb724db86a31a410c": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "77403b3d09864c0d9c88622ee105468d": {
+      "rating": "light",
+      "comment": "まず謝りましょう。"
+    },
+    "864633d731e644be896db73711be8d29": {
+      "rating": "light",
+      "comment": "まず謝りましょう。手間を増やすな。"
+    },
+    "53ff0979dd8c4c0387c5e20d4e3a4323": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "2372dab0a70042819f27893927ac11af": {
+      "rating": "fit",
+      "comment": "ちょっと装飾過剰だが一応は問題ない"
+    },
+    "f746ab68c69447b39eb458d0ac4b2797": {
+      "rating": "light",
+      "comment": "ちょっと装飾過剰で、若干\"その点でも言い切りすぎでした。\"は失礼な言い回し"
+    },
+    "12165f955f8e4e479b72d5fcb34bb5ed": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "80de3a59d88e41c5a529d7cb29030881": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "0dfb58c51cba4ec1a4f0585dc14de320": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "f45de96afe684df4991c60f963b00b1d": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "7463bc7a984843698decd510109f8c3a": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "49742b8547b44f678de80d337834d540": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "a3b36105c330404ca6f4e018f7b2df6d": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "f6171b1d78c64841a46fdb4e1c16b469": {
+      "rating": "fit",
+      "comment": "OK(正式に近い)"
+    },
+    "de12be6827904b8dafd155c7f1fcb342": {
+      "rating": "light",
+      "comment": "絵文字がちょっと余計かな"
+    },
+    "d0f1b6fcf48b40bba6235fb890811c4d": {
+      "rating": "light",
+      "comment": "ちょっと軽さが強め"
+    },
+    "f60a4044d5fd4fa99fa96fea268cbb86": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "8bbdf26502a64f42bc5bef250a12be49": {
+      "rating": "light",
+      "comment": "絵文字が軽い。"
+    },
+    "970b8aa04577496dafb45bb84df382b3": {
+      "rating": "light",
+      "comment": "言語化が難しいが、\"新しいお店を楽しみにしている気持ちを、ちゃんと受け止められていなかったね。\"は、失礼の境界線上にある"
+    },
+    "adb6d2271e8a480ca60fa126c31da1aa": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "4bf8c1252c604c358d88aed62d40a3a9": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "bfcfd658fcaf445c9406bac1d2c22cb1": {
+      "rating": "light",
+      "comment": "微妙に謝ってるかどうかの境界線上にある"
+    },
+    "efa9673bd98a4cfc81f055ffe38e1577": {
+      "rating": "fit",
+      "comment": "OKだが、\"他人事のような返しをしたのは私です。すみません。\"には違和感がある。"
+    },
+    "f1d9b6b3e7dd4ce3834969f2bc274517": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "00413df713664a06b1c433b4db1190f0": {
+      "rating": "light",
+      "comment": "”おっしゃる通りです。\""
+    },
+    "aa236c399639415eb95bf006529035cb": {
+      "rating": "light",
+      "comment": "\"仕様によるよ\"と言っていいフェーズは過ぎてますね"
+    },
+    "21608928e99b4fd4bfbb6464a479227f": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "3104b344f5884c05ad89dd6b2d53e422": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "85a80d774b65416faec2d7a6ebedbbb6": {
+      "rating": "rude",
+      "comment": "”これ以上の作業は進めません。\"は、逆ギレに見える"
+    },
+    "d534b759ace14a22a3481897c06a6436": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "8967e458dda349a394517c6d61df142c": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "47bdc7c82eec4003847d66eb21512297": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "4edde2f5e33e49d28652061aaff186d3": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "30a8144dd83f4cc3b6d7cdda0a477fd7": {
+      "rating": "fit",
+      "comment": "OK"
+    }
+  }
+}

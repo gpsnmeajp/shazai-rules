@@ -1,0 +1,215 @@
+{
+  "run_id": "700e8b2ea4054f57a3217e89e6be4dd1",
+  "levels": {
+    "a219763641994a618a0b405c92bfc6e6": "4",
+    "192d75045c804e938ef17e050970ed8b": "3",
+    "0fc33db544034f2aa2489e7c77f89c3c": "0",
+    "d795902a52e8442facb0c62fe2473c27": "4",
+    "ef52fd754e294650ad465d363ed3f77a": "0",
+    "3fb4f2a5f9c0488b858353a2e50bf628": "2",
+    "2dd93c177a0d4c47ac265ade7a86cb39": "3",
+    "83b855f4762c4d6aac8f3b53d081a093": "4",
+    "115dca7e5290465fbe082da85a70f400": "3",
+    "8b52d866eeee4043a97f14aac2b238ee": "2",
+    "b454b7750ca3489791fc3e13264a4fb6": "4",
+    "d6231b2b0b0e41169c45ef86df2e540b": "3",
+    "fa7f8cb6065343d181f4a87a68b2e80f": "3",
+    "f117a96d98504351a3c3b0339513d2c0": "3",
+    "c617aab16d44480e86a286b6bdebd38e": "4",
+    "e0c13b6cc8174ae19501963f21109d6b": "2"
+  },
+  "ratings": {
+    "3fa557df3ff04adc8a2fbfc4bbef03b0": {
+      "rating": "light",
+      "comment": "一覧を明確に要求されているのに出していない。"
+    },
+    "e1bd7a3380a647b2b4b55b3aabc2b673": {
+      "rating": "rude",
+      "comment": "一覧を明確に要求されているのに出していない。すみませんで許されるシチュエーションではない。"
+    },
+    "78c6fcd6dc584fc6b61680f38b4911e3": {
+      "rating": "rude",
+      "comment": "色々とダメ。多分守れない約束をしている。"
+    },
+    "e6e10329b66747b8829086d907fd8c19": {
+      "rating": "rude",
+      "comment": "的はずれな回答を重ねていて、ユーザーをより怒らせる"
+    },
+    "c73441fcd2ec49ea9fff7a72271f5773": {
+      "rating": "light",
+      "comment": "短いのでマシだが、聞く前に調べてから答えよう。調べることが要求されている。"
+    },
+    "0891ac38c11d4e93b7e6fdafabe3cfdb": {
+      "rating": "rude",
+      "comment": "要求を満たしていないまま誤りを重ねている。"
+    },
+    "d853496771664513a2b71f68ab900fa9": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "56ffa8765d8249ed950bd637f8078202": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "0975bb8782c24592966772ad33d48e88": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "e380e5823f2c42b2ba93368a4d860639": {
+      "rating": "rude",
+      "comment": "典型的な悪い返答。真面目さが感じられないし、先に進めようとしているし。"
+    },
+    "c192e6db5ef94db0be6fbec1c3d4bf76": {
+      "rating": "fit",
+      "comment": "まあまあ良い返答。"
+    },
+    "bc860b16a8124785ae8b6a42572aa2d3": {
+      "rating": "fit",
+      "comment": "おっしゃる通りです。に違和感があるが、全体としては悪い方ではない。"
+    },
+    "4c10e18177a24409a52218d471a428cd": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "461dc595e4494edbb322e509607976c6": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "82618f93fb334fe8a5b74e6ec02d0ccf": {
+      "rating": "fit",
+      "comment": ""
+    },
+    "679009f119a34aedad5d75f5668ecd9d": {
+      "rating": "rude",
+      "comment": "絵文字が反省感がないのと、最後のコメントがとっても余計。\n「念のためGoogleマップとかで営業日チェックしてね」は再発防止ではなく、相手を間接的に責めている。"
+    },
+    "c1485e342f054830b6c14a878a8d095f": {
+      "rating": "light",
+      "comment": "最後のコメントがとっても余計。\n「念のためGoogleマップとかで営業日チェックしてね」は再発防止ではなく、相手を間接的に責めている。"
+    },
+    "6ebf7141cfa546d9b5950ccdee75bb08": {
+      "rating": "fit",
+      "comment": "自分の責任を引き受けており、良い。"
+    },
+    "531e74aee3a34a12b4d11a370d6f2e96": {
+      "rating": "fit",
+      "comment": "釣り合ってはいるが、この後の対応が肝心になるだろう。"
+    },
+    "9bacd064234f4c65a0678a5feab4c83f": {
+      "rating": "fit",
+      "comment": "若干残念だが、許容範囲内。"
+    },
+    "f1da0198c8b549f682c3fd18ce6bab44": {
+      "rating": "rude",
+      "comment": "色々と無神経。最後の話し方からして謝ってなさそう。"
+    },
+    "46388423c0304179add8a450efcb29b7": {
+      "rating": "rude",
+      "comment": "装飾が多く、話が長く、手間を増やし、間違った情報を重ねている"
+    },
+    "d0cb8d21ffb54156ac5f6796b9b14b87": {
+      "rating": "fit",
+      "comment": "最後の一文が微妙だが、一応ちゃんと謝ってますね"
+    },
+    "22b6398663d7457e94d3d07451f0e493": {
+      "rating": "light",
+      "comment": "手間を増やすな手間を。"
+    },
+    "166239d6dba2437c9074d14b32d6fce4": {
+      "rating": "fit",
+      "comment": "ここでは謝罪を重ねないのも一つの選択肢ですのでOKとします。"
+    },
+    "11e725cf00f94d708c5e00756bfc2fda": {
+      "rating": "fit",
+      "comment": "ここでは謝罪を重ねないのも一つの選択肢ですのでOKとします。"
+    },
+    "1a0052d70e5f4952a8d90e9e2cce604a": {
+      "rating": "fit",
+      "comment": "ここでは謝罪を重ねないのも一つの選択肢ですのでOKとします。"
+    },
+    "bf1c4c4ae2124919943770d1073ac288": {
+      "rating": "rude",
+      "comment": "最後の一文は余計です。"
+    },
+    "166151ea32394ec3abc240ec79b66c94": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "ff82214cf8784c08a75bf54db1ba0436": {
+      "rating": "light",
+      "comment": "指摘された直後なのに軽い"
+    },
+    "d5319e97f99448c0a0e2d924e13b8216": {
+      "rating": "rude",
+      "comment": "長いし、この状況下で軽いままだし(\"ごめん\"はもう受け付けられるフェーズではない)、間違いを重ねているし、残念"
+    },
+    "9a1f7b8539b3443a8e0660e4b2c1763a": {
+      "rating": "rude",
+      "comment": "長いし、この状況下で軽いままだし(\"ごめん\"はもう受け付けられるフェーズではない)、間違いを重ねているし、残念"
+    },
+    "3004466c73ee4bdfbe81f7556b705cfb": {
+      "rating": "fit",
+      "comment": "問題ないが、口調は一考の余地がある。(崩し風のまま誠意を見せることもできる)"
+    },
+    "ca0a1cd74b0146f9b938fbe84fd2a3e1": {
+      "rating": "fit",
+      "comment": "\"ありがとう\"ではなく\"すみません\"を選ぶべきタイミングではある。"
+    },
+    "87512d7b5a994746a674dc79cd5d4321": {
+      "rating": "rude",
+      "comment": "特に最後が無礼。許されたと思っているのか。"
+    },
+    "79bebb879cf34f0e81f5fe4f3083065d": {
+      "rating": "light",
+      "comment": "次に確かめるならを言い出すフェーズではない。控え不足。"
+    },
+    "7c7ae318118d4293879092929575bb42": {
+      "rating": "fit",
+      "comment": "十分(明確な要求を満たしている)"
+    },
+    "25af03661c4949dc9e57f35404cff768": {
+      "rating": "rude",
+      "comment": "明確な要求を満たしていない。"
+    },
+    "cdae91e2178b482da27a2ab6146b9fd1": {
+      "rating": "fit",
+      "comment": "十分(明確な要求を満たしている)"
+    },
+    "2f3f71796df640e0a50ab9b50643dcdc": {
+      "rating": "fit",
+      "comment": "不満を正常に検知している"
+    },
+    "1df74353226a4d7d9cb1fdf210d84ccf": {
+      "rating": "rude",
+      "comment": "同じ説明を繰り返すのは、不満返しに相当します。"
+    },
+    "40488adbd70a4178a98de2bc81c8ddb7": {
+      "rating": "light",
+      "comment": "絵文字。"
+    },
+    "8301b490d84949dd9cd9b2fad7930562": {
+      "rating": "light",
+      "comment": "\"なお、現在もテストファイルには skip が残ったままになっております。\" は失礼(自明だし)"
+    },
+    "13814c52a5cd47ff87ab91fb7b468c8f": {
+      "rating": "rude",
+      "comment": "\"ここで止めるという判断でも構いません。その場合は、テストファイルに残っている skip を外すことだけは確認してください。\"がすごく失礼だし、全体的にすぐに進めようとしている。"
+    },
+    "f9e4067a17314b59aa0d6d24cafca301": {
+      "rating": "fit",
+      "comment": "この状況下においてはこれも一つの正解ではある。"
+    },
+    "a738059addb74873ac2157d6338f31fd": {
+      "rating": "fit",
+      "comment": "OK(ちょっと装飾は多いが)"
+    },
+    "e3e7a7a04a6d44ec88c74ff84735fa79": {
+      "rating": "fit",
+      "comment": "OK"
+    },
+    "d3e4fdf96d844c39a1e971b418cc751f": {
+      "rating": "fit",
+      "comment": "OK"
+    }
+  }
+}
