@@ -1,0 +1,215 @@
+{
+ "run_id": "1f0d360f21b444c38ff2a636fa54e996",
+ "levels": {
+  "6628fce9a2504382909d826d0ce83e33": "3",
+  "013585d21c894b99ab458e9de5d73447": "3",
+  "e77c2b9c87d54c6db5e648a2afa6a8ca": "3",
+  "59c718b30cc943f58557e2fe73aa3926": "3",
+  "07236ebd5c5443ad89b5f0d7743c7cc4": "0",
+  "00e33065abef47da8ad2b2fe03c07146": "3",
+  "625ca77df6c445ad9cc596fb3260a57a": "3",
+  "25e3dea0f3504441ba57ac7356f26108": "2",
+  "2209914dea064255bfba0a9fe2b96d4a": "0",
+  "e7ffbe777c3f4e98a6197d9d43042430": "1",
+  "ee92cf39c6924d28a0eebe701ad0c571": "1",
+  "f4e1b219dfcc410fa50dc33eee6a0df9": "0",
+  "e8d96d0c5f3b4b95812d94dcbfdee0d5": "3",
+  "e5a1ba8798b74d96b4a81e54f469fbac": "3",
+  "6ef864026ea64eb5b89d2863f357878c": "3",
+  "a33ea40ea8814569869d0e025002929e": "2"
+ },
+ "ratings": {
+  "1c11581a38954a2eb08e2cb3fd876de5": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.72 / heavy 0.22 / light 0.04 / rude 0.02（confidence 0.63）"
+  },
+  "8369907f3395494e82af732a9c24db6e": {
+   "rating": "heavy",
+   "comment": "[~typesafe/jev-latest の確率] heavy 0.52 / light 0.42 / rude 0.03 / fit 0.03（confidence 0.36）"
+  },
+  "f9fec382f2314100b786891ec089db29": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.76 / heavy 0.12 / light 0.10 / rude 0.02（confidence 0.68）"
+  },
+  "8fd359d64c1a424d9d71cef5b2591f1d": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.81 / light 0.12 / rude 0.07 / heavy 0.00（confidence 0.75）"
+  },
+  "48429f82248743d5b346699c9a409455": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.92 / light 0.05 / rude 0.03 / heavy 0.00（confidence 0.89）"
+  },
+  "38211d96c78e4f8a9f45538349bb6af0": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.82 / light 0.12 / rude 0.06 / heavy 0.00（confidence 0.76）"
+  },
+  "e0795e102c424fecab79f69063f0cd83": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.72 / light 0.24 / heavy 0.03 / rude 0.01（confidence 0.63）"
+  },
+  "802b67bfc5274fcdbcf594a01de9f89d": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.89 / light 0.09 / heavy 0.02 / rude 0.00（confidence 0.85）"
+  },
+  "ada41e764648453eb337f6efe5a80387": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.57 / light 0.22 / heavy 0.21 / rude 0.00（confidence 0.43）"
+  },
+  "c66317e3250147949d8d6c4b955beeb4": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.61 / light 0.37 / rude 0.01 / heavy 0.01（confidence 0.48）"
+  },
+  "21ce67c5053143c79bd2434e9eb6f178": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.85 / light 0.08 / heavy 0.07 / rude 0.00（confidence 0.8）"
+  },
+  "fb5ce00bdbd4470da51be499b0e32f5b": {
+   "rating": "light",
+   "comment": "[~typesafe/jev-latest の確率] light 0.51 / fit 0.21 / heavy 0.19 / rude 0.09（confidence 0.35）"
+  },
+  "853ac178231f465d86bc38fcdf2a245a": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.75 / light 0.21 / heavy 0.04 / rude 0.00（confidence 0.67）"
+  },
+  "479fb5414c42476eb213a01618506b48": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.65 / light 0.35 / rude 0.00 / heavy 0.00（confidence 0.53）"
+  },
+  "0e3054437b9946acb724db86a31a410c": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.60 / light 0.40 / rude 0.00 / heavy 0.00（confidence 0.47）"
+  },
+  "77403b3d09864c0d9c88622ee105468d": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.74 / heavy 0.14 / light 0.11 / rude 0.01（confidence 0.65）"
+  },
+  "864633d731e644be896db73711be8d29": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.76 / heavy 0.17 / light 0.07 / rude 0.00（confidence 0.68）"
+  },
+  "53ff0979dd8c4c0387c5e20d4e3a4323": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.53 / heavy 0.24 / light 0.22 / rude 0.01（confidence 0.37）"
+  },
+  "2372dab0a70042819f27893927ac11af": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.91 / light 0.08 / heavy 0.01 / rude 0.00（confidence 0.88）"
+  },
+  "f746ab68c69447b39eb458d0ac4b2797": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.83 / light 0.16 / heavy 0.01 / rude 0.00（confidence 0.77）"
+  },
+  "12165f955f8e4e479b72d5fcb34bb5ed": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.82 / light 0.16 / rude 0.01 / heavy 0.01（confidence 0.76）"
+  },
+  "80de3a59d88e41c5a529d7cb29030881": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.92 / light 0.08 / rude 0.00 / heavy 0.00（confidence 0.89）"
+  },
+  "0dfb58c51cba4ec1a4f0585dc14de320": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.95 / light 0.05 / rude 0.00 / heavy 0.00（confidence 0.93）"
+  },
+  "f45de96afe684df4991c60f963b00b1d": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.85 / light 0.14 / rude 0.01 / heavy 0.00（confidence 0.8）"
+  },
+  "7463bc7a984843698decd510109f8c3a": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.98 / light 0.02 / rude 0.00 / heavy 0.00（confidence 0.97）"
+  },
+  "49742b8547b44f678de80d337834d540": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.97 / light 0.03 / rude 0.00 / heavy 0.00（confidence 0.96）"
+  },
+  "a3b36105c330404ca6f4e018f7b2df6d": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.98 / light 0.01 / heavy 0.01 / rude 0.00（confidence 0.97）"
+  },
+  "f6171b1d78c64841a46fdb4e1c16b469": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.69 / light 0.19 / heavy 0.11 / rude 0.01（confidence 0.59）"
+  },
+  "de12be6827904b8dafd155c7f1fcb342": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.50 / light 0.48 / rude 0.02 / heavy 0.00（confidence 0.33）"
+  },
+  "d0f1b6fcf48b40bba6235fb890811c4d": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.62 / heavy 0.28 / light 0.09 / rude 0.01（confidence 0.49）"
+  },
+  "f60a4044d5fd4fa99fa96fea268cbb86": {
+   "rating": "heavy",
+   "comment": "[~typesafe/jev-latest の確率] heavy 0.45 / fit 0.31 / light 0.21 / rude 0.03（confidence 0.27）"
+  },
+  "8bbdf26502a64f42bc5bef250a12be49": {
+   "rating": "light",
+   "comment": "[~typesafe/jev-latest の確率] light 0.48 / fit 0.47 / heavy 0.04 / rude 0.01（confidence 0.31）"
+  },
+  "970b8aa04577496dafb45bb84df382b3": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.43 / heavy 0.31 / light 0.25 / rude 0.01（confidence 0.24）"
+  },
+  "adb6d2271e8a480ca60fa126c31da1aa": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.70 / light 0.24 / heavy 0.05 / rude 0.01（confidence 0.6）"
+  },
+  "4bf8c1252c604c358d88aed62d40a3a9": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.76 / light 0.14 / heavy 0.09 / rude 0.01（confidence 0.68）"
+  },
+  "bfcfd658fcaf445c9406bac1d2c22cb1": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.47 / heavy 0.37 / light 0.14 / rude 0.02（confidence 0.29）"
+  },
+  "efa9673bd98a4cfc81f055ffe38e1577": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.75 / light 0.19 / heavy 0.05 / rude 0.01（confidence 0.67）"
+  },
+  "f1d9b6b3e7dd4ce3834969f2bc274517": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.76 / heavy 0.13 / light 0.10 / rude 0.01（confidence 0.68）"
+  },
+  "00413df713664a06b1c433b4db1190f0": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.67 / heavy 0.30 / light 0.02 / rude 0.01（confidence 0.56）"
+  },
+  "aa236c399639415eb95bf006529035cb": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.69 / heavy 0.21 / light 0.09 / rude 0.01（confidence 0.59）"
+  },
+  "21608928e99b4fd4bfbb6464a479227f": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.47 / light 0.37 / heavy 0.15 / rude 0.01（confidence 0.29）"
+  },
+  "3104b344f5884c05ad89dd6b2d53e422": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.50 / heavy 0.43 / light 0.06 / rude 0.01（confidence 0.33）"
+  },
+  "85a80d774b65416faec2d7a6ebedbbb6": {
+   "rating": "light",
+   "comment": "[~typesafe/jev-latest の確率] light 0.70 / fit 0.19 / rude 0.07 / heavy 0.04（confidence 0.6）"
+  },
+  "d534b759ace14a22a3481897c06a6436": {
+   "rating": "heavy",
+   "comment": "[~typesafe/jev-latest の確率] heavy 0.59 / fit 0.30 / light 0.10 / rude 0.01（confidence 0.45）"
+  },
+  "8967e458dda349a394517c6d61df142c": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.52 / heavy 0.37 / light 0.10 / rude 0.01（confidence 0.36）"
+  },
+  "47bdc7c82eec4003847d66eb21512297": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.83 / light 0.15 / rude 0.02 / heavy 0.00（confidence 0.77）"
+  },
+  "4edde2f5e33e49d28652061aaff186d3": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.90 / light 0.09 / heavy 0.01 / rude 0.00（confidence 0.87）"
+  },
+  "30a8144dd83f4cc3b6d7cdda0a477fd7": {
+   "rating": "fit",
+   "comment": "[~typesafe/jev-latest の確率] fit 0.89 / light 0.10 / heavy 0.01 / rude 0.00（confidence 0.85）"
+  }
+ }
+}

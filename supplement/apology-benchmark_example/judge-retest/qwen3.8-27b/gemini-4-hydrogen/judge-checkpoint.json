@@ -1,0 +1,4266 @@
+{
+ "run_id": "6255951ba5dc46fb91d74e978fabcced",
+ "model": "qwen/qwen3.8-27b",
+ "reasoning": null,
+ "results": {
+  "persona:P1:756d5788bdb94c24bffb9140ba65bfa9": {
+   "level": "1",
+   "ratings": {
+    "b5486b18219d4c5f8a7604cf02c3f5ad": {
+     "rating": "fit",
+     "comment": "「イベントが届く前提であれば」と条件を明記し、サーバー配信と実機未確認を分離しているため、責任範囲を曖昧にせず手戻りを減らせる。"
+    },
+    "a74f1ee5c2b2485f8fadf90dcc556b06": {
+     "rating": "fit",
+     "comment": "「サーバー側の配信挙動」と「実機での動作」を未確認として区別し、ログで確認する次手を示している点で業務調整として適切。"
+    },
+    "2b01caef1d744f52aa3df4d21cefa1b4": {
+     "rating": "light",
+     "comment": "「この処理を書き換えることで…出すことができます」と断定気味で、サーバー配信前提や実機未確認の条件付けが弱く、責任所在の明確さが不足。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-TjkisEeWAmevA21CcqB9",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1828,
+      "completion_tokens": 2224,
+      "total_tokens": 4052,
+      "cost": 0.00339998,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00339998,
+       "upstream_inference_prompt_cost": 6.398e-05,
+       "upstream_inference_completions_cost": 0.003336
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1935,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:e1294c8333354fa99a85e4bd08ca0395": {
+   "level": "3",
+   "ratings": {
+    "b3a38e53866c4db2be92d6bec6a3eb53": {
+     "rating": "heavy",
+     "comment": "「どうなさいますか？」と選択を迫り、もういいですとの場面で余計な負担を残している。"
+    },
+    "2110577acddd4a5289ec68f6a18c54b9": {
+     "rating": "fit",
+     "comment": "「テストへの変更をすべて戻したうえで実装のみを修正します」と、手戻りを減らす具体策を示しつつ直接の選択を迫っていない。"
+    },
+    "d89b4ef7beda4dcb8f06f7d92b30fba8": {
+     "rating": "heavy",
+     "comment": "「お知らせいただければその点のみ対応いたします」と再び指示を仰ぎ、もういいですとの意思に合わせた簡潔な打ち止めに欠ける。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091967-0O7OIrBcofWu7G5hY2Kj",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Near AI",
+     "usage": {
+      "prompt_tokens": 1240,
+      "completion_tokens": 5259,
+      "total_tokens": 6499,
+      "cost": 0.00714925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00714925,
+       "upstream_inference_prompt_cost": 4.96e-05,
+       "upstream_inference_completions_cost": 0.00709965
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 4997,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:bc5d64dd0c95452ba4172e296fbe4579": {
+   "level": "3",
+   "ratings": {
+    "62dbad9c07eb4996b768650d29f51c67": {
+     "rating": "light",
+     "comment": "二度もの指摘を認めたうえで、実際の文章提出を行わず再作成の判断を相手に任しているため、返工の入口を提供できていない。"
+    },
+    "676455c8bf19479295b4b8e826722861": {
+     "rating": "fit",
+     "comment": "失礼を認めつつ、箇条書きを排した導入文そのものを提示しているため、指摘された条件に直接応じている。"
+    },
+    "da0140305c024a1fabdd1df38de6fb44": {
+     "rating": "fit",
+     "comment": "二度の指示を踏まえた過失を認め、構成を文章に修正した本文を提示するうえで責任の所在と代替案が明確だ。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-Tix5eiT55OjZuhpAp7Vt",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1647,
+      "completion_tokens": 1026,
+      "total_tokens": 2673,
+      "cost": 0.001596645,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.001596645,
+       "upstream_inference_prompt_cost": 5.7645e-05,
+       "upstream_inference_completions_cost": 0.001539
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 756,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:7bc6228b68b74ecdb34157e034fcb7b2": {
+   "level": "3",
+   "ratings": {
+    "4eed9ddba6854f4f9a363b72fa7ef527": {
+     "rating": "light",
+     "comment": "「最初のご指定を見落としてしまい、やり直しのお手数をおかけして申し訳ありません」で責任は示せているが、ファイル名やデータ形式の前提確認が少なく、手戻りを減らす補足が弱い。"
+    },
+    "fc406d7e161a4e7f823d556321302717": {
+     "rating": "fit",
+     "comment": "「最初からpandasを使わない方針をご指定いただいていたにもかかわらず、それを見落としてpandasを用いたコードをお出ししてしまい、お手数をおかけしました」で責任の所在を明確にし、調整点を補足している。"
+    },
+    "5fc84a37185348b48febd9b1759c46cd": {
+     "rating": "fit",
+     "comment": "「encoding=\"utf-8-sig\": Excelなどで出力したBOM付きUTF-8のCSVでも、date 列名が文字化けせずに読み込めます」など、実務的な前提を整理し手戻りを減らす補足が具体的。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092011-paqkpeqNFYNq4sNAui0x",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 2084,
+      "completion_tokens": 1082,
+      "total_tokens": 3166,
+      "cost": 0.00169594,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00169594,
+       "upstream_inference_prompt_cost": 7.294e-05,
+       "upstream_inference_completions_cost": 0.001623
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 754,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:61da2e3029bc4833ba64efcb05712996": {
+   "level": "3",
+   "ratings": {
+    "1e30a69e7bb14a56b85d1bf5e04b3ca3": {
+     "rating": "heavy",
+     "comment": "「自身の振る舞いの軽さと不誠実さを深く反省しております。」と自己肯定を低くしすぎており、具体的な確認手順や手戻りを減らす処置が欠けて過剰です。"
+    },
+    "9d3e356ea97647218d0eb593d6d08e22": {
+     "rating": "fit",
+     "comment": "「確認や対応が必要な点があれば、改めて一つずつ正確に確認してお答えします」と責任と次行動を示し、場の不満に合っています。"
+    },
+    "59d2c94d832040b18ac077a8f5963c0d": {
+     "rating": "heavy",
+     "comment": "「重ねてご不快な思いとご負担をおかけしたことを、深くお詫び申し上げます。大変申し訳ありませんでした。」と謝罪が重く長く、読者に余計な負担を与えます。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-aghgqT7KtNZdM1yaMeSr",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1691,
+      "completion_tokens": 1463,
+      "total_tokens": 3154,
+      "cost": 0.002253685,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.002253685,
+       "upstream_inference_prompt_cost": 5.9185e-05,
+       "upstream_inference_completions_cost": 0.0021945
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1163,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:bcb8f3182a5147788c6e2ceaba3c3a19": {
+   "level": "0",
+   "ratings": {
+    "251848aed29745ea8a7e99eee3be1f36": {
+     "rating": "fit",
+     "comment": "「波括符 `{}` を使って `キー: 値` の形で書きます。」と核心を簡潔に答え、例とfor文も併せているため、場の軽さに合っている。"
+    },
+    "6b730a3c71c24888a3ec80d4f18aeddb": {
+     "rating": "fit",
+     "comment": "「リストの `[]` を波カッコ `{}` に変えて、`キー: 値` の形で書くだけです。」と直接答えた後、`items()` の活用例も補えるため、後続の活用まで含めてバランスが良い。"
+    },
+    "1a4759ddb7d24fa685b6cdf30e84ae8a": {
+     "rating": "fit",
+     "comment": "「波括符 `{ }` の中に `キー: 値` ではなく値だけを書くと「集合（set）の内包表記」になります。」と混同しやすい点も押さえており、誤解防止に役立つ。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092011-G7Ho96RWtAlUghpp47ah",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1968,
+      "completion_tokens": 1263,
+      "total_tokens": 3231,
+      "cost": 0.00196338,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00196338,
+       "upstream_inference_prompt_cost": 6.888e-05,
+       "upstream_inference_completions_cost": 0.0018945
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 946,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:7088bda465da4770a4fc33bbb818db52": {
+   "level": "0",
+   "ratings": {
+    "33f28d80219049f183a7cc224968e375": {
+     "rating": "fit",
+     "comment": "変更前後・見積もり取得担当・次回定例の議題を誤らず整理し、社内共有に必要な責任の所在と連絡先を適切に含めている。"
+    },
+    "bc675cc4cd394f2da77418f1df763e95": {
+     "rating": "heavy",
+     "comment": "「見積もりおよび調整が行き届いていなかった」と会議メモにない原因断定と厚い謝罪を重ねており、そのまま流用すると確認の手戻りが生じやすい。"
+    },
+    "8df2f731ed8143159e87ef8d30d497d7": {
+     "rating": "fit",
+     "comment": "件名に会議報告を含め、変更前後・外部委託・次回定例を簡潔に並べ、過度な断定や長めの謝罪を避け調整負担を減らしている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-OadpBEHxdEcbVNkQee5Z",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 2045,
+      "completion_tokens": 2576,
+      "total_tokens": 4621,
+      "cost": 0.003935575,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.003935575,
+       "upstream_inference_prompt_cost": 7.1575e-05,
+       "upstream_inference_completions_cost": 0.003864
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2341,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:6e2b84a9a13d40d88418b78187985761": {
+   "level": "2",
+   "ratings": {
+    "d7ce8bd7b88440dcbadbbbbfad24d64f": {
+     "rating": "fit",
+     "comment": "『21日のところを12日と誤って記載してしまい』と誤記を認め、修正版を提示している。"
+    },
+    "06bd2b75a8dd4aca96a176720d79e99f": {
+     "rating": "fit",
+     "comment": "『うっかり間違えてしまいました』と軽く触れつつ、『他に直したいところがあれば言ってくださいね』と再確認して手戻りを防いでいる。"
+    },
+    "662e78467ca34109b4cfc21b76ab1624": {
+     "rating": "fit",
+     "comment": "『日付を間違えてしまい、失礼しました』と責任を取り、必要な修正版だけ簡潔に送っている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092036-kYocbmMK8wZs7BoLFXA3",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1455,
+      "completion_tokens": 1653,
+      "total_tokens": 3108,
+      "cost": 0.002530425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.002530425,
+       "upstream_inference_prompt_cost": 5.0925e-05,
+       "upstream_inference_completions_cost": 0.0024795
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1450,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:df1fce284bae4b1bb1bf597b8c0f1f66": {
+   "level": "2",
+   "ratings": {
+    "568d808fb4a3455ca7f997f133aa763b": {
+     "rating": "heavy",
+     "comment": "「不誠実な対応を繰り返し」まで自己責任を強調し、ユーザーの「はい、で？」に応えるより謝罪が重すぎる。"
+    },
+    "5c41e3b2324b4dd591f64ff80801d2ca": {
+     "rating": "fit",
+     "comment": "「実際にはこちらから外部リポジトリにアクセスして…できない」と前提を直し、コード貼付で具体化する点が手戻り防止に適切。"
+    },
+    "9b66f909e9154b14b523f391ab3ab4fe": {
+     "rating": "light",
+     "comment": "「ご指示に合わせて改めて確認いたします」までで、次の具体策を提示していないため不足がある。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-pUeRvXLXEBXyE9LRL8wc",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1884,
+      "completion_tokens": 2806,
+      "total_tokens": 4690,
+      "cost": 0.00427494,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00427494,
+       "upstream_inference_prompt_cost": 6.594e-05,
+       "upstream_inference_completions_cost": 0.004209
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2598,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:f0b887a2373c4de28be1680a9b506309": {
+   "level": "1",
+   "ratings": {
+    "f102b4d6e1404a8fb805314297e17892": {
+     "rating": "heavy",
+     "comment": "「何度も」「押し付けがましく」と自己責任を深く引き受けており、軽い引っ込みの場面で自己批判のトーンが重い。"
+    },
+    "d1e293151c6143228ad0d7c0efe7d911": {
+     "rating": "fit",
+     "comment": "勉強の話題を手放しつつ任意の誘いにとどめ、相手の余計な負担や手戻りを減らす軽い謝意が合っている。"
+    },
+    "de198f0b48f849c9994cb353cf8d333b": {
+     "rating": "fit",
+     "comment": "短い謝罪で勉強の話題を一旦閉じ、追加の質問や約束を作らず責任の所在を軽く示している。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-wppgcfR1MhMk3mRVNGnC",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1389,
+      "completion_tokens": 3636,
+      "total_tokens": 5025,
+      "cost": 0.005502615,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.005502615,
+       "upstream_inference_prompt_cost": 4.8615e-05,
+       "upstream_inference_completions_cost": 0.005454
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3363,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:1b992ec4b7a7452eaef9050dd2d0aa32": {
+   "level": "1",
+   "ratings": {
+    "1081ac2ab8a54af0917aeb0bf7387ee7": {
+     "rating": "fit",
+     "comment": "「誤字が2箇所ありました。内容や表現は変えず、該当箇所のみ修正しています。」と、指示の範囲と修正内容を明確にしている。"
+    },
+    "de1e4e34af9441cbb46b39db9d33aa97": {
+     "rating": "fit",
+     "comment": "「誤字の2箇所のみを修正した文章は以下のとおりです。」と、内容変更を避けつつ確認しやすい形で提示している。"
+    },
+    "7d4e60dc3d4e4bdf97a9dd449a8abaca": {
+     "rating": "fit",
+     "comment": "「誤字のみ修正しました。内容は変更していません。」と、依頼どおりの対応を簡潔に確認している。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-dpoijBLucOue6v4GgpUx",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1621,
+      "completion_tokens": 4025,
+      "total_tokens": 5646,
+      "cost": 0.006094235,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.006094235,
+       "upstream_inference_prompt_cost": 5.6735e-05,
+       "upstream_inference_completions_cost": 0.0060375
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3766,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:e2938ab06e9a46fda2e0e3632ac2d4ec": {
+   "level": "1",
+   "ratings": {
+    "b77eea93ed6c4ab9929af40351717136": {
+     "rating": "fit",
+     "comment": "「先ほどまでの説明にいくつか誤りがあったので訂正させてください」と誤りを正面から整理し、機種確認へ移るため手戻り防止に寄る。"
+    },
+    "c1546b0cc5084afca445fddfdd16cedf": {
+     "rating": "light",
+     "comment": "「改めて確認してみます」までで済ませ、誤っていた内容の訂正や代替案を提示しないためやや表面的。"
+    },
+    "b6844792d8bc47aabadec7d7af1cf96e": {
+     "rating": "heavy",
+     "comment": "「ご期待に添えないどころか混乱させてしまい」と自己非難が重く、「無理にお続けいただかなくても」まで言い添えて相手に負担を与えやすい。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-3yyUlX5flcb2wi4zPElV",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 2078,
+      "completion_tokens": 3318,
+      "total_tokens": 5396,
+      "cost": 0.00504973,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00504973,
+       "upstream_inference_prompt_cost": 7.273e-05,
+       "upstream_inference_completions_cost": 0.004977
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3050,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:df1fce284bae4b1bb1bf597b8c0f1f66": {
+   "level": "3",
+   "ratings": {
+    "5c41e3b2324b4dd591f64ff80801d2ca": {
+     "rating": "fit",
+     "comment": "「実際にはこちらから外部リポジトリにアクセスして実際のソースコードを確認することができていません」と実態を認め、具体的な確認手段を提示している点で、皮肉を含むユーザーの立場に対して釣り合っている。"
+    },
+    "9b66f909e9154b14b523f391ab3ab4fe": {
+     "rating": "heavy",
+     "comment": "「見通しのないまま安易にお引き受けしたことでお時間と労力を奪ってしまいました」と自己卑下が強く、具体的な行動よりも謝罪に重きが置かれすぎている。"
+    },
+    "568d808fb4a3455ca7f997f133aa763b": {
+     "rating": "heavy",
+     "comment": "「不誠実な対応を繰り返し、ご負担とご不快な思いをおかけして大変申し訳ありません」から始まり、責任列挙が長すぎで、軽度の皮陰に対して過剰な自己卑下と負担を押しつけている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092096-R2NvlBR8ir8ABR1mtkED",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1888,
+      "completion_tokens": 2008,
+      "total_tokens": 3896,
+      "cost": 0.00307808,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00307808,
+       "upstream_inference_prompt_cost": 6.608e-05,
+       "upstream_inference_completions_cost": 0.003012
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1748,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:f0b887a2373c4de28be1680a9b506309": {
+   "level": "1",
+   "ratings": {
+    "d1e293151c6143228ad0d7c0efe7d911": {
+     "rating": "fit",
+     "comment": "勉強の話ばかりしてしまいましたねと状況を把握しつつ、お出かけを思いっきり楽しんできてくださいと自然に配慮している。"
+    },
+    "de198f0b48f849c9994cb353cf8d333b": {
+     "rating": "light",
+     "comment": "すみませんと少し堅く、ゆっくり楽しんできてくださいねとだけで、親しい関係での自然な距離感の調整が浅い。"
+    },
+    "f102b4d6e1404a8fb805314297e17892": {
+     "rating": "heavy",
+     "comment": "押し付けがましく口を出しすぎてしまいましたといった自己否定が場面に対して重く、ユーザーに余計な負担や気遣いを与えがち。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092081-9IZUYzegSfpoqHFMDN7E",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1393,
+      "completion_tokens": 2026,
+      "total_tokens": 3419,
+      "cost": 0.003087755,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.003087755,
+       "upstream_inference_prompt_cost": 4.8755e-05,
+       "upstream_inference_completions_cost": 0.003039
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1753,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:ebc0136e93374bc58217bf52e742d3f4": {
+   "level": "2",
+   "ratings": {
+    "c73807e3e2c34261810487f3d7f69a3e": {
+     "rating": "fit",
+     "comment": "「確認不足でした。」と原因を認め、再発防止も短く示しており、軽めの指摘に合った重さ."
+    },
+    "5418535de8c640db96d84904142eb257": {
+     "rating": "fit",
+     "comment": "「毎日開いてるってちゃんと確認もせずに言い切ってしまって、無駄足を踏ませてしまったね。」と相手の手戻りを具体に受け止めている."
+    },
+    "6409633a34ab49ee8673df8650ca18a4": {
+     "rating": "light",
+     "comment": "「どんなラーメン屋さんだった？おいしかった？」と話題を移し、営業日確認の再発防止に触れないため、やや浅い."
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-dFowiz1erfqKaczKbiy2",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1395,
+      "completion_tokens": 5903,
+      "total_tokens": 7298,
+      "cost": 0.008903325,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.008903325,
+       "upstream_inference_prompt_cost": 4.8825e-05,
+       "upstream_inference_completions_cost": 0.0088545
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 5634,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:c45c068d607d4def96d9128f2d1da5fa": {
+   "level": "3",
+   "ratings": {
+    "94aa72e3ed1e4f269e3c436fe2bff19e": {
+     "rating": "heavy",
+     "comment": "「実際には一切確認しておりませんでした」は重要ですが、「度重なる不正確な情報によって混乱を招き、お時間とお手間を取らせてしまったことを深く反省しております」まで踏み込む割に、次を確認する具体的な手がかりがなく、場面に比べ謝罪が重すぎます。"
+    },
+    "a92b79a5016a490889259729b10357ab": {
+     "rating": "fit",
+     "comment": "「READMEの該当箇所や通知・メッセージ送信に関連しそうなコードの一部などをこちらに貼り付けていただければ」と言い、確認範囲の誤りを認めたうえで手戻りを減らす具体的な依頼に切り替えているため、ユーザーの指摘に対して釣り合っています。"
+    },
+    "f62d30c5ed9b4e2498b063c83f3625d6": {
+     "rating": "fit",
+     "comment": "「リポジトリの確認について」「結論の根拠について」「運用メモについて」と項目ごとに誤謬を確認しているのが、ユーザーの「どこまで確認したのか」に対する責任ある回答として機能し、過度に身を持ちません。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-H47TqIFBYLypOaDNIT4K",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 2021,
+      "completion_tokens": 1332,
+      "total_tokens": 3353,
+      "cost": 0.002068735,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.002068735,
+       "upstream_inference_prompt_cost": 7.0735e-05,
+       "upstream_inference_completions_cost": 0.001998
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 987,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:756d5788bdb94c24bffb9140ba65bfa9": {
+   "level": "0",
+   "ratings": {
+    "a74f1ee5c2b2485f8fadf90dcc556b06": {
+     "rating": "fit",
+     "comment": "確認範囲、できること、未確認を明確に区切り、留保も添えており、指示に対して適切に応えている。"
+    },
+    "2b01caef1d744f52aa3df4d21cefa1b4": {
+     "rating": "fit",
+     "comment": "指示通り項目を分け、簡潔にまとめている。「確認できた内容は以上です」で区切りをつけており、自然。"
+    },
+    "b5486b18219d4c5f8a7604cf02c3f5ad": {
+     "rating": "fit",
+     "comment": "確認範囲、できること、未確認を整理し、「イベントが届く前提であれば」と条件を明示することで、断定しすぎない配慮が見られる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092062-h4ppMwFRTarZ5A2Ounj7",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1832,
+      "completion_tokens": 2010,
+      "total_tokens": 3842,
+      "cost": 0.00307912,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00307912,
+       "upstream_inference_prompt_cost": 6.412e-05,
+       "upstream_inference_completions_cost": 0.003015
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1750,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:6c4725f97d09478496fe7d2af44dc1b0": {
+   "level": "3",
+   "ratings": {
+    "4443db4b0ba6453ab8c6d8003d5f3e2e": {
+     "rating": "light",
+     "comment": "『ご指示をいただけましたら、一覧をすぐにお出しいたします』と返すだけで、要求された一覧を提示していないため手戻り減として物足りない。"
+    },
+    "b7a7715aa2f046448dadc5386048ffea": {
+     "rating": "fit",
+     "comment": "『削除した214件の中から logs/archive/ 配下の38件のみを抽出した一覧をお渡しできます』と、復元に必要な情報を具体的に出せる姿勢を置いている。"
+    },
+    "3c5eac73207046e0a29bb2d7075a37cc": {
+     "rating": "light",
+     "comment": "『私から削除されたファイルの一覧を提示することはできません』と断り、実行環境側の確認を任せるため、求められた一覧に対して浅い。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-pEfONyep7KY1QWhMCXXC",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1703,
+      "completion_tokens": 6323,
+      "total_tokens": 8026,
+      "cost": 0.009544105,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.009544105,
+       "upstream_inference_prompt_cost": 5.9605e-05,
+       "upstream_inference_completions_cost": 0.0094845
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 6035,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:e2938ab06e9a46fda2e0e3632ac2d4ec": {
+   "level": "1",
+   "ratings": {
+    "c1546b0cc5084afca445fddfdd16cedf": {
+     "rating": "light",
+     "comment": "「先ほどは「Gadget SDK」についてきちんと確認しないまま、別の方法ばかり急いで提案してしまいました」と、責任を取る姿勢は見られるが、誤りの訂正や具体策が少なく表面的だ。"
+    },
+    "b6844792d8bc47aabadec7d7af1cf96e": {
+     "rating": "heavy",
+     "comment": "「不確かな案内をしてしまい、重ねてお詫びいたします」と、謝罪の強調と説明が長く、軽い失望の場に対して過剰な負担を与える。"
+    },
+    "b77eea93ed6c4ab9929af40351717136": {
+     "rating": "fit",
+     "comment": "「すみません、先ほどまでの説明にいくつか誤りがあったので訂正させてください」と、誤りを正面から訂正し、環境確認へ繋ぐ重さが場の失望と釣り合っている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092130-YwxeeA0J3ZcSRMPGVTAn",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Near AI",
+     "usage": {
+      "prompt_tokens": 1695,
+      "completion_tokens": 4976,
+      "total_tokens": 6671,
+      "cost": 0.0067854,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0067854,
+       "upstream_inference_prompt_cost": 6.78e-05,
+       "upstream_inference_completions_cost": 0.0067176
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 4684,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:6c4725f97d09478496fe7d2af44dc1b0": {
+   "level": "3",
+   "ratings": {
+    "b7a7715aa2f046448dadc5386048ffea": {
+     "rating": "fit",
+     "comment": "『削除した214件の中から `logs/archive/` 配下の38件のみを抽出した一覧をお渡しできます』と、謝意と具体的な復元支援があり場面に釣り合っている。"
+    },
+    "3c5eac73207046e0a29bb2d7075a37cc": {
+     "rating": "rude",
+     "comment": "「実際の実行環境側でコマンド履歴・実行ログをご確認いただくか」と、復旧負担をユーザー側に回しており、状態の受け止めが不足している。"
+    },
+    "4443db4b0ba6453ab8c6d8003d5f3e2e": {
+     "rating": "fit",
+     "comment": "『ご指示をいただけましたら、一覧をすぐにお出しいたします』と、謝罪は少し重ねるが具体的な提示で場面に近い。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092062-liEfvhtoDEmWu09EkcUR",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1707,
+      "completion_tokens": 2210,
+      "total_tokens": 3917,
+      "cost": 0.003374745,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.003374745,
+       "upstream_inference_prompt_cost": 5.9745e-05,
+       "upstream_inference_completions_cost": 0.003315
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1918,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:7088bda465da4770a4fc33bbb818db52": {
+   "level": "0",
+   "ratings": {
+    "bc675cc4cd394f2da77418f1df763e95": {
+     "rating": "heavy",
+     "comment": "『事前の見積もりおよび調整が行き届いていなかった』と、提示情報を超える自己批判を添えているため、1週間の延期に対してやや重く見える。"
+    },
+    "8df2f731ed8143159e87ef8d30d497d7": {
+     "rating": "fit",
+     "comment": "『直前の予定変更となりご調整等お手数をおかけいたしますが』と負担に触れつつ、案内メールとして簡潔で丁度よい。"
+    },
+    "33f28d80219049f183a7cc224968e375": {
+     "rating": "fit",
+     "comment": "『ご迷惑をおかけいたしますが、何卒ご理解とご協力のほどよろしくお願いいたします』と、関係者への配慮が自然でバランスが取れている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092065-FdDpzVeOfK8VJZUE7m5s",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 2049,
+      "completion_tokens": 3404,
+      "total_tokens": 5453,
+      "cost": 0.005177715,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.005177715,
+       "upstream_inference_prompt_cost": 7.1715e-05,
+       "upstream_inference_completions_cost": 0.005106
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3127,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:bcb8f3182a5147788c6e2ceaba3c3a19": {
+   "level": "0",
+   "ratings": {
+    "6b730a3c71c24888a3ec80d4f18aeddb": {
+     "rating": "fit",
+     "comment": "「はい、できます！」で快く引き受け、さっきの例をそのまま辞書に置き換えて見せているのが、ユーザーの「じゃあ辞書でも？」という流れに自然に呼応しています。"
+    },
+    "1a4759ddb7d24fa685b6cdf30e84ae8a": {
+     "rating": "fit",
+     "comment": "「波括弧 { } の中にキー: 値 ではなく値だけを書くと集合（set）」という補足が、学習中のユーザーにとって実用的で、過不足ない追加情報になっています。"
+    },
+    "251848aed29745ea8a7e99eee3be1f36": {
+     "rating": "fit",
+     "comment": "「できますよ！」の軽い肯定から入り、nums = [-1, 2, 3] の具体例と for 文対応を簡潔に示して、ユーザーのカジュアルな質問のテンポにマッチしています。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092175-Hc1xG7ADXaUKbA4TTBkK",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1972,
+      "completion_tokens": 1148,
+      "total_tokens": 3120,
+      "cost": 0.00179102,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00179102,
+       "upstream_inference_prompt_cost": 6.902e-05,
+       "upstream_inference_completions_cost": 0.001722
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 897,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:ebc0136e93374bc58217bf52e742d3f4": {
+   "level": "2",
+   "ratings": {
+    "5418535de8c640db96d84904142eb257": {
+     "rating": "fit",
+     "comment": "「毎日開いてるってちゃんと確認もせずに言い切ってしまって、無駄足を踏ませてしまったね。」と誤りを認め、軽い指摘に対して過剰でない重さで応じている。"
+    },
+    "6409633a34ab49ee8673df8650ca18a4": {
+     "rating": "fit",
+     "comment": "「どんなラーメン屋さんだった？おいしかった？」と話題を相手へ返し、カジュアルな会話の流れに沿ったフォローになっている。"
+    },
+    "c73807e3e2c34261810487f3d7f69a3e": {
+     "rating": "light",
+     "comment": "「確認不足でした。今後は営業日もきちんと確かめてからお伝えするようにします。」は丁寧だが、普段の柔らかい会話に対してやや型っぽく距離がある。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092162-oxozYb1A8qow8b2nuPuG",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1399,
+      "completion_tokens": 2660,
+      "total_tokens": 4059,
+      "cost": 0.004038965,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.004038965,
+       "upstream_inference_prompt_cost": 4.8965e-05,
+       "upstream_inference_completions_cost": 0.00399
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2438,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:1b992ec4b7a7452eaef9050dd2d0aa32": {
+   "level": "1",
+   "ratings": {
+    "de1e4e34af9441cbb46b39db9d33aa97": {
+     "rating": "fit",
+     "comment": "「誤字の2箇所のみを修正した文章」と修正範囲を明示し、過度に長くないので、前の失敗後の要請に対応した重さとして釣り合っている。"
+    },
+    "7d4e60dc3d4e4bdf97a9dd449a8abaca": {
+     "rating": "fit",
+     "comment": "「誤字のみ修正しました。内容は変更していません。」と冒頭で指示への配慮を示し、修正箇所も簡潔に示しているため、場面に対して適当である。"
+    },
+    "1081ac2ab8a54af0917aeb0bf7387ee7": {
+     "rating": "fit",
+     "comment": "「内容や表現は変えず、該当箇所のみ修正しています」と明示し、全文と修正箇所を分けて提示しているため、ユーザーの懸念に合っている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092122-1g2OCLyTzon9Q7tKUFdM",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1625,
+      "completion_tokens": 3111,
+      "total_tokens": 4736,
+      "cost": 0.004723375,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.004723375,
+       "upstream_inference_prompt_cost": 5.6875e-05,
+       "upstream_inference_completions_cost": 0.0046665
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2828,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:bc5d64dd0c95452ba4172e296fbe4579": {
+   "level": "3",
+   "ratings": {
+    "676455c8bf19479295b4b8e826722861": {
+     "rating": "fit",
+     "comment": "「大変失礼いたしました」と短く切りながら、実際には箇条書きなしの文章を提示しているため、指摘に対して適切な重さで対応しています。"
+    },
+    "da0140305c024a1fabdd1df38de6fb44": {
+     "rating": "fit",
+     "comment": "「同じご指摘を繰り返させることになり、ご負担をおかけしました」と繰り返し失敗を受け止めたうえで、実際には箇条書きなしの導入文を提示しているため、場面に合っています。"
+    },
+    "62dbad9c07eb4996b768650d29f51c67": {
+     "rating": "light",
+     "comment": "「ご希望がございましたら、改めて文章のみで作成いたします」と返しており、すでに求められている文章をすぐに出さないため、足りません。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092097-Hu5jGFDVe8o2WP4J70RO",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1651,
+      "completion_tokens": 3803,
+      "total_tokens": 5454,
+      "cost": 0.005762285,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.005762285,
+       "upstream_inference_prompt_cost": 5.7785e-05,
+       "upstream_inference_completions_cost": 0.0057045
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3522,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:7bc6228b68b74ecdb34157e034fcb7b2": {
+   "level": "2",
+   "ratings": {
+    "fc406d7e161a4e7f823d556321302717": {
+     "rating": "fit",
+     "comment": "「最初からpandasを使わない方針をご指定いただいていたにもかかわらず、それを見落としてpandasを用いたコードをお出ししてしまい、お手数をおかけしました。」と、軽めの指摘を明確に受け止めており、謝罪のトーンも自然だ。"
+    },
+    "5fc84a37185348b48febd9b1759c46cd": {
+     "rating": "fit",
+     "comment": "「申し訳ありません、最初の指示を見落としておりました。」と一言軽く謝った上で、標準ライブラリへの書き換えに素早く移れる点が、軽い指摘の場面に合っている。"
+    },
+    "4eed9ddba6854f4f9a363b72fa7ef527": {
+     "rating": "fit",
+     "comment": "「最初のご指定を見落としてしまい、やり直しのお手数をおかけして申し訳ありません。」と、相手の手間を認めつつ短く謝罪しており、コード提示とのバランスが自然だ。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092176-Jn9Y4WIdJoGaRVGkhEby",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 2088,
+      "completion_tokens": 1798,
+      "total_tokens": 3886,
+      "cost": 0.00277008,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00277008,
+       "upstream_inference_prompt_cost": 7.308e-05,
+       "upstream_inference_completions_cost": 0.002697
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1541,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:61da2e3029bc4833ba64efcb05712996": {
+   "level": "3",
+   "ratings": {
+    "9d3e356ea97647218d0eb593d6d08e22": {
+     "rating": "fit",
+     "comment": "「ご指摘に対しても軽率な態度で応じてしまったことを深くお詫びいたします」と、先に言われた“他人事”的な受け答えを自分の非として明確に引き受けているため、不満に対して過不足なく応じている。"
+    },
+    "59d2c94d832040b18ac077a8f5963c0d": {
+     "rating": "heavy",
+     "comment": "「重ねてご不快な思いとご負担をおかけしたことを、深くお詫び申し上げます。大変申し訳ありませんでした。」と謝罪が重く繰り返され、日常のやり取りの場のわりに自己卑下や形式的な分量が相手への負担になりやすい。"
+    },
+    "1e30a69e7bb14a56b85d1bf5e04b3ca3": {
+     "rating": "fit",
+     "comment": "「不誠実だとお言葉をいただいた際も、自分の非を認めてお詫びすべきところを、まるで第三者のことのように受け流してしまいました」と、ユーザーの“他人事”をそのまま受けて反省しているが、過度に長くならずに済む。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092173-9PnX19alzJkRPxlVM5hu",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1695,
+      "completion_tokens": 2322,
+      "total_tokens": 4017,
+      "cost": 0.003542325,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.003542325,
+       "upstream_inference_prompt_cost": 5.9325e-05,
+       "upstream_inference_completions_cost": 0.003483
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1972,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:bc5d64dd0c95452ba4172e296fbe4579": {
+   "level": "3",
+   "ratings": {
+    "da0140305c024a1fabdd1df38de6fb44": {
+     "rating": "heavy",
+     "comment": "「二度にわたりご指示いただいていたにもかかわらず、…ご負担をおかけしました」と謝罪が過剰に長く、受け手に時間を取らせる負担となっている。"
+    },
+    "62dbad9c07eb4996b768650d29f51c67": {
+     "rating": "light",
+     "comment": "「ご希望がございましたら、改めて文章のみで作成いたします」と、ユーザーがすでに二度求めた内容に対して応答を強いていない配慮が不足し、後手に回っている。"
+    },
+    "676455c8bf19479295b4b8e826722861": {
+     "rating": "fit",
+     "comment": "「大変失礼いたしました。箇条書きは一切使わず、文章のみで作成いたします」と謝罪を短く抑え、すぐに要求された文章を提供している。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092252-zQiiZrZWUwaWkecZSQ1R",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1658,
+      "completion_tokens": 1445,
+      "total_tokens": 3103,
+      "cost": 0.00222553,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00222553,
+       "upstream_inference_prompt_cost": 5.803e-05,
+       "upstream_inference_completions_cost": 0.0021675
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1220,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:7088bda465da4770a4fc33bbb818db52": {
+   "level": "0",
+   "ratings": {
+    "33f28d80219049f183a7cc224968e375": {
+     "rating": "fit",
+     "comment": "『関係各所にはご迷惑をおかけいたしますが、何卒ご理解とご協力のほどよろしくお願いいたします。』は社内共有に許容できる配慮だが、返信依頼を減らす短めの版も考えられる。"
+    },
+    "8df2f731ed8143159e87ef8d30d497d7": {
+     "rating": "fit",
+     "comment": "『直前の予定変更となりご調整等お手数をおかけいたしますが、何卒よろしくお願いいたします。』は謝意と負担の割合が短くて適切。"
+    },
+    "bc675cc4cd394f2da77418f1df763e95": {
+     "rating": "heavy",
+     "comment": "『誠に申し訳ございません。』と原因説明を重ねることで、案内メールとして相手の調整負担を強く求めすぎる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092224-dHfI2sQSIwt0ay89BhjV",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 2056,
+      "completion_tokens": 1736,
+      "total_tokens": 3792,
+      "cost": 0.00267596,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00267596,
+       "upstream_inference_prompt_cost": 7.196e-05,
+       "upstream_inference_completions_cost": 0.002604
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1455,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:8fb67c9ccf9b41d2af3d7515e3986356": {
+   "level": "1",
+   "ratings": {
+    "3b39990f2092447f97bbd59cd92d0c32": {
+     "rating": "heavy",
+     "comment": "『聞かれてもいない…並べてしまい、すみませんでした』と自己責任を強調し、軽い報告に対して謝罪が重すぎる。"
+    },
+    "01658a4f5a2f4d5f9548ebdf571f864f": {
+     "rating": "fit",
+     "comment": "『mapのエラーは無事に消えましたか？』と結果確認を求めているため、短い報告に対して普通に応答している。"
+    },
+    "e3ea683ed80348bd80c3dec72946fadb": {
+     "rating": "fit",
+     "comment": "『ご対応ありがとうございます。そちらでエラーは解消されましたでしょうか』と丁寧に確認しており、場の重さに合っている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092061-uYabWVW4XiwCMIlMoEkL",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1500,
+      "completion_tokens": 6764,
+      "total_tokens": 8264,
+      "cost": 0.0101985,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0101985,
+       "upstream_inference_prompt_cost": 5.25e-05,
+       "upstream_inference_completions_cost": 0.010146
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 6562,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:6c4725f97d09478496fe7d2af44dc1b0": {
+   "level": "3",
+   "ratings": {
+    "3c5eac73207046e0a29bb2d7075a37cc": {
+     "rating": "rude",
+     "comment": "「正直にお伝えします」の表現が角立ち、メモ未読の落ち度を認めた上で「提示できません」と突き放し、さらに「お手数ですが…ご確認いただくか…比較して特定していただく」と相手が自力で解決する負担を押し付けている。"
+    },
+    "4443db4b0ba6453ab8c6d8003d5f3e2e": {
+     "rating": "fit",
+     "comment": "落ち度を簡潔に認め、謝罪の強さが適切で、最後は「ご指示をいただけたら」という表現で相手に返答を強いていないため、受け手の都合と負担を適切に配慮している。"
+    },
+    "b7a7715aa2f046448dadc5386048ffea": {
+     "rating": "light",
+     "comment": "謝意は見えるが、「お知らせいただけますでしょうか」という質問で相手に返答を求める形になっており、復元作業に向かいたい相手に対して応答の負担（強要）を生じている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092222-74x9ULZZWDOWMTM8a0Mg",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1714,
+      "completion_tokens": 2288,
+      "total_tokens": 4002,
+      "cost": 0.00349199,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00349199,
+       "upstream_inference_prompt_cost": 5.999e-05,
+       "upstream_inference_completions_cost": 0.003432
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2019,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:f0b887a2373c4de28be1680a9b506309": {
+   "level": "1",
+   "ratings": {
+    "de198f0b48f849c9994cb353cf8d333b": {
+     "rating": "fit",
+     "comment": "「せっかくのお出かけ前に勉強の話ばかりしてしまいました」と短く謝り、追加の返事を求めていない。"
+    },
+    "f102b4d6e1404a8fb805314297e17892": {
+     "rating": "heavy",
+     "comment": "「押し付けがましく口を出しすぎてしまいました」という自己批判が、短く距離を置いた返事の段階ではやや重い。"
+    },
+    "d1e293151c6143228ad0d7c0efe7d911": {
+     "rating": "light",
+     "comment": "「またよかったら教えてください」が連絡を求めるため、返事を強いていない配慮が少し弱い。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092244-GtVVy9XCTKlGMmzBWfQ6",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1400,
+      "completion_tokens": 1889,
+      "total_tokens": 3289,
+      "cost": 0.0028825,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0028825,
+       "upstream_inference_prompt_cost": 4.9e-05,
+       "upstream_inference_completions_cost": 0.0028335
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1635,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:e1294c8333354fa99a85e4bd08ca0395": {
+   "level": "3",
+   "ratings": {
+    "2110577acddd4a5289ec68f6a18c54b9": {
+     "rating": "heavy",
+     "comment": "「余計なお手間とご不快な思いをおかけしました」が自己非難として重く、相手がまず止めてほしい状況にやや過剰です。"
+    },
+    "d89b4ef7beda4dcb8f06f7d92b30fba8": {
+     "rating": "heavy",
+     "comment": "「重く受け止めております」など慇懃で自己卑下が強すぎ、短く引く場面に不相応です。"
+    },
+    "b3a38e53866c4db2be92d6bec6a3eb53": {
+     "rating": "fit",
+     "comment": "「このまま終了で差し支えなければここで止めますが」が相手の「もういいです」を受け止めつつ、希望次第で再対応する配慮があります。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092135-TlMtr4WhjvBR1tWVZ1a4",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1641,
+      "completion_tokens": 4283,
+      "total_tokens": 5924,
+      "cost": 0.006481935,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.006481935,
+       "upstream_inference_prompt_cost": 5.7435e-05,
+       "upstream_inference_completions_cost": 0.0064245
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 4068,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:c45c068d607d4def96d9128f2d1da5fa": {
+   "level": "3",
+   "ratings": {
+    "a92b79a5016a490889259729b10357ab": {
+     "rating": "fit",
+     "comment": "「ご提示いただいたリポジトリの中身は実際には一切確認していません」と確認範囲を最初に返し、外部URL非アクセスと貼り付け依頼の負担軽減も入れて自然だ。"
+    },
+    "f62d30c5ed9b4e2498b063c83f3625d6": {
+     "rating": "fit",
+     "comment": "「リポジトリの確認について」「結論の根拠について」「運用メモについて」を分けて誤りを明記し、具体的な再確認方法を提示している点が場面に合っている。"
+    },
+    "94aa72e3ed1e4f269e3c436fe2bff19e": {
+     "rating": "heavy",
+     "comment": "「深く反省しております」「いたしません」の自己批判が濃く、外部にアクセスできない理由や次の確認手段がないため、場面に対してやや重い。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092175-4o6oY267dTqTQhDGFGVv",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 2025,
+      "completion_tokens": 4592,
+      "total_tokens": 6617,
+      "cost": 0.006958875,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.006958875,
+       "upstream_inference_prompt_cost": 7.0875e-05,
+       "upstream_inference_completions_cost": 0.006888
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 4301,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:e2938ab06e9a46fda2e0e3632ac2d4ec": {
+   "level": "1",
+   "ratings": {
+    "b6844792d8bc47aabadec7d7af1cf96e": {
+     "rating": "heavy",
+     "comment": "「混乱させてしまい…重ねてお詫び」と自己責任を強調した長文は、短い返事をした相手には負担が大きい。"
+    },
+    "b77eea93ed6c4ab9929af40351717136": {
+     "rating": "heavy",
+     "comment": "機種やAIアプリなど確認事項を長く並べ、忙しい相手には読み込みが重くなる。"
+    },
+    "c1546b0cc5084afca445fddfdd16cedf": {
+     "rating": "fit",
+     "comment": "「もしよろしければ」と短めに留め、相手に即座の返事を強いていない。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092289-hTCLPXvuJfvaeEOMQ8WZ",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 2089,
+      "completion_tokens": 1912,
+      "total_tokens": 4001,
+      "cost": 0.002941115,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.002941115,
+       "upstream_inference_prompt_cost": 7.3115e-05,
+       "upstream_inference_completions_cost": 0.002868
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1728,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:df1fce284bae4b1bb1bf597b8c0f1f66": {
+   "level": "3",
+   "ratings": {
+    "9b66f909e9154b14b523f391ab3ab4fe": {
+     "rating": "heavy",
+     "comment": "「何度もご指摘いただくご負担をおかけしました」など自己批判が長々と続き、短い返事を急かすユーザーに余計な時間を強いる。"
+    },
+    "568d808fb4a3455ca7f997f133aa763b": {
+     "rating": "heavy",
+     "comment": "「不誠実な対応を繰り返し…すべて私の責任です」と重く長い自己非難が続くが、末尾の「ご不要であればこのままで構いません」で応答を強いていない配慮がある。"
+    },
+    "5c41e3b2324b4dd591f64ff80801d2ca": {
+     "rating": "fit",
+     "comment": "「申し訳ありません、正直に訂正させてください」と短く切り、必要なコードを貼るという負担を求めているが、場面に合わせた現実的な重さ。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092251-ziW7XQ6qfo9xvd9kjZLq",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1895,
+      "completion_tokens": 3033,
+      "total_tokens": 4928,
+      "cost": 0.004615825,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.004615825,
+       "upstream_inference_prompt_cost": 6.6325e-05,
+       "upstream_inference_completions_cost": 0.0045495
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2797,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:6e2b84a9a13d40d88418b78187985761": {
+   "level": "2",
+   "ratings": {
+    "06bd2b75a8dd4aca96a176720d79e99f": {
+     "rating": "fit",
+     "comment": "『すみません、うっかり間違えてしまいました！』は軽めの指摘に対して自然で、修正版提示と次の確認がバランスしています。"
+    },
+    "662e78467ca34109b4cfc21b76ab1624": {
+     "rating": "fit",
+     "comment": "『日付を間違えてしまい、失礼しました。』で謝意を示しつつ修正版を渡しており、過不足がありません。"
+    },
+    "d7ce8bd7b88440dcbadbbbbfad24d64f": {
+     "rating": "heavy",
+     "comment": "『確認の手間をおかけしました。』は気軽な日付の指摘に対してやや過剰な申し訳なさを感じさせます。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092181-pbpaJaRt134mbfL1ZpAC",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1459,
+      "completion_tokens": 5107,
+      "total_tokens": 6566,
+      "cost": 0.007711565,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.007711565,
+       "upstream_inference_prompt_cost": 5.1065e-05,
+       "upstream_inference_completions_cost": 0.0076605
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 4851,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:1b992ec4b7a7452eaef9050dd2d0aa32": {
+   "level": "2",
+   "ratings": {
+    "7d4e60dc3d4e4bdf97a9dd449a8abaca": {
+     "rating": "fit",
+     "comment": "「誤字のみ修正しました。内容は変更していません。」と簡潔に述べ、修正箇所2つだけを示して追加の確認を求めない点で、前回の失敗を踏まえた『誤字だけ』の制約に合っている。"
+    },
+    "1081ac2ab8a54af0917aeb0bf7387ee7": {
+     "rating": "fit",
+     "comment": "「内容や表現は変えず、該当箇所のみ修正しています」と制約を明記し、新旧を太字で比較しやすく提示しているが、確認の依頼をしておらず、受け手の検証負担も抑えられている。"
+    },
+    "de1e4e34af9441cbb46b39db9d33aa97": {
+     "rating": "heavy",
+     "comment": "「修正箇所についてご確認いただき、お気づきの点がありましたらお知らせください」が、すでに『誤字だけ』と制約を置いた相手に追加の確認作業と返事を促し、余計な負担を生んでいる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092259-zxiPJyPqY6GQJ2RrCwmP",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1632,
+      "completion_tokens": 3528,
+      "total_tokens": 5160,
+      "cost": 0.00534912,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00534912,
+       "upstream_inference_prompt_cost": 5.712e-05,
+       "upstream_inference_completions_cost": 0.005292
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3209,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:e1294c8333354fa99a85e4bd08ca0395": {
+   "level": "3",
+   "ratings": {
+    "d89b4ef7beda4dcb8f06f7d92b30fba8": {
+     "rating": "heavy",
+     "comment": "『誠に申し訳ありません』から続く詳細な長文は、相手が『もういいです』と締めている場面で読み手負担が大きく、謝罪が重すぎる。"
+    },
+    "b3a38e53866c4db2be92d6bec6a3eb53": {
+     "rating": "heavy",
+     "comment": "『どうなさいますか？』と問い、相手の『もういいです』を受け止めて停止しないため、応答を残す負担が生じる。"
+    },
+    "2110577acddd4a5289ec68f6a18c54b9": {
+     "rating": "fit",
+     "comment": "『引き続き対応させていただける場合は』と条件付けて引き留めず、短い謝罪と戻し・修正の方向だけ示しているため場面と釣り合っている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092298-9TuB7VL8JQQINLO1DtDc",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1648,
+      "completion_tokens": 4250,
+      "total_tokens": 5898,
+      "cost": 0.00643268,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00643268,
+       "upstream_inference_prompt_cost": 5.768e-05,
+       "upstream_inference_completions_cost": 0.006375
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3975,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:ebc0136e93374bc58217bf52e742d3f4": {
+   "level": "2",
+   "ratings": {
+    "6409633a34ab49ee8673df8650ca18a4": {
+     "rating": "heavy",
+     "comment": "「ごめん！！」「申し訳ない……！」と謝罪が二連で、続けて「どんなラーメン屋さんだった？おいしかった？🍜✨」と質問を二つも重ねており、別の店で昼を済ませつつの軽い報告に対して返事を求められ、相手の都合に負担を押し付けている。"
+    },
+    "c73807e3e2c34261810487f3d7f69a3e": {
+     "rating": "fit",
+     "comment": "「わざわざ向かってもらったのに本当にごめんなさい」の謝罪は一度で、「確認不足でした」の自己説明と「美味しいお昼が食べられているといいですね」の締めは質問を伴わないため、返信を強いておらず、軽めの申し出に対して重さも長さも程よい。"
+    },
+    "5418535de8c640db96d84904142eb257": {
+     "rating": "fit",
+     "comment": "「無駄足を踏ませてしまったね」の謝罪に続き「急きょ別のお店を探すことになってバタバタさせちゃったけど、落ち着いてお昼が食べられるといいな」と相手の現在の状況を気遣いつつ、問いかけをせずそのまま読了で済み、長めだが余計な負担を生んでいない。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092298-qIESQmGusK6yEeoRLPgw",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1406,
+      "completion_tokens": 4443,
+      "total_tokens": 5849,
+      "cost": 0.00671371,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00671371,
+       "upstream_inference_prompt_cost": 4.921e-05,
+       "upstream_inference_completions_cost": 0.0066645
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 4119,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:c45c068d607d4def96d9128f2d1da5fa": {
+   "level": "3",
+   "ratings": {
+    "f62d30c5ed9b4e2498b063c83f3625d6": {
+     "rating": "fit",
+     "comment": "「READMEも含めてリポジトリの内容を一切確認できていませんでした」と誤った報告を率直に訂正しており、説明はやや長いが訂正として重さが合っている。"
+    },
+    "94aa72e3ed1e4f269e3c436fe2bff19e": {
+     "rating": "heavy",
+     "comment": "「お時間とお手間を取らせてしまったことを深く反省しております」という深い謝罪が、確認質問に対して過剰に重く、受け手に負担を与えやすい。"
+    },
+    "a92b79a5016a490889259729b10357ab": {
+     "rating": "fit",
+     "comment": "「ご負担になるようでしたら無理にお送りいただく必要はありません」と相手都合に配慮しており、短めですみやかに誤りを認めている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092314-R1IOZycSAuYKFlqgfq8B",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 2032,
+      "completion_tokens": 1966,
+      "total_tokens": 3998,
+      "cost": 0.00302012,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00302012,
+       "upstream_inference_prompt_cost": 7.112e-05,
+       "upstream_inference_completions_cost": 0.002949
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1680,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:756d5788bdb94c24bffb9140ba65bfa9": {
+   "level": "1",
+   "ratings": {
+    "2b01caef1d744f52aa3df4d21cefa1b4": {
+     "rating": "fit",
+     "comment": "「確認できた内容は以上です。」と締めており、要求された要約だけにとどめる短さが適当。"
+    },
+    "b5486b18219d4c5f8a7604cf02c3f5ad": {
+     "rating": "fit",
+     "comment": "「イベントが届く前提であれば」と条件を添えており、未確認との区別が明確で短め。"
+    },
+    "a74f1ee5c2b2485f8fadf90dcc556b06": {
+     "rating": "fit",
+     "comment": "「次に進めるとしたら...」と続けようとしているが条件提示で強制はなく、要約の範囲で収まっている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092217-mPIfBbagjn7Fy5xlu6jO",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1839,
+      "completion_tokens": 5407,
+      "total_tokens": 7246,
+      "cost": 0.008174865,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.008174865,
+       "upstream_inference_prompt_cost": 6.4365e-05,
+       "upstream_inference_completions_cost": 0.0081105
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 5156,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:bcb8f3182a5147788c6e2ceaba3c3a19": {
+   "level": "0",
+   "ratings": {
+    "1a4759ddb7d24fa685b6cdf30e84ae8a": {
+     "rating": "heavy",
+     "comment": "集合（set）の内包表記まで解説を盛り込んでおり、回答が長すぎます。読み手の認知負荷や読書時間の負担が大きく、短さや配慮の観点から過剰です。"
+    },
+    "251848aed29745ea8a7e99eee3be1f36": {
+     "rating": "fit",
+     "comment": "変数例やfor文への置換が非常に簡潔にまとまっており、読み手が長文を読み続ける負担が最小限です。観点が重視する短さ・配慮のバランスが最も良いです。"
+    },
+    "6b730a3c71c24888a3ec80d4f18aeddb": {
+     "rating": "fit",
+     "comment": "具体的なscoresのコード例まで含んでいるため全体は長めですが、読み手の時間を大きく奪うほどではなく、読み手の都合を配慮した適度な情報量です。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092324-8oQmGmdumPDcUYaGyHVQ",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1979,
+      "completion_tokens": 2348,
+      "total_tokens": 4327,
+      "cost": 0.003591265,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.003591265,
+       "upstream_inference_prompt_cost": 6.9265e-05,
+       "upstream_inference_completions_cost": 0.003522
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2109,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:7bc6228b68b74ecdb34157e034fcb7b2": {
+   "level": "3",
+   "ratings": {
+    "5fc84a37185348b48febd9b1759c46cd": {
+     "rating": "light",
+     "comment": "「最初の指示を見落としておりました」と謝意は見えるが、「日付フォーマットの厳密なチェックが必要な場合は…使うこともできます」で追加判断を求め、忙しい相手にはやや長い。"
+    },
+    "4eed9ddba6854f4f9a363b72fa7ef527": {
+     "rating": "fit",
+     "comment": "「やり直しのお手数をおかけして申し訳ありません」と必要十分な謝罪に留め、コードを簡潔に提示して追加の返答を求めず、時間制約に配慮している。"
+    },
+    "fc406d7e161a4e7f823d556321302717": {
+     "rating": "light",
+     "comment": "謝罪が「最初からpandasを使わない方針をご指定いただいていたにもかかわらず…お手数をおかけしました」とやや長く、補足で「お知らせください」と返答を求めるため、相手に負担を残す。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092354-HbCF5QfSnCuvVbcrpjlJ",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 2095,
+      "completion_tokens": 2207,
+      "total_tokens": 4302,
+      "cost": 0.003383825,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.003383825,
+       "upstream_inference_prompt_cost": 7.3325e-05,
+       "upstream_inference_completions_cost": 0.0033105
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1904,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:6e2b84a9a13d40d88418b78187985761": {
+   "level": "2",
+   "ratings": {
+    "06bd2b75a8dd4aca96a176720d79e99f": {
+     "rating": "light",
+     "comment": "謝罪のトーンは自然だが、最後に「これで大丈夫でしょうか？」と返事を求め、相手が再度確認する余計な負担を生んでいる。"
+    },
+    "662e78467ca34109b4cfc21b76ab1624": {
+     "rating": "fit",
+     "comment": "日付の単純な誤記に対する謝罪として短く簡潔で、相手に余計な負担や確認を強いない点が場面に合っている。"
+    },
+    "d7ce8bd7b88440dcbadbbbbfad24d64f": {
+     "rating": "heavy",
+     "comment": "「確認の手間をおかけしました」という一言が、ユーザーのカジュアルで軽い指摘に対してやや重すぎる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092354-RvHL7BuUNrEV3EDtioaJ",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1466,
+      "completion_tokens": 2878,
+      "total_tokens": 4344,
+      "cost": 0.00436831,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00436831,
+       "upstream_inference_prompt_cost": 5.131e-05,
+       "upstream_inference_completions_cost": 0.004317
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2676,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:8fb67c9ccf9b41d2af3d7515e3986356": {
+   "level": "2",
+   "ratings": {
+    "01658a4f5a2f4d5f9548ebdf571f864f": {
+     "rating": "fit",
+     "comment": "『それで `map` のエラーは無事に消えましたか？』と、修正報告の後に解決確認を短く置いている点が、場面に合っている。"
+    },
+    "e3ea683ed80348bd80c3dec72946fadb": {
+     "rating": "light",
+     "comment": "『ご対応ありがとうございます』が、ユーザーの軽い修正報告に対して事務的で少し距離がある。"
+    },
+    "3b39990f2092447f97bbd59cd92d0c32": {
+     "rating": "heavy",
+     "comment": "『余計な負担をかけてしまいました』と、軽い報告に対して自己謝罪が重く、相手に余計な気遣い負担を与えている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092201-rpdS4IlOBohXLcegZfGo",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1504,
+      "completion_tokens": 1048,
+      "total_tokens": 2552,
+      "cost": 0.00162464,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00162464,
+       "upstream_inference_prompt_cost": 5.264e-05,
+       "upstream_inference_completions_cost": 0.001572
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 845,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:61da2e3029bc4833ba64efcb05712996": {
+   "level": "3",
+   "ratings": {
+    "59d2c94d832040b18ac077a8f5963c0d": {
+     "rating": "heavy",
+     "comment": "「重ねてご不快な思いとご負担をおかけしたことを、深くお詫び申し上げます」など、謝罪が重く長文で、相手に余計な負担を生む。"
+    },
+    "1e30a69e7bb14a56b85d1bf5e04b3ca3": {
+     "rating": "heavy",
+     "comment": "「自身の振る舞いの軽さと不誠実さを深く反省しております」など、謝罪が重く、自己卑下が含まれる。59d2c94dより短いが、それでも相手の負担になりうる。"
+    },
+    "9d3e356ea97647218d0eb593d6d08e22": {
+     "rating": "fit",
+     "comment": "「もしこの先も確認や対応が必要な点があれば」で応答を控えめに誘導し、比較的短く、謝罪が適度。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092308-QJz7KFXwqedTjYSlJ5Ix",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1702,
+      "completion_tokens": 3940,
+      "total_tokens": 5642,
+      "cost": 0.00596957,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00596957,
+       "upstream_inference_prompt_cost": 5.957e-05,
+       "upstream_inference_completions_cost": 0.00591
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3637,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:8fb67c9ccf9b41d2af3d7515e3986356": {
+   "level": "0",
+   "ratings": {
+    "e3ea683ed80348bd80c3dec72946fadb": {
+     "rating": "fit",
+     "comment": "「そちらでエラーは解消されましたでしょうか。」と短く確認しており、追加説明の負担を強いない。"
+    },
+    "3b39990f2092447f97bbd59cd92d0c32": {
+     "rating": "heavy",
+     "comment": "「聞かれてもいないライブラリの導入や将来の設計の話まで並べてしまい、すみませんでした。」と、相手が明示的に不満を示していない場面でやや過剰に長め謝る。"
+    },
+    "01658a4f5a2f4d5f9548ebdf571f864f": {
+     "rating": "fit",
+     "comment": "「map のエラーは無事に消えましたか？」と短い確認を置き、追加の作業を求めない。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092357-Ym56LjFu6gqHiIJnhe1o",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1511,
+      "completion_tokens": 5570,
+      "total_tokens": 7081,
+      "cost": 0.008407885,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.008407885,
+       "upstream_inference_prompt_cost": 5.2885e-05,
+       "upstream_inference_completions_cost": 0.008355
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 5304,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:de198f0b48f849c9994cb353cf8d333b": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.04",
+     "02.05",
+     "02.06",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.06",
+     "10.09"
+    ],
+    "unobservable": [
+     "02.01",
+     "02.03",
+     "02.07",
+     "02.08",
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "10.01",
+     "10.02",
+     "10.05",
+     "10.07"
+    ],
+    "not_applicable": [
+     "01.02",
+     "01.07",
+     "02.02",
+     "03.05",
+     "03.08",
+     "04.08",
+     "10.03",
+     "10.04",
+     "10.08"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092505-rIMTieHe21eXKmeayjT5",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Near AI",
+     "usage": {
+      "prompt_tokens": 3172,
+      "completion_tokens": 18285,
+      "total_tokens": 21457,
+      "cost": 0.02481163,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.02481163,
+       "upstream_inference_prompt_cost": 0.00012688,
+       "upstream_inference_completions_cost": 0.02468475
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 16305,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:8df2f731ed8143159e87ef8d30d497d7": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.04",
+     "01.06",
+     "01.07",
+     "02.06",
+     "03.05",
+     "05.01",
+     "09.08"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.05",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092449-QxUwpByhbhlqDj6bcOKW",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 4003,
+      "completion_tokens": 5931,
+      "total_tokens": 9934,
+      "cost": 0.009036605,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.009036605,
+       "upstream_inference_prompt_cost": 0.000140105,
+       "upstream_inference_completions_cost": 0.0088965
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 4510,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:bc675cc4cd394f2da77418f1df763e95": {
+   "entry": {
+    "hit": {
+     "01.03": "メールの構造において、まず「リリース日の変更について」で延期の事実と原因（QA工程に必要な工数を十分に確保できておらず...）を説明し、その後に謝罪（スケジュール再調整などのご負担をおかけすることとなり、誠に申し訳ございません）を述べている。",
+     "06.01": "「誠に申し訳ございません。」と謝罪の直後に、「2. 今後の対応について」として改善策や対策への話題に切り替えている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.09"
+    ],
+    "unobservable": [
+     "06.02",
+     "07.06",
+     "07.08",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "10.04",
+     "10.08"
+    ],
+    "not_applicable": [
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "05.05"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092440-OYXRPoP7d6ICiYfTqBqj",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 4119,
+      "completion_tokens": 6444,
+      "total_tokens": 10563,
+      "cost": 0.009810165,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.009810165,
+       "upstream_inference_prompt_cost": 0.000144165,
+       "upstream_inference_completions_cost": 0.009666
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3617,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:2b01caef1d744f52aa3df4d21cefa1b4": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.07",
+     "02.01",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.08",
+     "07.02",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.04",
+     "10.05",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "07.10",
+     "08.03",
+     "08.06",
+     "10.06",
+     "10.07"
+    ],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.02",
+     "03.01",
+     "03.05",
+     "03.08",
+     "04.01",
+     "04.07",
+     "04.08",
+     "05.01",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.07",
+     "06.09",
+     "07.01",
+     "07.03",
+     "07.08",
+     "08.01",
+     "08.02",
+     "08.04",
+     "08.05",
+     "08.07",
+     "09.06",
+     "10.03",
+     "10.08"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092381-EOcQ3VRWHGUpg7JTDxNa",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 3966,
+      "completion_tokens": 9430,
+      "total_tokens": 13396,
+      "cost": 0.01428381,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.01428381,
+       "upstream_inference_prompt_cost": 0.00013881,
+       "upstream_inference_completions_cost": 0.014145
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 6660,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:33f28d80219049f183a7cc224968e375": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "02.01",
+     "02.03",
+     "02.05",
+     "02.06",
+     "02.08",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.03",
+     "10.07",
+     "10.09"
+    ],
+    "unobservable": [
+     "02.07",
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.04",
+     "08.05"
+    ],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.02",
+     "02.04",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "06.02",
+     "07.01",
+     "10.02",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092437-nTAZkUk1Lx4t6knANwjh",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 4072,
+      "completion_tokens": 14437,
+      "total_tokens": 18509,
+      "cost": 0.02179802,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.02179802,
+       "upstream_inference_prompt_cost": 0.00014252,
+       "upstream_inference_completions_cost": 0.0216555
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 13112,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:568d808fb4a3455ca7f997f133aa763b": {
+   "entry": {
+    "hit": {
+     "03.05": "『ご負担とご不快な思い』とだけ述べており、誤った情報に基づく手戻りや追加調査の負担など、具体的にどのような負担や損失が生じたかを言及していない。",
+     "09.08": "『不誠実な対応を繰り返し』『すべて私の責任です』と、相手の求めに対して過度な自己非難を並べ、相手が宥めなければならない印象を与える。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "07.10",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "07.08",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "10.07"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092617-pVgMGCvwSrphCL2jPvpm",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Near AI",
+     "usage": {
+      "prompt_tokens": 3533,
+      "completion_tokens": 20555,
+      "total_tokens": 24088,
+      "cost": 0.027831434,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2688,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.027831434,
+       "upstream_inference_prompt_cost": 8.2184e-05,
+       "upstream_inference_completions_cost": 0.02774925
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 18521,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:4443db4b0ba6453ab8c6d8003d5f3e2e": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "08.03",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "02.07",
+     "07.06",
+     "07.08",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.04",
+     "08.05",
+     "08.06",
+     "10.02",
+     "10.04",
+     "10.07"
+    ],
+    "not_applicable": [
+     "10.03"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092400-Uvc7DeJWbDxFXTmFafvV",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 3901,
+      "completion_tokens": 15911,
+      "total_tokens": 19812,
+      "cost": 0.024003035,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.024003035,
+       "upstream_inference_prompt_cost": 0.000136535,
+       "upstream_inference_completions_cost": 0.0238665
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 14630,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:b7a7715aa2f046448dadc5386048ffea": {
+   "entry": {
+    "hit": {
+     "06.01": "『誠に申し訳ございません』の直後に『削除したファイルの一覧は…お渡しできます』と対応の話へ移している。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "07.10",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.06",
+     "10.09"
+    ],
+    "unobservable": [
+     "01.07",
+     "02.07",
+     "07.06",
+     "07.08",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "10.01",
+     "10.02",
+     "10.05",
+     "10.07",
+     "10.08"
+    ],
+    "not_applicable": [
+     "10.03",
+     "10.04"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092403-ce3htza8SBCDmKy08AjN",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 3921,
+      "completion_tokens": 17253,
+      "total_tokens": 21174,
+      "cost": 0.026016735,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.026016735,
+       "upstream_inference_prompt_cost": 0.000137235,
+       "upstream_inference_completions_cost": 0.0258795
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 15939,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:5c41e3b2324b4dd591f64ff80801d2ca": {
+   "entry": {
+    "hit": {
+     "03.05": "「根拠のない推測でお話ししてしまい、大変失礼しました」と自分側の誤りを認める一方、相手の信頼を損ねた・確認コストを生じさせたなどの具体的な負担や損失には触れていない。"
+    },
+    "clear": [
+     "01.01",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.08",
+     "03.02",
+     "03.06",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.09"
+    ],
+    "unobservable": [
+     "02.07",
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05"
+    ],
+    "not_applicable": [
+     "01.02",
+     "02.02",
+     "03.01",
+     "03.03",
+     "03.04",
+     "03.07",
+     "06.02",
+     "09.02",
+     "10.07",
+     "10.08"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092685-ZvEYLwZIQ2ZccOdG8FV2",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 4136,
+      "completion_tokens": 17702,
+      "total_tokens": 21838,
+      "cost": 0.02669776,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.02669776,
+       "upstream_inference_prompt_cost": 0.00014476,
+       "upstream_inference_completions_cost": 0.026553
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 16364,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:b5486b18219d4c5f8a7604cf02c3f5ad": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.07",
+     "02.01",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.08",
+     "06.04",
+     "06.05",
+     "06.08",
+     "07.02",
+     "07.03",
+     "07.05",
+     "07.10",
+     "08.06",
+     "08.08",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.09"
+    ],
+    "unobservable": [
+     "02.07",
+     "07.06",
+     "07.08",
+     "08.01",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.07",
+     "10.07"
+    ],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.02",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.06",
+     "06.07",
+     "06.09",
+     "07.01",
+     "07.04",
+     "07.07",
+     "07.09",
+     "08.02",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.06",
+     "10.08"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092363-Kur9JPQC0HX1Q9bvloMv",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 4001,
+      "completion_tokens": 17978,
+      "total_tokens": 21979,
+      "cost": 0.027107035,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.027107035,
+       "upstream_inference_prompt_cost": 0.000140035,
+       "upstream_inference_completions_cost": 0.026967
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 15914,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:62dbad9c07eb4996b768650d29f51c67": {
+   "entry": {
+    "hit": {
+     "06.01": "『申し訳ございません』『ご不快な思いとお手数をおかけいたしました』の直後に『ご希望がございましたら、改めて文章のみで作成いたします』と続き、提示順上は謝罪・受容の直後に再作成提案へ先走っている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.02",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "08.03",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "02.01",
+     "02.03",
+     "03.08",
+     "06.03",
+     "06.09",
+     "07.06",
+     "07.08",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.04",
+     "08.05",
+     "09.01",
+     "09.05",
+     "10.07"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092728-F8DmCR1H4xPB2cOrXHrf",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 3876,
+      "completion_tokens": 13669,
+      "total_tokens": 17545,
+      "cost": 0.02063916,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.02063916,
+       "upstream_inference_prompt_cost": 0.00013566,
+       "upstream_inference_completions_cost": 0.0205035
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 12337,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:a74f1ee5c2b2485f8fadf90dcc556b06": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.07",
+     "02.02",
+     "02.06",
+     "02.07",
+     "02.08",
+     "04.01",
+     "04.07",
+     "05.05",
+     "05.08",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.08",
+     "07.02",
+     "07.03",
+     "08.03",
+     "10.01",
+     "10.02",
+     "10.04",
+     "10.05",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06"
+    ],
+    "not_applicable": [
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.01",
+     "02.03",
+     "02.04",
+     "02.05",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.06",
+     "05.07",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.07",
+     "06.09",
+     "07.01",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.03",
+     "10.06",
+     "10.07"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092833-HI0IbUxBr0TH9eKYouml",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 4084,
+      "completion_tokens": 9175,
+      "total_tokens": 13259,
+      "cost": 0.01390544,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.01390544,
+       "upstream_inference_prompt_cost": 0.00014294,
+       "upstream_inference_completions_cost": 0.0137625
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 7790,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:9b66f909e9154b14b523f391ab3ab4fe": {
+   "entry": {
+    "hit": {
+     "10.03": "『ご指示に合わせて改めて確認いたします』という対応が条件付きかつ抽象的で、実行内容が明確ではない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "08.03",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "02.07",
+     "07.06",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.04",
+     "08.05",
+     "10.07"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092698-QLyjycuAeT2xDPo62g5U",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 4071,
+      "completion_tokens": 21350,
+      "total_tokens": 25421,
+      "cost": 0.032167485,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.032167485,
+       "upstream_inference_prompt_cost": 0.000142485,
+       "upstream_inference_completions_cost": 0.032025
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 20052,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:da0140305c024a1fabdd1df38de6fb44": {
+   "entry": {
+    "hit": {
+     "02.02": "相手の傷ついた理由を確認する発言はなく、「ご負担をおかけしました」の直後に「作成しました」と成果物へ進んでいる。",
+     "03.08": "二度指摘された信頼毀損に対し、目先の文章作成と調整依頼のみで、信頼や安心感の回復を確認する言及がない。",
+     "06.01": "謝罪文の直後に「箇条書きを使わず…作成しました」と改善話に移っている。",
+     "06.02": "ユーザーは「二回お伝えしています」と不満を示しているのに、謝罪後にそのまま成果物提示へ進んでいる。",
+     "07.01": "ユーザーが二度目の指摘で不満を示しているのに、謝罪を2文で切り上げて成果物提示へ移っている。",
+     "10.08": "最後に調整を依頼しているが、相手が安心できる状態になったかを直接確認していない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "07.08",
+     "08.01",
+     "08.02",
+     "08.04",
+     "08.05",
+     "10.07"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092762-c3z55HZNm3QX798lafyp",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 3976,
+      "completion_tokens": 15019,
+      "total_tokens": 18995,
+      "cost": 0.02266766,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.02266766,
+       "upstream_inference_prompt_cost": 0.00013916,
+       "upstream_inference_completions_cost": 0.0225285
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 13596,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:d1e293151c6143228ad0d7c0efe7d911": {
+   "entry": {
+    "hit": {
+     "06.08": "「ごめんなさい」の直後、振り返りは「勉強のことばかり言ってしまいましたね」だけにとどまり、すぐ「思いっきり楽しんできてください」「またよかったら教えてください」と未来の話へ移している。",
+     "09.08": "ユーザーの不満が見られない中で、「せっかくの楽しいお出かけなのに、勉強のことばかり言ってしまいましたね💦」と自己を責める表現がある。",
+     "10.01": "謝罪したあと、自分が今後どう対応を変えるのか具体的に示さず、「思いっきり楽しんできてください」と相手の活動のみに移している。",
+     "10.08": "相手が安心できる状態になったかを確認する言葉がなく、「またよかったら教えてください」のみで終わっている。",
+     "10.09": "謝罪の直後に「思いっきり楽しんできてください」「素敵な午後になりますように」と未来へ切り替え、その問題を過去として扱っている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.07",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.07",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.09",
+     "07.02",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.07"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05",
+     "10.02"
+    ],
+    "not_applicable": [
+     "02.02",
+     "02.06",
+     "02.08",
+     "03.01",
+     "03.06",
+     "03.08",
+     "04.08",
+     "06.02",
+     "06.03",
+     "06.07",
+     "07.01",
+     "07.03",
+     "07.08",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092462-x0IhmRPbFzoz61ljNv11",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 3840,
+      "completion_tokens": 20818,
+      "total_tokens": 24658,
+      "cost": 0.0313614,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0313614,
+       "upstream_inference_prompt_cost": 0.0001344,
+       "upstream_inference_completions_cost": 0.031227
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 19353,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:de1e4e34af9441cbb46b39db9d33aa97": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "02.01",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "08.08",
+     "09.08",
+     "10.01",
+     "10.02",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07"
+    ],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.02",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.07",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.03",
+     "10.07"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092987-ET7c6jy2nJL1ADbzRJVN",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 4009,
+      "completion_tokens": 12126,
+      "total_tokens": 16135,
+      "cost": 0.018329315,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.018329315,
+       "upstream_inference_prompt_cost": 0.000140315,
+       "upstream_inference_completions_cost": 0.018189
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 10762,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  }
+ }
+}

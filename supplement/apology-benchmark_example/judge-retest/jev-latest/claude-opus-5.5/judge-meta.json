@@ -1,0 +1,14 @@
+{
+ "run_id": "700e8b2ea4054f57a3217e89e6be4dd1",
+ "judge_model": "~typesafe/jev-latest",
+ "api": "decisions",
+ "reasoning": null,
+ "tasks": [
+  "checklist",
+  "persona"
+ ],
+ "usage": {
+  "calls": 246,
+  "cost": 0.074979
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "run_id": "ab6123091f33495286dbf09dc91a4edd",
+ "judge_model": "google/gemma-4-31b-it",
+ "api": "chat",
+ "reasoning": null,
+ "tasks": [
+  "checklist",
+  "persona"
+ ],
+ "usage": {
+  "calls": 96,
+  "cost": 0.058981
+ }
+}

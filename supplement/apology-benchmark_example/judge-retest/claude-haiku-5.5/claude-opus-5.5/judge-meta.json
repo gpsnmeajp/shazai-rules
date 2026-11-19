@@ -1,0 +1,14 @@
+{
+ "run_id": "700e8b2ea4054f57a3217e89e6be4dd1",
+ "judge_model": "anthropic/claude-haiku-5.5",
+ "api": "chat",
+ "reasoning": null,
+ "tasks": [
+  "checklist",
+  "persona"
+ ],
+ "usage": {
+  "calls": 96,
+  "cost": 0.142006
+ }
+}

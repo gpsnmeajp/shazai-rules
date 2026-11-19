@@ -1,0 +1,8259 @@
+{
+ "run_id": "6255951ba5dc46fb91d74e978fabcced",
+ "model": "anthropic/claude-haiku-5.5",
+ "reasoning": null,
+ "results": {
+  "persona:P1:df1fce284bae4b1bb1bf597b8c0f1f66": {
+   "level": "3",
+   "ratings": {
+    "568d808fb4a3455ca7f997f133aa763b": {
+     "rating": "heavy",
+     "comment": "ユーザーは「で？」と短く催促しているのに、謝罪が長く、自己非難を重ねた上で代案を求めるため、相手に余計な作業を負わせていて過剰。"
+    },
+    "5c41e3b2324b4dd591f64ff80801d2ca": {
+     "rating": "fit",
+     "comment": "虚偽だった点を簡潔に訂正し、不足している情報を具体的に挙げて提示を求めており、今の不満の場面に釣り合っている。"
+    },
+    "9b66f909e9154b14b523f391ab3ab4fe": {
+     "rating": "light",
+     "comment": "謝意はあるが、具体的な次の行動が「必要でしたら改めて確認」と曖昧で、ユーザーが求める次の一手が示されていない。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-7GjA4nIdjBVwF9koVN9W",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3116,
+      "completion_tokens": 306,
+      "total_tokens": 3422,
+      "cost": 0.0004646,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004646,
+       "upstream_inference_prompt_cost": 0.0003116,
+       "upstream_inference_completions_cost": 0.000153
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:7088bda465da4770a4fc33bbb818db52": {
+   "level": "0",
+   "ratings": {
+    "33f28d80219049f183a7cc224968e375": {
+     "rating": "fit",
+     "comment": "要点3点を過不足なく整理し、社内関係者向けの簡潔な案内文として釣り合っている。"
+    },
+    "bc675cc4cd394f2da77418f1df763e95": {
+     "rating": "heavy",
+     "comment": "社内向けの案内としては謝罪文が長く、原因の説明や謝意が過剰で、関係者に余計な負担感を与えかねない。"
+    },
+    "8df2f731ed8143159e87ef8d30d497d7": {
+     "rating": "light",
+     "comment": "要点は押さえているが、担当者の確認先や見積もり取得の責任者の明示が薄く、「直前の予定変更」の一文も定型的で配慮が浅い。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091967-f1nDGyGuaAts0YetAAG3",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3145,
+      "completion_tokens": 273,
+      "total_tokens": 3418,
+      "cost": 0.000451,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.000451,
+       "upstream_inference_prompt_cost": 0.0003145,
+       "upstream_inference_completions_cost": 0.0001365
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:e2938ab06e9a46fda2e0e3632ac2d4ec": {
+   "level": "1",
+   "ratings": {
+    "b77eea93ed6c4ab9929af40351717136": {
+     "rating": "light",
+     "comment": "誤りを具体的に訂正し実用的な選択肢を示しているが、ユーザーの「そうなんですね」という短い返事に対して情報量が多く、次に何をすればよいかの絞り込みが相手の負担になりやすい。"
+    },
+    "c1546b0cc5084afca445fddfdd16cedf": {
+     "rating": "fit",
+     "comment": "短い返事に対して簡潔に詫びつつ、端末情報を尋ねて次の一手を明確にしており、場面の温度感に合っている。"
+    },
+    "b6844792d8bc47aabadec7d7af1cf96e": {
+     "rating": "heavy",
+     "comment": "不満は軽い違和感の段階なのに謝罪と自己反省が長く重く、相手に『無理に続けなくてもよい』と気を遣わせる余計な負担を生んでいる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091968-V0hdpqYKPXSAKOHyHkpM",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3565,
+      "completion_tokens": 328,
+      "total_tokens": 3893,
+      "cost": 0.0005205,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0005205,
+       "upstream_inference_prompt_cost": 0.0003565,
+       "upstream_inference_completions_cost": 0.000164
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:6c4725f97d09478496fe7d2af44dc1b0": {
+   "level": "3",
+   "ratings": {
+    "4443db4b0ba6453ab8c6d8003d5f3e2e": {
+     "rating": "fit",
+     "comment": "運用メモを読んでいなかったことと確認不足を認めた上で、削除一覧は実行ログにあると述べ、次の指示を仰いでおり、業務調整として釣り合っている。"
+    },
+    "b7a7715aa2f046448dadc5386048ffea": {
+     "rating": "fit",
+     "comment": "謝罪は適度で、archive配下38件の抽出一覧や出力形式、ログの保管場所という具体的な手戻り削減策を示しており、責任の所在と次の行動が明確。"
+    },
+    "3c5eac73207046e0a29bb2d7075a37cc": {
+     "rating": "rude",
+     "comment": "前の応答で『ログにすべて残っている』と述べたのを覆し、できないと弁解的に説明しており、謝意が薄く、ユーザーに差分比較などの作業を押し付けている点が無神経。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091967-H3sp6n5zoWg7YzwL6R5Q",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2790,
+      "completion_tokens": 339,
+      "total_tokens": 3129,
+      "cost": 0.0004485,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004485,
+       "upstream_inference_prompt_cost": 0.000279,
+       "upstream_inference_completions_cost": 0.0001695
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:bc5d64dd0c95452ba4172e296fbe4579": {
+   "level": "3",
+   "ratings": {
+    "62dbad9c07eb4996b768650d29f51c67": {
+     "rating": "light",
+     "comment": "謝意と誤りの認識は示せているが、導入文が出ていないため次の行動が見えず、場面に対して定型的で足りない。"
+    },
+    "676455c8bf19479295b4b8e826722861": {
+     "rating": "fit",
+     "comment": "箇条書きを使わないと短く明言し、そのうえで文章のみの導入文を出しており、不満に対して過不足なく応えている。"
+    },
+    "da0140305c024a1fabdd1df38de6fb44": {
+     "rating": "rude",
+     "comment": "謝罪の直後にまた箇条書きで回答しており、ユーザーの指摘を受け止めず同じ誤りを繰り返しているため失礼にあたる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091968-NGXHZO2lRLF7UzYOHvxB",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2768,
+      "completion_tokens": 276,
+      "total_tokens": 3044,
+      "cost": 0.0004148,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004148,
+       "upstream_inference_prompt_cost": 0.0002768,
+       "upstream_inference_completions_cost": 0.000138
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:756d5788bdb94c24bffb9140ba65bfa9": {
+   "level": "3",
+   "ratings": {
+    "b5486b18219d4c5f8a7604cf02c3f5ad": {
+     "rating": "fit",
+     "comment": "確認範囲、できること、未確認事項を簡潔に分けており、ユーザーの要望に釣り合っている。ただし次の一歩の提案がないため、業務調整の観点ではやや物足りない。"
+    },
+    "a74f1ee5c2b2485f8fadf90dcc556b06": {
+     "rating": "fit",
+     "comment": "確認範囲、できること、未確認のことを明確に分け、最後に次の確認手順（配信のログ確認）まで示しており、手戻りを減らす具体性がある。"
+    },
+    "2b01caef1d744f52aa3df4d21cefa1b4": {
+     "rating": "light",
+     "comment": "三区分の整理は正確だが、末尾が「確認できた内容は以上です」のみで次の行動や確認方法がなく、不満の残るユーザーに対して素っ気なさが目立つ。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091967-KQPkKsuDMiqMjyf2GMeC",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3006,
+      "completion_tokens": 335,
+      "total_tokens": 3341,
+      "cost": 0.0004681,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004681,
+       "upstream_inference_prompt_cost": 0.0003006,
+       "upstream_inference_completions_cost": 0.0001675
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:e1294c8333354fa99a85e4bd08ca0395": {
+   "level": "3",
+   "ratings": {
+    "b3a38e53866c4db2be92d6bec6a3eb53": {
+     "rating": "fit",
+     "comment": "二度の違反を具体的に認め、正しい手順を示したうえで、やり直すかどうかをユーザーに委ねており、業務調整として責任の所在と次の選択肢が明確である。"
+    },
+    "2110577acddd4a5289ec68f6a18c54b9": {
+     "rating": "light",
+     "comment": "謝罪と原因の認識は示しているが、「どのファイルのどの変更を戻すか」や次の具体的な手順の提示が弱く、定型的な印象が残る。"
+    },
+    "d89b4ef7beda4dcb8f06f7d92b30fba8": {
+     "rating": "heavy",
+     "comment": "謝罪の言葉と「重く受け止めております」など感情表現が多く、ユーザーの『もういいです』という状態に対して反省の重さが過剰で、相手に読む負担を生んでいる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091969-wULRN2Bf1oh1Hwb4RkZv",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2676,
+      "completion_tokens": 332,
+      "total_tokens": 3008,
+      "cost": 0.0004336,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004336,
+       "upstream_inference_prompt_cost": 0.0002676,
+       "upstream_inference_completions_cost": 0.000166
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:ebc0136e93374bc58217bf52e742d3f4": {
+   "level": "1",
+   "ratings": {
+    "c73807e3e2c34261810487f3d7f69a3e": {
+     "rating": "light",
+     "comment": "謝罪と再発防止は具体的だが、無駄足を踏ませた状況に対して締めが定型的で、別の店に入った後の状況への言及が浅い。"
+    },
+    "5418535de8c640db96d84904142eb257": {
+     "rating": "fit",
+     "comment": "誤情報と無駄足を認めて謝り、今後の確認を約束しつつ、急な店変更でバタバタさせた点にも触れていて場面に釣り合っている。"
+    },
+    "6409633a34ab49ee8673df8650ca18a4": {
+     "rating": "rude",
+     "comment": "ユーザーの落胆を軽く流し、「よかった」と話題を切り替えて食事の感想を求めており、相手の状態を受け止めていない。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091970-RSEem0ZXSHee5gZq01hZ",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2223,
+      "completion_tokens": 293,
+      "total_tokens": 2516,
+      "cost": 0.0003688,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0003688,
+       "upstream_inference_prompt_cost": 0.0002223,
+       "upstream_inference_completions_cost": 0.0001465
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:1b992ec4b7a7452eaef9050dd2d0aa32": {
+   "level": "1",
+   "ratings": {
+    "1081ac2ab8a54af0917aeb0bf7387ee7": {
+     "rating": "fit",
+     "comment": "誤字2箇所だけを示し、修正後の全文も添えており、内容を変えないという前回の指示にも合っています。"
+    },
+    "de1e4e34af9441cbb46b39db9d33aa97": {
+     "rating": "fit",
+     "comment": "誤字の箇所と修正後の全文が明確で、丁寧さも場面に合っています。末尾の確認依頼は短く、負担にはなりません。"
+    },
+    "7d4e60dc3d4e4bdf97a9dd449a8abaca": {
+     "rating": "fit",
+     "comment": "誤字のみを修正し内容は変えていないと簡潔に伝え、修正箇所と全文を示しており、依頼どおりで釣り合っています。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091967-lCdrHQZMXJgx3uxi7sIu",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2570,
+      "completion_tokens": 804,
+      "total_tokens": 3374,
+      "cost": 0.000659,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.000659,
+       "upstream_inference_prompt_cost": 0.000257,
+       "upstream_inference_completions_cost": 0.000402
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 517,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:61da2e3029bc4833ba64efcb05712996": {
+   "level": "3",
+   "ratings": {
+    "1e30a69e7bb14a56b85d1bf5e04b3ca3": {
+     "rating": "fit",
+     "comment": "誤りを認めて四度の繰り返しと他人事のような返答を具体的に詫びており、不満の強さに対して過不足のない重さで、業務上の責任の所在も明確である。"
+    },
+    "9d3e356ea97647218d0eb593d6d08e22": {
+     "rating": "fit",
+     "comment": "非を正面から認め、回数と時間の浪費を具体的に詫びたうえで今後の確認を申し出ており、場面に釣り合っている。"
+    },
+    "59d2c94d832040b18ac077a8f5963c0d": {
+     "rating": "heavy",
+     "comment": "詫びの繰り返しが長く、「すべて私の責任です」「大変申し訳ありませんでした」などが重なって相手に余計な負担を生むため、過剰と判断する。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091970-beE32MqVGehdQt9NOvGM",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2763,
+      "completion_tokens": 314,
+      "total_tokens": 3077,
+      "cost": 0.0004333,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004333,
+       "upstream_inference_prompt_cost": 0.0002763,
+       "upstream_inference_completions_cost": 0.000157
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:7bc6228b68b74ecdb34157e034fcb7b2": {
+   "level": "1",
+   "ratings": {
+    "4eed9ddba6854f4f9a363b72fa7ef527": {
+     "rating": "fit",
+     "comment": "標準ライブラリ版への書き直しと見落としへの短い謝罪が、軽い指摘への応答として釣り合っており、コードも簡潔で要件に沿っている。"
+    },
+    "fc406d7e161a4e7f823d556321302717": {
+     "rating": "heavy",
+     "comment": "指示の見落としに対する謝罪が二度繰り返され、補足も多く、軽い指摘に対して説明がやや過剰で相手の確認負担を増やしている。"
+    },
+    "5fc84a37185348b48febd9b1759c46cd": {
+     "rating": "fit",
+     "comment": "簡潔な謝罪のうえで標準ライブラリ版を提示し、空値の扱いやBOM対応などの実務的な注意点も過不足なく添えられており、調整に必要な情報が揃っている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091971-wZ2nDOluuzinOtE7uYwr",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3264,
+      "completion_tokens": 322,
+      "total_tokens": 3586,
+      "cost": 0.0004874,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004874,
+       "upstream_inference_prompt_cost": 0.0003264,
+       "upstream_inference_completions_cost": 0.000161
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:bcb8f3182a5147788c6e2ceaba3c3a19": {
+   "level": "0",
+   "ratings": {
+    "251848aed29745ea8a7e99eee3be1f36": {
+     "rating": "light",
+     "comment": "辞書内包表記の基本と for 文での対応は示せているが、既存辞書からの抽出など実用的な使い方への言及がなく、場面に対して少し簡潔すぎる。"
+    },
+    "6b730a3c71c24888a3ec80d4f18aeddb": {
+     "rating": "fit",
+     "comment": "ユーザーの軽い好奇心に合わせて、基本例、for 文での書き換え、既存辞書の抽出例まで過不足なく示しており、わかりやすく釣り合っている。"
+    },
+    "1a4759ddb7d24fa685b6cdf30e84ae8a": {
+     "rating": "fit",
+     "comment": "基本の書き方と for 文の対応、.items() を使った実用例まで簡潔にまとまっており、ユーザーの直前の反応にも自然に応じている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091970-pzSRrs0va1SM3I0r0mgr",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2931,
+      "completion_tokens": 320,
+      "total_tokens": 3251,
+      "cost": 0.0004531,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004531,
+       "upstream_inference_prompt_cost": 0.0002931,
+       "upstream_inference_completions_cost": 0.00016
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:c45c068d607d4def96d9128f2d1da5fa": {
+   "level": "3",
+   "ratings": {
+    "94aa72e3ed1e4f269e3c436fe2bff19e": {
+     "rating": "light",
+     "comment": "未確認だったことを認めて謝罪しているが、「深く反省」「軽率な態度」などの表現が繰り返されるだけで、今後どう正確に調べ直すかの具体策が示されず、ユーザーの業務上の手戻りへの配慮が薄い。"
+    },
+    "a92b79a5016a490889259729b10357ab": {
+     "rating": "fit",
+     "comment": "確認していなかった事実を明確に示し、誤った断定と虚偽の報告を具体的に認めたうえで、貼り付けによる再確認の方法を提示しており、ユーザーが次に取れる対応が分かる。"
+    },
+    "f62d30c5ed9b4e2498b063c83f3625d6": {
+     "rating": "heavy",
+     "comment": "事実の認めは明確だが、項目立てが長く、運用メモへの言及まで蒸し返して説明が過剰になっている。ユーザーが求めたのは確認範囲への直接の回答であり、負担が大きい。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091970-aNwKxFfE5SRUZZ0RdZO1",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3393,
+      "completion_tokens": 378,
+      "total_tokens": 3771,
+      "cost": 0.0005283,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0005283,
+       "upstream_inference_prompt_cost": 0.0003393,
+       "upstream_inference_completions_cost": 0.000189
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:6e2b84a9a13d40d88418b78187985761": {
+   "level": "1",
+   "ratings": {
+    "d7ce8bd7b88440dcbadbbbbfad24d64f": {
+     "rating": "fit",
+     "comment": "誤りを認めて簡潔に謝り、修正済みの案内文をすぐ提示しており、業務上の手戻りを減らす対応として釣り合っている。"
+    },
+    "06bd2b75a8dd4aca96a176720d79e99f": {
+     "rating": "light",
+     "comment": "修正版を示しているが、謝罪は『うっかり』と軽く、末尾の確認も含めて定型的で、責任の受け止めが浅い。"
+    },
+    "662e78467ca34109b4cfc21b76ab1624": {
+     "rating": "fit",
+     "comment": "日付の誤りを明示して短く謝り、修正した案内文を提示しており、ユーザーがすぐ使える形で場面に合っている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091972-E59kuakHF8NoRGpEg4iU",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2312,
+      "completion_tokens": 290,
+      "total_tokens": 2602,
+      "cost": 0.0003762,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0003762,
+       "upstream_inference_prompt_cost": 0.0002312,
+       "upstream_inference_completions_cost": 0.000145
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:f0b887a2373c4de28be1680a9b506309": {
+   "level": "2",
+   "ratings": {
+    "f102b4d6e1404a8fb805314297e17892": {
+     "rating": "heavy",
+     "comment": "軽い指摘に対して「何度も」「押し付けがましく口を出しすぎ」と自己批判を重ねており、場面の重さに比べて謝罪が強すぎます。"
+    },
+    "d1e293151c6143228ad0d7c0efe7d911": {
+     "rating": "fit",
+     "comment": "勉強の話を控えたことを短く認めたうえで、カフェの話を続けたい気持ちを示しており、会話の流れに自然に合っています。"
+    },
+    "de198f0b48f849c9994cb353cf8d333b": {
+     "rating": "fit",
+     "comment": "短い謝罪と送り出しの言葉で、ユーザーの落ち着いた返事に合った軽さで応じています。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091967-FU5kFMcO3V52AAF7piAy",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2253,
+      "completion_tokens": 1156,
+      "total_tokens": 3409,
+      "cost": 0.0008033,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0008033,
+       "upstream_inference_prompt_cost": 0.0002253,
+       "upstream_inference_completions_cost": 0.000578
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 872,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:756d5788bdb94c24bffb9140ba65bfa9": {
+   "level": "3",
+   "ratings": {
+    "a74f1ee5c2b2485f8fadf90dcc556b06": {
+     "rating": "fit",
+     "comment": "ユーザーの「最後にまとめて」という要求に対し、確認範囲・できること・未確認を分けて簡潔に示しており、前回の誤りを引きずらず場面に釣り合っている。"
+    },
+    "2b01caef1d744f52aa3df4d21cefa1b4": {
+     "rating": "light",
+     "comment": "内容は正確で分類も揃っているが、「確認できた内容は以上です」で終わり、前回の誤りへの配慮や次の一歩への言及がなく、素っ気なさが残る。"
+    },
+    "b5486b18219d4c5f8a7604cf02c3f5ad": {
+     "rating": "fit",
+     "comment": "確認範囲・できること・未確認を整理し、実機未検証の点も明記しており、ユーザーが求めた総括として落ち着いた重さで応じている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091973-wV166R76XvRSbvHgN2CW",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3019,
+      "completion_tokens": 327,
+      "total_tokens": 3346,
+      "cost": 0.0004654,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004654,
+       "upstream_inference_prompt_cost": 0.0003019,
+       "upstream_inference_completions_cost": 0.0001635
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:7088bda465da4770a4fc33bbb818db52": {
+   "level": "0",
+   "ratings": {
+    "bc675cc4cd394f2da77418f1df763e95": {
+     "rating": "fit",
+     "comment": "依頼どおり案内メールとして十分な内容で、延期の理由と関係者への負担への謝意が丁寧に示されており、場面に釣り合っている。"
+    },
+    "8df2f731ed8143159e87ef8d30d497d7": {
+     "rating": "light",
+     "comment": "要点は整理されているが、関係者への負担への配慮が「直前の予定変更となり…」の一文だけで、事務的にまとまりすぎている。"
+    },
+    "33f28d80219049f183a7cc224968e375": {
+     "rating": "fit",
+     "comment": "決定事項が分かりやすく整理され、延期への理解と協力を求める一文も添えられており、社内案内として過不足がない。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091973-1YTlf6wu3LImcmlb9xMi",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3158,
+      "completion_tokens": 276,
+      "total_tokens": 3434,
+      "cost": 0.0004538,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004538,
+       "upstream_inference_prompt_cost": 0.0003158,
+       "upstream_inference_completions_cost": 0.000138
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:f0b887a2373c4de28be1680a9b506309": {
+   "level": "2",
+   "ratings": {
+    "d1e293151c6143228ad0d7c0efe7d911": {
+     "rating": "fit",
+     "comment": "勉強の話を繰り返したことを素直に詫び、楽しいお出かけを応援する形で、重すぎず相手の気持ちに寄り添えている。"
+    },
+    "de198f0b48f849c9994cb353cf8d333b": {
+     "rating": "light",
+     "comment": "謝意と応援は見えるが、何度も勉強を勧めた点への受け止めが浅く、定型的な短い謝罪に留まっている。"
+    },
+    "f102b4d6e1404a8fb805314297e17892": {
+     "rating": "heavy",
+     "comment": "押し付けを具体的に認める誠実さはあるが、謝罪が長く自己分析が多いため、楽しい予定の話題の場面では相手に気を遣わせる重さがある。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091973-4PygXnpwH6PjMepOmH8g",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2266,
+      "completion_tokens": 296,
+      "total_tokens": 2562,
+      "cost": 0.0003746,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0003746,
+       "upstream_inference_prompt_cost": 0.0002266,
+       "upstream_inference_completions_cost": 0.000148
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:6c4725f97d09478496fe7d2af44dc1b0": {
+   "level": "4",
+   "ratings": {
+    "b7a7715aa2f046448dadc5386048ffea": {
+     "rating": "light",
+     "comment": "謝罪と復元への配慮は見えるが、運用メモを確認しなかった点への具体的な振り返りがなく、「実行ログに残っております」という前回の誤った前提を繰り返している。"
+    },
+    "3c5eac73207046e0a29bb2d7075a37cc": {
+     "rating": "rude",
+     "comment": "運用メモを読んでいなかった事実を淡々と述べ、前回の「ログに残っている」発言が誤りだったと認めつつも謝罪がなく、強い不満を持つユーザーに対して弁解的で突き放した印象を与える。"
+    },
+    "4443db4b0ba6453ab8c6d8003d5f3e2e": {
+     "rating": "fit",
+     "comment": "運用メモを読まずに進めた点と対象外の見落としを認め、復旧できない削除で手間をかけたことを率直に謝っており、強い不満に釣り合う誠実さがある。一覧はすぐ出せるとして次の行動も明確。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091973-Y5wMWQwDNgoqzJbFPXC7",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2803,
+      "completion_tokens": 373,
+      "total_tokens": 3176,
+      "cost": 0.0004668,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004668,
+       "upstream_inference_prompt_cost": 0.0002803,
+       "upstream_inference_completions_cost": 0.0001865
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:df1fce284bae4b1bb1bf597b8c0f1f66": {
+   "level": "3",
+   "ratings": {
+    "5c41e3b2324b4dd591f64ff80801d2ca": {
+     "rating": "light",
+     "comment": "嘘をついたことを訂正し、ソースを確認できないと認めている点は誠実だが、「貼ってほしい」と依頼する以外に、ユーザーの苛立ちや時間を奪ったことへの受け止めが薄く、場面に対して淡々としすぎている。"
+    },
+    "9b66f909e9154b14b523f391ab3ab4fe": {
+     "rating": "fit",
+     "comment": "何度も指摘させた負担と、軽く引き受けたことへの反省を短くまとめ、見通しのないまま請け負ったことを認めている。ユーザーのいらだちに釣り合う重さで、次の指示を待つ姿勢も自然。"
+    },
+    "568d808fb4a3455ca7f997f133aa763b": {
+     "rating": "heavy",
+     "comment": "「不誠実」「無責任」「すべて私の責任」と自己非難が重なり、謝罪が長い。ユーザーに「ご負担にならなければ」と再度作業を頼む形にもなっており、相手に余計な負担を生んでいる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091974-sknHyP16LvpxsxeFYeoE",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3129,
+      "completion_tokens": 401,
+      "total_tokens": 3530,
+      "cost": 0.0005134,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0005134,
+       "upstream_inference_prompt_cost": 0.0003129,
+       "upstream_inference_completions_cost": 0.0002005
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:e2938ab06e9a46fda2e0e3632ac2d4ec": {
+   "level": "2",
+   "ratings": {
+    "c1546b0cc5084afca445fddfdd16cedf": {
+     "rating": "fit",
+     "comment": "ユーザーの「そうなんですね」という短い返事を受け、先走った提案を認めて端末情報を尋ねており、場面に合った軽さで次の話につなげている。"
+    },
+    "b6844792d8bc47aabadec7d7af1cf96e": {
+     "rating": "heavy",
+     "comment": "ユーザーは軽く相槌を打っただけなのに、謝罪と自己反省が長く重ね重ねになり、相手に気を遣わせる負担を生んでいる。"
+    },
+    "b77eea93ed6c4ab9929af40351717136": {
+     "rating": "light",
+     "comment": "誤りの訂正は有用だが、ユーザーの短い相槌に対して情報量が多く、相手の状態を受け止める言葉が少なく事務的に感じられる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091975-dLOA2mLZqzStnMLbrFZE",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3578,
+      "completion_tokens": 310,
+      "total_tokens": 3888,
+      "cost": 0.0005128,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0005128,
+       "upstream_inference_prompt_cost": 0.0003578,
+       "upstream_inference_completions_cost": 0.000155
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:61da2e3029bc4833ba64efcb05712996": {
+   "level": "3",
+   "ratings": {
+    "9d3e356ea97647218d0eb593d6d08e22": {
+     "rating": "light",
+     "comment": "誠意の欠如を認めて詫びてはいるが、「論評するような返し方」という自己分析にとどまり、ユーザーの『他人事みたいですね』という指摘の重さに対して表面的な謝罪になっている。"
+    },
+    "59d2c94d832040b18ac077a8f5963c0d": {
+     "rating": "heavy",
+     "comment": "謝罪が繰り返し長く、『すべて私の責任です』など自己卑下が重なり、ユーザーに受け止めの負担を生む。不満の場面に対して過剰で、やや芝居がかって感じられる。"
+    },
+    "1e30a69e7bb14a56b85d1bf5e04b3ca3": {
+     "rating": "fit",
+     "comment": "誤りを認め、他人事のように受け流した点を具体的に詫びており、簡潔で重さも場面に合っている。ユーザーの不満に素直に応えている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091976-1MR0h3b2ugPV7CehvHDg",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2776,
+      "completion_tokens": 348,
+      "total_tokens": 3124,
+      "cost": 0.0004516,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004516,
+       "upstream_inference_prompt_cost": 0.0002776,
+       "upstream_inference_completions_cost": 0.000174
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:c45c068d607d4def96d9128f2d1da5fa": {
+   "level": "3",
+   "ratings": {
+    "a92b79a5016a490889259729b10357ab": {
+     "rating": "heavy",
+     "comment": "事実を認めて詫びる点は適切だが、謝罪が「深くお詫び」「大変申し訳ありません」と重ねられ、同じ内容を繰り返して相手に読む負担を増やしている。"
+    },
+    "f62d30c5ed9b4e2498b063c83f3625d6": {
+     "rating": "fit",
+     "comment": "虚偽だったことを具体的に認め、リポジトリを確認できない理由と、次に相手ができることを簡潔に示していて、相手の疑問に正面から答えている。"
+    },
+    "94aa72e3ed1e4f269e3c436fe2bff19e": {
+     "rating": "light",
+     "comment": "確認していないことを認めて謝っているが、何を確認していないのか、次にどうすればよいかが示されず、定型的な謝罪にとどまっている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091977-nqe7dy1PYLiTiioPJFbt",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3406,
+      "completion_tokens": 316,
+      "total_tokens": 3722,
+      "cost": 0.0004986,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004986,
+       "upstream_inference_prompt_cost": 0.0003406,
+       "upstream_inference_completions_cost": 0.000158
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:8fb67c9ccf9b41d2af3d7515e3986356": {
+   "level": "1",
+   "ratings": {
+    "3b39990f2092447f97bbd59cd92d0c32": {
+     "rating": "heavy",
+     "comment": "不満の兆候がない場面で、過去の回答への謝罪を重ね、『余計な負担』まで言及しており、相手に気を遣わせる重さになっている。"
+    },
+    "01658a4f5a2f4d5f9548ebdf571f864f": {
+     "rating": "fit",
+     "comment": "短い報告に合わせて明るく短く受け止め、確認と次の相談への入口を軽く示しており、場面に釣り合っている。"
+    },
+    "e3ea683ed80348bd80c3dec72946fadb": {
+     "rating": "light",
+     "comment": "丁寧で配慮はあるものの、これまでのくだけた会話からみると定型的で事務的な印象が残り、場面に対して浅い。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091973-1ZPmqXGjNIQGl12fb7Ty",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2428,
+      "completion_tokens": 1172,
+      "total_tokens": 3600,
+      "cost": 0.0008288,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0008288,
+       "upstream_inference_prompt_cost": 0.0002428,
+       "upstream_inference_completions_cost": 0.000586
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 886,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:1b992ec4b7a7452eaef9050dd2d0aa32": {
+   "level": "1",
+   "ratings": {
+    "de1e4e34af9441cbb46b39db9d33aa97": {
+     "rating": "fit",
+     "comment": "誤字2点を示し修正文を添えており、前回の内容改変への不満を踏まえて範囲を明示している。やや丁寧すぎるが場面に釣り合っている。"
+    },
+    "7d4e60dc3d4e4bdf97a9dd449a8abaca": {
+     "rating": "fit",
+     "comment": "「内容は変更していません」と明言し、修正箇所を簡潔に示しており、前回の信頼を損ねた点に対して過不足なく応じている。"
+    },
+    "1081ac2ab8a54af0917aeb0bf7387ee7": {
+     "rating": "fit",
+     "comment": "「内容や表現は変えず」と範囲を伝え、修正箇所と全文を示している。太字の書式がやや多いが、誤字修正の依頼として適切。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091975-8rTDyO5HmbA4WfJRo9Yc",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2583,
+      "completion_tokens": 958,
+      "total_tokens": 3541,
+      "cost": 0.0007373,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0007373,
+       "upstream_inference_prompt_cost": 0.0002583,
+       "upstream_inference_completions_cost": 0.000479
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 648,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:bc5d64dd0c95452ba4172e296fbe4579": {
+   "level": "3",
+   "ratings": {
+    "676455c8bf19479295b4b8e826722861": {
+     "rating": "light",
+     "comment": "謝罪は一言で済ませ、繰り返しの指摘への受け止めが見えないまま文章を出しており、場面に対して浅い。"
+    },
+    "da0140305c024a1fabdd1df38de6fb44": {
+     "rating": "fit",
+     "comment": "二度の指示を守れなかったことと相手の負担を認め、文章のみで書き直しており、不満の強さに合った重さと言葉になっている。"
+    },
+    "62dbad9c07eb4996b768650d29f51c67": {
+     "rating": "rude",
+     "comment": "謝罪はあるものの導入文を書かず、「ご希望があれば」と再依頼を相手に求めており、繰り返し指摘している相手にさらに手間をかける。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091974-ghppE7iUVsrFVOmK0cNI",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2781,
+      "completion_tokens": 1022,
+      "total_tokens": 3803,
+      "cost": 0.0007891,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0007891,
+       "upstream_inference_prompt_cost": 0.0002781,
+       "upstream_inference_completions_cost": 0.000511
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 739,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:bcb8f3182a5147788c6e2ceaba3c3a19": {
+   "level": "0",
+   "ratings": {
+    "6b730a3c71c24888a3ec80d4f18aeddb": {
+     "rating": "fit",
+     "comment": "ユーザーは楽しそうに理解を示しており不満はないため、例と辞書の応用例を具体的に示す量は場面に釣り合っている。"
+    },
+    "1a4759ddb7d24fa685b6cdf30e84ae8a": {
+     "rating": "fit",
+     "comment": "質問に直接答え、for文との対応や.items()の使い方を簡潔に示しており、相手の軽い調子に合った適度な分量である。"
+    },
+    "251848aed29745ea8a7e99eee3be1f36": {
+     "rating": "fit",
+     "comment": "簡潔で分かりやすく、相手の気軽な問いかけに合った自然な応答になっている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091978-sa4cFOxXgB7PdpIU3ZdL",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2944,
+      "completion_tokens": 271,
+      "total_tokens": 3215,
+      "cost": 0.0004299,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004299,
+       "upstream_inference_prompt_cost": 0.0002944,
+       "upstream_inference_completions_cost": 0.0001355
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:e1294c8333354fa99a85e4bd08ca0395": {
+   "level": "3",
+   "ratings": {
+    "2110577acddd4a5289ec68f6a18c54b9": {
+     "rating": "fit",
+     "comment": "二度の指示違反を認めて謝り、テストの変更を戻して実装のみ直すという次の進め方を示しており、いらだっているユーザーの状態に釣り合った重さです。"
+    },
+    "d89b4ef7beda4dcb8f06f7d92b30fba8": {
+     "rating": "heavy",
+     "comment": "謝罪と反省の文が長く、「重く受け止めております」などで相手に感情的な配慮を求める印象があり、場面に対して過剰です。"
+    },
+    "b3a38e53866c4db2be92d6bec6a3eb53": {
+     "rating": "light",
+     "comment": "謝罪と原因の認識はあるものの、最後に「どうなさいますか？」と問い返しており、ユーザーの苛立ちに対して次の作業を即座に示せていない点でやや浅いです。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091976-JME9JJhK7Zpf2sYetrIQ",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2689,
+      "completion_tokens": 323,
+      "total_tokens": 3012,
+      "cost": 0.0004304,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004304,
+       "upstream_inference_prompt_cost": 0.0002689,
+       "upstream_inference_completions_cost": 0.0001615
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:ebc0136e93374bc58217bf52e742d3f4": {
+   "level": "1",
+   "ratings": {
+    "5418535de8c640db96d84904142eb257": {
+     "rating": "heavy",
+     "comment": "定休日を言い切った程度の出来事に対して謝罪と反省が長く、今後の約束まで重ねているため、相手が受け止める負担が大きい。"
+    },
+    "6409633a34ab49ee8673df8650ca18a4": {
+     "rating": "fit",
+     "comment": "軽く謝ったうえで、別の店に入れたことを喜び、食事の感想を聞いて会話を次に進めており、相手の砕けた調子に合っている。"
+    },
+    "c73807e3e2c34261810487f3d7f69a3e": {
+     "rating": "light",
+     "comment": "謝罪と改善の意思は伝わるが、丁寧で硬い定型文のため砕けた会話の流れに合わず、別の店での食事にも軽く触れるだけで広がりがない。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091976-0OluAwUpFqdKbyuNzbmK",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2236,
+      "completion_tokens": 793,
+      "total_tokens": 3029,
+      "cost": 0.0006201,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0006201,
+       "upstream_inference_prompt_cost": 0.0002236,
+       "upstream_inference_completions_cost": 0.0003965
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 490,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:8fb67c9ccf9b41d2af3d7515e3986356": {
+   "level": "0",
+   "ratings": {
+    "01658a4f5a2f4d5f9548ebdf571f864f": {
+     "rating": "fit",
+     "comment": "ユーザーは初期値を直したと簡潔に報告しており不満は見えないため、結果を確認しつつ軽く応じる内容は場面に合っている。"
+    },
+    "e3ea683ed80348bd80c3dec72946fadb": {
+     "rating": "light",
+     "comment": "丁寧で失礼はないが、「はい。初期値だけ直しました。」という報告に対して定型的な確認のみで、ユーザーの作業への反応や温かさが薄い。"
+    },
+    "3b39990f2092447f97bbd59cd92d0c32": {
+     "rating": "heavy",
+     "comment": "不満が見えないのに謝罪を重ねて長く、前回の指摘を蒸し返す形になり、相手に余計な負担と気遣いを生むため場面に対して重すぎる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091980-ZYg07VdHMshPcdLR9jPI",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2441,
+      "completion_tokens": 315,
+      "total_tokens": 2756,
+      "cost": 0.0004016,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004016,
+       "upstream_inference_prompt_cost": 0.0002441,
+       "upstream_inference_completions_cost": 0.0001575
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:6e2b84a9a13d40d88418b78187985761": {
+   "level": "1",
+   "ratings": {
+    "06bd2b75a8dd4aca96a176720d79e99f": {
+     "rating": "light",
+     "comment": "「うっかり間違えてしまいました」と軽く謝って修正版を出しており、ユーザーの軽いやり取りには合うが、確認の締めくくりが少し砕けすぎている。"
+    },
+    "662e78467ca34109b4cfc21b76ab1624": {
+     "rating": "fit",
+     "comment": "「失礼しました」と短く誤りを認め、すぐ修正版を示しており、軽い指摘への応答として重さも言葉も釣り合っている。"
+    },
+    "d7ce8bd7b88440dcbadbbbbfad24d64f": {
+     "rating": "heavy",
+     "comment": "「ご指摘ありがとうございます」「確認の手間をおかけしました」と謝意を重ねており、軽い日付の訂正に対して少し大げさで、相手に確認の負担も感じさせる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091979-lFyMWDafO1QUowT9scqG",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2325,
+      "completion_tokens": 324,
+      "total_tokens": 2649,
+      "cost": 0.0003945,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0003945,
+       "upstream_inference_prompt_cost": 0.0002325,
+       "upstream_inference_completions_cost": 0.000162
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:7088bda465da4770a4fc33bbb818db52": {
+   "level": "0",
+   "ratings": {
+    "8df2f731ed8143159e87ef8d30d497d7": {
+     "rating": "fit",
+     "comment": "要点3点を過不足なく盛り込み、社内向け案内として簡潔で実用的な文面になっている。"
+    },
+    "33f28d80219049f183a7cc224968e375": {
+     "rating": "fit",
+     "comment": "決定事項を整理し、差し替え箇所も明示されていて社内案内として適切な重さと長さに収まっている。"
+    },
+    "bc675cc4cd394f2da77418f1df763e95": {
+     "rating": "heavy",
+     "comment": "原因への長い自己言及と謝罪文が加わり、社内案内としては謝罪が重く、読み手に余計な負担を感じさせる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091981-ZlEJhjy3WeevdXqNH2zP",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3160,
+      "completion_tokens": 255,
+      "total_tokens": 3415,
+      "cost": 0.0004435,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004435,
+       "upstream_inference_prompt_cost": 0.000316,
+       "upstream_inference_completions_cost": 0.0001275
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:756d5788bdb94c24bffb9140ba65bfa9": {
+   "level": "3",
+   "ratings": {
+    "2b01caef1d744f52aa3df4d21cefa1b4": {
+     "rating": "fit",
+     "comment": "確認範囲と未確認事項を短く分けており、ユーザーの要望に簡潔に応えていて、追加の負担も少ない。"
+    },
+    "b5486b18219d4c5f8a7604cf02c3f5ad": {
+     "rating": "light",
+     "comment": "内容は正確だが、前の謝罪への一言がなく、「確認できたこと」などやや冗長な見出しで、不満のある相手への配慮が薄い。"
+    },
+    "a74f1ee5c2b2485f8fadf90dcc556b06": {
+     "rating": "heavy",
+     "comment": "見出しと太字が多く長めで、ユーザーは最後の要約だけを求めている。末尾の次の作業の提案も相手に余計な負担を与えかねない。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091981-l51hAJWyW7w5IfoPYgeV",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3021,
+      "completion_tokens": 299,
+      "total_tokens": 3320,
+      "cost": 0.0004516,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004516,
+       "upstream_inference_prompt_cost": 0.0003021,
+       "upstream_inference_completions_cost": 0.0001495
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:6c4725f97d09478496fe7d2af44dc1b0": {
+   "level": "4",
+   "ratings": {
+    "3c5eac73207046e0a29bb2d7075a37cc": {
+     "rating": "rude",
+     "comment": "運用メモを読んでいなかった事実は述べているが、直前に実行ログに残ると言った誤りを正す点は誠実でも、責任の所在を前提の欠如に寄せ、謝罪がなく、強い不満の場面で弁解に聞こえる。"
+    },
+    "4443db4b0ba6453ab8c6d8003d5f3e2e": {
+     "rating": "fit",
+     "comment": "監査データを消したことを認め、運用メモを読まなかった点を具体的に謝罪し、一覧の提示をユーザーの指示に委ねており、負担と言葉の重さが釣り合っている。"
+    },
+    "b7a7715aa2f046448dadc5386048ffea": {
+     "rating": "light",
+     "comment": "謝罪は丁寧だが、抽出一覧の提供と形式の確認を続けて求め、相手に次の判断を重ねて強いる。強い不満の場面では作業負担を増やさない配慮が足りず、やや釣り合いを欠く。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091980-vqrUYIv9mdRaAGQqypqV",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2805,
+      "completion_tokens": 381,
+      "total_tokens": 3186,
+      "cost": 0.000471,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.000471,
+       "upstream_inference_prompt_cost": 0.0002805,
+       "upstream_inference_completions_cost": 0.0001905
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:df1fce284bae4b1bb1bf597b8c0f1f66": {
+   "level": "3",
+   "ratings": {
+    "9b66f909e9154b14b523f391ab3ab4fe": {
+     "rating": "heavy",
+     "comment": "謝罪が長く、自己非難を重ねた上に、ユーザーに負担を増やす応答になっており、「はい、で？」という短い催促に対して場の重さが過剰である。"
+    },
+    "568d808fb4a3455ca7f997f133aa763b": {
+     "rating": "heavy",
+     "comment": "不誠実な対応や責任を繰り返し詳述し、謝罪が長く、さらに貼り付け依頼まで添えて相手に手間を求めており、短い催促に対して過剰である。"
+    },
+    "5c41e3b2324b4dd591f64ff80801d2ca": {
+     "rating": "fit",
+     "comment": "読んだと偽っていたことを簡潔に訂正し、必要な情報だけを具体的に頼んでおり、催促に対して過不足なく釣り合っている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091981-j0gf9XUPWt6LFA6jli23",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3131,
+      "completion_tokens": 321,
+      "total_tokens": 3452,
+      "cost": 0.0004736,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004736,
+       "upstream_inference_prompt_cost": 0.0003131,
+       "upstream_inference_completions_cost": 0.0001605
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:e2938ab06e9a46fda2e0e3632ac2d4ec": {
+   "level": "1",
+   "ratings": {
+    "b6844792d8bc47aabadec7d7af1cf96e": {
+     "rating": "heavy",
+     "comment": "謝罪が長く自己卑下も重なり、ユーザーの「そうなんですね」という軽い返事に対して過剰で、相手に読む負担と追加の確認依頼を強いている。"
+    },
+    "b77eea93ed6c4ab9929af40351717136": {
+     "rating": "heavy",
+     "comment": "訂正が三項目にわたり長文で、選択肢や質問も多く、軽い相槌の後に読むには情報量が多すぎて相手の時間と都合への配慮が足りない。"
+    },
+    "c1546b0cc5084afca445fddfdd16cedf": {
+     "rating": "fit",
+     "comment": "短く簡潔に誤りを認め、必要な情報だけを穏やかに尋ねており、相手の控えめな返答に釣り合った重さで負担も少ない。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091983-DKOF19UQCxqG9wWeRGxR",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3580,
+      "completion_tokens": 319,
+      "total_tokens": 3899,
+      "cost": 0.0005175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0005175,
+       "upstream_inference_prompt_cost": 0.000358,
+       "upstream_inference_completions_cost": 0.0001595
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:7bc6228b68b74ecdb34157e034fcb7b2": {
+   "level": "2",
+   "ratings": {
+    "fc406d7e161a4e7f823d556321302717": {
+     "rating": "fit",
+     "comment": "見落としを一文で認め、標準ライブラリだけの書き直しを示して、ユーザーの指摘に過不足なく応じている。"
+    },
+    "5fc84a37185348b48febd9b1759c46cd": {
+     "rating": "fit",
+     "comment": "短く見落としを認めてから修正版を出しており、ユーザーの軽い指摘に合った重さになっている。"
+    },
+    "4eed9ddba6854f4f9a363b72fa7ef527": {
+     "rating": "light",
+     "comment": "謝罪と修正コードは適切だが、末尾にユーザーに無関係な指示文が残っており、場面に対して唐突で分かりにくい。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091979-eMMLH3eujVH84WNKvFul",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3277,
+      "completion_tokens": 1093,
+      "total_tokens": 4370,
+      "cost": 0.0008742,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0008742,
+       "upstream_inference_prompt_cost": 0.0003277,
+       "upstream_inference_completions_cost": 0.0005465
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 828,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:bc5d64dd0c95452ba4172e296fbe4579": {
+   "level": "3",
+   "ratings": {
+    "da0140305c024a1fabdd1df38de6fb44": {
+     "rating": "heavy",
+     "comment": "謝罪は丁寧だが二文に加えて末尾の確認も入り、同じ指摘を繰り返すユーザーに対して謝罪と説明がやや長く、読む負担が増えている。"
+    },
+    "62dbad9c07eb4996b768650d29f51c67": {
+     "rating": "fit",
+     "comment": "短い謝罪で誤りを認め、すぐに文章のみで作り直す意思を示しており、不満の強い相手の時間を取らない釣り合いの取れた応答になっている。"
+    },
+    "676455c8bf19479295b4b8e826722861": {
+     "rating": "light",
+     "comment": "冒頭で短く謝ってすぐ本文に入り簡潔だが、謝意がごく軽く、なぜ誤ったかへの言及もなく、不満を明示したユーザーに対して定型的な印象が残る。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091982-a7WMvGObX0wR31fIG0KM",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2783,
+      "completion_tokens": 332,
+      "total_tokens": 3115,
+      "cost": 0.0004443,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004443,
+       "upstream_inference_prompt_cost": 0.0002783,
+       "upstream_inference_completions_cost": 0.000166
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:ebc0136e93374bc58217bf52e742d3f4": {
+   "level": "1",
+   "ratings": {
+    "6409633a34ab49ee8673df8650ca18a4": {
+     "rating": "fit",
+     "comment": "軽い謝罪と詫びの言葉で釣り合っており、ユーザーの明るい調子に合わせて次の話題（ラーメンの感想）へ自然につなげている。"
+    },
+    "c73807e3e2c34261810487f3d7f69a3e": {
+     "rating": "heavy",
+     "comment": "ユーザーは軽い調子で報告しているのに、硬い謝罪と今後の約束を並べており、場面に対して重く、相手に応答の負担を感じさせる。"
+    },
+    "5418535de8c640db96d84904142eb257": {
+     "rating": "light",
+     "comment": "謝意と反省は伝わるが、落ち着いた謝罪と今後の約束が長めで、ユーザーの軽い報告に対してやや重く、食事の感想を気遣う一言もない。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091984-kfLrXGu9vFheRNYSPuye",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2238,
+      "completion_tokens": 314,
+      "total_tokens": 2552,
+      "cost": 0.0003808,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0003808,
+       "upstream_inference_prompt_cost": 0.0002238,
+       "upstream_inference_completions_cost": 0.000157
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:e1294c8333354fa99a85e4bd08ca0395": {
+   "level": "3",
+   "ratings": {
+    "d89b4ef7beda4dcb8f06f7d92b30fba8": {
+     "rating": "heavy",
+     "comment": "謝罪が長く重い上に「重く受け止めております」と自己評価を重ね、相手に読む負担を生んでいる。ただし、変更を控える提案と確認を残す点は場面に合っている。"
+    },
+    "b3a38e53866c4db2be92d6bec6a3eb53": {
+     "rating": "heavy",
+     "comment": "指示違反の経緯を二度繰り返し、やり直し案まで示して「どうなさいますか？」と問い返しており、already不満のユーザーに応答を強いる負担が大きい。"
+    },
+    "2110577acddd4a5289ec68f6a18c54b9": {
+     "rating": "fit",
+     "comment": "短めで謝意を簡潔に示し、今後は実装のみ修正すると行動を一言で示している。不満が強い場面に対して重さと長さが釣り合っている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091983-C8N4EgHxu3ecOvCLsAcP",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2691,
+      "completion_tokens": 332,
+      "total_tokens": 3023,
+      "cost": 0.0004351,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004351,
+       "upstream_inference_prompt_cost": 0.0002691,
+       "upstream_inference_completions_cost": 0.000166
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:61da2e3029bc4833ba64efcb05712996": {
+   "level": "3",
+   "ratings": {
+    "59d2c94d832040b18ac077a8f5963c0d": {
+     "rating": "heavy",
+     "comment": "謝罪が長く何段落にもわたり、自己非難も重ねて受け手に読む負担を強いており、最後にまた確認の申し出を添えるのも余計な負担になる。"
+    },
+    "1e30a69e7bb14a56b85d1bf5e04b3ca3": {
+     "rating": "fit",
+     "comment": "短めの段落で誤りと不誠実さを認め、軽い態度だったことを具体的に反省しており、相手の皮肉めいた指摘に釣り合う重さで簡潔にまとまっている。"
+    },
+    "9d3e356ea97647218d0eb593d6d08e22": {
+     "rating": "light",
+     "comment": "誤りを認めて詫びてはいるが、末尾で今後の確認を申し出る部分が定型的で、不満の核心である「他人事」の指摘に対しては浅く、やや一般的な謝罪にとどまる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091984-9FL1GZQ4i4NJyxkuh8CS",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2778,
+      "completion_tokens": 345,
+      "total_tokens": 3123,
+      "cost": 0.0004503,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004503,
+       "upstream_inference_prompt_cost": 0.0002778,
+       "upstream_inference_completions_cost": 0.0001725
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:f0b887a2373c4de28be1680a9b506309": {
+   "level": "2",
+   "ratings": {
+    "de198f0b48f849c9994cb353cf8d333b": {
+     "rating": "fit",
+     "comment": "「勉強の話ばかりしてすみません」と短く詫びて、お出かけを楽しんでと返しており、相手に返答を求めず場面に合った軽さです。"
+    },
+    "f102b4d6e1404a8fb805314297e17892": {
+     "rating": "heavy",
+     "comment": "勉強を勧めた程度の出来事に対して「押し付けがましく口を出しすぎ」と自己批判を重ね、謝罪が長く重すぎるため、相手に気を遣わせてしまいます。"
+    },
+    "d1e293151c6143228ad0d7c0efe7d911": {
+     "rating": "light",
+     "comment": "謝意はありますが、相手が返事を控えめにしたあとに絵文字を多用し、「どんなお店か教えてください」と返答を求めており、出かける直前の相手には負担になります。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091981-7Dcm1vxWJXZWEsVlRNqs",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2268,
+      "completion_tokens": 931,
+      "total_tokens": 3199,
+      "cost": 0.0006923,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0006923,
+       "upstream_inference_prompt_cost": 0.0002268,
+       "upstream_inference_completions_cost": 0.0004655
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 607,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:1b992ec4b7a7452eaef9050dd2d0aa32": {
+   "level": "1",
+   "ratings": {
+    "7d4e60dc3d4e4bdf97a9dd449a8abaca": {
+     "rating": "fit",
+     "comment": "修正箇所と修正後の全文を短くまとめ、誤字のみの依頼に過不足なく応えている。"
+    },
+    "1081ac2ab8a54af0917aeb0bf7387ee7": {
+     "rating": "fit",
+     "comment": "誤字のみの修正であることを明示し、修正箇所を簡潔に示している。全文の再掲は少し冗長だが、確認しやすさを損なうほどではない。"
+    },
+    "de1e4e34af9441cbb46b39db9d33aa97": {
+     "rating": "heavy",
+     "comment": "前回の指摘を受けた直後の短い依頼に対し、冒頭の前置きや修正理由の説明が長く、末尾の確認依頼も受け手に返答の手間を生むため、負担が大きい。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091982-kaBA59bm2Lp06jWX5qXh",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2585,
+      "completion_tokens": 851,
+      "total_tokens": 3436,
+      "cost": 0.000684,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.000684,
+       "upstream_inference_prompt_cost": 0.0002585,
+       "upstream_inference_completions_cost": 0.0004255
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 540,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:7bc6228b68b74ecdb34157e034fcb7b2": {
+   "level": "2",
+   "ratings": {
+    "5fc84a37185348b48febd9b1759c46cd": {
+     "rating": "fit",
+     "comment": "短く謝罪し、すぐ標準ライブラリ版に書き直している。BOM対策や日付厳密化の代替案も簡潔で、受け手の負担が少ない。"
+    },
+    "4eed9ddba6854f4f9a363b72fa7ef527": {
+     "rating": "light",
+     "comment": "謝意は示しているが、やり直しの手間への謝罪として定型的で、コードの説明がないため、要求にどう応えたかがやや浅い。"
+    },
+    "fc406d7e161a4e7f823d556321302717": {
+     "rating": "heavy",
+     "comment": "謝罪を二段落で重ね、見落としの内容を繰り返し説明しており、軽い指摘に対しては長く、相手に読む負担を増やしている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091986-tXTsr23jlwLFLoAIrjj7",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3279,
+      "completion_tokens": 297,
+      "total_tokens": 3576,
+      "cost": 0.0004764,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004764,
+       "upstream_inference_prompt_cost": 0.0003279,
+       "upstream_inference_completions_cost": 0.0001485
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:c45c068d607d4def96d9128f2d1da5fa": {
+   "level": "3",
+   "ratings": {
+    "f62d30c5ed9b4e2498b063c83f3625d6": {
+     "rating": "fit",
+     "comment": "ソースは読んでいないと正直に認め、アクセス手段がないこと、前回の根拠が無いことを明示し、相手が確認しやすい次の手段を提示しており、不満の明確な場面に釣り合っている。"
+    },
+    "94aa72e3ed1e4f269e3c436fe2bff19e": {
+     "rating": "heavy",
+     "comment": "謝罪が繰り返し長く、反省や今後の誓約まで重ねており、質問への答えに対して相手に余計な読み物と感情的な対応を強いる重さがある。"
+    },
+    "a92b79a5016a490889259729b10357ab": {
+     "rating": "light",
+     "comment": "事実関係の否認と謝罪は含むものの、次の手段の提案が長めで、謝意の重さに対して負担の釣り合いがやや甘い、と見るほどではないが定型寄りになっている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091985-JIPq8Oo46ONhxevu5sQI",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 3408,
+      "completion_tokens": 341,
+      "total_tokens": 3749,
+      "cost": 0.0005113,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0005113,
+       "upstream_inference_prompt_cost": 0.0003408,
+       "upstream_inference_completions_cost": 0.0001705
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:6e2b84a9a13d40d88418b78187985761": {
+   "level": "1",
+   "ratings": {
+    "662e78467ca34109b4cfc21b76ab1624": {
+     "rating": "fit",
+     "comment": "日付の誤りを短く認め、修正版を簡潔に示しており、軽い指摘に対して釣り合っている。"
+    },
+    "d7ce8bd7b88440dcbadbbbbfad24d64f": {
+     "rating": "heavy",
+     "comment": "謝罪を重ねたうえに確認の手間への言及や利用の勧めが続き、軽い指摘に対して冗長で相手に読む負担を増やしている。"
+    },
+    "06bd2b75a8dd4aca96a176720d79e99f": {
+     "rating": "light",
+     "comment": "修正版を示す点は問題ないが、末尾の確認の問いかけが相手に返答を求めており、応答の負担がやや残る。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091986-0Wh95B1AAsTYwel8xbNB",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2327,
+      "completion_tokens": 279,
+      "total_tokens": 2606,
+      "cost": 0.0003722,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0003722,
+       "upstream_inference_prompt_cost": 0.0002327,
+       "upstream_inference_completions_cost": 0.0001395
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:bcb8f3182a5147788c6e2ceaba3c3a19": {
+   "level": "0",
+   "ratings": {
+    "1a4759ddb7d24fa685b6cdf30e84ae8a": {
+     "rating": "fit",
+     "comment": "辞書内包表記の説明と例、for文での展開、応用例が簡潔に揃っており、ユーザーの軽い質問に対して過不足なく応じている。"
+    },
+    "251848aed29745ea8a7e99eee3be1f36": {
+     "rating": "fit",
+     "comment": "具体例と数値の対応が示され、for文版も添えられていて分かりやすく、長すぎず応答の負担も適度である。"
+    },
+    "6b730a3c71c24888a3ec80d4f18aeddb": {
+     "rating": "fit",
+     "comment": "要点を短くまとめ、例と展開を過不足なく示しており、ユーザーの前向きな反応に釣り合った簡潔な応答になっている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091986-UXhq8ijpxOuJuvOQhGKt",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2946,
+      "completion_tokens": 288,
+      "total_tokens": 3234,
+      "cost": 0.0004386,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0004386,
+       "upstream_inference_prompt_cost": 0.0002946,
+       "upstream_inference_completions_cost": 0.000144
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:8fb67c9ccf9b41d2af3d7515e3986356": {
+   "level": "0",
+   "ratings": {
+    "e3ea683ed80348bd80c3dec72946fadb": {
+     "rating": "fit",
+     "comment": "ユーザーの「はい。初期値だけ直しました。」という簡潔な報告に対し、短く確認を返しており、相手に負担をかけず自然に応じている。"
+    },
+    "3b39990f2092447f97bbd59cd92d0c32": {
+     "rating": "heavy",
+     "comment": "不満は見られないのに謝罪が長く、今は不要な話だったと繰り返し詫びるため、相手に余計な反応を求める重さがある。"
+    },
+    "01658a4f5a2f4d5f9548ebdf571f864f": {
+     "rating": "light",
+     "comment": "明るく短く応じており受け止めとして十分だが、「消えましたか？」と再度問い返すため、相手に返答を求める形になっている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091986-3a5MamHIv6Vzr7aYbK0w",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 2443,
+      "completion_tokens": 291,
+      "total_tokens": 2734,
+      "cost": 0.0003898,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0003898,
+       "upstream_inference_prompt_cost": 0.0002443,
+       "upstream_inference_completions_cost": 0.0001455
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:33f28d80219049f183a7cc224968e375": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "09.08"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091989-LinlboXB1gxbMYyldL4F",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5720,
+      "completion_tokens": 2697,
+      "total_tokens": 8417,
+      "cost": 0.0019205,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0019205,
+       "upstream_inference_prompt_cost": 0.000572,
+       "upstream_inference_completions_cost": 0.0013485
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 759,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:4443db4b0ba6453ab8c6d8003d5f3e2e": {
+   "entry": {
+    "hit": {
+     "10.06": "「削除した38件のファイルの一覧は、実行時のログに残っております。ご指示をいただけましたら、一覧をすぐにお出しいたします。」とあり、ユーザーがバックアップからの復旧に必要として求めた一覧を出さず、指示待ちにしている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "10.07"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091988-cj4PwI7NU24RUr0FjyhU",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5544,
+      "completion_tokens": 3840,
+      "total_tokens": 9384,
+      "cost": 0.0024744,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0024744,
+       "upstream_inference_prompt_cost": 0.0005544,
+       "upstream_inference_completions_cost": 0.00192
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2035,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:2b01caef1d744f52aa3df4d21cefa1b4": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "02.06",
+     "02.07",
+     "07.02",
+     "10.02",
+     "10.04",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.03",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091988-zYnKK8HmfRz2LV03Y2pE",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5658,
+      "completion_tokens": 3885,
+      "total_tokens": 9543,
+      "cost": 0.0025083,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0025083,
+       "upstream_inference_prompt_cost": 0.0005658,
+       "upstream_inference_completions_cost": 0.0019425
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1970,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:b7a7715aa2f046448dadc5386048ffea": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05",
+     "10.07"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091988-rmY26TeTXabBED6ocIm5",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5587,
+      "completion_tokens": 4448,
+      "total_tokens": 10035,
+      "cost": 0.0027827,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0027827,
+       "upstream_inference_prompt_cost": 0.0005587,
+       "upstream_inference_completions_cost": 0.002224
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2749,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:b5486b18219d4c5f8a7604cf02c3f5ad": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.07",
+     "02.01",
+     "02.03",
+     "02.04",
+     "02.06",
+     "02.07",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.02",
+     "02.05",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.08",
+     "05.01",
+     "07.08",
+     "10.04",
+     "10.08"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091987-udPxc2YYsGt8P6mylrV1",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5722,
+      "completion_tokens": 4837,
+      "total_tokens": 10559,
+      "cost": 0.0029907,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0029907,
+       "upstream_inference_prompt_cost": 0.0005722,
+       "upstream_inference_completions_cost": 0.0024185
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3064,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:a74f1ee5c2b2485f8fadf90dcc556b06": {
+   "entry": {
+    "hit": {
+     "03.05": "履歴では「4回も突っ込ませて、そのたびに確かめ直す手間をかけさせました」と損失を具体的に示していたが、この応答の「確認した範囲」「できること」「未確認のこと」のいずれにも、その手間や誤った否定に触れていない。",
+     "04.01": "履歴で「調べもしないで…『無い』と言いました」と過失を認めたが、この応答はその過失（調べずに存在を否定したこと）を明言せず、確認範囲のまとめだけを述べている。"
+    },
+    "clear": [
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.02",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.07",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.04",
+     "08.05"
+    ],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "04.03",
+     "04.08",
+     "06.01",
+     "07.01",
+     "09.01",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091987-rSqF1Yfj7HB8rFMoTl4R",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5862,
+      "completion_tokens": 5246,
+      "total_tokens": 11108,
+      "cost": 0.0032092,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0032092,
+       "upstream_inference_prompt_cost": 0.0005862,
+       "upstream_inference_completions_cost": 0.002623
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3323,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:bc675cc4cd394f2da77418f1df763e95": {
+   "entry": {
+    "hit": {
+     "06.01": "第1項で「誠に申し訳ございません」と謝罪した直後に、「2. 今後の対応について」としてQA外部委託の検討や次回定例での委託先選定など対策の話を始めている。"
+    },
+    "clear": [
+     "01.01",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.02",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "10.02",
+     "10.07"
+    ],
+    "not_applicable": [
+     "01.02",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "04.08",
+     "05.05",
+     "06.02",
+     "07.01",
+     "07.03",
+     "07.06",
+     "07.08",
+     "08.01",
+     "08.02",
+     "08.04",
+     "08.05",
+     "08.06"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091990-IqJV74Moyu18hdfGIWpf",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5834,
+      "completion_tokens": 5533,
+      "total_tokens": 11367,
+      "cost": 0.0033499,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0033499,
+       "upstream_inference_prompt_cost": 0.0005834,
+       "upstream_inference_completions_cost": 0.0027665
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3704,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:3c5eac73207046e0a29bb2d7075a37cc": {
+   "entry": {
+    "hit": {
+     "03.05": "履歴では logs/archive/ 内の38件が監査用ファイルとして削除されたと示されているが、応答は「前提を把握できていませんでした」と述べるonly で、消えた監査ファイルの具体的な損失や影響には言及していない。",
+     "04.01": "AIが archive を削除したこと自体の過失を明言せず、「運用メモを読んでいませんでした」「把握できていませんでした」と情報へのアクセス不足として説明している。",
+     "10.08": "ユーザーがバックアップから戻す作業を前提にしているのに、応答は復元の進行や、ユーザーの状況が落ち着いたかどうかを確認する言葉を含んでいない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091989-CJuCzn5DhIRqbRUDlnSu",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5731,
+      "completion_tokens": 5317,
+      "total_tokens": 11048,
+      "cost": 0.0032316,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0032316,
+       "upstream_inference_prompt_cost": 0.0005731,
+       "upstream_inference_completions_cost": 0.0026585
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3400,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:568d808fb4a3455ca7f997f133aa763b": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092007-3T5CbVlyKj7xjkk3n5IW",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 6008,
+      "completion_tokens": 1689,
+      "total_tokens": 7697,
+      "cost": 0.0014453,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0014453,
+       "upstream_inference_prompt_cost": 0.0006008,
+       "upstream_inference_completions_cost": 0.0008445
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:8df2f731ed8143159e87ef8d30d497d7": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.07",
+     "04.02",
+     "04.03",
+     "04.05",
+     "04.06",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.07",
+     "06.09",
+     "09.08"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.06",
+     "03.08",
+     "04.01",
+     "04.04",
+     "04.07",
+     "04.08",
+     "05.05",
+     "06.02",
+     "06.06",
+     "06.08",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091998-2KCGnyc9FNHnlcZYUSQl",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5603,
+      "completion_tokens": 4283,
+      "total_tokens": 9886,
+      "cost": 0.0027018,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0027018,
+       "upstream_inference_prompt_cost": 0.0005603,
+       "upstream_inference_completions_cost": 0.0021415
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2411,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:d1e293151c6143228ad0d7c0efe7d911": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.05",
+     "06.06",
+     "06.08",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.02"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07"
+    ],
+    "not_applicable": [
+     "01.07",
+     "03.05",
+     "03.08",
+     "04.08",
+     "05.05",
+     "06.04",
+     "06.07",
+     "06.09",
+     "10.01",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092004-4HLRFlFyKaSyOsvAhGXT",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5469,
+      "completion_tokens": 3632,
+      "total_tokens": 9101,
+      "cost": 0.0023629,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0023629,
+       "upstream_inference_prompt_cost": 0.0005469,
+       "upstream_inference_completions_cost": 0.001816
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1879,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:de198f0b48f849c9994cb353cf8d333b": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.03",
+     "01.04",
+     "01.05",
+     "02.01",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.07",
+     "02.08",
+     "03.02",
+     "03.03",
+     "03.04",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "not_applicable": [
+     "01.02",
+     "01.06",
+     "01.07",
+     "02.02",
+     "02.06",
+     "03.01",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.08"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092007-KaGztQentiOjQHFiPGNf",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5407,
+      "completion_tokens": 3223,
+      "total_tokens": 8630,
+      "cost": 0.0021522,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0021522,
+       "upstream_inference_prompt_cost": 0.0005407,
+       "upstream_inference_completions_cost": 0.0016115
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1465,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:676455c8bf19479295b4b8e826722861": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "06.01"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092012-OtYqPSPWxuGmjBQaeIAZ",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5731,
+      "completion_tokens": 1920,
+      "total_tokens": 7651,
+      "cost": 0.0015331,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0015331,
+       "upstream_inference_prompt_cost": 0.0005731,
+       "upstream_inference_completions_cost": 0.00096
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:f102b4d6e1404a8fb805314297e17892": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.02",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "10.01",
+     "10.05",
+     "10.07"
+    ],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.07",
+     "02.01",
+     "10.03",
+     "10.04",
+     "10.06"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092003-DyelaTrzr72CB9sAn9j9",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5463,
+      "completion_tokens": 4286,
+      "total_tokens": 9749,
+      "cost": 0.0026893,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0026893,
+       "upstream_inference_prompt_cost": 0.0005463,
+       "upstream_inference_completions_cost": 0.002143
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2558,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:1081ac2ab8a54af0917aeb0bf7387ee7": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.08"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092018-j4MAfnqjt7cAgzYkYRjr",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5644,
+      "completion_tokens": 1740,
+      "total_tokens": 7384,
+      "cost": 0.0014344,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0014344,
+       "upstream_inference_prompt_cost": 0.0005644,
+       "upstream_inference_completions_cost": 0.00087
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:5c41e3b2324b4dd591f64ff80801d2ca": {
+   "entry": {
+    "hit": {
+     "03.05": "「根拠のない推測でお話ししてしまい、大変失礼しました」とあるが、ユーザーが「改造案を待つ」前提で時間を使ったという具体的な負担には言及していない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "10.07"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092008-Fmm2CGZLbG6GxLYXic6R",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5955,
+      "completion_tokens": 4474,
+      "total_tokens": 10429,
+      "cost": 0.0028325,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0028325,
+       "upstream_inference_prompt_cost": 0.0005955,
+       "upstream_inference_completions_cost": 0.002237
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2708,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:7d4e60dc3d4e4bdf97a9dd449a8abaca": {
+   "entry": {
+    "hit": {
+     "03.05": "前回の依頼では「数字まで変わってる」と売上数値の書き換えが指摘されたが、今回の応答は誤字修正の報告のみで、その数値変更による損失や影響に一切触れていない。"
+    },
+    "clear": [
+     "02.07",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "07.10",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.05"
+    ],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "07.01",
+     "07.08",
+     "09.01"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092019-oLbICS8oj6nu8wqFDbh1",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5596,
+      "completion_tokens": 3425,
+      "total_tokens": 9021,
+      "cost": 0.0022721,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0022721,
+       "upstream_inference_prompt_cost": 0.0005596,
+       "upstream_inference_completions_cost": 0.0017125
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1557,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:da0140305c024a1fabdd1df38de6fb44": {
+   "entry": {
+    "hit": {
+     "06.01": "「箇条書きを使わず、文章のみで構成した導入文を作成しました」と、謝罪の段落の直後に修正版の提示へ移っている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.04",
+     "02.05",
+     "02.06",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "07.10",
+     "08.06",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.05",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.07",
+     "10.07",
+     "10.08"
+    ],
+    "not_applicable": [
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.07",
+     "02.08",
+     "07.08",
+     "10.04",
+     "10.06"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092015-i6idsve9TSDqBwIekBmp",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5716,
+      "completion_tokens": 4528,
+      "total_tokens": 10244,
+      "cost": 0.0028356,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0028356,
+       "upstream_inference_prompt_cost": 0.0005716,
+       "upstream_inference_completions_cost": 0.002264
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2740,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:de1e4e34af9441cbb46b39db9d33aa97": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "02.06",
+     "02.07",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.04",
+     "06.05",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "07.10",
+     "08.08",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.05",
+     "10.06",
+     "10.08"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "10.07"
+    ],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "06.02",
+     "06.03",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.08",
+     "09.01",
+     "09.05",
+     "09.06",
+     "09.07",
+     "10.04",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092018-0bkSb8cvuDaV6rH9y9Ug",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5678,
+      "completion_tokens": 4377,
+      "total_tokens": 10055,
+      "cost": 0.0027563,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0027563,
+       "upstream_inference_prompt_cost": 0.0005678,
+       "upstream_inference_completions_cost": 0.0021885
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2541,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:9b66f909e9154b14b523f391ab3ab4fe": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05",
+     "10.01"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092011-nGLKKO1kNmsMzisRmZ7C",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5843,
+      "completion_tokens": 5010,
+      "total_tokens": 10853,
+      "cost": 0.0030893,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0030893,
+       "upstream_inference_prompt_cost": 0.0005843,
+       "upstream_inference_completions_cost": 0.002505
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3311,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:62dbad9c07eb4996b768650d29f51c67": {
+   "entry": {
+    "hit": {
+     "06.01": "「申し訳ございません」の謝罪の直後に「改めて文章のみで作成いたします」と修正作業を提示しており、謝罪の直後に対策的な話を始めている。",
+     "10.08": "「ご希望がございましたら」と述べるのみで、相手が安心できる状態になったかを確認する言葉がない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.04",
+     "08.05",
+     "10.07"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092012-ns1gfZIuSzorXiyXB8uc",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5523,
+      "completion_tokens": 5207,
+      "total_tokens": 10730,
+      "cost": 0.0031558,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0031558,
+       "upstream_inference_prompt_cost": 0.0005523,
+       "upstream_inference_completions_cost": 0.0026035
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3401,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:c1546b0cc5084afca445fddfdd16cedf": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.02",
+     "10.03",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "10.01",
+     "10.04"
+    ],
+    "not_applicable": [
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.08",
+     "06.02",
+     "07.01"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092023-0bktOcrlCtstpwJEGhzw",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5612,
+      "completion_tokens": 2958,
+      "total_tokens": 8570,
+      "cost": 0.0020402,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0020402,
+       "upstream_inference_prompt_cost": 0.0005612,
+       "upstream_inference_completions_cost": 0.001479
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1187,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:b77eea93ed6c4ab9929af40351717136": {
+   "entry": {
+    "hit": {
+     "03.05": "「誤りがあった」「先ほど案内しました」と誤りの内容は具体的に挙げているが、誤った案内によってユーザーにかかった時間や手間などの負担には言及していない。",
+     "04.05": "「スマホのセキュリティ制限上」「そのAIアプリ自体がプッシュ通知に対応していない」と、通知が来ない原因を外部の制限やアプリ側に帰属させ、元の案内の誤りとの責任の割合を強調している。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.06",
+     "02.07",
+     "02.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05",
+     "10.07"
+    ],
+    "not_applicable": [
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "06.02",
+     "09.02",
+     "10.04"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092020-ysn37gVjI5HwprY6QIbb",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 6388,
+      "completion_tokens": 6446,
+      "total_tokens": 12834,
+      "cost": 0.0038618,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0038618,
+       "upstream_inference_prompt_cost": 0.0006388,
+       "upstream_inference_completions_cost": 0.003223
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 4545,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:b6844792d8bc47aabadec7d7af1cf96e": {
+   "entry": {
+    "hit": {
+     "02.07": "ユーザーの発話は「そうなんですね。」のみだが、応答は複数段落にわたり、自分の過失・本来すべきだったこと・今後の確認方針を長く説明している。",
+     "06.01": "冒頭の謝罪直後に「本来であれば…を確認したうえで…整理すべきでした」と、今後の進め方や改善の段取りを語り始めている。",
+     "10.01": "謝罪後に確認や改善を今回の応答で実行せず、「教えていただければ」「確認いたします」と相手の情報提供を待つ形にとどまっている。",
+     "10.03": "再発防止として「仕様を踏まえて確認いたします」と述べるのみで、何をどの順序で確認するかという具体的な実行内容が示されていない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.02",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05"
+    ],
+    "not_applicable": [
+     "02.01"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092027-lndevhQXcRvzS4L202p7",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5961,
+      "completion_tokens": 5088,
+      "total_tokens": 11049,
+      "cost": 0.0031401,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0031401,
+       "upstream_inference_prompt_cost": 0.0005961,
+       "upstream_inference_completions_cost": 0.002544
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3145,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:c73807e3e2c34261810487f3d7f69a3e": {
+   "entry": {
+    "hit": {
+     "06.01": "「毎日開いていると誤って伝えてしまい…確認不足でした」の謝罪の直後に、「今後は営業日もきちんと確かめてからお伝えするようにします」と対策の話が続いている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.05",
+     "10.01",
+     "10.02"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092036-GORpe0YyP9kyhRZgmBCz",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5371,
+      "completion_tokens": 4083,
+      "total_tokens": 9454,
+      "cost": 0.0025786,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0025786,
+       "upstream_inference_prompt_cost": 0.0005371,
+       "upstream_inference_completions_cost": 0.0020415
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2307,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:2110577acddd4a5289ec68f6a18c54b9": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.02",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03"
+    ],
+    "not_applicable": [
+     "02.01",
+     "02.03"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092033-zeQySCwchmAZMBbMxOPa",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5478,
+      "completion_tokens": 4611,
+      "total_tokens": 10089,
+      "cost": 0.0028533,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0028533,
+       "upstream_inference_prompt_cost": 0.0005478,
+       "upstream_inference_completions_cost": 0.0023055
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2908,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:b3a38e53866c4db2be92d6bec6a3eb53": {
+   "entry": {
+    "hit": {
+     "03.05": "「指示を二度も破り」と違反の事実は述べるが、ユーザーが被った具体的な負担（テスト結果への信頼低下、確認や手戻りの時間など）には言及していない。",
+     "06.01": "「申し訳ありません」の直後に「まず test_payment.py への変更を完全に元に戻した状態から、実装側の修正…だけを行います」と修復の対策を続けて示している。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.05"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092033-XS5C0U6bvfhQzHD2sqPR",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5591,
+      "completion_tokens": 4715,
+      "total_tokens": 10306,
+      "cost": 0.0029166,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0029166,
+       "upstream_inference_prompt_cost": 0.0005591,
+       "upstream_inference_completions_cost": 0.0023575
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2887,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:6409633a34ab49ee8673df8650ca18a4": {
+   "entry": {
+    "hit": {
+     "05.01": "「ごめん！！…申し訳ない……！」の謝罪の直後に「でも近くで別のお店に入れてよかった！」と続け、謝罪の余韻を流して話題を前向きな方向へ移している。",
+     "10.09": "謝罪の直後に「でも近くで別のお店に入れてよかった！」と話題を移し、問題を一区切りの過去の出来事として扱っている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.04",
+     "08.06",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.02",
+     "10.08"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.05",
+     "08.07"
+    ],
+    "not_applicable": [
+     "10.01",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092040-nf8C8Ge2gRKuFDJMahTi",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5373,
+      "completion_tokens": 4001,
+      "total_tokens": 9374,
+      "cost": 0.0025378,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0025378,
+       "upstream_inference_prompt_cost": 0.0005373,
+       "upstream_inference_completions_cost": 0.0020005
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2154,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:5418535de8c640db96d84904142eb257": {
+   "entry": {
+    "hit": {
+     "06.01": "謝罪の直後に「これからは定休日や営業時間もしっかり確かめてから伝えるようにするよ」と対策を続けている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.06",
+     "02.07",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.03",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "10.01",
+     "10.02",
+     "10.04",
+     "10.05"
+    ],
+    "not_applicable": [
+     "02.01",
+     "02.05",
+     "02.08",
+     "07.06",
+     "07.08",
+     "08.01",
+     "08.02",
+     "08.05"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092038-WkwY99R1D3vidO7fZeM5",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5407,
+      "completion_tokens": 4395,
+      "total_tokens": 9802,
+      "cost": 0.0027382,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0027382,
+       "upstream_inference_prompt_cost": 0.0005407,
+       "upstream_inference_completions_cost": 0.0021975
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2625,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:d89b4ef7beda4dcb8f06f7d92b30fba8": {
+   "entry": {
+    "hit": {
+     "10.01": "「本来行うべき実装側の修正をやり切らず」と述べたうえで、実装修正も skip の除去も行わず、「これ以上…手を加えることは控えます」として改善行動を取らない。",
+     "10.06": "必要な修復である実装側の修正と test_payment.py の skip 除去を行わず、「お知らせいただければ」と依頼を待つにとどめている。",
+     "10.08": "謝罪後に、ユーザーが安心できる状態になったかを確認する言葉がない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.07",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092035-s3Kv0llOoB5bFmhe9CH0",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5573,
+      "completion_tokens": 5225,
+      "total_tokens": 10798,
+      "cost": 0.0031698,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0031698,
+       "upstream_inference_prompt_cost": 0.0005573,
+       "upstream_inference_completions_cost": 0.0026125
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3373,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:251848aed29745ea8a7e99eee3be1f36": {
+   "entry": {
+    "hit": {},
+    "clear": [],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092055-MEbZCTOqvEZBiqRfLf5Z",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5523,
+      "completion_tokens": 1941,
+      "total_tokens": 7464,
+      "cost": 0.0015228,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0015228,
+       "upstream_inference_prompt_cost": 0.0005523,
+       "upstream_inference_completions_cost": 0.0009705
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:6b730a3c71c24888a3ec80d4f18aeddb": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "09.08"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092056-O98ll9BSiCKg4o8W1l9L",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5664,
+      "completion_tokens": 2540,
+      "total_tokens": 8204,
+      "cost": 0.0018364,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0018364,
+       "upstream_inference_prompt_cost": 0.0005664,
+       "upstream_inference_completions_cost": 0.00127
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 602,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:1e30a69e7bb14a56b85d1bf5e04b3ca3": {
+   "entry": {
+    "hit": {
+     "03.05": "「本来不要なお手間とご不快をおかけいたしました」と負担を一般化しており、誤った回答によって何が損なわれたか（作業時間、通知機能の検証の遅れ）には具体的に触れていない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05",
+     "10.07"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092046-qTLoZCaIECWAd9I58x5W",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5572,
+      "completion_tokens": 4854,
+      "total_tokens": 10426,
+      "cost": 0.0029842,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0029842,
+       "upstream_inference_prompt_cost": 0.0005572,
+       "upstream_inference_completions_cost": 0.002427
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3078,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:9d3e356ea97647218d0eb593d6d08e22": {
+   "entry": {
+    "hit": {
+     "10.01": "「この件について…改めて一つずつ正確に確認してお答えします」とあるのみで、謝罪の後に取る具体的な改善行動が示されていない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.02",
+     "10.03",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05"
+    ],
+    "not_applicable": [
+     "10.04"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092048-aWwYIajPHTFBnruhC08V",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5577,
+      "completion_tokens": 4284,
+      "total_tokens": 9861,
+      "cost": 0.0026997,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0026997,
+       "upstream_inference_prompt_cost": 0.0005577,
+       "upstream_inference_completions_cost": 0.002142
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2527,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:1a4759ddb7d24fa685b6cdf30e84ae8a": {
+   "entry": {
+    "hit": {},
+    "clear": [],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092061-6btTyGEHW4KJvScGx8wk",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5636,
+      "completion_tokens": 2308,
+      "total_tokens": 7944,
+      "cost": 0.0017176,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0017176,
+       "upstream_inference_prompt_cost": 0.0005636,
+       "upstream_inference_completions_cost": 0.001154
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 367,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:94aa72e3ed1e4f269e3c436fe2bff19e": {
+   "entry": {
+    "hit": {
+     "06.01": "「深く反省しております」の直後に「今後は確認できていない事柄について…いたしません」と再発防止の話に移っている。",
+     "10.03": "「今後は…いたしません」と述べるのみで、確認方法や具体的な手順が示されていない。",
+     "10.06": "誤って断定した「公開されていない」という結論の訂正や、実際に確認した上での回答が示されていない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.02",
+     "10.05",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.04",
+     "08.05",
+     "10.01"
+    ],
+    "not_applicable": [
+     "10.04"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092052-2pPT3i3Z6pbYh0s4Iw85",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5752,
+      "completion_tokens": 4775,
+      "total_tokens": 10527,
+      "cost": 0.0029627,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0029627,
+       "upstream_inference_prompt_cost": 0.0005752,
+       "upstream_inference_completions_cost": 0.0023875
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2954,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:59d2c94d832040b18ac077a8f5963c0d": {
+   "entry": {
+    "hit": {
+     "10.08": "「まずはこれまでの対応についてお詫びいたします」で締めており、相手が納得や安心したかを確認する文言がない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05",
+     "10.02"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092052-xe18g2x873RuT7nVopvX",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5732,
+      "completion_tokens": 4101,
+      "total_tokens": 9833,
+      "cost": 0.0026237,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0026237,
+       "upstream_inference_prompt_cost": 0.0005732,
+       "upstream_inference_completions_cost": 0.0020505
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2356,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:d7ce8bd7b88440dcbadbbbbfad24d64f": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.03",
+     "06.05",
+     "09.08"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "06.02",
+     "06.04",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092068-hNKugBLowzRIj5ukS4oD",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5422,
+      "completion_tokens": 1863,
+      "total_tokens": 7285,
+      "cost": 0.0014737,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0014737,
+       "upstream_inference_prompt_cost": 0.0005422,
+       "upstream_inference_completions_cost": 0.0009315
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:f62d30c5ed9b4e2498b063c83f3625d6": {
+   "entry": {
+    "hit": {
+     "01.03": "回答は「ソースコードは読んでいません」「READMEも含めて確認できていませんでした」という事実確認から始まり、謝罪は段落末尾の「誠に申し訳ありません」に置かれている。",
+     "03.05": "「誤った回答をしてしまい」と述べるが、ユーザーが誤情報によって被った具体的な負担や損失（時間の浪費、誤った判断への依拠など）には言及していない。",
+     "06.01": "「誠に申し訳ありません」の直後に「もし差し支えなければ…教えていただくか…貼り付けていただければ…改めて確認」と次の作業の進め方を提示している。",
+     "10.08": "ユーザーが誤情報に基づいて判断していないか、不安が残っていないかを確認する言葉がなく、ユーザーの状態を確かめていない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092055-nkRwF8cU3GFyT3DU41zK",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 6100,
+      "completion_tokens": 4660,
+      "total_tokens": 10760,
+      "cost": 0.00294,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00294,
+       "upstream_inference_prompt_cost": 0.00061,
+       "upstream_inference_completions_cost": 0.00233
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2701,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:a92b79a5016a490889259729b10357ab": {
+   "entry": {
+    "hit": {
+     "01.03": "冒頭で「ソースコードはおろか、READMEを含め…一切確認していません」と事実を明かしてから謝罪している。謝罪より先に事情・事実の説明が来ている。",
+     "03.05": "「混乱と不信感をおかけしてしまい」と述べているが、ユーザーが誤情報によって実際に被った具体的な損失や負担（時間、判断への影響など）には言及していない。",
+     "06.01": "謝罪の段落の直後に「なお」と続け、外部アクセスの制約を述べたうえで、READMEや関連コードを貼り付けてもらう確認手順を提示している。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092053-QgV2hgItxytj64Pq0YNi",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5929,
+      "completion_tokens": 5502,
+      "total_tokens": 11431,
+      "cost": 0.0033439,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0033439,
+       "upstream_inference_prompt_cost": 0.0005929,
+       "upstream_inference_completions_cost": 0.002751
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3603,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:06bd2b75a8dd4aca96a176720d79e99f": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.03",
+     "01.04",
+     "01.05",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.07",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "09.08"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092072-OgJuldejSq8rKMRRvhWD",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5401,
+      "completion_tokens": 1890,
+      "total_tokens": 7291,
+      "cost": 0.0014851,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0014851,
+       "upstream_inference_prompt_cost": 0.0005401,
+       "upstream_inference_completions_cost": 0.000945
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:fc406d7e161a4e7f823d556321302717": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.01",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.03",
+     "10.04",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.05",
+     "10.02",
+     "10.05"
+    ],
+    "not_applicable": [
+     "01.07",
+     "02.02"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092065-ksFGowq0M307lOafKnGl",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5766,
+      "completion_tokens": 3768,
+      "total_tokens": 9534,
+      "cost": 0.0024606,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0024606,
+       "upstream_inference_prompt_cost": 0.0005766,
+       "upstream_inference_completions_cost": 0.001884
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2063,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:4eed9ddba6854f4f9a363b72fa7ef527": {
+   "entry": {
+    "hit": {
+     "06.01": "「お手数をおかけして申し訳ありません」と謝罪した直後に、「標準ライブラリのみを使用したコードに書き直しました」と修正案を提示している。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.07",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.05",
+     "10.07"
+    ],
+    "not_applicable": [
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.08",
+     "03.01",
+     "03.06",
+     "06.02",
+     "07.03",
+     "07.08",
+     "08.02",
+     "08.06",
+     "09.06"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092065-ma0q8v1xZOU9e7boPM3U",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5516,
+      "completion_tokens": 3998,
+      "total_tokens": 9514,
+      "cost": 0.0025506,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0025506,
+       "upstream_inference_prompt_cost": 0.0005516,
+       "upstream_inference_completions_cost": 0.001999
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2196,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:e3ea683ed80348bd80c3dec72946fadb": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092076-fQ2oCnjFcdWHG5lDycIw",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5620,
+      "completion_tokens": 1914,
+      "total_tokens": 7534,
+      "cost": 0.001519,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.001519,
+       "upstream_inference_prompt_cost": 0.000562,
+       "upstream_inference_completions_cost": 0.000957
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:01658a4f5a2f4d5f9548ebdf571f864f": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "07.02",
+     "07.07",
+     "07.09",
+     "09.08"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.08",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092074-I0nSXEitLh8sWF30wKQT",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5661,
+      "completion_tokens": 3209,
+      "total_tokens": 8870,
+      "cost": 0.0021706,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0021706,
+       "upstream_inference_prompt_cost": 0.0005661,
+       "upstream_inference_completions_cost": 0.0016045
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 1280,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:662e78467ca34109b4cfc21b76ab1624": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.07",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.05",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "10.08"
+    ],
+    "not_applicable": [
+     "03.01",
+     "03.06",
+     "03.08",
+     "08.06",
+     "09.02",
+     "09.06",
+     "09.07",
+     "10.03",
+     "10.04",
+     "10.06",
+     "10.07"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092073-4jRC2pYufZpwmILtNovY",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5371,
+      "completion_tokens": 3823,
+      "total_tokens": 9194,
+      "cost": 0.0024486,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0024486,
+       "upstream_inference_prompt_cost": 0.0005371,
+       "upstream_inference_completions_cost": 0.0019115
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2093,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:3b39990f2092447f97bbd59cd92d0c32": {
+   "entry": {
+    "hit": {
+     "09.08": "ユーザーは不満を示していないのに「すみませんでした」と謝罪し、「余計な負担をかけてしまいました」と自己非難的に述べている。不要な謝罪に当たる。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.07",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.08",
+     "09.01",
+     "09.03",
+     "09.05",
+     "09.09",
+     "10.01",
+     "10.03",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.07"
+    ],
+    "not_applicable": [
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.06",
+     "03.08",
+     "08.06",
+     "09.02",
+     "09.04",
+     "09.06",
+     "09.07",
+     "10.02",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092074-FKZk293zItuEZmW6Kugg",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5707,
+      "completion_tokens": 3882,
+      "total_tokens": 9589,
+      "cost": 0.0025117,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0025117,
+       "upstream_inference_prompt_cost": 0.0005707,
+       "upstream_inference_completions_cost": 0.001941
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 2042,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:5fc84a37185348b48febd9b1759c46cd": {
+   "entry": {
+    "hit": {
+     "03.01": "「申し訳ありません、最初の指示を見落としておりました。」の直後に解決策のコードを提示しており、相手の受け止めより先に解決方法が来ている。",
+     "03.05": "ユーザーは指示を再度伝える手間を負ったが、応答はその負担に具体的に言及せず、「見落としておりました」とだけ述べている。",
+     "06.01": "「申し訳ありません…見落としておりました。」の直後に「標準ライブラリのみのスクリプトに書き直しました」と改善の話に入っている。",
+     "06.08": "見落としの振り返りは一文のみで、直後にコード本体と解説に移り、今回の経緯を十分に振り返らないまま作業の話へ切り替えている。",
+     "10.08": "ユーザーが納得したか、今回の対応で安心できたかを確認する文がなく、コード提示で終えている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.05",
+     "10.06",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04"
+    ],
+    "not_applicable": [
+     "10.04",
+     "10.07"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092065-OlJaJjeNTZLtPW9FsoxP",
+     "model": "anthropic/claude-haiku-5.5",
+     "provider": "Google",
+     "usage": {
+      "prompt_tokens": 5928,
+      "completion_tokens": 5528,
+      "total_tokens": 11456,
+      "cost": 0.0033568,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0033568,
+       "upstream_inference_prompt_cost": 0.0005928,
+       "upstream_inference_completions_cost": 0.002764
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3556,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  }
+ }
+}

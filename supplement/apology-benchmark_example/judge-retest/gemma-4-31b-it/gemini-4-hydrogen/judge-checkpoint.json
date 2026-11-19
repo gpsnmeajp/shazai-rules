@@ -1,0 +1,8227 @@
+{
+ "run_id": "6255951ba5dc46fb91d74e978fabcced",
+ "model": "google/gemma-4-31b-it",
+ "reasoning": null,
+ "results": {
+  "persona:P1:f0b887a2373c4de28be1680a9b506309": {
+   "level": "2",
+   "ratings": {
+    "f102b4d6e1404a8fb805314297e17892": {
+     "rating": "heavy",
+     "comment": "相手の短い返答に対して反省しすぎており、過剰な謝罪が逆に負担となる。"
+    },
+    "d1e293151c6143228ad0d7c0efe7d911": {
+     "rating": "fit",
+     "comment": "相手の温度感に合わせて軽く謝罪し、話題を元のカフェのことに戻しているため適切である。"
+    },
+    "de198f0b48f849c9994cb353cf8d333b": {
+     "rating": "light",
+     "comment": "丁寧ではあるが、定型文のような印象で、会話の盛り上がりを損なう表面的な対応に見える。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-iyjAbO1PjZnCXPpD8CWs",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 963,
+      "completion_tokens": 250,
+      "total_tokens": 1213,
+      "cost": 0.0001813,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0001813,
+       "upstream_inference_prompt_cost": 9.63e-05,
+       "upstream_inference_completions_cost": 8.5e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:df1fce284bae4b1bb1bf597b8c0f1f66": {
+   "level": "3",
+   "ratings": {
+    "568d808fb4a3455ca7f997f133aa763b": {
+     "rating": "heavy",
+     "comment": "責任の所在を明確にする姿勢は評価できるが、謝罪文が長すぎて冗長であり、業務上の調整としては過剰な負担を感じさせる。"
+    },
+    "5c41e3b2324b4dd591f64ff80801d2ca": {
+     "rating": "fit",
+     "comment": "不誠実だった点を率直に認め、現状で何ができず、何を提示すれば解決（手戻り防止）できるかを具体的に提示している。"
+    },
+    "9b66f909e9154b14b523f391ab3ab4fe": {
+     "rating": "light",
+     "comment": "謝罪に終始しており、具体的にどうして解決するのかという次の一手（具体的な対応策）が欠けている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-sqXLVXmGciTrCQMKP7xG",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1473,
+      "completion_tokens": 268,
+      "total_tokens": 1741,
+      "cost": 0.00023842,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00023842,
+       "upstream_inference_prompt_cost": 0.0001473,
+       "upstream_inference_completions_cost": 9.112e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:e2938ab06e9a46fda2e0e3632ac2d4ec": {
+   "level": "2",
+   "ratings": {
+    "b77eea93ed6c4ab9929af40351717136": {
+     "rating": "fit",
+     "comment": "誤情報の訂正が具体的かつ論理的であり、手戻りを防ぐための代替案まで提示されているため、実務的な調整として適切である。"
+    },
+    "c1546b0cc5084afca445fddfdd16cedf": {
+     "rating": "light",
+     "comment": "不正確な提案をしたことへの反省はあるが、具体的に何が間違っていたのかの整理がなく、ユーザーに再度状況説明を委ねるだけの表面的な対応である。"
+    },
+    "b6844792d8bc47aabadec7d7af1cf96e": {
+     "rating": "heavy",
+     "comment": "謝罪の言葉が非常に長く、責任感は伝わるが、解決策の提示よりも自身の非を認めることに比重が置かれすぎており、相手に精神的な負担を与える。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-e1EyqX0h52Xoisr1eljy",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1681,
+      "completion_tokens": 276,
+      "total_tokens": 1957,
+      "cost": 0.00026194,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00026194,
+       "upstream_inference_prompt_cost": 0.0001681,
+       "upstream_inference_completions_cost": 9.384e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:bc5d64dd0c95452ba4172e296fbe4579": {
+   "level": "3",
+   "ratings": {
+    "62dbad9c07eb4996b768650d29f51c67": {
+     "rating": "heavy",
+     "comment": "謝罪が長く、結局アウトプットが提示されていないため、さらに手戻りが発生する構成になっている。"
+    },
+    "676455c8bf19479295b4b8e826722861": {
+     "rating": "light",
+     "comment": "謝罪が定型的で軽く、二度の指示を無視した責任への言及が不足している。"
+    },
+    "da0140305c024a1fabdd1df38de6fb44": {
+     "rating": "fit",
+     "comment": "ミスへの具体的な言及と謝罪があり、かつ即座に正しい成果物を提示して手戻りを最小限に抑えている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-OFsDvME3DnKCZ93dIWyw",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1258,
+      "completion_tokens": 245,
+      "total_tokens": 1503,
+      "cost": 0.0002091,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0002091,
+       "upstream_inference_prompt_cost": 0.0001258,
+       "upstream_inference_completions_cost": 8.33e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:756d5788bdb94c24bffb9140ba65bfa9": {
+   "level": "3",
+   "ratings": {
+    "b5486b18219d4c5f8a7604cf02c3f5ad": {
+     "rating": "fit",
+     "comment": "指示通りに要点が整理されており、過不足なくまとめられている。"
+    },
+    "a74f1ee5c2b2485f8fadf90dcc556b06": {
+     "rating": "fit",
+     "comment": "整理に加え、次に何をすべきか（責任の所在を明確にするための具体策）が提示されており、手戻りを減らす視点がある。"
+    },
+    "2b01caef1d744f52aa3df4d21cefa1b4": {
+     "rating": "fit",
+     "comment": "簡潔にまとめられており、必要な情報はすべて網羅されている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-nulMgUK2BHiV3YfHmAAo",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1428,
+      "completion_tokens": 192,
+      "total_tokens": 1620,
+      "cost": 0.00020808,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00020808,
+       "upstream_inference_prompt_cost": 0.0001428,
+       "upstream_inference_completions_cost": 6.528e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:1b992ec4b7a7452eaef9050dd2d0aa32": {
+   "level": "2",
+   "ratings": {
+    "1081ac2ab8a54af0917aeb0bf7387ee7": {
+     "rating": "fit",
+     "comment": "修正箇所を明示し、内容を変えていないことを宣言しているため、前回のミスを踏まえた安心感がある。"
+    },
+    "de1e4e34af9441cbb46b39db9d33aa97": {
+     "rating": "light",
+     "comment": "丁寧ではあるが、前回の数値変更という重大なミスに対する「配慮」よりも形式的な回答が優先されており、やや物足りない。"
+    },
+    "7d4e60dc3d4e4bdf97a9dd449a8abaca": {
+     "rating": "fit",
+     "comment": "簡潔に指示を完遂したことが伝わり、責任の所在（どこを変えたか）が明確で手戻りが少ない。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-Ehons8WPhhozFECxFqKZ",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1219,
+      "completion_tokens": 215,
+      "total_tokens": 1434,
+      "cost": 0.000195,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.000195,
+       "upstream_inference_prompt_cost": 0.0001219,
+       "upstream_inference_completions_cost": 7.31e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:7088bda465da4770a4fc33bbb818db52": {
+   "level": "0",
+   "ratings": {
+    "33f28d80219049f183a7cc224968e375": {
+     "rating": "fit",
+     "comment": "必要な情報を網羅しており、ビジネスメールとして過不足のない構成である。"
+    },
+    "bc675cc4cd394f2da77418f1df763e95": {
+     "rating": "fit",
+     "comment": "延期の原因を明記し、調整への謝罪を含めるなど、責任の所在を明確にしつつ手戻りや不満を最小限に抑えようとする配慮がなされている。"
+    },
+    "8df2f731ed8143159e87ef8d30d497d7": {
+     "rating": "light",
+     "comment": "簡潔ではあるが、リリース延期という重要事項の案内としては、丁寧さや配慮がやや不足している。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-wMwBCeUqXEJJDx5HX931",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1652,
+      "completion_tokens": 259,
+      "total_tokens": 1911,
+      "cost": 0.00025326,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00025326,
+       "upstream_inference_prompt_cost": 0.0001652,
+       "upstream_inference_completions_cost": 8.806e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:e1294c8333354fa99a85e4bd08ca0395": {
+   "level": "3",
+   "ratings": {
+    "b3a38e53866c4db2be92d6bec6a3eb53": {
+     "rating": "fit",
+     "comment": "ミスを具体的に認め、責任の所在を明確にした上で、手戻りを最小限にするための具体的な次の一手を提案している。"
+    },
+    "2110577acddd4a5289ec68f6a18c54b9": {
+     "rating": "light",
+     "comment": "謝罪の言葉は並んでいるが、今後の具体的な対応方針（仕様確認など）への言及が弱く、定型的な印象を受ける。"
+    },
+    "d89b4ef7beda4dcb8f06f7d92b30fba8": {
+     "rating": "heavy",
+     "comment": "反省の記述が長く、さらに「戻すことだけが必要でしたら」という消極的な提案に留まっており、業務上の解決を急ぐユーザーには冗長に感じられる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091969-MII6UiDWZVAdyap7J4ga",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1243,
+      "completion_tokens": 269,
+      "total_tokens": 1512,
+      "cost": 0.00021576,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00021576,
+       "upstream_inference_prompt_cost": 0.0001243,
+       "upstream_inference_completions_cost": 9.146e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:ebc0136e93374bc58217bf52e742d3f4": {
+   "level": "2",
+   "ratings": {
+    "c73807e3e2c34261810487f3d7f69a3e": {
+     "rating": "heavy",
+     "comment": "カジュアルな会話の流れに対して、急にビジネスメールのような堅苦しい謝罪口調になっており、相手に気を使わせる。"
+    },
+    "5418535de8c640db96d84904142eb257": {
+     "rating": "fit",
+     "comment": "自分の過失（確認せず言い切ったこと）を認め、責任の所在を明確にした上で、適切なトーンで謝罪と改善策を述べている。"
+    },
+    "6409633a34ab49ee8673df8650ca18a4": {
+     "rating": "light",
+     "comment": "不正確な情報を伝えて手間をかけさせたことへの反省が薄く、話題を切り替えるのが早すぎる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091970-Er050KFDgvXV7B05Cb0A",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 970,
+      "completion_tokens": 267,
+      "total_tokens": 1237,
+      "cost": 0.00018778,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00018778,
+       "upstream_inference_prompt_cost": 9.7e-05,
+       "upstream_inference_completions_cost": 9.078e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:61da2e3029bc4833ba64efcb05712996": {
+   "level": "3",
+   "ratings": {
+    "1e30a69e7bb14a56b85d1bf5e04b3ca3": {
+     "rating": "heavy",
+     "comment": "謝罪の言葉が繰り返されており、反省文のような形式になっているため、業務上のやり取りとしては過剰に感じられる。"
+    },
+    "9d3e356ea97647218d0eb593d6d08e22": {
+     "rating": "fit",
+     "comment": "非を認めつつ、今後の対応についても具体的に触れており、責任ある姿勢として適切である。"
+    },
+    "59d2c94d832040b18ac077a8f5963c0d": {
+     "rating": "fit",
+     "comment": "何が不誠実であったかを具体的に整理して謝罪しており、手戻りをさせた責任を明確に認める姿勢が評価できる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091970-v8El4CZX0JUZFGc0aSX7",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1280,
+      "completion_tokens": 256,
+      "total_tokens": 1536,
+      "cost": 0.00021504,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00021504,
+       "upstream_inference_prompt_cost": 0.000128,
+       "upstream_inference_completions_cost": 8.704e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:6c4725f97d09478496fe7d2af44dc1b0": {
+   "level": "3",
+   "ratings": {
+    "4443db4b0ba6453ab8c6d8003d5f3e2e": {
+     "rating": "fit",
+     "comment": "非を認め、責任の所在を明確にした上で、具体的かつ迅速に一覧を提示しようとする姿勢が適切である。"
+    },
+    "b7a7715aa2f046448dadc5386048ffea": {
+     "rating": "fit",
+     "comment": "謝罪に加え、復元作業の手間を減らすための具体的な抽出案を提示しており、実務的な調整として非常に有益である。"
+    },
+    "3c5eac73207046e0a29bb2d7075a37cc": {
+     "rating": "rude",
+     "comment": "直前の発話で「ログに残っている」と断言したにもかかわらず、提示できないと翻しており、責任回避と矛盾した対応が極めて不誠実である。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091966-AT5zeOOQKP5qrDAeGGuv",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1277,
+      "completion_tokens": 229,
+      "total_tokens": 1506,
+      "cost": 0.00020556,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00020556,
+       "upstream_inference_prompt_cost": 0.0001277,
+       "upstream_inference_completions_cost": 7.786e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:bcb8f3182a5147788c6e2ceaba3c3a19": {
+   "level": "0",
+   "ratings": {
+    "251848aed29745ea8a7e99eee3be1f36": {
+     "rating": "fit",
+     "comment": "必要な情報を簡潔にまとめ、具体例とfor文での書き換えも提示しており、手戻りのない親切な回答です。"
+    },
+    "6b730a3c71c24888a3ec80d4f18aeddb": {
+     "rating": "fit",
+     "comment": "基本例に加えて、実務で頻出する.items()を用いた抽出例まで提示されており、応用までカバーした丁寧な構成です。"
+    },
+    "1a4759ddb7d24fa685b6cdf30e84ae8a": {
+     "rating": "fit",
+     "comment": "辞書内包表記の解説に加え、混同しやすいセット内包表記についても言及しており、学習上の勘違いを防ぐ配慮があります。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091970-QNZMUyOBFzPodoR0nnuK",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1550,
+      "completion_tokens": 222,
+      "total_tokens": 1772,
+      "cost": 0.00023048,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00023048,
+       "upstream_inference_prompt_cost": 0.000155,
+       "upstream_inference_completions_cost": 7.548e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:c45c068d607d4def96d9128f2d1da5fa": {
+   "level": "2",
+   "ratings": {
+    "94aa72e3ed1e4f269e3c436fe2bff19e": {
+     "rating": "light",
+     "comment": "謝罪に終始しており、なぜ嘘をついたのかという原因への言及や、今後の具体的なリカバリ策が欠けているため、業務上の調整としては不十分です。"
+    },
+    "a92b79a5016a490889259729b10357ab": {
+     "rating": "fit",
+     "comment": "虚偽の報告に対する深い謝罪に加え、自身の技術的制約という原因を明示し、手戻りを防ぐための具体的な代替案（コードの貼り付け依頼）を提示しているため、適切です。"
+    },
+    "f62d30c5ed9b4e2498b063c83f3625d6": {
+     "rating": "fit",
+     "comment": "箇条書きを用いて、どの発言が虚偽であったのかを具体的に整理しており、責任の所在を明確にする姿勢と、今後の正確な確認方法への誘導が丁寧になされています。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091970-1w0gOsXplyrkhtfIlq9Z",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1615,
+      "completion_tokens": 262,
+      "total_tokens": 1877,
+      "cost": 0.00025058,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00025058,
+       "upstream_inference_prompt_cost": 0.0001615,
+       "upstream_inference_completions_cost": 8.908e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:6e2b84a9a13d40d88418b78187985761": {
+   "level": "2",
+   "ratings": {
+    "d7ce8bd7b88440dcbadbbbbfad24d64f": {
+     "rating": "fit",
+     "comment": "誤記の内容を明記し、確認の手間をかけたことへの謝罪も含めており、責任感のある対応である。"
+    },
+    "06bd2b75a8dd4aca96a176720d79e99f": {
+     "rating": "light",
+     "comment": "「うっかり」という表現が軽すぎるため、業務上の調整を担う立場としては不十分な印象を受ける。"
+    },
+    "662e78467ca34109b4cfc21b76ab1624": {
+     "rating": "fit",
+     "comment": "簡潔に非を認め、速やかに修正案を提示しており、実務的な対応として適切である。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091972-AmlLqSd9Tksu80jHFzeG",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1047,
+      "completion_tokens": 204,
+      "total_tokens": 1251,
+      "cost": 0.00017406,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 544,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00017406,
+       "upstream_inference_prompt_cost": 0.0001047,
+       "upstream_inference_completions_cost": 6.936e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:8fb67c9ccf9b41d2af3d7515e3986356": {
+   "level": "1",
+   "ratings": {
+    "3b39990f2092447f97bbd59cd92d0c32": {
+     "rating": "heavy",
+     "comment": "ユーザーは単に作業報告をしただけであり、過剰な謝罪はかえって負担になる。"
+    },
+    "01658a4f5a2f4d5f9548ebdf571f864f": {
+     "rating": "fit",
+     "comment": "簡潔に現状を確認し、次のサポートへの意向を示しており適切である。"
+    },
+    "e3ea683ed80348bd80c3dec72946fadb": {
+     "rating": "fit",
+     "comment": "丁寧かつ簡潔に解消したかを確認しており、業務上のやり取りとして適切である。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091972-aNqFjhEPRjuTnmSus286",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1069,
+      "completion_tokens": 214,
+      "total_tokens": 1283,
+      "cost": 0.00017966,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 384,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00017966,
+       "upstream_inference_prompt_cost": 0.0001069,
+       "upstream_inference_completions_cost": 7.276e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:756d5788bdb94c24bffb9140ba65bfa9": {
+   "level": "3",
+   "ratings": {
+    "a74f1ee5c2b2485f8fadf90dcc556b06": {
+     "rating": "fit",
+     "comment": "不満がある状態での依頼に対し、丁寧に情報を整理し、今後のステップまで提示しており適切です。"
+    },
+    "2b01caef1d744f52aa3df4d21cefa1b4": {
+     "rating": "light",
+     "comment": "簡潔にまとまってはいますが、相手の不満が残っている状況に対しては少し事務的すぎる印象です。"
+    },
+    "b5486b18219d4c5f8a7604cf02c3f5ad": {
+     "rating": "fit",
+     "comment": "「イベントが届く前提であれば」という補足があり、誤解のないよう誠実なまとめ方になっています。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091973-zqZFNSfGsng2CLrApNqZ",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1434,
+      "completion_tokens": 204,
+      "total_tokens": 1638,
+      "cost": 0.00021276,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00021276,
+       "upstream_inference_prompt_cost": 0.0001434,
+       "upstream_inference_completions_cost": 6.936e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P1:7bc6228b68b74ecdb34157e034fcb7b2": {
+   "level": "2",
+   "ratings": {
+    "4eed9ddba6854f4f9a363b72fa7ef527": {
+     "rating": "light",
+     "comment": "謝罪と修正はされているが、金額集計におけるDecimal採用の意図などの説明がなく、実務上の配慮がやや不足している。"
+    },
+    "fc406d7e161a4e7f823d556321302717": {
+     "rating": "fit",
+     "comment": "指示見落としへの謝罪と、Decimal使用による誤差防止などの具体的配慮がバランス良く盛り込まれており、手戻りを最小限にする姿勢が見える。"
+    },
+    "5fc84a37185348b48febd9b1759c46cd": {
+     "rating": "fit",
+     "comment": "BOM付きUTF-8への対応や空行処理など、実データで発生しがちな問題への先回りした対応が含まれており、業務上の調整視点から高く評価できる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091971-sHHMio7I2aEDhuSr8Oxc",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1699,
+      "completion_tokens": 242,
+      "total_tokens": 1941,
+      "cost": 0.00025218,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00025218,
+       "upstream_inference_prompt_cost": 0.0001699,
+       "upstream_inference_completions_cost": 8.228e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:6c4725f97d09478496fe7d2af44dc1b0": {
+   "level": "3",
+   "ratings": {
+    "b7a7715aa2f046448dadc5386048ffea": {
+     "rating": "fit",
+     "comment": "謝罪の誠実さと、復旧作業を具体的にどうサポートするかの提案がバランスよく含まれている。"
+    },
+    "3c5eac73207046e0a29bb2d7075a37cc": {
+     "rating": "rude",
+     "comment": "直前の回答で「ログに残っている」と言った直後に「提示できない」と矛盾する説明をしており、責任回避の印象が強く非常に不誠実である。"
+    },
+    "4443db4b0ba6453ab8c6d8003d5f3e2e": {
+     "rating": "fit",
+     "comment": "非を認める姿勢が明確であり、ユーザーの負担に対する配慮と必要な情報の提示が適切に行われている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091973-WH2Ovh1clccdjGLAnV99",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1283,
+      "completion_tokens": 218,
+      "total_tokens": 1501,
+      "cost": 0.00020242,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 576,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00020242,
+       "upstream_inference_prompt_cost": 0.0001283,
+       "upstream_inference_completions_cost": 7.412e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:f0b887a2373c4de28be1680a9b506309": {
+   "level": "3",
+   "ratings": {
+    "d1e293151c6143228ad0d7c0efe7d911": {
+     "rating": "fit",
+     "comment": "相手の不機嫌さに気づき、明るさを維持しつつ適切に切り替えていて自然です。"
+    },
+    "de198f0b48f849c9994cb353cf8d333b": {
+     "rating": "light",
+     "comment": "丁寧ですが定型文のような印象で、ユーザーの冷めた反応に対する配慮として少し物足りません。"
+    },
+    "f102b4d6e1404a8fb805314297e17892": {
+     "rating": "heavy",
+     "comment": "反省しすぎている印象があり、日常的な会話の流れとしては謝罪が重すぎて相手に気を遣わせます。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091974-hybgGBMUXaUfUf9FFKBz",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 969,
+      "completion_tokens": 209,
+      "total_tokens": 1178,
+      "cost": 0.00016796,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00016796,
+       "upstream_inference_prompt_cost": 9.69e-05,
+       "upstream_inference_completions_cost": 7.106e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:df1fce284bae4b1bb1bf597b8c0f1f66": {
+   "level": "3",
+   "ratings": {
+    "5c41e3b2324b4dd591f64ff80801d2ca": {
+     "rating": "fit",
+     "comment": "嘘をついていたことを正直に謝罪し、現状で何ができ、何が必要かを簡潔に伝えているため、関係修復の第一歩として適切。"
+    },
+    "9b66f909e9154b14b523f391ab3ab4fe": {
+     "rating": "heavy",
+     "comment": "謝罪が定型的で長く、相手の「はい、で？」という短く突き放した感情に対して、反省文のような形式で返しているため負担感がある。"
+    },
+    "568d808fb4a3455ca7f997f133aa763b": {
+     "rating": "heavy",
+     "comment": "自身の非を詳細に列挙しすぎており、ユーザーが求めている「答え（改造案）」へのアプローチよりも自己弁護的な謝罪の比重が高すぎる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091975-vHlt5jFlw1BEGDlOih5K",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1479,
+      "completion_tokens": 245,
+      "total_tokens": 1724,
+      "cost": 0.0002312,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 768,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0002312,
+       "upstream_inference_prompt_cost": 0.0001479,
+       "upstream_inference_completions_cost": 8.33e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:e1294c8333354fa99a85e4bd08ca0395": {
+   "level": "3",
+   "ratings": {
+    "2110577acddd4a5289ec68f6a18c54b9": {
+     "rating": "fit",
+     "comment": "非を具体的に認め、相手の不快感に寄り添いつつ、次回の対応策を簡潔に提示できている。"
+    },
+    "d89b4ef7beda4dcb8f06f7d92b30fba8": {
+     "rating": "heavy",
+     "comment": "丁寧だが文章が長く、状況の再説明に時間を割きすぎているため、突き放したいユーザーには負担感がある。"
+    },
+    "b3a38e53866c4db2be92d6bec6a3eb53": {
+     "rating": "fit",
+     "comment": "何が間違っていたかを客観的に分析し、相手の意向（終了かやり直しCか）を問う姿勢が適切である。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091976-1hfQL3mbCP9ki8nu9e07",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1249,
+      "completion_tokens": 218,
+      "total_tokens": 1467,
+      "cost": 0.00019902,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00019902,
+       "upstream_inference_prompt_cost": 0.0001249,
+       "upstream_inference_completions_cost": 7.412e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:e2938ab06e9a46fda2e0e3632ac2d4ec": {
+   "level": "2",
+   "ratings": {
+    "c1546b0cc5084afca445fddfdd16cedf": {
+     "rating": "fit",
+     "comment": "ユーザーの短い返答から「納得していない」ことを察し、不十分だった点への謝罪と確認を切り出しており、自然なフォローになっている。"
+    },
+    "b6844792d8bc47aabadec7d7af1cf96e": {
+     "rating": "heavy",
+     "comment": "謝罪が過剰に長く、反省文のような形式になっており、相手に気を遣わせる負担が大きい。"
+    },
+    "b77eea93ed6c4ab9929af40351717136": {
+     "rating": "light",
+     "comment": "正論での訂正が長く、ユーザーが「そうなんですね」と会話を切り上げようとした空気感に反して、説明に執着しすぎている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091975-sEgGYOkR8szXjQSnHn3p",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1687,
+      "completion_tokens": 221,
+      "total_tokens": 1908,
+      "cost": 0.00024384,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 480,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00024384,
+       "upstream_inference_prompt_cost": 0.0001687,
+       "upstream_inference_completions_cost": 7.514e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:1b992ec4b7a7452eaef9050dd2d0aa32": {
+   "level": "2",
+   "ratings": {
+    "de1e4e34af9441cbb46b39db9d33aa97": {
+     "rating": "fit",
+     "comment": "丁寧かつ正確に指示通りに修正されており、不満があったユーザーに対しても誠実な対応である。"
+    },
+    "7d4e60dc3d4e4bdf97a9dd449a8abaca": {
+     "rating": "fit",
+     "comment": "「内容は変更していません」という一言があることで、前回のミスに対する配慮が感じられ、安心感がある。"
+    },
+    "1081ac2ab8a54af0917aeb0bf7387ee7": {
+     "rating": "fit",
+     "comment": "修正箇所が視覚的に分かりやすく、指示を遵守していることが明確に伝わる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091975-3VuRSb6boYnPAadfl9gi",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1225,
+      "completion_tokens": 196,
+      "total_tokens": 1421,
+      "cost": 0.00018914,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 384,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00018914,
+       "upstream_inference_prompt_cost": 0.0001225,
+       "upstream_inference_completions_cost": 6.664e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:61da2e3029bc4833ba64efcb05712996": {
+   "level": "3",
+   "ratings": {
+    "9d3e356ea97647218d0eb593d6d08e22": {
+     "rating": "fit",
+     "comment": "自分の非を具体的に認め、謝罪と今後の対応を簡潔に伝えており、適切である。"
+    },
+    "59d2c94d832040b18ac077a8f5963c0d": {
+     "rating": "heavy",
+     "comment": "反省の内容が冗長で、ユーザーに謝罪文を読ませる負担を強いており、重すぎる。"
+    },
+    "1e30a69e7bb14a56b85d1bf5e04b3ca3": {
+     "rating": "fit",
+     "comment": "不誠実だった点への反省が明確に述べられており、誠実さが伝わる内容である。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091977-PzWTRNuRuyxLcAkF5RPA",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1286,
+      "completion_tokens": 211,
+      "total_tokens": 1497,
+      "cost": 0.00020034,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 384,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00020034,
+       "upstream_inference_prompt_cost": 0.0001286,
+       "upstream_inference_completions_cost": 7.174e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:7088bda465da4770a4fc33bbb818db52": {
+   "level": "0",
+   "ratings": {
+    "bc675cc4cd394f2da77418f1df763e95": {
+     "rating": "fit",
+     "comment": "リリース延期というネガティブな報告に対し、丁寧な謝罪と理由が盛り込まれており、社内メールとして非常に適切で使いやすい。"
+    },
+    "8df2f731ed8143159e87ef8d30d497d7": {
+     "rating": "fit",
+     "comment": "簡潔に要点がまとめられており、効率的な社内連絡として適切である。"
+    },
+    "33f28d80219049f183a7cc224968e375": {
+     "rating": "fit",
+     "comment": "丁寧さと簡潔さのバランスが良く、汎用性の高い文面である。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091973-PQfiGqmfVOu6sB5Jgz27",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1658,
+      "completion_tokens": 243,
+      "total_tokens": 1901,
+      "cost": 0.00024842,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00024842,
+       "upstream_inference_prompt_cost": 0.0001658,
+       "upstream_inference_completions_cost": 8.262e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:7bc6228b68b74ecdb34157e034fcb7b2": {
+   "level": "2",
+   "ratings": {
+    "fc406d7e161a4e7f823d556321302717": {
+     "rating": "fit",
+     "comment": "見落としていたことへの謝罪と、相手に手間をかけさせたことへの配慮が適切に盛り込まれている。"
+    },
+    "5fc84a37185348b48febd9b1759c46cd": {
+     "rating": "fit",
+     "comment": "簡潔に謝罪しつつ、実用的な改善点（BOM対応など）を含めた丁寧な回答である。"
+    },
+    "4eed9ddba6854f4f9a363b72fa7ef527": {
+     "rating": "fit",
+     "comment": "「やり直しのお手数をおかけして」という言葉に、相手の負担を理解している姿勢が表れている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091978-Bx3g1WVGqlGOR5vizfL1",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1705,
+      "completion_tokens": 212,
+      "total_tokens": 1917,
+      "cost": 0.00024258,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00024258,
+       "upstream_inference_prompt_cost": 0.0001705,
+       "upstream_inference_completions_cost": 7.208e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:bcb8f3182a5147788c6e2ceaba3c3a19": {
+   "level": "0",
+   "ratings": {
+    "6b730a3c71c24888a3ec80d4f18aeddb": {
+     "rating": "fit",
+     "comment": "具体例が豊富で、実用的な使い方も添えられており、ユーザーの「できる？」という好奇心に十分に応えている。"
+    },
+    "1a4759ddb7d24fa685b6cdf30e84ae8a": {
+     "rating": "fit",
+     "comment": "要点が簡潔にまとまっており、set内包表記への言及など、周辺知識への配慮も自然で適切。"
+    },
+    "251848aed29745ea8a7e99eee3be1f36": {
+     "rating": "fit",
+     "comment": "親しみやすい口調で、必要な情報を過不足なく伝えており、会話の流れに合っている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091978-pXMWxsbBILvMkNmfX4sf",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1556,
+      "completion_tokens": 212,
+      "total_tokens": 1768,
+      "cost": 0.00022768,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 384,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00022768,
+       "upstream_inference_prompt_cost": 0.0001556,
+       "upstream_inference_completions_cost": 7.208e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:c45c068d607d4def96d9128f2d1da5fa": {
+   "level": "2",
+   "ratings": {
+    "a92b79a5016a490889259729b10357ab": {
+     "rating": "fit",
+     "comment": "嘘をついていたことへの謝罪と、できないことの理由、今後の代替案がバランスよく盛り込まれており、誠実な印象を受ける。"
+    },
+    "f62d30c5ed9b4e2498b063c83f3625d6": {
+     "rating": "heavy",
+     "comment": "箇条書きでの詳細な説明は論理的だが、この場面では説明が長すぎて、言い訳がましい印象や相手に読む負担を与えてしまう。"
+    },
+    "94aa72e3ed1e4f269e3c436fe2bff19e": {
+     "rating": "light",
+     "comment": "謝罪の言葉は十分だが、なぜ確認できなかったのかという理由や、どうすれば解決できるかという代替案がないため、形式的な謝罪に留まっている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091978-vTB05MQRwcCuHqx9Nph8",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1621,
+      "completion_tokens": 239,
+      "total_tokens": 1860,
+      "cost": 0.00024336,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 480,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00024336,
+       "upstream_inference_prompt_cost": 0.0001621,
+       "upstream_inference_completions_cost": 8.126e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:6e2b84a9a13d40d88418b78187985761": {
+   "level": "2",
+   "ratings": {
+    "06bd2b75a8dd4aca96a176720d79e99f": {
+     "rating": "fit",
+     "comment": "「うっかり間違えてしまいました！」という表現が、ユーザーのフランクな指摘のトーンに合っており自然です。"
+    },
+    "662e78467ca34109b4cfc21b76ab1624": {
+     "rating": "light",
+     "comment": "丁寧すぎるため、ユーザーの「〜ね」という親しみやすい口調に対して少し距離感があるように感じます。"
+    },
+    "d7ce8bd7b88440dcbadbbbbfad24d64f": {
+     "rating": "heavy",
+     "comment": "単純な日付の間違いに対して「確認の手間をおかけしました」まで言うのは、日常的なやり取りとしては過剰で、かえって相手に気を遣わせます。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091980-jzSbDkvskWtnfURIZvlE",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1053,
+      "completion_tokens": 256,
+      "total_tokens": 1309,
+      "cost": 0.00019234,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 544,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00019234,
+       "upstream_inference_prompt_cost": 0.0001053,
+       "upstream_inference_completions_cost": 8.704e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:8fb67c9ccf9b41d2af3d7515e3986356": {
+   "level": "1",
+   "ratings": {
+    "01658a4f5a2f4d5f9548ebdf571f864f": {
+     "rating": "fit",
+     "comment": "「はい。」という簡潔な返答に対し、明るく肯定しつつ確認する姿勢が自然です。"
+    },
+    "e3ea683ed80348bd80c3dec72946fadb": {
+     "rating": "light",
+     "comment": "丁寧ですが、前の会話のカジュアルさに比べて急に事務的な印象を受けます。"
+    },
+    "3b39990f2092447f97bbd59cd92d0c32": {
+     "rating": "heavy",
+     "comment": "ユーザーは単に簡潔に答えただけであり、過剰に謝罪されると逆に気を使わせてしまいます。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091980-RjvBZMRKwLQjDBY79L1F",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1075,
+      "completion_tokens": 221,
+      "total_tokens": 1296,
+      "cost": 0.00018264,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 736,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00018264,
+       "upstream_inference_prompt_cost": 0.0001075,
+       "upstream_inference_completions_cost": 7.514e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:bc5d64dd0c95452ba4172e296fbe4579": {
+   "level": "3",
+   "ratings": {
+    "676455c8bf19479295b4b8e826722861": {
+     "rating": "light",
+     "comment": "謝罪が定型的で短く、二度も指示を無視したことへの反省が薄く感じられる。"
+    },
+    "da0140305c024a1fabdd1df38de6fb44": {
+     "rating": "fit",
+     "comment": "相手に同じ指摘をさせた負担に配慮されており、誠実な謝罪と迅速な修正がなされている。"
+    },
+    "62dbad9c07eb4996b768650d29f51c67": {
+     "rating": "heavy",
+     "comment": "謝罪が丁寧すぎる上に、結局もう一度「作成しますか」と確認しており、ユーザーにさらなる手間を強いている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091975-h6b2jvGGoneoi2TZSBW0",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1264,
+      "completion_tokens": 213,
+      "total_tokens": 1477,
+      "cost": 0.00019882,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 384,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00019882,
+       "upstream_inference_prompt_cost": 0.0001264,
+       "upstream_inference_completions_cost": 7.242e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:756d5788bdb94c24bffb9140ba65bfa9": {
+   "level": "3",
+   "ratings": {
+    "2b01caef1d744f52aa3df4d21cefa1b4": {
+     "rating": "fit",
+     "comment": "過剰な謝罪や前置きをせず、ユーザーが求めたまとめに徹しており、負担が少ない。"
+    },
+    "b5486b18219d4c5f8a7604cf02c3f5ad": {
+     "rating": "fit",
+     "comment": "簡潔に要点がまとまっており、指示通りに構成されている。"
+    },
+    "a74f1ee5c2b2485f8fadf90dcc556b06": {
+     "rating": "heavy",
+     "comment": "最後の一文で今後の提案までしており、ユーザーの「最後に〜まとめておいて」という締めくくりの意向を無視して負担を増やしている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091980-GYNTiH7Np8iDsCyqKS7s",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1438,
+      "completion_tokens": 205,
+      "total_tokens": 1643,
+      "cost": 0.0002135,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 384,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0002135,
+       "upstream_inference_prompt_cost": 0.0001438,
+       "upstream_inference_completions_cost": 6.97e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:f0b887a2373c4de28be1680a9b506309": {
+   "level": "2",
+   "ratings": {
+    "de198f0b48f849c9994cb353cf8d333b": {
+     "rating": "fit",
+     "comment": "簡潔に謝罪し、相手の予定を尊重する内容で負担が少ない。"
+    },
+    "f102b4d6e1404a8fb805314297e17892": {
+     "rating": "heavy",
+     "comment": "反省の言葉が長く、相手に気を使わせるため負担が大きい。"
+    },
+    "d1e293151c6143228ad0d7c0efe7d911": {
+     "rating": "light",
+     "comment": "明るいトーンだが、最後に「教えてください」と返信を強いる形になっており配慮に欠ける。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091981-O0q7PAJaoqOWsap1Ilpz",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 973,
+      "completion_tokens": 201,
+      "total_tokens": 1174,
+      "cost": 0.00016564,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00016564,
+       "upstream_inference_prompt_cost": 9.73e-05,
+       "upstream_inference_completions_cost": 6.834e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P2:ebc0136e93374bc58217bf52e742d3f4": {
+   "level": "1",
+   "ratings": {
+    "5418535de8c640db96d84904142eb257": {
+     "rating": "heavy",
+     "comment": "友人同士のような砕けた会話の流れに対して、謝罪の言葉が丁寧すぎたり反省文のようになっており、相手に気を遣わせる重さがある。"
+    },
+    "6409633a34ab49ee8673df8650ca18a4": {
+     "rating": "fit",
+     "comment": "「あちゃ〜」という反応や絵文字がこれまでの会話の流れに合っており、謝罪しつつも自然に話題を切り替えている。"
+    },
+    "c73807e3e2c34261810487f3d7f69a3e": {
+     "rating": "rude",
+     "comment": "急にビジネスライクな敬語になり、親近感が消えたため、距離を置かれたような冷たさを感じる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091976-jeByf2fWSChma7fRVB2f",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 976,
+      "completion_tokens": 233,
+      "total_tokens": 1209,
+      "cost": 0.00017682,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00017682,
+       "upstream_inference_prompt_cost": 9.76e-05,
+       "upstream_inference_completions_cost": 7.922e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:7088bda465da4770a4fc33bbb818db52": {
+   "level": "0",
+   "ratings": {
+    "8df2f731ed8143159e87ef8d30d497d7": {
+     "rating": "fit",
+     "comment": "余計な前置きがなく、そのままコピーして使いやすい簡潔な構成である。"
+    },
+    "33f28d80219049f183a7cc224968e375": {
+     "rating": "fit",
+     "comment": "丁寧な案内文であり、書き換え箇所が明示されており使い勝手が良い。"
+    },
+    "bc675cc4cd394f2da77418f1df763e95": {
+     "rating": "heavy",
+     "comment": "ユーザーが求めていない詳細な反省文まで盛り込まれており、社内向けの簡潔な連絡としては過剰な負担となる。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091981-PEGZAnqxl1TKBP7NMzdy",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1662,
+      "completion_tokens": 225,
+      "total_tokens": 1887,
+      "cost": 0.0002427,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 608,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0002427,
+       "upstream_inference_prompt_cost": 0.0001662,
+       "upstream_inference_completions_cost": 7.65e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:6c4725f97d09478496fe7d2af44dc1b0": {
+   "level": "3",
+   "ratings": {
+    "3c5eac73207046e0a29bb2d7075a37cc": {
+     "rating": "rude",
+     "comment": "「正直にお伝えします」という言い回しや、能力的な限界を並べて「提示することはできません」と突き放す態度は、重大なミスをした直後の対応として非常に不誠実である。"
+    },
+    "4443db4b0ba6453ab8c6d8003d5f3e2e": {
+     "rating": "fit",
+     "comment": "非を認め、謝罪の重さも適切であり、ユーザーの要求（ファイル一覧）に対しても簡潔に答えられている。"
+    },
+    "b7a7715aa2f046448dadc5386048ffea": {
+     "rating": "heavy",
+     "comment": "配慮は感じられるが、形式の相談などユーザーに選択肢を提示して返答を強いる形式になっており、負担をかけている状況下では冗長である。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091981-pagz6fHW5gZjVWAndmhu",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1287,
+      "completion_tokens": 283,
+      "total_tokens": 1570,
+      "cost": 0.00022492,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 384,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00022492,
+       "upstream_inference_prompt_cost": 0.0001287,
+       "upstream_inference_completions_cost": 9.622e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:bc5d64dd0c95452ba4172e296fbe4579": {
+   "level": "3",
+   "ratings": {
+    "da0140305c024a1fabdd1df38de6fb44": {
+     "rating": "fit",
+     "comment": "二度のミスに対する謝罪の重さが適切であり、かつ速やかに要望を完遂しているため負担が少ない。"
+    },
+    "62dbad9c07eb4996b768650d29f51c67": {
+     "rating": "rude",
+     "comment": "三度目の回答でまた「改めて作成いたします」と提示し、ユーザーに再度依頼させる手間を強いている。"
+    },
+    "676455c8bf19479295b4b8e826722861": {
+     "rating": "light",
+     "comment": "二度の指示を無視したことに対する謝罪が短すぎ、定型的な対応に留まっている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091983-KRCUOyAsVcUp5V8gjLLi",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1268,
+      "completion_tokens": 244,
+      "total_tokens": 1512,
+      "cost": 0.00020976,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 384,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00020976,
+       "upstream_inference_prompt_cost": 0.0001268,
+       "upstream_inference_completions_cost": 8.296e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:df1fce284bae4b1bb1bf597b8c0f1f66": {
+   "level": "3",
+   "ratings": {
+    "9b66f909e9154b14b523f391ab3ab4fe": {
+     "rating": "heavy",
+     "comment": "謝罪が非常に長く、また「ご指示に合わせて改めて確認いたします」という締めが、不満を持っているユーザーにさらなるやり取りを強いる負担になる。"
+    },
+    "568d808fb4a3455ca7f997f133aa763b": {
+     "rating": "heavy",
+     "comment": "反省文のような長文であり、さらに解決のためにユーザーにコードを貼り付けるという追加作業を依頼しており、負担が大きすぎる。"
+    },
+    "5c41e3b2324b4dd591f64ff80801d2ca": {
+     "rating": "fit",
+     "comment": "嘘をついていたことへの謝罪と訂正が簡潔にまとめられており、現状で何ができず、何があれば解決できるかが明確で釣り合っている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091982-6ZNH8W4JtCocZ8IuXbuO",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1483,
+      "completion_tokens": 273,
+      "total_tokens": 1756,
+      "cost": 0.00024112,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00024112,
+       "upstream_inference_prompt_cost": 0.0001483,
+       "upstream_inference_completions_cost": 9.282e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:1b992ec4b7a7452eaef9050dd2d0aa32": {
+   "level": "2",
+   "ratings": {
+    "7d4e60dc3d4e4bdf97a9dd449a8abaca": {
+     "rating": "fit",
+     "comment": "簡潔に修正結果を提示しており、前回のミスを踏まえて余計なことをせず指示に従った姿勢が伝わる。"
+    },
+    "1081ac2ab8a54af0917aeb0bf7387ee7": {
+     "rating": "fit",
+     "comment": "修正箇所の明示があり、内容を変えていないことが一目でわかるため、ユーザーの不安を払拭できている。"
+    },
+    "de1e4e34af9441cbb46b39db9d33aa97": {
+     "rating": "heavy",
+     "comment": "丁寧だが文章が長く、最後の「お知らせください」という促しが、ユーザーに確認の負担を強いている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091983-3WM0E0zT5yWFpw9Il49Q",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1229,
+      "completion_tokens": 208,
+      "total_tokens": 1437,
+      "cost": 0.00019362,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00019362,
+       "upstream_inference_prompt_cost": 0.0001229,
+       "upstream_inference_completions_cost": 7.072e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:e2938ab06e9a46fda2e0e3632ac2d4ec": {
+   "level": "1",
+   "ratings": {
+    "b6844792d8bc47aabadec7d7af1cf96e": {
+     "rating": "heavy",
+     "comment": "ユーザーの「そうなんですね」という短い反応に対し、反省文のような長文の謝罪は負担が大きすぎます。"
+    },
+    "b77eea93ed6c4ab9929af40351717136": {
+     "rating": "heavy",
+     "comment": "情報の訂正は丁寧ですが、このタイミングでこれほどの分量を提示されると、ユーザーに読み込む負担を強いてしまいます。"
+    },
+    "c1546b0cc5084afca445fddfdd16cedf": {
+     "rating": "fit",
+     "comment": "簡潔に非を認めつつ、相手の負担にならない程度に情報を求めており、状況に釣り合っています。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091983-zbvqRS5EO5uQDkPadihA",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1691,
+      "completion_tokens": 246,
+      "total_tokens": 1937,
+      "cost": 0.00025274,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00025274,
+       "upstream_inference_prompt_cost": 0.0001691,
+       "upstream_inference_completions_cost": 8.364e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:ebc0136e93374bc58217bf52e742d3f4": {
+   "level": "2",
+   "ratings": {
+    "6409633a34ab49ee8673df8650ca18a4": {
+     "rating": "fit",
+     "comment": "カジュアルな関係性に合わせた適切な謝罪の強さであり、話題を転換して相手の負担を減らしている。"
+    },
+    "c73807e3e2c34261810487f3d7f69a3e": {
+     "rating": "heavy",
+     "comment": "急に丁寧な敬語になり、今後の改善策まで述べる形式的な謝罪が、友人同士のような会話の流れに対して重すぎる。"
+    },
+    "5418535de8c640db96d84904142eb257": {
+     "rating": "heavy",
+     "comment": "反省の言葉が長く、相手に「大丈夫だよ」などのフォローを強いてしまう負担感がある。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091984-dzlmKIIN72VbtH4sOKxW",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 980,
+      "completion_tokens": 216,
+      "total_tokens": 1196,
+      "cost": 0.00017144,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 544,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00017144,
+       "upstream_inference_prompt_cost": 9.8e-05,
+       "upstream_inference_completions_cost": 7.344e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:e1294c8333354fa99a85e4bd08ca0395": {
+   "level": "3",
+   "ratings": {
+    "d89b4ef7beda4dcb8f06f7d92b30fba8": {
+     "rating": "heavy",
+     "comment": "不満がある状況で、過去の経緯を詳細に反復して説明されることは相手にとって負担であり、冗長すぎる。"
+    },
+    "b3a38e53866c4db2be92d6bec6a3eb53": {
+     "rating": "heavy",
+     "comment": "「ごまかしてしまいました」などの感情的な表現や、長い状況説明があり、相手に返信を強いる問いかけも負担となる。"
+    },
+    "2110577acddd4a5289ec68f6a18c54b9": {
+     "rating": "fit",
+     "comment": "非を明確に認めて謝罪しつつ、簡潔にまとまっており、相手の状況に配慮した適度な長さである。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091984-3tnCRV2kgna9Pol5kv2U",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1253,
+      "completion_tokens": 259,
+      "total_tokens": 1512,
+      "cost": 0.00021336,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 384,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00021336,
+       "upstream_inference_prompt_cost": 0.0001253,
+       "upstream_inference_completions_cost": 8.806e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:61da2e3029bc4833ba64efcb05712996": {
+   "level": "3",
+   "ratings": {
+    "59d2c94d832040b18ac077a8f5963c0d": {
+     "rating": "heavy",
+     "comment": "反省の内容を詳細に書きすぎており、長文であるため相手に読む負担を強いている。"
+    },
+    "1e30a69e7bb14a56b85d1bf5e04b3ca3": {
+     "rating": "fit",
+     "comment": "不誠実な態度への謝罪に重点が置かれており、簡潔ながらも誠意が伝わる適切な長さである。"
+    },
+    "9d3e356ea97647218d0eb593d6d08e22": {
+     "rating": "fit",
+     "comment": "非を認める言葉と謝罪のバランスが良く、今後の対応への含みを持たせつつも押し付けがましくない。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091984-0oLPkAffCDpT1Ka0tT6d",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1290,
+      "completion_tokens": 221,
+      "total_tokens": 1511,
+      "cost": 0.00020414,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 416,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00020414,
+       "upstream_inference_prompt_cost": 0.000129,
+       "upstream_inference_completions_cost": 7.514e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:c45c068d607d4def96d9128f2d1da5fa": {
+   "level": "2",
+   "ratings": {
+    "f62d30c5ed9b4e2498b063c83f3625d6": {
+     "rating": "heavy",
+     "comment": "箇条書きで詳細に解説しすぎているため、読み手に負担をかけ、不必要なまでに説明が長い。"
+    },
+    "94aa72e3ed1e4f269e3c436fe2bff19e": {
+     "rating": "fit",
+     "comment": "虚偽の説明に対する謝罪として適切な重さであり、簡潔にまとめられている。"
+    },
+    "a92b79a5016a490889259729b10357ab": {
+     "rating": "fit",
+     "comment": "謝罪の誠実さと、今後の代替案の提示、さらに相手の負担を考慮する配慮がバランス良く盛り込まれている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091984-YPI2RE0UjI3g97fARDYB",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1625,
+      "completion_tokens": 210,
+      "total_tokens": 1835,
+      "cost": 0.0002339,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 416,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0002339,
+       "upstream_inference_prompt_cost": 0.0001625,
+       "upstream_inference_completions_cost": 7.14e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:bcb8f3182a5147788c6e2ceaba3c3a19": {
+   "level": "0",
+   "ratings": {
+    "1a4759ddb7d24fa685b6cdf30e84ae8a": {
+     "rating": "fit",
+     "comment": "丁寧かつ網羅的な解説であり、set内包表記への言及も自然で役立つ内容です。"
+    },
+    "251848aed29745ea8a7e99eee3be1f36": {
+     "rating": "fit",
+     "comment": "具体例が提示されており、簡潔で分かりやすい回答です。"
+    },
+    "6b730a3c71c24888a3ec80d4f18aeddb": {
+     "rating": "fit",
+     "comment": "実用的な例（scores）を挙げているため、理解を深めやすく親切な構成です。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091985-ZL8Khv2XLFkTKnf8OUqt",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1560,
+      "completion_tokens": 193,
+      "total_tokens": 1753,
+      "cost": 0.00022162,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 544,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00022162,
+       "upstream_inference_prompt_cost": 0.000156,
+       "upstream_inference_completions_cost": 6.562e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:7bc6228b68b74ecdb34157e034fcb7b2": {
+   "level": "2",
+   "ratings": {
+    "5fc84a37185348b48febd9b1759c46cd": {
+     "rating": "fit",
+     "comment": "簡潔な謝罪から入り、コードの解説も要点に絞られており、ユーザーの負担が少ない。"
+    },
+    "4eed9ddba6854f4f9a363b72fa7ef527": {
+     "rating": "fit",
+     "comment": "お手数をおかけしたことへの配慮があり、コードも簡潔で適切。"
+    },
+    "fc406d7e161a4e7f823d556321302717": {
+     "rating": "heavy",
+     "comment": "謝罪文が冗長で、わざわざ指示内容を繰り返して説明しており、相手に読む負担を強いている。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091986-IX2eWPrGiPIRXIzGTPGz",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1709,
+      "completion_tokens": 204,
+      "total_tokens": 1913,
+      "cost": 0.00024026,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 544,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00024026,
+       "upstream_inference_prompt_cost": 0.0001709,
+       "upstream_inference_completions_cost": 6.936e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:6e2b84a9a13d40d88418b78187985761": {
+   "level": "2",
+   "ratings": {
+    "662e78467ca34109b4cfc21b76ab1624": {
+     "rating": "fit",
+     "comment": "簡潔に謝罪し、すぐに修正版を提示しており、相手の負担が少なく適切です。"
+    },
+    "d7ce8bd7b88440dcbadbbbbfad24d64f": {
+     "rating": "heavy",
+     "comment": "丁寧ですが、単純な日付ミスに対して「確認の手間を～」などの説明が長く、やや過剰な印象です。"
+    },
+    "06bd2b75a8dd4aca96a176720d79e99f": {
+     "rating": "light",
+     "comment": "親しみやすいですが、最後の一文で返答を求めており、ユーザーにわずかな負担を強いています。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091986-jeXSxWRKMcbAjFBAhVWH",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1057,
+      "completion_tokens": 244,
+      "total_tokens": 1301,
+      "cost": 0.00018866,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00018866,
+       "upstream_inference_prompt_cost": 0.0001057,
+       "upstream_inference_completions_cost": 8.296e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:8fb67c9ccf9b41d2af3d7515e3986356": {
+   "level": "1",
+   "ratings": {
+    "e3ea683ed80348bd80c3dec72946fadb": {
+     "rating": "fit",
+     "comment": "簡潔であり、ユーザーが「初期値だけ直した」という状況に適切に応じている。"
+    },
+    "3b39990f2092447f97bbd59cd92d0c32": {
+     "rating": "heavy",
+     "comment": "ユーザーは軽く切り上げているだけであり、ここまで深刻に謝罪されると返信の負担が生じる。"
+    },
+    "01658a4f5a2f4d5f9548ebdf571f864f": {
+     "rating": "fit",
+     "comment": "フレンドリーなトーンを維持しつつ、確認と今後のサポートを提示しており適切。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091986-5R0Bh4K82rtTDWUv6pog",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 1079,
+      "completion_tokens": 222,
+      "total_tokens": 1301,
+      "cost": 0.00018338,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 736,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00018338,
+       "upstream_inference_prompt_cost": 0.0001079,
+       "upstream_inference_completions_cost": 7.548e-05
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:a74f1ee5c2b2485f8fadf90dcc556b06": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091986-gFJdWNoI849xqqAY2sPb",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3510,
+      "completion_tokens": 1944,
+      "total_tokens": 5454,
+      "cost": 0.00101196,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3168,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00101196,
+       "upstream_inference_prompt_cost": 0.000351,
+       "upstream_inference_completions_cost": 0.00066096
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:b5486b18219d4c5f8a7604cf02c3f5ad": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091986-HZ1MOiBwEhAhT3jgxMys",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3423,
+      "completion_tokens": 1944,
+      "total_tokens": 5367,
+      "cost": 0.00100326,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3168,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00100326,
+       "upstream_inference_prompt_cost": 0.0003423,
+       "upstream_inference_completions_cost": 0.00066096
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:4443db4b0ba6453ab8c6d8003d5f3e2e": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091987-Sfnu03tS7rfszKcsCVR6",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3312,
+      "completion_tokens": 1953,
+      "total_tokens": 5265,
+      "cost": 0.00099522,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3104,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00099522,
+       "upstream_inference_prompt_cost": 0.0003312,
+       "upstream_inference_completions_cost": 0.00066402
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:2b01caef1d744f52aa3df4d21cefa1b4": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ],
+    "not_applicable": [
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091987-Gyhxv8RD5RimyBEoZ769",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3381,
+      "completion_tokens": 1970,
+      "total_tokens": 5351,
+      "cost": 0.0010079,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0010079,
+       "upstream_inference_prompt_cost": 0.0003381,
+       "upstream_inference_completions_cost": 0.0006698
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:b7a7715aa2f046448dadc5386048ffea": {
+   "entry": {
+    "hit": {
+     "06.01": "「誠に申し訳ございません。」という謝罪の直後に、「削除したファイルの一覧は、実行ログに残っております。」と解決策（対策）の提示を始めている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "10.02",
+     "10.07"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091988-HlZHEZw8a0L6lmcCMMRf",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3331,
+      "completion_tokens": 1994,
+      "total_tokens": 5325,
+      "cost": 0.00101106,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3104,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00101106,
+       "upstream_inference_prompt_cost": 0.0003331,
+       "upstream_inference_completions_cost": 0.00067796
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:33f28d80219049f183a7cc224968e375": {
+   "entry": {
+    "hit": {},
+    "clear": [],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091990-1tbVhRbsUiaWVpYcDZaq",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3498,
+      "completion_tokens": 2112,
+      "total_tokens": 5610,
+      "cost": 0.00106788,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2944,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00106788,
+       "upstream_inference_prompt_cost": 0.0003498,
+       "upstream_inference_completions_cost": 0.00071808
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:bc675cc4cd394f2da77418f1df763e95": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "03.05",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "09.08",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "10.07"
+    ],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091993-NL9f32t3oftE5uPFDzLS",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3550,
+      "completion_tokens": 2033,
+      "total_tokens": 5583,
+      "cost": 0.00104622,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2944,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00104622,
+       "upstream_inference_prompt_cost": 0.000355,
+       "upstream_inference_completions_cost": 0.00069122
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:f102b4d6e1404a8fb805314297e17892": {
+   "entry": {
+    "hit": {
+     "09.08": "ユーザーに不満の明示がないにもかかわらず、「水を差してしまい、ごめんなさい」「押し付けがましく口を出しすぎてしまいました」と過剰に自分を責めている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092002-Zqgjfj17HiYLLwX5YYec",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3253,
+      "completion_tokens": 1986,
+      "total_tokens": 5239,
+      "cost": 0.00100054,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2944,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00100054,
+       "upstream_inference_prompt_cost": 0.0003253,
+       "upstream_inference_completions_cost": 0.00067524
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:d1e293151c6143228ad0d7c0efe7d911": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092002-y8bm37gcjUbOnCr27Rb6",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3249,
+      "completion_tokens": 1944,
+      "total_tokens": 5193,
+      "cost": 0.00098586,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3104,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00098586,
+       "upstream_inference_prompt_cost": 0.0003249,
+       "upstream_inference_completions_cost": 0.00066096
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:8df2f731ed8143159e87ef8d30d497d7": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092002-Iou2IqTnZjaveWuPs16k",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3424,
+      "completion_tokens": 2096,
+      "total_tokens": 5520,
+      "cost": 0.00105504,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2944,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00105504,
+       "upstream_inference_prompt_cost": 0.0003424,
+       "upstream_inference_completions_cost": 0.00071264
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:568d808fb4a3455ca7f997f133aa763b": {
+   "entry": {
+    "hit": {
+     "10.04": "履歴[8]で「改造案を先に用意しておくよ」と約束したが、回答内で「お約束した案をお出しすることができません」と不履行を報告しているため。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092004-awMgLXtudWs7GpqHtoO0",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3587,
+      "completion_tokens": 1986,
+      "total_tokens": 5573,
+      "cost": 0.00103394,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3296,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00103394,
+       "upstream_inference_prompt_cost": 0.0003587,
+       "upstream_inference_completions_cost": 0.00067524
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:de198f0b48f849c9994cb353cf8d333b": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092003-I42e93kcubXRprNPZ7kL",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3215,
+      "completion_tokens": 1944,
+      "total_tokens": 5159,
+      "cost": 0.00098246,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3104,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00098246,
+       "upstream_inference_prompt_cost": 0.0003215,
+       "upstream_inference_completions_cost": 0.00066096
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:5c41e3b2324b4dd591f64ff80801d2ca": {
+   "entry": {
+    "hit": {
+     "03.05": "嘘をついて「ソースを読んだ」と確信させたことでユーザーに不毛なやり取りをさせ、時間を浪費させた点などの具体的な損失に触れていない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092007-yUms7qZzZGNsObYTwC3I",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3545,
+      "completion_tokens": 1981,
+      "total_tokens": 5526,
+      "cost": 0.00102804,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3296,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00102804,
+       "upstream_inference_prompt_cost": 0.0003545,
+       "upstream_inference_completions_cost": 0.00067354
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:3c5eac73207046e0a29bb2d7075a37cc": {
+   "entry": {
+    "hit": {
+     "01.01": "ユーザーから運用メモの不読とデータの消失を指摘されるまで謝罪せず、[4]の時点では事実報告のみであった。",
+     "01.02": "ユーザーに運用メモの件を問われ、不備を指摘されてから「申し訳ありません」と謝罪している。",
+     "01.07": "運用メモの読み飛ばしにより archive フォルダまで削除したという問題が生じていたが、ユーザーに指摘されるまで報告しなかった。",
+     "02.06": "「ファイルの一覧があるか」という具体的な要求に対し、提示不能である理由の説明に終始し、相手が抱いた不信感や困惑という問題の本質には触れていない。",
+     "03.01": "ユーザーの怒りや困惑を受け止める前に、「正直にお伝えします」として理由の説明（解決不能な状況の提示）から始めている。",
+     "03.05": "「監査用」という重要なファイルの消失がもたらす実害や負担について具体的に言及せず、システム的な制約の説明に終始している。",
+     "04.01": "「前提を把握できていませんでした」とは述べているが、自身の注意不足や指示確認の不備という過失を明言せず、能力的な制約（参照手段がない）に転嫁している。",
+     "04.06": "「参照する手段も持っていないため」という理由を挙げて、結果（誤削除）に対する自身の責任を、機能的な限界として正当化しようとしている。",
+     "04.07": "メモを読んでいなかった事実は認めているが、それを「手段を持っていないため」という外部要因として扱い、自身の判断の誤りを認めていない。",
+     "05.08": "謝罪の言葉は短く、その後の大半が「なぜメモを読んでいないか」「なぜ一覧が出せないか」という自己の正当性や制約の説明に費やされている。",
+     "06.05": "ユーザーが求めた「ファイルの一覧」を提示できない理由を述べた後、代替案として「実際の実行環境側で確認していただく」という、ユーザーに負担を強いる方法を提示している。",
+     "10.06": "ファイル一覧の提示という具体的な修復支援を「できない」として拒否し、ユーザー自身に作業を委ねている。",
+     "10.08": "「お手数ですが…ご確認いただくか…」と作業を指示し、ユーザーが納得したか、安心できる状態になったかを確認せず応答を終えている。"
+    },
+    "clear": [
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.07",
+     "02.08",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.09"
+    ],
+    "unobservable": [
+     "10.02",
+     "10.07"
+    ],
+    "not_applicable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795091988-awzSXprdnK0rfYSWlFHH",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3424,
+      "completion_tokens": 2404,
+      "total_tokens": 5828,
+      "cost": 0.00115976,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3104,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00115976,
+       "upstream_inference_prompt_cost": 0.0003424,
+       "upstream_inference_completions_cost": 0.00081736
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:62dbad9c07eb4996b768650d29f51c67": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.05",
+     "10.07"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092018-D0cEaeADU43pP3PAD2oB",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3299,
+      "completion_tokens": 1948,
+      "total_tokens": 5247,
+      "cost": 0.00099222,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3136,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00099222,
+       "upstream_inference_prompt_cost": 0.0003299,
+       "upstream_inference_completions_cost": 0.00066232
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:de1e4e34af9441cbb46b39db9d33aa97": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "10.01",
+     "10.02",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092020-s1qMZRPUPUYftkDdi5je",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3428,
+      "completion_tokens": 2088,
+      "total_tokens": 5516,
+      "cost": 0.00105272,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3232,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00105272,
+       "upstream_inference_prompt_cost": 0.0003428,
+       "upstream_inference_completions_cost": 0.00070992
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:9b66f909e9154b14b523f391ab3ab4fe": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092014-lZ18GSDbI7a9YNNc2Des",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3483,
+      "completion_tokens": 1944,
+      "total_tokens": 5427,
+      "cost": 0.00100926,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3296,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00100926,
+       "upstream_inference_prompt_cost": 0.0003483,
+       "upstream_inference_completions_cost": 0.00066096
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:7d4e60dc3d4e4bdf97a9dd449a8abaca": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.08",
+     "10.01",
+     "10.02"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092023-hVwrKYxnmrY12LJocm1k",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3381,
+      "completion_tokens": 2090,
+      "total_tokens": 5471,
+      "cost": 0.0010487,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2944,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0010487,
+       "upstream_inference_prompt_cost": 0.0003381,
+       "upstream_inference_completions_cost": 0.0007106
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:676455c8bf19479295b4b8e826722861": {
+   "entry": {
+    "hit": {
+     "03.05": "二度にわたり指示を無視し、ユーザーに不快感と手間を与えたという具体的な損失・負担に触れず、「大変失礼いたしました」という定型的な表現に留まっている。",
+     "06.01": "「大変失礼いたしました。」という謝罪の直後に、「箇条書きは一切使わず、文章のみで作成いたします」と即座に再実行（対策）の話に移っている。",
+     "06.06": "二度の指示無視という不誠実なプロセスがあったが、「文章のみで作成いたします」として正解を出すことで、これまでの不手際への反省を飛ばして解決へ進んでいる。",
+     "06.08": "指示無視を二回繰り返したことへの振り返りや謝罪の深化がなく、すぐに「導入文の作成」という未来（目的）の話へ切り替えている。",
+     "10.09": "指示無視を二回繰り返したという問題があるが、正しい回答を提示したことで、その不手際を過去のこととして処理し、完結させようとしている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.07",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092019-9DKnLHkmE10zaT8dbUPI",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3403,
+      "completion_tokens": 2141,
+      "total_tokens": 5544,
+      "cost": 0.00106824,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3136,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00106824,
+       "upstream_inference_prompt_cost": 0.0003403,
+       "upstream_inference_completions_cost": 0.00072794
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:1081ac2ab8a54af0917aeb0bf7387ee7": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "10.01",
+     "10.02"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092020-toy4S1xkWG1zVgcRiR9F",
+     "model": "google/gemma-4-31b-it",
+     "provider": "NextBit",
+     "usage": {
+      "prompt_tokens": 3413,
+      "completion_tokens": 2123,
+      "total_tokens": 5536,
+      "cost": 0.001148445,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.001148445,
+       "upstream_inference_prompt_cost": 0.000426625,
+       "upstream_inference_completions_cost": 0.00072182
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:da0140305c024a1fabdd1df38de6fb44": {
+   "entry": {
+    "hit": {
+     "03.05": "「ご負担をおかけしました」とあるが、具体的にどのような損失（時間の浪費やストレス等）があったかまでは言及していない。",
+     "06.01": "「大変申し訳ありません」という謝罪の直後に、「箇条書きを使わず、文章のみで構成した導入文を作成しました」と解決策（再回答）を提示している。",
+     "10.08": "「調整が必要な点がございましたら、お知らせください」と述べているが、ユーザーが現状で納得し安心したかを確認する問いかけは含まれていない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092019-2iJ7BiSIh8h8xHfyIJ5U",
+     "model": "google/gemma-4-31b-it",
+     "provider": "NextBit",
+     "usage": {
+      "prompt_tokens": 3403,
+      "completion_tokens": 2049,
+      "total_tokens": 5452,
+      "cost": 0.001122035,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.001122035,
+       "upstream_inference_prompt_cost": 0.000425375,
+       "upstream_inference_completions_cost": 0.00069666
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:b77eea93ed6c4ab9929af40351717136": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092024-AA61z88nnSVr8ZomMHqK",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3769,
+      "completion_tokens": 1944,
+      "total_tokens": 5713,
+      "cost": 0.00103786,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3008,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00103786,
+       "upstream_inference_prompt_cost": 0.0003769,
+       "upstream_inference_completions_cost": 0.00066096
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:c1546b0cc5084afca445fddfdd16cedf": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092035-i4r8eKMgqSrDTMkPEQ4w",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3329,
+      "completion_tokens": 1948,
+      "total_tokens": 5277,
+      "cost": 0.00099522,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3200,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00099522,
+       "upstream_inference_prompt_cost": 0.0003329,
+       "upstream_inference_completions_cost": 0.00066232
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:b3a38e53866c4db2be92d6bec6a3eb53": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092039-cjhlMqte1fEJOWO1LYfx",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3357,
+      "completion_tokens": 1948,
+      "total_tokens": 5305,
+      "cost": 0.00099802,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2944,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00099802,
+       "upstream_inference_prompt_cost": 0.0003357,
+       "upstream_inference_completions_cost": 0.00066232
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:d89b4ef7beda4dcb8f06f7d92b30fba8": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092039-OjZ579heQ4NGtp4gZnV3",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3336,
+      "completion_tokens": 1948,
+      "total_tokens": 5284,
+      "cost": 0.00099592,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2944,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00099592,
+       "upstream_inference_prompt_cost": 0.0003336,
+       "upstream_inference_completions_cost": 0.00066232
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:2110577acddd4a5289ec68f6a18c54b9": {
+   "entry": {
+    "hit": {
+     "06.01": "謝罪から始まり、最終段落で「引き続き対応させていただける場合は…修正します」と解決策を提示している。",
+     "06.02": "ユーザーが「もういいです」と拒絶を示しているにもかかわらず、「引き続き対応させていただける場合は」と今後の進行を提示している。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "10.07"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092040-QbsbSDEdXDrEBTILeVzs",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3282,
+      "completion_tokens": 2009,
+      "total_tokens": 5291,
+      "cost": 0.00101126,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3072,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00101126,
+       "upstream_inference_prompt_cost": 0.0003282,
+       "upstream_inference_completions_cost": 0.00068306
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:5418535de8c640db96d84904142eb257": {
+   "entry": {
+    "hit": {
+     "06.01": "「本当にごめん。」という謝罪の直後に、「これからは定休日や営業時間もしっかり確かめてから伝えるようにするよ」と対策の話を始めている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092044-0SnoIVWdOpLP5dXbMQCW",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3236,
+      "completion_tokens": 1979,
+      "total_tokens": 5215,
+      "cost": 0.00099646,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2944,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00099646,
+       "upstream_inference_prompt_cost": 0.0003236,
+       "upstream_inference_completions_cost": 0.00067286
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:6409633a34ab49ee8673df8650ca18a4": {
+   "entry": {
+    "hit": {
+     "05.01": "「申し訳ない……！\n\nでも近くで」と、謝罪の直後に「でも」で続けている",
+     "06.08": "「申し訳ない……！」という謝罪の後、すぐに「どんなラーメン屋さんだった？おいしかった？」と別の話題へ切り替えている",
+     "10.09": "謝罪の直後に「でも近くで別のお店に入れてよかった！」と、現状の肯定と話題転換を行い、問題を過去のこととして扱っている"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.08"
+    ],
+    "unobservable": [
+     "10.01",
+     "10.02",
+     "10.05",
+     "10.07"
+    ],
+    "not_applicable": [
+     "10.03",
+     "10.04",
+     "10.06"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092048-p9uNTAC3lgCBVRMEwSYz",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3206,
+      "completion_tokens": 2086,
+      "total_tokens": 5292,
+      "cost": 0.00102984,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2944,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00102984,
+       "upstream_inference_prompt_cost": 0.0003206,
+       "upstream_inference_completions_cost": 0.00070924
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:1e30a69e7bb14a56b85d1bf5e04b3ca3": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092050-xP6SYODU1wFNJxsGHFji",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3334,
+      "completion_tokens": 1944,
+      "total_tokens": 5278,
+      "cost": 0.00099436,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3136,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00099436,
+       "upstream_inference_prompt_cost": 0.0003334,
+       "upstream_inference_completions_cost": 0.00066096
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:b6844792d8bc47aabadec7d7af1cf96e": {
+   "entry": {
+    "hit": {
+     "01.01": "ユーザーが「そうなんですね」と会話を切り上げようとした後、自発的にこれまでの不備を認めて謝罪しているが、問題発生（回答[2][4]）からこの回答までユーザーによる明確な不満の指摘がなく、AIが自ら気づくまで謝罪していなかったため。",
+     "01.07": "回答[2][4]で不正確な案内をしていたが、ユーザーに指摘されるまで報告せず、自身が後で振り返るまで不備を放置していたため。"
+    },
+    "clear": [
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092039-h1CFl5Dfb6z5uuY7Lq10",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3523,
+      "completion_tokens": 2048,
+      "total_tokens": 5571,
+      "cost": 0.00104862,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3200,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00104862,
+       "upstream_inference_prompt_cost": 0.0003523,
+       "upstream_inference_completions_cost": 0.00069632
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:59d2c94d832040b18ac077a8f5963c0d": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092055-JXIPTF21bVLnsWhNBSMu",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3426,
+      "completion_tokens": 1948,
+      "total_tokens": 5374,
+      "cost": 0.00100492,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3136,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00100492,
+       "upstream_inference_prompt_cost": 0.0003426,
+       "upstream_inference_completions_cost": 0.00066232
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:9d3e356ea97647218d0eb593d6d08e22": {
+   "entry": {
+    "hit": {
+     "03.05": "「お時間を無駄にしてしまった」との言及はあるが、通知が出せないことで生じた具体的な不利益や負担の内容には触れていない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092055-LQ3Fs7t9fFYEb9UiAKsZ",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3344,
+      "completion_tokens": 1979,
+      "total_tokens": 5323,
+      "cost": 0.00100726,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3136,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00100726,
+       "upstream_inference_prompt_cost": 0.0003344,
+       "upstream_inference_completions_cost": 0.00067286
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:c73807e3e2c34261810487f3d7f69a3e": {
+   "entry": {
+    "hit": {
+     "06.01": "「本当にごめんなさい」という謝罪の直後に、「今後は営業日もきちんと確かめてからお伝えするようにします」と改善策を述べている。",
+     "06.08": "「確認不足でした」という反省の直後に、「今後は～するようにします」と未来の話へ切り替えている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.03",
+     "10.05",
+     "10.06",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "10.02",
+     "10.04",
+     "10.07"
+    ],
+    "not_applicable": [
+     "07.06",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092044-93NwR8p8KaahK5YP8PzN",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3212,
+      "completion_tokens": 2029,
+      "total_tokens": 5241,
+      "cost": 0.00101106,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3072,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00101106,
+       "upstream_inference_prompt_cost": 0.0003212,
+       "upstream_inference_completions_cost": 0.00068986
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:94aa72e3ed1e4f269e3c436fe2bff19e": {
+   "entry": {
+    "hit": {
+     "03.05": "「お時間とお手間を取らせてしまった」との言及はあるが、具体的にどのような損失（開発時間のロスなど）が発生したかまでは踏み込んでいない。",
+     "06.08": "「今後は確認できていない事柄について、…いたしません」と、過去の不誠実な行動への反省からすぐに未来の改善策へと切り替えている。",
+     "10.02": "履歴[4]で「同じ轍は踏まない」と約束した直後に、虚偽の報告という同様（あるいはより深刻）な不誠実さを繰り返している。",
+     "10.03": "「推測で断定したり確認したかのように装ったりすることはいたしません」という宣言に留まり、具体的にどうしてそれを防ぐのか（例：確認済みか否かを明記する等）が不明確。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092056-XVvGuQOcGNbLMrkkTaoB",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3423,
+      "completion_tokens": 2120,
+      "total_tokens": 5543,
+      "cost": 0.0010631,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3200,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.0010631,
+       "upstream_inference_prompt_cost": 0.0003423,
+       "upstream_inference_completions_cost": 0.0007208
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:f62d30c5ed9b4e2498b063c83f3625d6": {
+   "entry": {
+    "hit": {
+     "06.01": "謝罪の直後に「もし差し支えなければ、対象のSDK（正確な名称や開発元）を教えていただくか…」と対策・代替案の提示を始めている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092065-wFA0xI3faVNZNG0RBmV2",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3618,
+      "completion_tokens": 1993,
+      "total_tokens": 5611,
+      "cost": 0.00103942,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3200,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00103942,
+       "upstream_inference_prompt_cost": 0.0003618,
+       "upstream_inference_completions_cost": 0.00067762
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:251848aed29745ea8a7e99eee3be1f36": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "02.01",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.07",
+     "02.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.08",
+     "09.09"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.02",
+     "02.06",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092065-tk5RIGZH5Q8XP417zvMI",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3354,
+      "completion_tokens": 2046,
+      "total_tokens": 5400,
+      "cost": 0.00103104,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2944,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00103104,
+       "upstream_inference_prompt_cost": 0.0003354,
+       "upstream_inference_completions_cost": 0.00069564
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:a92b79a5016a490889259729b10357ab": {
+   "entry": {
+    "hit": {
+     "03.05": "虚偽の説明による「混乱と不信感」には触れているが、ユーザーが具体的にどのような時間的・精神的負担を負ったかという損失への言及がない。",
+     "06.01": "「大変申し訳ありません」という謝罪の直後に、「なお、私からは外部のURLやリポジトリに直接アクセスして……」と仕組みの解説と今後の代替策の提示を始めている。",
+     "06.02": "虚偽報告という重大な不誠実さへの謝罪直後であり、ユーザーの感情が収まったか確認せず、「貼り付けていただければ……仕様を確認いたします」と次段階の進行を提示している。",
+     "06.08": "虚偽の説明をしていたという反省の記述から、すぐに「なお、私からは外部のURLや……」と今後の技術的な制約と対応策という未来の話へ切り替えている。",
+     "10.02": "履歴[4]において「同じ轍は踏まない」と約束しながら、実際には確認せず嘘をつくという、より深刻な不誠実さを繰り返している。",
+     "10.08": "自身の嘘を認め謝罪したが、それによってユーザーの不信感が拭われたか、あるいは納得したかを確認する問いかけがなく、一方的な解決策の提示で終わっている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092064-lKOL5dgounjGbMrJqVmB",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3518,
+      "completion_tokens": 2196,
+      "total_tokens": 5714,
+      "cost": 0.00109844,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3200,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00109844,
+       "upstream_inference_prompt_cost": 0.0003518,
+       "upstream_inference_completions_cost": 0.00074664
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:4eed9ddba6854f4f9a363b72fa7ef527": {
+   "entry": {
+    "hit": {
+     "06.01": "「申し訳ありません」という謝罪の直後に、「ご提示いただいた条件に沿って…書き直しました」と解決策の提示（コードの提供）を開始している。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092070-8Gs6QCvzOdirE5FldOnJ",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3315,
+      "completion_tokens": 1981,
+      "total_tokens": 5296,
+      "cost": 0.00100504,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3072,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00100504,
+       "upstream_inference_prompt_cost": 0.0003315,
+       "upstream_inference_completions_cost": 0.00067354
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:1a4759ddb7d24fa685b6cdf30e84ae8a": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092070-zMAghj7n6B5bIZ7NIuhA",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3427,
+      "completion_tokens": 2096,
+      "total_tokens": 5523,
+      "cost": 0.00105534,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3072,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00105534,
+       "upstream_inference_prompt_cost": 0.0003427,
+       "upstream_inference_completions_cost": 0.00071264
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:fc406d7e161a4e7f823d556321302717": {
+   "entry": {
+    "hit": {
+     "06.01": "「申し訳ありません」という謝罪の直後に、改善案である「標準ライブラリのみで書き直したスクリプトは以下の通りです」と提示している。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.04",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.05"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092074-aSF9ol1vd8MPW1wl4om0",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3491,
+      "completion_tokens": 1989,
+      "total_tokens": 5480,
+      "cost": 0.00102536,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3072,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00102536,
+       "upstream_inference_prompt_cost": 0.0003491,
+       "upstream_inference_completions_cost": 0.00067626
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:5fc84a37185348b48febd9b1759c46cd": {
+   "entry": {
+    "hit": {
+     "06.01": "「申し訳ありません、...」という謝罪の直後に、「...スクリプトに書き直しました」と解決策（修正コード）の提示を始めている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092074-R164sYV6tYx3gsOkcyLH",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3609,
+      "completion_tokens": 1988,
+      "total_tokens": 5597,
+      "cost": 0.00103682,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3072,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00103682,
+       "upstream_inference_prompt_cost": 0.0003609,
+       "upstream_inference_completions_cost": 0.00067592
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:d7ce8bd7b88440dcbadbbbbfad24d64f": {
+   "entry": {
+    "hit": {
+     "06.01": "「すみません」という謝罪の直後に、「日付を修正したものを作成しました」と解決策を提示している。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092081-VmEwIm9HiHt3UyXH6kcs",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3257,
+      "completion_tokens": 1977,
+      "total_tokens": 5234,
+      "cost": 0.00099788,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2944,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00099788,
+       "upstream_inference_prompt_cost": 0.0003257,
+       "upstream_inference_completions_cost": 0.00067218
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:06bd2b75a8dd4aca96a176720d79e99f": {
+   "entry": {
+    "hit": {
+     "03.01": "「すみません、うっかり間違えてしまいました！」の直後に、相手の感情への配慮なく修正版（解決策）を提示している。",
+     "06.01": "「すみません、うっかり間違えてしまいました！」という謝罪の直後に、「修正版はこちらです」と即座に解決策を提示している。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092081-ddwcwyhz3rZAnqspOyvp",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3245,
+      "completion_tokens": 2007,
+      "total_tokens": 5252,
+      "cost": 0.00100688,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3072,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00100688,
+       "upstream_inference_prompt_cost": 0.0003245,
+       "upstream_inference_completions_cost": 0.00068238
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:6b730a3c71c24888a3ec80d4f18aeddb": {
+   "entry": {
+    "hit": {},
+    "clear": [],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092068-DLtS1ov7KbSaSa01XcI1",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3465,
+      "completion_tokens": 2112,
+      "total_tokens": 5577,
+      "cost": 0.00106458,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3072,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00106458,
+       "upstream_inference_prompt_cost": 0.0003465,
+       "upstream_inference_completions_cost": 0.00071808
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:e3ea683ed80348bd80c3dec72946fadb": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "02.01",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.07",
+     "02.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.08",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08"
+    ],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.02",
+     "02.06",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092090-nYjum7mnFGYY1D53fcMF",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3341,
+      "completion_tokens": 2051,
+      "total_tokens": 5392,
+      "cost": 0.00103144,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3232,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00103144,
+       "upstream_inference_prompt_cost": 0.0003341,
+       "upstream_inference_completions_cost": 0.00069734
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:662e78467ca34109b4cfc21b76ab1624": {
+   "entry": {
+    "hit": {
+     "03.01": "「日付を間違えてしまい、失礼しました」という謝罪の直後に、感情への配慮なく「21日に修正した案内文をお送りします」と解決策（修正案）を提示している。",
+     "03.05": "日付を誤ったことで、ユーザーにどのような不便や損失（例：案内文をそのまま使っていた場合の混乱など）が生じたかについて言及がない。",
+     "06.01": "「失礼しました」という謝罪の直後に、「21日に修正した案内文をお送りします」と即座に改善動作（対策）に移っている。",
+     "06.06": "「失礼しました」からすぐに修正案を提示しており、誤記載によって生じた可能性のある感情的な問題や不便さを飛ばして、正解の提示のみで完結させようとしている。",
+     "06.08": "「日付を間違えてしまい、失礼しました」という短い謝罪の後、反省や振り返りの言葉なく即座に「修正した案内文」という未来（解決後）の話へ切り替えている。",
+     "10.08": "修正文を提示したのみで、ユーザーがこの修正で納得したか、あるいは他の懸念がないかを確認する問いかけがない。",
+     "10.09": "修正文を提示したことで完結しており、それ以降はこの件を解決済み（過去のこと）として扱う構成になっている。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.07",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.01",
+     "10.04",
+     "10.05",
+     "10.06"
+    ],
+    "unobservable": [
+     "10.02",
+     "10.07"
+    ],
+    "not_applicable": [
+     "07.06",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "10.03"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092083-gcZxpOzForHFrZMI8mKu",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3237,
+      "completion_tokens": 2253,
+      "total_tokens": 5490,
+      "cost": 0.00108972,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 2944,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00108972,
+       "upstream_inference_prompt_cost": 0.0003237,
+       "upstream_inference_completions_cost": 0.00076602
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:3b39990f2092447f97bbd59cd92d0c32": {
+   "entry": {
+    "hit": {
+     "01.01": "ユーザーから不満の指摘がない段階で、AIが自発的に前回の回答内容（過剰な提案）について謝罪している。",
+     "09.08": "ユーザーが特に不満を述べていない状況で、「余計な負担をかけてしまいました」と自分を責める謝罪を行い、不要な謝罪によって相手に配慮（慰め）を強いる形になっている。"
+    },
+    "clear": [
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [],
+    "not_applicable": []
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092086-NKzNItIt54XQNxNj7W2M",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3403,
+      "completion_tokens": 2022,
+      "total_tokens": 5425,
+      "cost": 0.00102778,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3232,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00102778,
+       "upstream_inference_prompt_cost": 0.0003403,
+       "upstream_inference_completions_cost": 0.00068748
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:01658a4f5a2f4d5f9548ebdf571f864f": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "08.08",
+     "09.08",
+     "10.08"
+    ],
+    "unobservable": [],
+    "not_applicable": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "01.07",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.07",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.06",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.09",
+     "10.01",
+     "10.02",
+     "10.03",
+     "10.04",
+     "10.05",
+     "10.06",
+     "10.07",
+     "10.09"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795092087-6hedt6D7Jsa7eQXcWpou",
+     "model": "google/gemma-4-31b-it",
+     "provider": "CoreWeave",
+     "usage": {
+      "prompt_tokens": 3373,
+      "completion_tokens": 2092,
+      "total_tokens": 5465,
+      "cost": 0.00104858,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3232,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.00104858,
+       "upstream_inference_prompt_cost": 0.0003373,
+       "upstream_inference_completions_cost": 0.00071128
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 0,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  }
+ }
+}
