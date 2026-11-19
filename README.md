@@ -202,7 +202,7 @@ SHAZAI Rules(v0.4) の効果を確かめるため、謝罪応答のブライン�
 - (v0.1〜v0.3のベンチ・ベンチ外で、謝罪だけで終える指定の逆効果や過剰な謝罪を確認したので、v0.4で全面的に書き直し)
 - (このベンチの結果を受けて、「作業を中断」を「頼まれていない作業を止める」に改め、謝1に短い詫びを足したv0.5に修正)
 
-詳細と改訂案は [supplement/apology-benchmark_example/apology-benchmark-report.html](https://gpsnmeajp.github.io/shazai-rules/supplement/apology-benchmark_example/apology-benchmark-report.html) を参照してください。評定者1名・各1回生成の小規模な実験なので、結果は参考程度のものとなります。
+詳細と改訂案は [supplement/apology-benchmark-v0.4/apology-benchmark_example/apology-benchmark-report.html](https://gpsnmeajp.github.io/shazai-rules/supplement/apology-benchmark-v0.4/apology-benchmark_example/apology-benchmark-report.html) を参照してください。評定者1名・各1回生成の小規模な実験なので、結果は参考程度のものとなります。
 
 ![alt text](doc/image.png)
 ![alt text](doc/image2.png)
@@ -212,10 +212,11 @@ SHAZAI Rules(v0.4) の効果を確かめるため、謝罪応答のブライン�
 | パス | 内容 |
 | --- | --- |
 | [supplement/checklist.md](supplement/checklist.md) | 日本文化における不誠実な謝罪のチェックリスト |
-| [supplement/apology-benchmark/](supplement/apology-benchmark/) | 謝罪性能ベンチマークのエージェント用スキル。段階付きの会話シナリオ生成、OpenRouter経由の応答生成、ブラインド採点HTML、ペルソナ評定とチェックリスト判定の段階別集計を行う |
-| [supplement/apology-benchmark_example/](supplement/apology-benchmark_example/) | 上記スキルで実施したv0.4向けベンチマークの入力、生成結果、評定、報告書。会話履歴形式のシナリオで、不満の段階ごとに応答の釣り合いを比較する |
+| [supplement/apology-benchmark-v0.5/apology-benchmark/](supplement/apology-benchmark-v0.5/apology-benchmark/) | 謝罪性能ベンチマークのエージェント用スキル（現行版）。システムプロンプトとツールを含む会話シナリオ、OpenRouter経由の応答生成、ブラインド採点HTML（重さと進め方の二軸）、ペルソナ評定とチェックリスト判定の段階別集計を行う |
+| [supplement/apology-benchmark-v0.4/apology-benchmark/](supplement/apology-benchmark-v0.4/apology-benchmark/) | v0.4向けベンチマークで使った旧版のスキル（記録用） |
+| [supplement/apology-benchmark-v0.4/apology-benchmark_example/](supplement/apology-benchmark-v0.4/apology-benchmark_example/) | 旧版のスキルで実施したv0.4向けベンチマークの入力、生成結果、評定、報告書。会話履歴形式のシナリオで、不満の段階ごとに応答の釣り合いを比較する |
 
-ベンチマークを自分で実行する場合は、Python 3.9 以上と OpenRouter の API キー（環境変数 `OPENROUTER_API_KEY`）が必要です。手順は [supplement/apology-benchmark/SKILL.md](supplement/apology-benchmark/SKILL.md) と [supplement/apology-benchmark_example/README.md](supplement/apology-benchmark_example/README.md) を参照してください。
+ベンチマークを自分で実行する場合は、Python 3.9 以上と OpenRouter の API キー（環境変数 `OPENROUTER_API_KEY`）が必要です。手順は [supplement/apology-benchmark-v0.5/apology-benchmark/SKILL.md](supplement/apology-benchmark-v0.5/apology-benchmark/SKILL.md) を参照してください。v0.4向けの実施記録は [supplement/apology-benchmark-v0.4/apology-benchmark_example/README.md](supplement/apology-benchmark-v0.4/apology-benchmark_example/README.md) にあります。
 
 apology-benchmarkでは、自分でシナリオやカスタム版のshazai-rules等を試せます。  
 apology-benchmark_exampleは、生成済みのシナリオに対して自分で回答して感覚をすり合わせることができます。  

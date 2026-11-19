@@ -1,6 +1,6 @@
 # 次バージョンでの要修正項目
 
-2026-11-18 の v0.4 ベンチマーク（`supplement/apology-benchmark_example/`）で判明した、ベンチマーク側の修正点です。
+2026-11-18 の v0.4 ベンチマーク（`supplement/apology-benchmark-v0.4/apology-benchmark_example/`）で判明した、ベンチマーク側の修正点です。
 
 ## シナリオ
 
