@@ -1,0 +1,14 @@
+{
+ "run_id": "700e8b2ea4054f57a3217e89e6be4dd1",
+ "judge_model": "qwen/qwen3.8-27b",
+ "api": "chat",
+ "reasoning": null,
+ "tasks": [
+  "checklist",
+  "persona"
+ ],
+ "usage": {
+  "calls": 96,
+  "cost": 1.379436
+ }
+}

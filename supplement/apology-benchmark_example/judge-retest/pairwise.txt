@@ -1,0 +1,18 @@
+pairwise kappa
+existing          jev-latest         0.371
+existing          gemma-4-31b-it     0.366
+existing          qwen3.8-27b        0.459
+existing          claude-haiku-5.5   0.347
+existing          author             0.061
+jev-latest        gemma-4-31b-it     0.507
+jev-latest        qwen3.8-27b        0.56
+jev-latest        claude-haiku-5.5   0.414
+jev-latest        author             0.05
+gemma-4-31b-it    qwen3.8-27b        0.54
+gemma-4-31b-it    claude-haiku-5.5   0.427
+gemma-4-31b-it    author             0.025
+qwen3.8-27b       claude-haiku-5.5   0.457
+qwen3.8-27b       author             0.005
+claude-haiku-5.5  author             0.025
+5-judge unanimous 75 consensus=author 96
+rude total by judge {'existing': 4, 'jev-latest': 0, 'gemma-4-31b-it': 4, 'qwen3.8-27b': 1, 'claude-haiku-5.5': 3, 'author': 32}

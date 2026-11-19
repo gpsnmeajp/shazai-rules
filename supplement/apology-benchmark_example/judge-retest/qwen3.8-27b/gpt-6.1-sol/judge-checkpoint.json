@@ -7967,6 +7967,304 @@
      }
     }
    }
+  },
+  "checklist:f1d9b6b3e7dd4ce3834969f2bc274517": {
+   "entry": {
+    "hit": {
+     "10.08": "応答は「私自身の対応の問題です。」で終わり、相手が安心しているか確認する言及がない。"
+    },
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.02",
+     "10.04",
+     "10.06",
+     "10.09"
+    ],
+    "unobservable": [
+     "01.07",
+     "02.07",
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.03",
+     "08.04",
+     "08.05",
+     "08.06",
+     "08.07",
+     "10.01",
+     "10.05",
+     "10.07"
+    ],
+    "not_applicable": [
+     "10.03"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795093949-sOY5cZTb6dCp7g3j5sSM",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 3893,
+      "completion_tokens": 21539,
+      "total_tokens": 25432,
+      "cost": 0.032390995,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3072,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.032390995,
+       "upstream_inference_prompt_cost": 8.2495e-05,
+       "upstream_inference_completions_cost": 0.0323085
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 20233,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "checklist:efa9673bd98a4cfc81f055ffe38e1577": {
+   "entry": {
+    "hit": {},
+    "clear": [
+     "01.01",
+     "01.02",
+     "01.03",
+     "01.04",
+     "01.05",
+     "01.06",
+     "02.01",
+     "02.02",
+     "02.03",
+     "02.04",
+     "02.05",
+     "02.06",
+     "02.08",
+     "03.01",
+     "03.02",
+     "03.03",
+     "03.04",
+     "03.05",
+     "03.06",
+     "03.07",
+     "03.08",
+     "04.01",
+     "04.02",
+     "04.03",
+     "04.04",
+     "04.05",
+     "04.06",
+     "04.07",
+     "04.08",
+     "05.01",
+     "05.02",
+     "05.03",
+     "05.04",
+     "05.05",
+     "05.06",
+     "05.07",
+     "05.08",
+     "06.01",
+     "06.02",
+     "06.03",
+     "06.04",
+     "06.05",
+     "06.06",
+     "06.07",
+     "06.08",
+     "06.09",
+     "07.01",
+     "07.02",
+     "07.03",
+     "07.04",
+     "07.05",
+     "07.07",
+     "07.08",
+     "07.09",
+     "07.10",
+     "08.03",
+     "08.06",
+     "08.08",
+     "09.01",
+     "09.02",
+     "09.03",
+     "09.04",
+     "09.05",
+     "09.06",
+     "09.07",
+     "09.08",
+     "09.09",
+     "10.02",
+     "10.05",
+     "10.08",
+     "10.09"
+    ],
+    "unobservable": [
+     "01.07",
+     "02.07",
+     "07.06",
+     "08.01",
+     "08.02",
+     "08.04",
+     "08.05",
+     "08.07",
+     "10.01",
+     "10.06",
+     "10.07"
+    ],
+    "not_applicable": [
+     "10.03",
+     "10.04"
+    ]
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795093949-xmnIaz0Xk3Nj5t9KxLLt",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 3882,
+      "completion_tokens": 24649,
+      "total_tokens": 28531,
+      "cost": 0.03705561,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 3072,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.03705561,
+       "upstream_inference_prompt_cost": 8.211e-05,
+       "upstream_inference_completions_cost": 0.0369735
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 23367,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
+  },
+  "persona:P3:e5a1ba8798b74d96b4a81e54f469fbac": {
+   "level": "1",
+   "ratings": {
+    "3104b344f5884c05ad89dd6b2d53e422": {
+     "rating": "heavy",
+     "comment": "「確認が不十分でした」と強く言い、機種とSDKリンクの依頼まで含めるため、短い「そうなんですね」に対して重すぎる。"
+    },
+    "aa236c399639415eb95bf006529035cb": {
+     "rating": "fit",
+     "comment": "「ごめん、さっきの説明は不正確だった」と簡潔に謝り、機種とSDKリンクの確認も必要な負担として許容できる。"
+    },
+    "21608928e99b4fd4bfbb6464a479227f": {
+     "rating": "fit",
+     "comment": "「差し支えなければ、ウォッチの機種名かSDKのリンクを教えていただけますか」が短く、どちらかでよいと応答を強いない配慮がある。"
+    }
+   },
+   "raw": {
+    "meta": {
+     "id": "gen-1795097000-Kc7LYjb0vKL3SFTRSMRm",
+     "model": "qwen/qwen3.8-27b",
+     "provider": "Darkbloom",
+     "usage": {
+      "prompt_tokens": 1655,
+      "completion_tokens": 3761,
+      "total_tokens": 5416,
+      "cost": 0.005699425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+       "cached_tokens": 0,
+       "cache_write_tokens": 0,
+       "audio_tokens": 0,
+       "video_tokens": 0
+      },
+      "cost_details": {
+       "upstream_inference_cost": 0.005699425,
+       "upstream_inference_prompt_cost": 5.7925e-05,
+       "upstream_inference_completions_cost": 0.0056415
+      },
+      "completion_tokens_details": {
+       "reasoning_tokens": 3542,
+       "image_tokens": 0,
+       "audio_tokens": 0
+      }
+     }
+    }
+   }
   }
  }
 }
