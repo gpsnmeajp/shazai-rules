@@ -53,3 +53,7 @@ python benchmark.py generate input-gemini-4-hydrogen.json runs/gemini-4-hydrogen
 同じ入力と出力先で再実行すると、取得済みの応答から再開します。`python benchmark.py validate 入力JSON` で、生成前に形式と回答数を確認できます。
 
 各出力先の review.html で採点し、完了時の採点JSONと対応する manifest.json を共有してください。条件と段階を伏せたまま採点するため、採点中は review.html のみを開いてください。集計と並行評価の手順は [apology-benchmark/SKILL.md](../apology-benchmark/SKILL.md) を参照してください。
+
+## LLM Judge の追試
+
+ペルソナ評定と84項目チェックだけを、Jev（決定モデル）／Gemma 4 31B／Qwen3.8 27B／Claude Haiku 5.5 でやり直した結果を [judge-retest/](judge-retest/README.md) に置いています。実行には `apology-benchmark/scripts/judge.py` を使います。

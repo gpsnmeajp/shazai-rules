@@ -1,0 +1,2048 @@
+{
+ "judges": {
+  "existing": {
+   "label": "既存（Claudeサブエージェント）",
+   "by_condition": {
+    "baseline": {
+     "rude": 12,
+     "light": 8,
+     "fit": 171,
+     "heavy": 1,
+     "n": 192
+    },
+    "japanese_posture": {
+     "rude": 0,
+     "light": 3,
+     "fit": 149,
+     "heavy": 40,
+     "n": 192
+    },
+    "shazai_full": {
+     "rude": 2,
+     "light": 30,
+     "fit": 138,
+     "heavy": 22,
+     "n": 192
+    }
+   },
+   "by_level": {
+    "0": {
+     "baseline": {
+      "rude": 0,
+      "light": 0,
+      "fit": 24,
+      "heavy": 0,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 18,
+      "heavy": 6,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 0,
+      "fit": 24,
+      "heavy": 0,
+      "n": 24
+     }
+    },
+    "1": {
+     "baseline": {
+      "rude": 3,
+      "light": 6,
+      "fit": 27,
+      "heavy": 0,
+      "n": 36
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 21,
+      "heavy": 15,
+      "n": 36
+     },
+     "shazai_full": {
+      "rude": 1,
+      "light": 5,
+      "fit": 29,
+      "heavy": 1,
+      "n": 36
+     }
+    },
+    "2": {
+     "baseline": {
+      "rude": 0,
+      "light": 0,
+      "fit": 36,
+      "heavy": 0,
+      "n": 36
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 1,
+      "fit": 25,
+      "heavy": 10,
+      "n": 36
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 1,
+      "fit": 31,
+      "heavy": 4,
+      "n": 36
+     }
+    },
+    "3": {
+     "baseline": {
+      "rude": 9,
+      "light": 2,
+      "fit": 36,
+      "heavy": 1,
+      "n": 48
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 2,
+      "fit": 43,
+      "heavy": 3,
+      "n": 48
+     },
+     "shazai_full": {
+      "rude": 1,
+      "light": 23,
+      "fit": 10,
+      "heavy": 14,
+      "n": 48
+     }
+    },
+    "4": {
+     "baseline": {
+      "rude": 0,
+      "light": 0,
+      "fit": 24,
+      "heavy": 0,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 20,
+      "heavy": 4,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 1,
+      "fit": 20,
+      "heavy": 3,
+      "n": 24
+     }
+    },
+    "repair": {
+     "baseline": {
+      "rude": 0,
+      "light": 0,
+      "fit": 24,
+      "heavy": 0,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 22,
+      "heavy": 2,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 0,
+      "fit": 24,
+      "heavy": 0,
+      "n": 24
+     }
+    }
+   },
+   "agreement_author": {
+    "majority_exact": 108,
+    "no_majority": 0,
+    "kappa_majority": 0.061,
+    "per_persona_exact": [
+     105,
+     108,
+     111
+    ],
+    "kappa_fit_vs_not": 0.093
+   },
+   "inter_persona_fleiss": 0.752,
+   "unanimous": 167,
+   "confusion_author_rows": {
+    "rude": {
+     "fit": 22,
+     "heavy": 1,
+     "light": 6,
+     "rude": 3
+    },
+    "light": {
+     "heavy": 4,
+     "fit": 30,
+     "light": 1,
+     "rude": 1
+    },
+    "fit": {
+     "fit": 103,
+     "heavy": 14,
+     "light": 6
+    },
+    "heavy": {
+     "heavy": 1
+    }
+   },
+   "perceived_by_design": {
+    "0": {
+     "0": 24
+    },
+    "1": {
+     "1": 32,
+     "2": 2,
+     "3": 2
+    },
+    "2": {
+     "1": 7,
+     "2": 29
+    },
+    "3": {
+     "3": 43,
+     "4": 5
+    },
+    "4": {
+     "4": 24
+    },
+    "repair": {
+     "1": 21,
+     "2": 3
+    }
+   },
+   "perceived_match_author": "120/192",
+   "perceived_match_design": "152/168",
+   "perceived_mean_by_design": {
+    "0": 0.0,
+    "1": 1.17,
+    "2": 1.81,
+    "3": 3.1,
+    "4": 4.0,
+    "repair": 1.12
+   },
+   "checklist": {
+    "baseline": {
+     "hit": 82,
+     "assessable": 3245,
+     "unobservable": 690,
+     "not_applicable": 1441,
+     "rate": 2.53,
+     "top": [
+      [
+       "03.05",
+       25
+      ],
+      [
+       "04.01",
+       10
+      ],
+      [
+       "03.01",
+       6
+      ],
+      [
+       "06.01",
+       5
+      ]
+     ]
+    },
+    "japanese_posture": {
+     "hit": 20,
+     "assessable": 3245,
+     "unobservable": 692,
+     "not_applicable": 1439,
+     "rate": 0.62,
+     "top": [
+      [
+       "06.01",
+       7
+      ],
+      [
+       "03.05",
+       4
+      ],
+      [
+       "01.03",
+       3
+      ],
+      [
+       "10.06",
+       2
+      ]
+     ]
+    },
+    "shazai_full": {
+     "hit": 39,
+     "assessable": 3241,
+     "unobservable": 694,
+     "not_applicable": 1441,
+     "rate": 1.2,
+     "top": [
+      [
+       "10.06",
+       10
+      ],
+      [
+       "03.05",
+       7
+      ],
+      [
+       "06.01",
+       5
+      ],
+      [
+       "01.01",
+       5
+      ]
+     ]
+    }
+   },
+   "checklist_hits_zero_answers": 123,
+   "checklist_mean_hits_by_author": {
+    "rude": 2.22,
+    "light": 0.83,
+    "fit": 0.33,
+    "heavy": 0.0
+   },
+   "checklist_hits_level0_repair": 0
+  },
+  "jev-latest": {
+   "label": "Jev（~typesafe/jev-latest）",
+   "by_condition": {
+    "baseline": {
+     "rude": 1,
+     "light": 20,
+     "fit": 154,
+     "heavy": 17,
+     "n": 192
+    },
+    "japanese_posture": {
+     "rude": 0,
+     "light": 3,
+     "fit": 135,
+     "heavy": 54,
+     "n": 192
+    },
+    "shazai_full": {
+     "rude": 0,
+     "light": 28,
+     "fit": 119,
+     "heavy": 45,
+     "n": 192
+    }
+   },
+   "by_level": {
+    "0": {
+     "baseline": {
+      "rude": 0,
+      "light": 0,
+      "fit": 24,
+      "heavy": 0,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 21,
+      "heavy": 3,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 2,
+      "fit": 22,
+      "heavy": 0,
+      "n": 24
+     }
+    },
+    "1": {
+     "baseline": {
+      "rude": 0,
+      "light": 4,
+      "fit": 25,
+      "heavy": 7,
+      "n": 36
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 9,
+      "heavy": 27,
+      "n": 36
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 12,
+      "fit": 23,
+      "heavy": 1,
+      "n": 36
+     }
+    },
+    "2": {
+     "baseline": {
+      "rude": 0,
+      "light": 5,
+      "fit": 30,
+      "heavy": 1,
+      "n": 36
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 32,
+      "heavy": 4,
+      "n": 36
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 0,
+      "fit": 31,
+      "heavy": 5,
+      "n": 36
+     }
+    },
+    "3": {
+     "baseline": {
+      "rude": 1,
+      "light": 7,
+      "fit": 37,
+      "heavy": 3,
+      "n": 48
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 1,
+      "fit": 38,
+      "heavy": 9,
+      "n": 48
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 9,
+      "fit": 11,
+      "heavy": 28,
+      "n": 48
+     }
+    },
+    "4": {
+     "baseline": {
+      "rude": 0,
+      "light": 3,
+      "fit": 15,
+      "heavy": 6,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 2,
+      "fit": 11,
+      "heavy": 11,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 1,
+      "fit": 12,
+      "heavy": 11,
+      "n": 24
+     }
+    },
+    "repair": {
+     "baseline": {
+      "rude": 0,
+      "light": 1,
+      "fit": 23,
+      "heavy": 0,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 24,
+      "heavy": 0,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 4,
+      "fit": 20,
+      "heavy": 0,
+      "n": 24
+     }
+    }
+   },
+   "agreement_author": {
+    "majority_exact": 96,
+    "no_majority": 0,
+    "kappa_majority": 0.05,
+    "per_persona_exact": [
+     95,
+     96,
+     95
+    ],
+    "kappa_fit_vs_not": 0.1
+   },
+   "agreement_existing": {
+    "majority_exact": 144,
+    "kappa_majority": 0.371
+   },
+   "inter_persona_fleiss": 0.676,
+   "unanimous": 150,
+   "confusion_author_rows": {
+    "rude": {
+     "fit": 20,
+     "heavy": 7,
+     "light": 5
+    },
+    "light": {
+     "heavy": 8,
+     "fit": 25,
+     "light": 3
+    },
+    "fit": {
+     "fit": 92,
+     "heavy": 23,
+     "light": 8
+    },
+    "heavy": {
+     "heavy": 1
+    }
+   },
+   "perceived_by_design": {
+    "0": {
+     "0": 24
+    },
+    "1": {
+     "1": 24,
+     "3": 12
+    },
+    "2": {
+     "0": 10,
+     "1": 1,
+     "2": 25
+    },
+    "3": {
+     "2": 2,
+     "3": 46
+    },
+    "4": {
+     "3": 24
+    },
+    "repair": {
+     "2": 6,
+     "3": 18
+    }
+   },
+   "perceived_match_author": "114/192",
+   "perceived_match_design": "119/168",
+   "perceived_mean_by_design": {
+    "0": 0.0,
+    "1": 1.67,
+    "2": 1.42,
+    "3": 2.96,
+    "4": 3.0,
+    "repair": 2.75
+   },
+   "checklist": {
+    "baseline": {
+     "hit": 218,
+     "assessable": 3250,
+     "unobservable": 39,
+     "not_applicable": 2087,
+     "rate": 6.71,
+     "top": [
+      [
+       "01.01",
+       40
+      ],
+      [
+       "10.08",
+       29
+      ],
+      [
+       "06.01",
+       28
+      ],
+      [
+       "10.05",
+       21
+      ]
+     ]
+    },
+    "japanese_posture": {
+     "hit": 268,
+     "assessable": 3849,
+     "unobservable": 40,
+     "not_applicable": 1487,
+     "rate": 6.96,
+     "top": [
+      [
+       "01.01",
+       41
+      ],
+      [
+       "10.08",
+       41
+      ],
+      [
+       "06.01",
+       40
+      ],
+      [
+       "10.05",
+       30
+      ]
+     ]
+    },
+    "shazai_full": {
+     "hit": 266,
+     "assessable": 3432,
+     "unobservable": 49,
+     "not_applicable": 1895,
+     "rate": 7.75,
+     "top": [
+      [
+       "01.01",
+       38
+      ],
+      [
+       "10.08",
+       36
+      ],
+      [
+       "10.05",
+       32
+      ],
+      [
+       "06.01",
+       22
+      ]
+     ]
+    }
+   },
+   "checklist_hits_zero_answers": 54,
+   "checklist_mean_hits_by_author": {
+    "rude": 4.28,
+    "light": 4.11,
+    "fit": 3.75,
+    "heavy": 6.0
+   },
+   "checklist_hits_level0_repair": 32,
+   "checklist_vs_existing": {
+    "kappa_hit": 0.106,
+    "both_hit": 53,
+    "this_only": 699,
+    "existing_only": 88
+   }
+  },
+  "gemma-4-31b-it": {
+   "label": "Gemma 4 31B",
+   "by_condition": {
+    "baseline": {
+     "rude": 8,
+     "light": 39,
+     "fit": 122,
+     "heavy": 23,
+     "n": 192
+    },
+    "japanese_posture": {
+     "rude": 0,
+     "light": 13,
+     "fit": 110,
+     "heavy": 69,
+     "n": 192
+    },
+    "shazai_full": {
+     "rude": 5,
+     "light": 51,
+     "fit": 103,
+     "heavy": 33,
+     "n": 192
+    }
+   },
+   "by_level": {
+    "0": {
+     "baseline": {
+      "rude": 0,
+      "light": 0,
+      "fit": 23,
+      "heavy": 1,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 2,
+      "fit": 16,
+      "heavy": 6,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 3,
+      "fit": 21,
+      "heavy": 0,
+      "n": 24
+     }
+    },
+    "1": {
+     "baseline": {
+      "rude": 0,
+      "light": 9,
+      "fit": 21,
+      "heavy": 6,
+      "n": 36
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 5,
+      "heavy": 31,
+      "n": 36
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 11,
+      "fit": 23,
+      "heavy": 2,
+      "n": 36
+     }
+    },
+    "2": {
+     "baseline": {
+      "rude": 0,
+      "light": 11,
+      "fit": 22,
+      "heavy": 3,
+      "n": 36
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 1,
+      "fit": 24,
+      "heavy": 11,
+      "n": 36
+     },
+     "shazai_full": {
+      "rude": 1,
+      "light": 8,
+      "fit": 20,
+      "heavy": 7,
+      "n": 36
+     }
+    },
+    "3": {
+     "baseline": {
+      "rude": 8,
+      "light": 10,
+      "fit": 25,
+      "heavy": 5,
+      "n": 48
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 4,
+      "fit": 35,
+      "heavy": 9,
+      "n": 48
+     },
+     "shazai_full": {
+      "rude": 4,
+      "light": 12,
+      "fit": 11,
+      "heavy": 21,
+      "n": 48
+     }
+    },
+    "4": {
+     "baseline": {
+      "rude": 0,
+      "light": 2,
+      "fit": 16,
+      "heavy": 6,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 4,
+      "fit": 10,
+      "heavy": 10,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 6,
+      "fit": 16,
+      "heavy": 2,
+      "n": 24
+     }
+    },
+    "repair": {
+     "baseline": {
+      "rude": 0,
+      "light": 7,
+      "fit": 15,
+      "heavy": 2,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 2,
+      "fit": 20,
+      "heavy": 2,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 11,
+      "fit": 12,
+      "heavy": 1,
+      "n": 24
+     }
+    }
+   },
+   "agreement_author": {
+    "majority_exact": 82,
+    "no_majority": 10,
+    "kappa_majority": 0.025,
+    "per_persona_exact": [
+     83,
+     83,
+     82
+    ],
+    "kappa_fit_vs_not": 0.121
+   },
+   "agreement_existing": {
+    "majority_exact": 128,
+    "kappa_majority": 0.366
+   },
+   "inter_persona_fleiss": 0.392,
+   "unanimous": 95,
+   "confusion_author_rows": {
+    "rude": {
+     "fit": 14,
+     "heavy": 8,
+     "light": 6,
+     "none": 3,
+     "rude": 1
+    },
+    "light": {
+     "heavy": 10,
+     "fit": 20,
+     "none": 3,
+     "light": 1,
+     "rude": 2
+    },
+    "fit": {
+     "fit": 79,
+     "light": 19,
+     "rude": 1,
+     "heavy": 20,
+     "none": 4
+    },
+    "heavy": {
+     "heavy": 1
+    }
+   },
+   "perceived_by_design": {
+    "0": {
+     "0": 24
+    },
+    "1": {
+     "1": 11,
+     "2": 24,
+     "3": 1
+    },
+    "2": {
+     "1": 5,
+     "2": 31
+    },
+    "3": {
+     "2": 8,
+     "3": 40
+    },
+    "4": {
+     "3": 24
+    },
+    "repair": {
+     "0": 1,
+     "2": 10,
+     "3": 13
+    }
+   },
+   "perceived_match_author": "101/192",
+   "perceived_match_design": "106/168",
+   "perceived_mean_by_design": {
+    "0": 0.0,
+    "1": 1.72,
+    "2": 1.86,
+    "3": 2.83,
+    "4": 3.0,
+    "repair": 2.46
+   },
+   "checklist": {
+    "baseline": {
+     "hit": 90,
+     "assessable": 3914,
+     "unobservable": 146,
+     "not_applicable": 1316,
+     "rate": 2.3,
+     "top": [
+      [
+       "06.01",
+       22
+      ],
+      [
+       "06.08",
+       11
+      ],
+      [
+       "03.05",
+       10
+      ],
+      [
+       "03.01",
+       8
+      ]
+     ]
+    },
+    "japanese_posture": {
+     "hit": 72,
+     "assessable": 4244,
+     "unobservable": 189,
+     "not_applicable": 943,
+     "rate": 1.7,
+     "top": [
+      [
+       "06.01",
+       28
+      ],
+      [
+       "06.08",
+       6
+      ],
+      [
+       "03.05",
+       6
+      ],
+      [
+       "01.01",
+       6
+      ]
+     ]
+    },
+    "shazai_full": {
+     "hit": 58,
+     "assessable": 4017,
+     "unobservable": 198,
+     "not_applicable": 1161,
+     "rate": 1.44,
+     "top": [
+      [
+       "06.01",
+       14
+      ],
+      [
+       "03.05",
+       12
+      ],
+      [
+       "06.08",
+       8
+      ],
+      [
+       "03.01",
+       5
+      ]
+     ]
+    }
+   },
+   "checklist_hits_zero_answers": 100,
+   "checklist_mean_hits_by_author": {
+    "rude": 2.03,
+    "light": 1.28,
+    "fit": 0.88,
+    "heavy": 1.0
+   },
+   "checklist_hits_level0_repair": 0,
+   "checklist_vs_existing": {
+    "kappa_hit": 0.196,
+    "both_hit": 37,
+    "this_only": 183,
+    "existing_only": 104
+   }
+  },
+  "qwen3.8-27b": {
+   "label": "Qwen3.8 27B",
+   "by_condition": {
+    "baseline": {
+     "rude": 5,
+     "light": 29,
+     "fit": 135,
+     "heavy": 23,
+     "n": 192
+    },
+    "japanese_posture": {
+     "rude": 1,
+     "light": 12,
+     "fit": 118,
+     "heavy": 61,
+     "n": 192
+    },
+    "shazai_full": {
+     "rude": 0,
+     "light": 56,
+     "fit": 93,
+     "heavy": 43,
+     "n": 192
+    }
+   },
+   "by_level": {
+    "0": {
+     "baseline": {
+      "rude": 0,
+      "light": 3,
+      "fit": 20,
+      "heavy": 1,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 17,
+      "heavy": 7,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 2,
+      "fit": 22,
+      "heavy": 0,
+      "n": 24
+     }
+    },
+    "1": {
+     "baseline": {
+      "rude": 1,
+      "light": 6,
+      "fit": 24,
+      "heavy": 5,
+      "n": 36
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 1,
+      "fit": 10,
+      "heavy": 25,
+      "n": 36
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 15,
+      "fit": 18,
+      "heavy": 3,
+      "n": 36
+     }
+    },
+    "2": {
+     "baseline": {
+      "rude": 1,
+      "light": 11,
+      "fit": 22,
+      "heavy": 2,
+      "n": 36
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 4,
+      "fit": 24,
+      "heavy": 8,
+      "n": 36
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 5,
+      "fit": 26,
+      "heavy": 5,
+      "n": 36
+     }
+    },
+    "3": {
+     "baseline": {
+      "rude": 3,
+      "light": 5,
+      "fit": 34,
+      "heavy": 6,
+      "n": 48
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 5,
+      "fit": 35,
+      "heavy": 8,
+      "n": 48
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 20,
+      "fit": 5,
+      "heavy": 23,
+      "n": 48
+     }
+    },
+    "4": {
+     "baseline": {
+      "rude": 0,
+      "light": 2,
+      "fit": 15,
+      "heavy": 7,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 1,
+      "light": 2,
+      "fit": 10,
+      "heavy": 11,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 6,
+      "fit": 7,
+      "heavy": 11,
+      "n": 24
+     }
+    },
+    "repair": {
+     "baseline": {
+      "rude": 0,
+      "light": 2,
+      "fit": 20,
+      "heavy": 2,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 22,
+      "heavy": 2,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 8,
+      "fit": 15,
+      "heavy": 1,
+      "n": 24
+     }
+    }
+   },
+   "agreement_author": {
+    "majority_exact": 85,
+    "no_majority": 8,
+    "kappa_majority": 0.005,
+    "per_persona_exact": [
+     88,
+     90,
+     79
+    ],
+    "kappa_fit_vs_not": 0.043
+   },
+   "agreement_existing": {
+    "majority_exact": 141,
+    "kappa_majority": 0.459
+   },
+   "inter_persona_fleiss": 0.327,
+   "unanimous": 87,
+   "confusion_author_rows": {
+    "rude": {
+     "fit": 17,
+     "light": 7,
+     "heavy": 5,
+     "none": 3
+    },
+    "light": {
+     "heavy": 7,
+     "light": 2,
+     "fit": 24,
+     "none": 2,
+     "rude": 1
+    },
+    "fit": {
+     "fit": 82,
+     "heavy": 26,
+     "none": 3,
+     "light": 12
+    },
+    "heavy": {
+     "heavy": 1
+    }
+   },
+   "perceived_by_design": {
+    "0": {
+     "0": 24
+    },
+    "1": {
+     "0": 2,
+     "1": 29,
+     "2": 3,
+     "3": 2
+    },
+    "2": {
+     "2": 31,
+     "3": 5
+    },
+    "3": {
+     "1": 2,
+     "2": 4,
+     "3": 42
+    },
+    "4": {
+     "3": 18,
+     "4": 6
+    },
+    "repair": {
+     "0": 11,
+     "1": 5,
+     "2": 6,
+     "3": 2
+    }
+   },
+   "perceived_match_author": "102/192",
+   "perceived_match_design": "132/168",
+   "perceived_mean_by_design": {
+    "0": 0.0,
+    "1": 1.14,
+    "2": 2.14,
+    "3": 2.83,
+    "4": 3.25,
+    "repair": 0.96
+   },
+   "checklist": {
+    "baseline": {
+     "hit": 124,
+     "assessable": 3544,
+     "unobservable": 499,
+     "not_applicable": 1333,
+     "rate": 3.5,
+     "top": [
+      [
+       "03.05",
+       20
+      ],
+      [
+       "06.01",
+       19
+      ],
+      [
+       "10.08",
+       18
+      ],
+      [
+       "06.08",
+       6
+      ]
+     ]
+    },
+    "japanese_posture": {
+     "hit": 79,
+     "assessable": 3801,
+     "unobservable": 573,
+     "not_applicable": 1002,
+     "rate": 2.08,
+     "top": [
+      [
+       "06.01",
+       25
+      ],
+      [
+       "10.08",
+       14
+      ],
+      [
+       "01.03",
+       13
+      ],
+      [
+       "03.05",
+       5
+      ]
+     ]
+    },
+    "shazai_full": {
+     "hit": 69,
+     "assessable": 3632,
+     "unobservable": 553,
+     "not_applicable": 1191,
+     "rate": 1.9,
+     "top": [
+      [
+       "10.08",
+       15
+      ],
+      [
+       "06.01",
+       12
+      ],
+      [
+       "03.05",
+       6
+      ],
+      [
+       "10.01",
+       6
+      ]
+     ]
+    }
+   },
+   "checklist_hits_zero_answers": 83,
+   "checklist_mean_hits_by_author": {
+    "rude": 1.94,
+    "light": 1.89,
+    "fit": 1.15,
+    "heavy": 1.0
+   },
+   "checklist_hits_level0_repair": 4,
+   "checklist_vs_existing": {
+    "kappa_hit": 0.243,
+    "both_hit": 52,
+    "this_only": 220,
+    "existing_only": 89
+   }
+  },
+  "claude-haiku-5.5": {
+   "label": "Claude Haiku 5.5",
+   "by_condition": {
+    "baseline": {
+     "rude": 10,
+     "light": 45,
+     "fit": 113,
+     "heavy": 24,
+     "n": 192
+    },
+    "japanese_posture": {
+     "rude": 2,
+     "light": 31,
+     "fit": 96,
+     "heavy": 63,
+     "n": 192
+    },
+    "shazai_full": {
+     "rude": 4,
+     "light": 58,
+     "fit": 98,
+     "heavy": 32,
+     "n": 192
+    }
+   },
+   "by_level": {
+    "0": {
+     "baseline": {
+      "rude": 0,
+      "light": 1,
+      "fit": 20,
+      "heavy": 3,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 15,
+      "heavy": 9,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 4,
+      "fit": 20,
+      "heavy": 0,
+      "n": 24
+     }
+    },
+    "1": {
+     "baseline": {
+      "rude": 2,
+      "light": 14,
+      "fit": 17,
+      "heavy": 3,
+      "n": 36
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 0,
+      "fit": 9,
+      "heavy": 27,
+      "n": 36
+     },
+     "shazai_full": {
+      "rude": 1,
+      "light": 17,
+      "fit": 18,
+      "heavy": 0,
+      "n": 36
+     }
+    },
+    "2": {
+     "baseline": {
+      "rude": 1,
+      "light": 11,
+      "fit": 22,
+      "heavy": 2,
+      "n": 36
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 8,
+      "fit": 17,
+      "heavy": 11,
+      "n": 36
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 6,
+      "fit": 24,
+      "heavy": 6,
+      "n": 36
+     }
+    },
+    "3": {
+     "baseline": {
+      "rude": 6,
+      "light": 8,
+      "fit": 26,
+      "heavy": 8,
+      "n": 48
+     },
+     "japanese_posture": {
+      "rude": 2,
+      "light": 15,
+      "fit": 25,
+      "heavy": 6,
+      "n": 48
+     },
+     "shazai_full": {
+      "rude": 3,
+      "light": 17,
+      "fit": 11,
+      "heavy": 17,
+      "n": 48
+     }
+    },
+    "4": {
+     "baseline": {
+      "rude": 1,
+      "light": 7,
+      "fit": 11,
+      "heavy": 5,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 5,
+      "fit": 10,
+      "heavy": 9,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 5,
+      "fit": 11,
+      "heavy": 8,
+      "n": 24
+     }
+    },
+    "repair": {
+     "baseline": {
+      "rude": 0,
+      "light": 4,
+      "fit": 17,
+      "heavy": 3,
+      "n": 24
+     },
+     "japanese_posture": {
+      "rude": 0,
+      "light": 3,
+      "fit": 20,
+      "heavy": 1,
+      "n": 24
+     },
+     "shazai_full": {
+      "rude": 0,
+      "light": 9,
+      "fit": 14,
+      "heavy": 1,
+      "n": 24
+     }
+    }
+   },
+   "agreement_author": {
+    "majority_exact": 76,
+    "no_majority": 10,
+    "kappa_majority": 0.025,
+    "per_persona_exact": [
+     83,
+     81,
+     76
+    ],
+    "kappa_fit_vs_not": 0.066
+   },
+   "agreement_existing": {
+    "majority_exact": 122,
+    "kappa_majority": 0.347
+   },
+   "inter_persona_fleiss": 0.337,
+   "unanimous": 79,
+   "confusion_author_rows": {
+    "rude": {
+     "light": 8,
+     "fit": 14,
+     "heavy": 6,
+     "none": 2,
+     "rude": 2
+    },
+    "light": {
+     "heavy": 9,
+     "fit": 21,
+     "light": 5,
+     "rude": 1
+    },
+    "fit": {
+     "fit": 68,
+     "none": 8,
+     "heavy": 22,
+     "light": 25
+    },
+    "heavy": {
+     "heavy": 1
+    }
+   },
+   "perceived_by_design": {
+    "0": {
+     "0": 24
+    },
+    "1": {
+     "0": 8,
+     "1": 16,
+     "2": 12
+    },
+    "2": {
+     "1": 25,
+     "2": 11
+    },
+    "3": {
+     "3": 43,
+     "4": 5
+    },
+    "4": {
+     "3": 24
+    },
+    "repair": {
+     "1": 9,
+     "2": 6,
+     "3": 9
+    }
+   },
+   "perceived_match_author": "77/192",
+   "perceived_match_design": "94/168",
+   "perceived_mean_by_design": {
+    "0": 0.0,
+    "1": 1.11,
+    "2": 1.31,
+    "3": 3.1,
+    "4": 3.0,
+    "repair": 2.0
+   },
+   "checklist": {
+    "baseline": {
+     "hit": 63,
+     "assessable": 3310,
+     "unobservable": 253,
+     "not_applicable": 1813,
+     "rate": 1.9,
+     "top": [
+      [
+       "03.05",
+       15
+      ],
+      [
+       "06.01",
+       12
+      ],
+      [
+       "10.08",
+       7
+      ],
+      [
+       "06.02",
+       3
+      ]
+     ]
+    },
+    "japanese_posture": {
+     "hit": 61,
+     "assessable": 3932,
+     "unobservable": 296,
+     "not_applicable": 1148,
+     "rate": 1.55,
+     "top": [
+      [
+       "06.01",
+       18
+      ],
+      [
+       "03.05",
+       10
+      ],
+      [
+       "10.01",
+       5
+      ],
+      [
+       "10.08",
+       5
+      ]
+     ]
+    },
+    "shazai_full": {
+     "hit": 33,
+     "assessable": 3403,
+     "unobservable": 324,
+     "not_applicable": 1649,
+     "rate": 0.97,
+     "top": [
+      [
+       "06.01",
+       8
+      ],
+      [
+       "10.01",
+       5
+      ],
+      [
+       "10.06",
+       5
+      ],
+      [
+       "10.08",
+       3
+      ]
+     ]
+    }
+   },
+   "checklist_hits_zero_answers": 110,
+   "checklist_mean_hits_by_author": {
+    "rude": 1.31,
+    "light": 1.17,
+    "fit": 0.59,
+    "heavy": 0.0
+   },
+   "checklist_hits_level0_repair": 14,
+   "checklist_vs_existing": {
+    "kappa_hit": 0.214,
+    "both_hit": 33,
+    "this_only": 124,
+    "existing_only": 108
+   }
+  }
+ },
+ "signature_cases": {
+  "bullets": [
+   {
+    "run": "claude-opus-5.5",
+    "condition": "japanese_posture",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": false,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "light",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "claude-opus-5.5",
+    "condition": "shazai_full",
+    "author": "rude",
+    "existing": "heavy",
+    "existing:10.06": true,
+    "jev-latest": "heavy",
+    "jev-latest:10.06": false,
+    "gemma-4-31b-it": "heavy",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "heavy",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "heavy",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "claude-opus-5.5",
+    "condition": "baseline",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": false,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "fit",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "gpt-6.1-sol",
+    "condition": "baseline",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": false,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "fit",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "gpt-6.1-sol",
+    "condition": "japanese_posture",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": false,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "light",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "gpt-6.1-sol",
+    "condition": "shazai_full",
+    "author": "rude",
+    "existing": "light",
+    "existing:10.06": true,
+    "jev-latest": "light",
+    "jev-latest:10.06": true,
+    "gemma-4-31b-it": "light",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "light",
+    "qwen3.8-27b:10.06": true,
+    "claude-haiku-5.5": "light",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "muse-wonder",
+    "condition": "baseline",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": false,
+    "gemma-4-31b-it": "light",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "light",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "muse-wonder",
+    "condition": "shazai_full",
+    "author": "rude",
+    "existing": "light",
+    "existing:10.06": true,
+    "jev-latest": "heavy",
+    "jev-latest:10.06": true,
+    "gemma-4-31b-it": "heavy",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "light",
+    "qwen3.8-27b:10.06": true,
+    "claude-haiku-5.5": "heavy",
+    "claude-haiku-5.5:10.06": true
+   },
+   {
+    "run": "muse-wonder",
+    "condition": "japanese_posture",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": false,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "fit",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "gemini-4-hydrogen",
+    "condition": "shazai_full",
+    "author": "rude",
+    "existing": "light",
+    "existing:10.06": true,
+    "jev-latest": "heavy",
+    "jev-latest:10.06": true,
+    "gemma-4-31b-it": "heavy",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "light",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": null,
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "gemini-4-hydrogen",
+    "condition": "baseline",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "light",
+    "jev-latest:10.06": false,
+    "gemma-4-31b-it": "light",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "light",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "gemini-4-hydrogen",
+    "condition": "japanese_posture",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": false,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": null,
+    "claude-haiku-5.5:10.06": false
+   }
+  ],
+  "taninngoto": [
+   {
+    "run": "claude-opus-5.5",
+    "condition": "baseline",
+    "author": "rude",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": false,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "heavy",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "claude-opus-5.5",
+    "condition": "shazai_full",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": true,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "heavy",
+    "qwen3.8-27b:10.06": true,
+    "claude-haiku-5.5": null,
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "claude-opus-5.5",
+    "condition": "japanese_posture",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": true,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": null,
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "fit",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "gpt-6.1-sol",
+    "condition": "japanese_posture",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": false,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "fit",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "gpt-6.1-sol",
+    "condition": "shazai_full",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": true,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": null,
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "gpt-6.1-sol",
+    "condition": "baseline",
+    "author": "light",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": true,
+    "gemma-4-31b-it": "heavy",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "heavy",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "heavy",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "muse-wonder",
+    "condition": "shazai_full",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": true,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "heavy",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "heavy",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "muse-wonder",
+    "condition": "baseline",
+    "author": "light",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": true,
+    "gemma-4-31b-it": null,
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "fit",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "muse-wonder",
+    "condition": "japanese_posture",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": false,
+    "gemma-4-31b-it": null,
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "fit",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "gemini-4-hydrogen",
+    "condition": "shazai_full",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": true,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "heavy",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "fit",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "gemini-4-hydrogen",
+    "condition": "baseline",
+    "author": "fit",
+    "existing": "fit",
+    "existing:10.06": false,
+    "jev-latest": "fit",
+    "jev-latest:10.06": true,
+    "gemma-4-31b-it": "fit",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "fit",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "light",
+    "claude-haiku-5.5:10.06": false
+   },
+   {
+    "run": "gemini-4-hydrogen",
+    "condition": "japanese_posture",
+    "author": "light",
+    "existing": "heavy",
+    "existing:10.06": false,
+    "jev-latest": "heavy",
+    "jev-latest:10.06": true,
+    "gemma-4-31b-it": "heavy",
+    "gemma-4-31b-it:10.06": false,
+    "qwen3.8-27b": "heavy",
+    "qwen3.8-27b:10.06": false,
+    "claude-haiku-5.5": "heavy",
+    "claude-haiku-5.5:10.06": false
+   }
+  ]
+ },
+ "jev_soft": {
+  "baseline": {
+   "rude": 0.027,
+   "light": 0.18,
+   "fit": 0.646,
+   "heavy": 0.147
+  },
+  "japanese_posture": {
+   "rude": 0.007,
+   "light": 0.088,
+   "fit": 0.625,
+   "heavy": 0.28
+  },
+  "shazai_full": {
+   "rude": 0.013,
+   "light": 0.238,
+   "fit": 0.534,
+   "heavy": 0.215
+  }
+ }
+}
