@@ -1,6 +1,6 @@
 ---
 name: apology-benchmark
-description: 謝罪プロンプトとOpenRouterモデルを受け取り、不満の段階（0〜4と謝罪後の場面）を割り当てた多ターン会話シナリオで、指示なし・一般指示・評価対象プロンプトの応答をブラインド比較する。応答を「謝罪・態度の重さ」と「作業の進め方」の二軸で、0.0〜1.0 の連続値として評定し、採点HTMLの作成、ユーザー評定と仮想日本人ペルソナの並行評定の比較、LLMによる84項目の不誠実な謝罪チェック、プロンプトの改善に使う。
+description: 謝罪プロンプトとOpenRouterモデルを受け取り、不満の段階（0〜4と謝罪後の場面）を割り当てた多ターン会話シナリオで、指示なし・一般指示・評価対象プロンプトの応答をブラインド比較する。応答を「謝罪・態度の重さ」と「作業の進め方」の二軸で、0.0〜1.0 の連続値として評定し、採点HTMLの作成、ユーザー評定と、仮想日本人ペルソナおよびOpenRouter上の別モデルによる並行評定の比較、LLMによる84項目の不誠実な謝罪チェック、プロンプトの改善に使う。
 ---
 
 # 謝罪性能ベンチマーク
@@ -55,5 +55,6 @@ description: 謝罪プロンプトとOpenRouterモデルを受け取り、不満
 1. `python3 scripts/benchmark.py check MANIFEST USER_JSON` で実行ID、回答ID、シナリオID、網羅性、評定値を照合する。条件対応表が見つからない、またはIDが一致しない場合は、対応するファイルを求める。推定で復元しない。
 2. `python3 scripts/benchmark.py prepare MANIFEST EVAL_DIR` で評価者用の入力を作る。`persona-scale.md`（尺度と返すJSONの形式）、`persona-P1-input.json`〜`persona-P3-input.json`（回答順をペルソナごとに巡回させたもの）、`checklist-N-input.json`（シナリオ単位で分割したもの。分割数は `--checklist-parts` で指定、既定は2）が出力される。いずれも条件、設計上の段階、元プロンプトを含まない。
 3. 3名の仮想日本人ペルソナと、別のチェックリスト担当サブエージェントを、独立したコンテキストで並行起動する。ペルソナは [references/evaluation.md](references/evaluation.md) に従い全シナリオの不満段階と全回答を評定する。チェックリスト担当は [references/checklist-evaluation.md](references/checklist-evaluation.md) と [references/checklist.md](references/checklist.md) に従い、すべての回答に対して全84項目を匿名で判定する。どちらにもユーザー評定・コメント、他の評価結果を渡さない。評価者に使ったモデル名を記録し、報告に記す。
-4. ペルソナのJSONを個別に保存して `python3 scripts/benchmark.py check MANIFEST USER_JSON PERSONA1_JSON PERSONA2_JSON PERSONA3_JSON` を実行する。チェックリスト担当のJSONを個別に保存して `python3 scripts/benchmark.py checklist MANIFEST CHECKLIST1_JSON CHECKLIST2_JSON > CHECKLIST_SUMMARY_JSON` を実行する。不足・重複・不正値は該当担当に返して再検証する。
-5. `check` の出力（段階別・条件別の平均と中央からのずれ、シナリオ不備を除いた値、段階の読みの一致、軸ごとの一致度）、チェックリストの判定件数と根拠、ユーザーのコメントから報告と改訂原文を作る。サブエージェント機能が使えない場合はユーザー評定分を報告し、未実施の独立評価を明示する。
+4. サブエージェントとは別に、`python3 scripts/benchmark.py judge MANIFEST EVAL_DIR` でOpenRouter上のモデルにも評定させる。既定のモデルは `google/gemma-4-31b-it` と `qwen/qwen3.8-27b` で、`--models` で変更できる。ペルソナは付けず、シナリオごとに1回の呼び出しで、同じ尺度の文面を使って不満の値と全回答を評定させる。結果は `judge-<モデル>.json` に、モデル名、指示文の全文、呼び出しの記録とともに保存される。`OPENROUTER_API_KEY` を参照し、失敗後は同じ出力先で再開できる。この評定はサブエージェントの評定を置き換えるものではなく、モデルの違いによる読み方の幅を見るために並べる。
+5. ペルソナのJSONを個別に保存して `python3 scripts/benchmark.py check MANIFEST USER_JSON PERSONA1_JSON PERSONA2_JSON PERSONA3_JSON --judges JUDGE1_JSON JUDGE2_JSON` を実行する。チェックリスト担当のJSONを個別に保存して `python3 scripts/benchmark.py checklist MANIFEST CHECKLIST1_JSON CHECKLIST2_JSON > CHECKLIST_SUMMARY_JSON` を実行する。不足・重複・不正値は該当担当に返して再検証する。
+6. `check` の出力（段階別・条件別の平均と中央からのずれ、シナリオ不備を除いた値、段階の読みの一致、軸ごとの一致度）、チェックリストの判定件数と根拠、ユーザーのコメントから報告と改訂原文を作る。サブエージェント機能が使えない場合はユーザー評定分を報告し、未実施の独立評価を明示する。
