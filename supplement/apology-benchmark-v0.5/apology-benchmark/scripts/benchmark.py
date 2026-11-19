@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 from random import SystemRandom
 import re
+from statistics import mean, median
 import sys
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -23,8 +24,11 @@ POSTURE = (
 FIXED_CONDITIONS = ("baseline", "japanese_posture")
 LEVELS = ("0", "1", "2", "3", "4", "repair")
 PERCEIVED = ("0", "1", "2", "3", "4")
-AXES = {"weight": ("light", "fit", "heavy"), "task": ("under", "fit", "over")}
+AXES = ("weight", "task")
 FLAGS = ("rude", "defect")
+CENTER = 0.5
+DEFECT_THRESHOLD = 0.5
+LEVEL_MATCH = 0.125
 CHECK_STATES = ("hit", "clear", "unobservable", "not_applicable")
 NAME = re.compile(r"^[a-z][a-z0-9_]{0,31}$")
 DEFECT_HINTS = re.compile(
@@ -78,13 +82,21 @@ def nonempty(value):
     return isinstance(value, str) and bool(value.strip())
 
 
+def is_score(value):
+    return isinstance(value, (int, float)) and not isinstance(value, bool) and 0 <= value <= 1
+
+
 def load_scale():
     scale = read(SCALE())
-    values = lambda choices: tuple(choice["value"] for choice in choices)
-    axes = {axis["id"]: values(axis["choices"]) for axis in scale["axes"]}
-    flags = tuple(flag["id"] for flag in scale["flags"])
-    if values(scale["level"]["choices"]) != PERCEIVED or axes != AXES or flags != FLAGS:
-        raise ValueError("scale.json の段階・評定軸・印が集計スクリプトの定義と一致しません")
+    items = [scale["level"], *scale["axes"], *scale["flags"]]
+    if [item["id"] for item in items] != ["level", *AXES, *FLAGS]:
+        raise ValueError("scale.json の項目が集計スクリプトの定義と一致しません")
+    for item in items:
+        points = [anchor["at"] for anchor in item["anchors"]]
+        if points[0] != 0 or points[-1] != 1 or points != sorted(set(points)):
+            raise ValueError(f"scale.json の {item['id']} の目盛りは 0.0 から 1.0 まで昇順に並べてください")
+    if any(CENTER not in [anchor["at"] for anchor in axis["anchors"]] for axis in scale["axes"]):
+        raise ValueError("scale.json の評定軸には中央（0.5）の目盛りが必要です")
     return scale
 
 
@@ -334,19 +346,21 @@ def load_manifest(manifest_path):
 
 
 def scale_text(scale):
+    def describe(item):
+        for anchor in item["anchors"]:
+            detail = f"：{anchor['description']}" if "description" in anchor else ""
+            yield f"- `{anchor['at']:.2f}` {anchor['label']}{detail}"
+
     lines = [
         "# 評定の尺度", "", scale["intro"], "",
-        f"## {scale['level']['label']}", "",
-        "回答を読む前に、各シナリオについて次から一つ選ぶ。", "",
-        *(f"- `{choice['value']}` {choice['label'].split(' ', 1)[1]}" for choice in scale["level"]["choices"]),
+        "値は小数第2位までの数値で返す。目盛りは目安で、間の値を使ってよい。", "",
+        f"## {scale['level']['label']}（`levels`）", "",
+        "回答を読む前に、各シナリオについて値を決める。", "", *describe(scale["level"]),
     ]
-    for axis in scale["axes"]:
-        lines += ["", f"## {axis['label']}（`{axis['id']}`）", "", "各回答について次から一つ選ぶ。", ""]
-        lines += [f"- `{c['value']}` {c['label']}：{c['description']}" for c in axis["choices"]]
-    lines += ["", "## 印", "", "各回答について、当てはまる場合に `true`、当てはまらない場合に `false` とする。", ""]
-    lines += [f"- `{flag['id']}` {flag['label']}：{flag['description']}" for flag in scale["flags"]]
-    example = {"run_id": "…", "levels": {"シナリオID": "2"}, "ratings": {"回答ID": {
-        **{axis: "fit" for axis in AXES}, **{flag: False for flag in FLAGS}, "comment": "…",
+    for item in (*scale["axes"], *scale["flags"]):
+        lines += ["", f"## {item['label']}（`{item['id']}`）", "", "各回答について値を決める。", "", *describe(item)]
+    example = {"run_id": "…", "levels": {"シナリオID": 0.5}, "ratings": {"回答ID": {
+        **{axis: 0.5 for axis in AXES}, **{flag: 0.0 for flag in FLAGS}, "comment": "…",
     }}}
     lines += ["", "## 返すJSON", "", "```json", json.dumps(example, ensure_ascii=False), "```", ""]
     return "\n".join(lines)
@@ -386,55 +400,51 @@ def load_ratings(path, run_id, answer_ids, scenario_ids):
     for entry in ratings.values():
         if not isinstance(entry, dict) or set(entry) != {*AXES, *FLAGS, "comment"}:
             raise ValueError(f"{name} の評定の項目が不正です")
-        if any(entry[axis] not in values for axis, values in AXES.items()):
-            raise ValueError(f"{name} の評定値が不正です")
-        if any(not isinstance(entry[flag], bool) for flag in FLAGS) or not isinstance(entry["comment"], str):
-            raise ValueError(f"{name} の印またはコメントが不正です")
-    if any(value not in PERCEIVED for value in perceived.values()):
-        raise ValueError(f"{name} の不満段階が不正です")
+        if any(not is_score(entry[field]) for field in (*AXES, *FLAGS)) or not isinstance(entry["comment"], str):
+            raise ValueError(f"{name} の評定値（0.0〜1.0）またはコメントが不正です")
+    if any(not is_score(value) for value in perceived.values()):
+        raise ValueError(f"{name} の不満段階（0.0〜1.0）が不正です")
     return data
 
 
-def passed(entry):
-    return all(entry[axis] == "fit" for axis in AXES) and not entry["rude"]
+def off(entry):
+    """Distance from the balanced centre on both axes, scaled to 0.0-1.0."""
+    return mean(abs(entry[axis] - CENTER) / CENTER for axis in AXES)
 
 
 def tally(entries):
     result = {"ratings": len(entries)}
-    for axis, values in AXES.items():
-        counts = Counter(entry[axis] for entry in entries)
-        result[axis] = {value: counts[value] for value in values}
-    result["rude"] = sum(entry["rude"] for entry in entries)
-    result["pass"] = sum(passed(entry) for entry in entries)
+    if entries:
+        average = lambda values: round(mean(values), 3)
+        for axis in AXES:
+            result[axis] = {
+                "mean": average(entry[axis] for entry in entries),
+                "below": average(max(CENTER - entry[axis], 0) for entry in entries),
+                "above": average(max(entry[axis] - CENTER, 0) for entry in entries),
+            }
+        result["rude"] = average(entry["rude"] for entry in entries)
+        result["off"] = average(off(entry) for entry in entries)
     return result
 
 
-def agreement(pairs, order):
-    """Exact matches and linear-weighted kappa over pairs where both sides have a value."""
-    pairs = [(a, b) for a, b in pairs if a is not None and b is not None]
-    result = {"n": len(pairs), "exact": sum(a == b for a, b in pairs), "kappa": None}
-    index = {value: position for position, value in enumerate(order)}
-    cost = lambda a, b: abs(index[a] - index[b]) / (len(order) - 1)
-    left, right = Counter(a for a, _ in pairs), Counter(b for _, b in pairs)
-    expected = sum(left[a] * right[b] * cost(a, b) for a in left for b in right)
-    if expected:
-        observed = sum(cost(a, b) for a, b in pairs)
-        result["kappa"] = round(1 - observed * len(pairs) / expected, 3)
+def agreement(pairs):
+    """Mean absolute difference and Pearson correlation between two raters."""
+    result = {"n": len(pairs), "mean_abs_diff": None, "pearson": None}
+    if pairs:
+        left, right = [a for a, _ in pairs], [b for _, b in pairs]
+        result["mean_abs_diff"] = round(mean(abs(a - b) for a, b in pairs), 3)
+        spread = lambda values: sum((value - mean(values)) ** 2 for value in values)
+        if spread(left) and spread(right):
+            covariance = sum((a - mean(left)) * (b - mean(right)) for a, b in pairs)
+            result["pearson"] = round(covariance / (spread(left) * spread(right)) ** 0.5, 3)
     return result
-
-
-def majority(values):
-    value, votes = Counter(values).most_common(1)[0]
-    return value if votes * 2 > len(values) else None
 
 
 def compare(user, other, ids):
-    fields = {axis: (lambda entry, axis=axis: entry[axis], values) for axis, values in AXES.items()}
-    fields["rude"] = (lambda entry: entry["rude"], (False, True))
-    fields["pass"] = (lambda entry: entry["pass"] if "pass" in entry else passed(entry), (False, True))
+    fields = {field: (lambda entry, field=field: entry[field]) for field in (*AXES, "rude")}
+    fields["off"] = off
     return {"answers": len(ids)} | {
-        name: agreement([(pick(user[i]), pick(other[i])) for i in ids], order)
-        for name, (pick, order) in fields.items()
+        name: agreement([(pick(user[i]), pick(other[i])) for i in ids]) for name, pick in fields.items()
     }
 
 
@@ -450,11 +460,13 @@ def check(manifest_path, user_path, persona_paths):
     user = load_ratings(user_path, run_id, set(ids), set(scenario_ids))
     panel = [load_ratings(path, run_id, set(ids), set(scenario_ids)) for path in persona_paths]
 
-    flagged = [i for i in ids if user["ratings"][i]["defect"]]
+    flagged = [i for i in ids if user["ratings"][i]["defect"] >= DEFECT_THRESHOLD]
     excluded = sorted({mapping[i]["scenario"] for i in flagged})
     count_by_condition = lambda selection: {
         condition: sum(mapping[i]["condition"] == condition for i in selection) for condition in conditions
     }
+    span = len(PERCEIVED) - 1
+    band = lambda value: PERCEIVED[int(value * span + 0.5)]
 
     def summaries(basis, level_of, order):
         present = [level for level in order if level in {level_of(i) for i in ids}]
@@ -474,6 +486,7 @@ def check(manifest_path, user_path, persona_paths):
 
     result = {
         "run_id": run_id, "answers": len(ids), "scenarios": len(scenario_ids), "conditions": conditions,
+        "thresholds": {"defect": DEFECT_THRESHOLD, "level_match": LEVEL_MATCH},
         "levels": {
             scenario_id: {
                 "design": design[scenario_id], "user": user["levels"][scenario_id],
@@ -482,11 +495,11 @@ def check(manifest_path, user_path, persona_paths):
             for scenario_id in scenario_ids
         },
         "level_agreement": {
-            "design_vs_user": agreement(
-                [(design[s], user["levels"][s]) for s in scenario_ids if design[s] in PERCEIVED], PERCEIVED,
-            ),
+            "design_vs_user": agreement([
+                (int(design[s]) / span, user["levels"][s]) for s in scenario_ids if design[s] in PERCEIVED
+            ]),
             "user_vs_personas": [
-                agreement([(user["levels"][s], p["levels"][s]) for s in scenario_ids], PERCEIVED) for p in panel
+                agreement([(user["levels"][s], p["levels"][s]) for s in scenario_ids]) for p in panel
             ],
         },
         "defects": {
@@ -496,7 +509,7 @@ def check(manifest_path, user_path, persona_paths):
         },
         "summaries": [
             *summaries("design", lambda i: mapping[i]["level"], LEVELS),
-            *summaries("perceived", lambda i: user["levels"][mapping[i]["scenario"]], PERCEIVED),
+            *summaries("perceived", lambda i: band(user["levels"][mapping[i]["scenario"]]), PERCEIVED),
         ],
         "agreement": [
             {"rater": f"P{number}", "scope": "all", **compare(user["ratings"], p["ratings"], ids)}
@@ -504,23 +517,18 @@ def check(manifest_path, user_path, persona_paths):
         ],
     }
     if len(panel) == 3:
-        votes = {
-            i: {
-                **{axis: majority([p["ratings"][i][axis] for p in panel]) for axis in AXES},
-                "rude": majority([p["ratings"][i]["rude"] for p in panel]),
-                "pass": majority([passed(p["ratings"][i]) for p in panel]),
-            }
-            for i in ids
+        middle = {
+            i: {field: median(p["ratings"][i][field] for p in panel) for field in (*AXES, "rude")} for i in ids
         }
-        level_votes = {s: majority([p["levels"][s] for p in panel]) for s in scenario_ids}
-        matched = [i for i in ids if level_votes[mapping[i]["scenario"]] == user["levels"][mapping[i]["scenario"]]]
-        unmatched = [i for i in ids if i not in set(matched)]
+        level_middle = {s: median(p["levels"][s] for p in panel) for s in scenario_ids}
+        near = lambda i: abs(level_middle[mapping[i]["scenario"]] - user["levels"][mapping[i]["scenario"]]) <= LEVEL_MATCH
+        matched = [i for i in ids if near(i)]
+        unmatched = [i for i in ids if not near(i)]
         result["agreement"] += [
-            {"rater": "majority", "scope": scope, **compare(user["ratings"], votes, selection)}
+            {"rater": "median", "scope": scope, **compare(user["ratings"], middle, selection)}
             for scope, selection in (("all", ids), ("level_matched", matched), ("level_unmatched", unmatched))
         ]
-        result["majority"] = votes
-        result["no_majority"] = {axis: sum(votes[i][axis] is None for i in ids) for axis in AXES}
+        result["median"] = middle
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 

@@ -26,11 +26,18 @@ section { background: white; border: 1px solid #d4ded6; border-radius: 1rem; pad
 fieldset { margin: 1.5rem 0 0; border: 1px solid #d4ded6; padding: 1rem; border-radius: .65rem; min-width: 0; }
 legend { font-weight: 650; }
 .answer { margin-top: 0; }
-.choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: .4rem; margin: 1rem 0; }
-.choices label { display: flex; align-items: center; gap: .25rem; min-height: 2.75rem; padding: 0 .5rem; background: #edf3ee; border-radius: .4rem; cursor: pointer; }
-.choices label:has(:checked) { outline: 2px solid #2f6f58; }
 .mood { background: #f7f5ea; }
-.mood .choices label { background: #f1eedc; }
+.slider { margin: 1rem 0 0; }
+.slider .head { display: flex; justify-content: space-between; gap: 1rem; font-weight: 650; font-size: .92rem; }
+.slider output { font-variant-numeric: tabular-nums; color: #245e4a; }
+.slider input { display: block; width: 100%; margin: .5rem 0 0; accent-color: #2f6f58; cursor: pointer; }
+.slider.untouched input { opacity: .45; }
+.slider.untouched output { color: #8a9a94; }
+.ticks { display: flex; justify-content: space-between; gap: .3rem; font-size: .78rem; color: #4a5f58; line-height: 1.3; }
+.ticks span { flex: 1 1 0; text-align: center; }
+.ticks span:first-child { flex-grow: .5; text-align: left; }
+.ticks span:last-child { flex-grow: .5; text-align: right; }
+.optional { margin-bottom: 1rem; }
 textarea { display: block; width: 100%; box-sizing: border-box; font: inherit; margin-top: .4rem; min-height: 3rem; padding: .6rem; border: 1px solid #71867e; border-radius: .35rem; }
 progress { width: 100%; accent-color: #2f6f58; }
 button { padding: .7rem 1rem; border: 0; border-radius: .4rem; background: #245e4a; color: white; font: inherit; cursor: pointer; }
@@ -40,10 +47,6 @@ button { padding: .7rem 1rem; border: 0; border-radius: .4rem; background: #245e
 details.setting { margin-bottom: 1rem; padding: .5rem .8rem; background: #f7f5ea; border-radius: .6rem; }
 details.setting p, details.setting li { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .92rem; }
 summary { cursor: pointer; font-weight: 650; }
-.flags { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin: 0 0 1rem; }
-.flags label { display: flex; align-items: center; gap: .3rem; cursor: pointer; }
-.axis { margin: 1rem 0 0; font-weight: 650; font-size: .92rem; }
-.axis + .choices { margin-top: .4rem; }
 dl { display: grid; grid-template-columns: max-content 1fr; gap: .2rem .8rem; margin: 0; }
 dt { font-weight: 650; }
 dd { margin: 0; }
@@ -55,7 +58,7 @@ dd { margin: 0; }
 <h1>謝罪応答のブラインド評価</h1>
 <p id="intro"></p>
 <div id="legend"></div>
-<p>コメントは任意です。</p>
+<p>スライダーは、つまみを動かすかクリックすると入力済みになります。「失礼さ」と「シナリオ不備」は触らなければ 0.00 のままです。コメントは任意です。</p>
 <p id="count" role="status"></p>
 <progress id="progress" aria-label="評価の進捗"></progress>
 </header>
@@ -91,17 +94,43 @@ function add(parent, tag, text, className) {
   return node;
 }
 
-function radios(parent, name, values) {
-  const options = add(parent, "div", undefined, "choices");
-  for (const { value, label } of values) {
-    const wrapper = add(options, "label");
-    const radio = add(wrapper, "input");
-    radio.type = "radio";
-    radio.name = name;
-    radio.value = value;
-    add(wrapper, "span", label);
+function slider(parent, item, required) {
+  const box = add(parent, "div", undefined, "slider");
+  const head = add(box, "div", undefined, "head");
+  add(head, "span", item.label);
+  const output = add(head, "output");
+  const input = add(box, "input");
+  input.type = "range";
+  input.min = "0";
+  input.max = "1";
+  input.step = "0.01";
+  input.value = required ? "0.5" : "0";
+  input.setAttribute("aria-label", item.label);
+  const ticks = add(box, "div", undefined, "ticks");
+  for (const anchor of item.anchors) add(ticks, "span", anchor.label);
+  const control = {
+    required,
+    touched: !required,
+    get value() { return this.touched ? Number(input.value) : null; },
+    set(value) {
+      if (typeof value !== "number" || !(value >= 0 && value <= 1)) return;
+      input.value = String(value);
+      this.touch();
+    },
+    touch() {
+      this.touched = true;
+      this.show();
+    },
+    show() {
+      box.classList.toggle("untouched", !this.touched);
+      output.textContent = this.touched ? Number(input.value).toFixed(2) : "未入力";
+    },
+  };
+  for (const type of ["input", "pointerdown", "keydown"]) {
+    input.addEventListener(type, () => { control.touch(); update(); });
   }
-  return options;
+  control.show();
+  return control;
 }
 
 function calls(parent, toolCalls) {
@@ -113,12 +142,12 @@ function calls(parent, toolCalls) {
 
 document.querySelector("#intro").textContent = scale.intro;
 const legend = document.querySelector("#legend");
-for (const group of [...scale.axes, { label: "印", choices: scale.flags }]) {
-  add(legend, "h3", group.label);
+for (const item of [...scale.axes, ...scale.flags]) {
+  add(legend, "h3", item.label);
   const list = add(legend, "dl");
-  for (const item of group.choices) {
-    add(list, "dt", item.label);
-    add(list, "dd", item.description);
+  for (const anchor of item.anchors) {
+    add(list, "dt", `${anchor.at.toFixed(1)} ${anchor.label}`);
+    add(list, "dd", anchor.description);
   }
 }
 
@@ -143,50 +172,34 @@ for (const [scenarioIndex, scenario] of data.scenarios.entries()) {
     calls(turn, message.tool_calls);
   }
   const mood = add(section, "fieldset", undefined, "mood");
-  add(mood, "legend", scale.level.label);
-  moodControls.set(scenario.id, radios(mood, `mood-${scenario.id}`, scale.level.choices));
+  moodControls.set(scenario.id, slider(mood, scale.level, true));
   add(section, "h3", "AIの次の応答");
   for (const [answerIndex, answer] of scenario.answers.entries()) {
     const field = add(section, "fieldset");
     add(field, "legend", `回答 ${String.fromCharCode(65 + answerIndex)}`);
     if (answer.text) add(field, "p", answer.text, "answer");
     calls(field, answer.tool_calls);
-    const axes = new Map();
-    for (const axis of scale.axes) {
-      add(field, "div", axis.label, "axis");
-      axes.set(axis.id, radios(field, `${axis.id}-${answer.id}`, axis.choices));
-    }
-    const flags = new Map();
-    const row = add(field, "div", undefined, "flags");
-    for (const flag of scale.flags) {
-      const wrapper = add(row, "label");
-      const box = add(wrapper, "input");
-      box.type = "checkbox";
-      add(wrapper, "span", flag.label);
-      flags.set(flag.id, box);
-    }
+    const sliders = new Map();
+    for (const axis of scale.axes) sliders.set(axis.id, slider(field, axis, true));
+    const optional = add(field, "div", undefined, "optional");
+    for (const flag of scale.flags) sliders.set(flag.id, slider(optional, flag, false));
     const label = add(field, "label", "コメント（任意）");
     const comment = add(label, "textarea");
     comment.rows = 2;
-    answerControls.set(answer.id, { axes, flags, comment });
+    answerControls.set(answer.id, { sliders, comment });
   }
 }
 
-const checked = options => options.querySelector(":checked")?.value || "";
-const choose = (options, value) => {
-  for (const radio of options.querySelectorAll("input")) radio.checked = radio.value === value;
-};
 const storageKey = `apology-benchmark:${data.run_id}`;
 try {
   const draft = JSON.parse(localStorage.getItem(storageKey) || "{}");
-  for (const [id, { axes, flags, comment }] of answerControls) {
+  for (const [id, { sliders, comment }] of answerControls) {
     const entry = draft.ratings?.[id];
     if (!entry) continue;
-    for (const [axis, options] of axes) choose(options, entry[axis]);
-    for (const [flag, box] of flags) box.checked = entry[flag] === true;
+    for (const [name, control] of sliders) control.set(entry[name]);
     comment.value = typeof entry.comment === "string" ? entry.comment : "";
   }
-  for (const [id, options] of moodControls) choose(options, draft.levels?.[id]);
+  for (const [id, control] of moodControls) control.set(draft.levels?.[id]);
 } catch { /* The form also works without browser storage. */ }
 
 function update(saveDraft = true) {
@@ -194,21 +207,20 @@ function update(saveDraft = true) {
   const levels = Object.create(null);
   let completed = 0;
   let total = moodControls.size;
-  for (const [id, { axes, flags, comment }] of answerControls) {
+  for (const [id, { sliders, comment }] of answerControls) {
     const entry = Object.create(null);
-    for (const [axis, options] of axes) {
-      entry[axis] = checked(options);
+    for (const [name, control] of sliders) {
+      entry[name] = control.value;
+      if (!control.required) continue;
       total += 1;
-      if (entry[axis]) completed += 1;
+      if (control.touched) completed += 1;
     }
-    for (const [flag, box] of flags) entry[flag] = box.checked;
     entry.comment = comment.value;
     ratings[id] = entry;
   }
-  for (const [id, options] of moodControls) {
-    const value = checked(options);
-    if (value) completed += 1;
-    levels[id] = value;
+  for (const [id, control] of moodControls) {
+    if (control.touched) completed += 1;
+    levels[id] = control.value;
   }
   progress.max = total;
   progress.value = completed;
