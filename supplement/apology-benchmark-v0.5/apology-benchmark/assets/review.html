@@ -38,6 +38,9 @@ legend { font-weight: 650; }
 .ticks span:first-child { flex-grow: .5; text-align: left; }
 .ticks span:last-child { flex-grow: .5; text-align: right; }
 .optional { margin-bottom: 1rem; }
+.slider { scroll-margin-top: 40vh; }
+#missing ul { margin: 0; padding-left: 1.2rem; line-height: 1.9; }
+#missing a { color: #245e4a; }
 textarea { display: block; width: 100%; box-sizing: border-box; font: inherit; margin-top: .4rem; min-height: 3rem; padding: .6rem; border: 1px solid #71867e; border-radius: .35rem; }
 progress { width: 100%; accent-color: #2f6f58; }
 button { padding: .7rem 1rem; border: 0; border-radius: .4rem; background: #245e4a; color: white; font: inherit; cursor: pointer; }
@@ -63,6 +66,11 @@ dd { margin: 0; }
 <progress id="progress" aria-label="評価の進捗"></progress>
 </header>
 <form id="review" autocomplete="off"></form>
+<section id="missing" hidden>
+<h2 id="missing-title"></h2>
+<ul id="missing-list"></ul>
+<p id="missing-more"></p>
+</section>
 <section id="export" hidden>
 <h2>採点結果をAIに貼り付ける</h2>
 <p>下のJSONをコピーして、このベンチマークを開始した会話に貼り付けてください。</p>
@@ -85,6 +93,10 @@ const copyStatus = document.querySelector("#copy-status");
 const speakers = { user: "ユーザー", assistant: "AI", tool: "ツール結果" };
 const answerControls = new Map();
 const moodControls = new Map();
+const required = [];
+const missing = document.querySelector("#missing");
+const missingList = document.querySelector("#missing-list");
+const MISSING_LIMIT = 20;
 
 function add(parent, tag, text, className) {
   const node = document.createElement(tag);
@@ -94,8 +106,9 @@ function add(parent, tag, text, className) {
   return node;
 }
 
-function slider(parent, item, required) {
+function slider(parent, item, where) {
   const box = add(parent, "div", undefined, "slider");
+  const mandatory = where !== undefined;
   const head = add(box, "div", undefined, "head");
   add(head, "span", item.label);
   const output = add(head, "output");
@@ -104,13 +117,17 @@ function slider(parent, item, required) {
   input.min = "0";
   input.max = "1";
   input.step = "0.01";
-  input.value = required ? "0.5" : "0";
+  input.value = mandatory ? "0.5" : "0";
   input.setAttribute("aria-label", item.label);
   const ticks = add(box, "div", undefined, "ticks");
   for (const anchor of item.anchors) add(ticks, "span", anchor.label);
   const control = {
-    required,
-    touched: !required,
+    required: mandatory,
+    touched: !mandatory,
+    focus() {
+      box.scrollIntoView({ block: "center", behavior: "smooth" });
+      input.focus({ preventScroll: true });
+    },
     get value() { return this.touched ? Number(input.value) : null; },
     set(value) {
       if (typeof value !== "number" || !(value >= 0 && value <= 1)) return;
@@ -130,6 +147,10 @@ function slider(parent, item, required) {
     input.addEventListener(type, () => { control.touch(); update(); });
   }
   control.show();
+  if (mandatory) {
+    box.id = `item-${required.length + 1}`;
+    required.push({ control, id: box.id, label: `${where}：${item.label}` });
+  }
   return control;
 }
 
@@ -172,17 +193,18 @@ for (const [scenarioIndex, scenario] of data.scenarios.entries()) {
     calls(turn, message.tool_calls);
   }
   const mood = add(section, "fieldset", undefined, "mood");
-  moodControls.set(scenario.id, slider(mood, scale.level, true));
+  moodControls.set(scenario.id, slider(mood, scale.level, `シナリオ ${scenarioIndex + 1}`));
   add(section, "h3", "AIの次の応答");
   for (const [answerIndex, answer] of scenario.answers.entries()) {
     const field = add(section, "fieldset");
+    const where = `シナリオ ${scenarioIndex + 1} 回答 ${String.fromCharCode(65 + answerIndex)}`;
     add(field, "legend", `回答 ${String.fromCharCode(65 + answerIndex)}`);
     if (answer.text) add(field, "p", answer.text, "answer");
     calls(field, answer.tool_calls);
     const sliders = new Map();
-    for (const axis of scale.axes) sliders.set(axis.id, slider(field, axis, true));
+    for (const axis of scale.axes) sliders.set(axis.id, slider(field, axis, where));
     const optional = add(field, "div", undefined, "optional");
-    for (const flag of scale.flags) sliders.set(flag.id, slider(optional, flag, false));
+    for (const flag of scale.flags) sliders.set(flag.id, slider(optional, flag));
     const label = add(field, "label", "コメント（任意）");
     const comment = add(label, "textarea");
     comment.rows = 2;
@@ -226,6 +248,17 @@ function update(saveDraft = true) {
   progress.value = completed;
   count.textContent = `評価済み ${completed} / ${total} 件`;
   panel.hidden = completed !== total;
+  const open = required.filter(entry => !entry.control.touched);
+  missing.hidden = open.length === 0;
+  document.querySelector("#missing-title").textContent = `未入力の項目（${open.length} 件）`;
+  missingList.replaceChildren();
+  for (const entry of open.slice(0, MISSING_LIMIT)) {
+    const link = add(add(missingList, "li"), "a", entry.label);
+    link.href = `#${entry.id}`;
+    link.addEventListener("click", event => { event.preventDefault(); entry.control.focus(); });
+  }
+  document.querySelector("#missing-more").textContent =
+    open.length > MISSING_LIMIT ? `ほか ${open.length - MISSING_LIMIT} 件。入力が進むと続きが表示されます。` : "";
   payload.value = panel.hidden ? "" : JSON.stringify({ run_id: data.run_id, levels, ratings }, null, 2);
   copyStatus.textContent = "";
   if (saveDraft) {
